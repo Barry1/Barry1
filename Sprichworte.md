@@ -8,5 +8,6 @@
 
 > Vor der Arbeit an künstlicher Intelligenz, sollte man etwas gegen die natürlich Dummheit tun. 
 
-> Künstliche Intelligenz ist allemal besser, als natürliche Dummheit. (Hans Matthöfer)
-![Künstliche Intelligenz ist allemal besser, als natürliche Dummheit. (Hans Matthöfer)](https://cdnext.funpot.net/bild/funpot0000343148/ef/Kuenstliche_Intelligenz.jpg "Künstliche Intelligenz ist allemal besser, als natürliche Dummheit. (Hans Matthöfer)")
+> ![Künstliche Intelligenz ist allemal besser, als natürliche Dummheit. (Hans Matthöfer)](https://cdnext.funpot.net/bild/funpot0000343148/ef/Kuenstliche_Intelligenz.jpg "Künstliche Intelligenz ist allemal besser, als natürliche Dummheit. (Hans Matthöfer)")
+
+> ![Wer mit künstlicher Intelligenz arbeitet, sollte auch mit natürlicher Dummheit rechnen.](https://cdnext.funpot.net/bild/ea79d00688bac4ba/1b/Wer_mit_kuenstlicher_Intelligenz.jpg "Wer mit künstlicher Intelligenz arbeitet, sollte auch mit natürlicher Dummheit rechnen.")
