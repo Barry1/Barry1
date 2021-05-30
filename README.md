@@ -1,7 +1,3 @@
----
-author: Dr. Bastian Ebeling
-date: 30.05.2021
----
 <!--- https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile --->
 <!--- https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme --->
 # My first try for more details within my profile
