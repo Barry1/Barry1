@@ -8,7 +8,8 @@ This is so great. I really love :star_struck: the markdown language for publishi
 ## Small project
 
 I try to build a python package called `valuefragments`.  
-For that I tried [![CodeFactor](https://www.codefactor.io/repository/github/barry1/pyvaluefragments/badge)](https://www.codefactor.io/repository/github/barry1/pyvaluefragments)
+For that I tried [![CodeFactor](https://www.codefactor.io/repository/github/barry1/pyvaluefragments/badge)](https://www.codefactor.io/repository/github/barry1/pyvaluefragments).  
+For live playing around with my first steps, you might try [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Barry1/PyValueFragments/HEAD).
 
 # Cool overview
 
