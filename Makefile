@@ -15,7 +15,7 @@ PYCALL = python
 else
 
 # GNU (Posix?) make.
-PYCALL = sudo python3
+PYCALL = python3
 
 endif    # gmake: close condition; nmake: not seen
 !endif : # gmake: unused target; nmake close conditional
