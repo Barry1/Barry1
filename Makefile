@@ -15,7 +15,7 @@ PYCALL = python
 else
 
 # GNU (Posix?) make.
-PYCALL = python3
+PYCALL = sudo python3
 
 endif    # gmake: close condition; nmake: not seen
 !endif : # gmake: unused target; nmake close conditional
@@ -24,3 +24,6 @@ updatepip:
 	$(PYCALL) -m pip install --upgrade pip setuptools
 	$(PYCALL) -m piptools compile --rebuild
 	$(PYCALL) -m pip install --upgrade -r requirements.txt
+
+showpipconf:
+	$(PYCALL) -m pip config debug
