@@ -14,19 +14,30 @@
 | lacheck             | syntax checker for LaTeX           |
 | lyx                 | WYSIWYG-frontend for LaTeX         |
 | needrestart         | checks for needed restarts         |
+| [nmap](#nmap)       | utility for network exploration    |
 | pandoc              | general markup converter           |
+| pssh                | parallel ssh execution of commands |
 
 ## Commands
 
-| command     | package        | description                   |
-| ----------- | -------------- | ----------------------------- |
-| ssh-copy-id | openssh-client | installs login keys on server |
+| command      | package        | description                          |
+| ------------ | -------------- | ------------------------------------ |
+| parallel-ssh | pssh           | same ssh command on multiple servers |
+| ssh-copy-id  | openssh-client | installs login keys on server        |
 
 ## description and examples
 
 ### bashtop
 
 [bashtop](https://github.com/aristocratos/bashtop) is a cool and colorful alternativ top the well known top command.
+
+### nmap
+
+An example command would be
+
+```bash
+nmap 192.168.177.1-254 -v -oA nmapscan
+```
 
 ### parallel
 
@@ -40,7 +51,7 @@ An example command would be
 parallel --bar nice ffmpeg -i {} {.}.mp3 ::: *.webm *.mkv
 ```
 
-for conversion of all *.webm and *.mkv files to *.mp3
+for conversion of all \*.webm and \*.mkv files to *.mp3
 
 ### powertop
 
