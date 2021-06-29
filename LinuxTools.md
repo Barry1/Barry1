@@ -2,22 +2,22 @@
 
 ## Packages
 
-| packagename         | shot description                   |
-| ------------------- | ---------------------------------- |
-| [bashtop](#bashtop) | colorful top                       |
-| apt-file            | matches files and packages         |
-| chktex              | Finds typographic errors in LaTeX  |
-| chrony              | NTP                                |
-| conky-all           | highly configurable system monitor |
-| gummi               | GTK+ latex editor                  |
-| inxi                | system info                        |
-| lacheck             | syntax checker for LaTeX           |
-| lyx                 | WYSIWYG-frontend for LaTeX         |
-| needrestart         | checks for needed restarts         |
-| [nmap](#nmap)       | utility for network exploration    |
-| pandoc              | general markup converter           |
-| parallel            | easy parallel instead serial       |
-| pssh                | parallel ssh execution of commands |
+| packagename          | short description                  |
+| -------------------- | ---------------------------------- |
+| [bashtop](#bashtop)  | colorful top                       |
+| apt-file             | matches files and packages         |
+| chktex               | Finds typographic errors in LaTeX  |
+| chrony               | NTP                                |
+| conky-all            | highly configurable system monitor |
+| gummi                | GTK+ latex editor                  |
+| inxi                 | system info                        |
+| lacheck              | syntax checker for LaTeX           |
+| lyx                  | WYSIWYG-frontend for LaTeX         |
+| needrestart          | checks for needed restarts         |
+| [nmap](#nmap)        | utility for network exploration    |
+| pandoc               | general markup converter           |
+| [parallel](#parallel)| easy parallel instead of serial    |
+| pssh                 | parallel ssh execution of commands |
 
 ## Commands
 
