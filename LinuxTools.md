@@ -16,12 +16,14 @@
 | needrestart         | checks for needed restarts         |
 | [nmap](#nmap)       | utility for network exploration    |
 | pandoc              | general markup converter           |
+| parallel            | easy parallel instead serial       |
 | pssh                | parallel ssh execution of commands |
 
 ## Commands
 
 | command      | package        | description                          |
 | ------------ | -------------- | ------------------------------------ |
+| niceload     | parallel       | slow down a program when the load average is above a certain limit|
 | parallel-ssh | pssh           | same ssh command on multiple servers |
 | ssh-copy-id  | openssh-client | installs login keys on server        |
 
