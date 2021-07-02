@@ -4,6 +4,24 @@ Just a collection of facts around this windows solution.
 
 ## Configuration
 
+### Global configuration
+
+For global settings the `.wslconfig` file is to be used.
+It has to be placed at `%USERPROFILE%\.wslconfig`
+
+The documentation is placed [here](https://docs.microsoft.com/de-de/windows/wsl/wsl-config#wsl-2-settings).
+
+See the example
+
+```
+[wsl2]
+kernel=C:\\temp\\myCustomKernel
+memory=4GB # Limits VM memory in WSL 2 to 4 GB
+processors=2 # Makes the WSL 2 VM use two virtual processors
+```
+
+### Configuration per Distribution
+
 There is the `/etc/wsl.conf` file in which some options could be set, in every distribution.
 
 The documentation on the options is to be found [here](https://docs.microsoft.com/de-de/windows/wsl/wsl-config#configuration-options).
