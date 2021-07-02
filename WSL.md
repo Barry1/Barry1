@@ -4,12 +4,14 @@ Just a collection of facts around this windows solution.
 
 ## Configuration
 
+You can finde many descriptions [here](https://docs.microsoft.com/en-us/windows/wsl/wsl-config) or within the text below.
+
 ### Global configuration
 
 For global settings the `.wslconfig` file is to be used.
 It has to be placed at `%USERPROFILE%\.wslconfig`
 
-The documentation is placed [here](https://docs.microsoft.com/de-de/windows/wsl/wsl-config#wsl-2-settings).
+The documentation is placed [here](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#wsl-2-settings).
 
 See the example
 
@@ -24,7 +26,7 @@ processors=2 # Makes the WSL 2 VM use two virtual processors
 
 There is the `/etc/wsl.conf` file in which some options could be set, in every distribution.
 
-The documentation on the options is to be found [here](https://docs.microsoft.com/de-de/windows/wsl/wsl-config#configuration-options).
+The documentation on the options is to be found [here](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configuration-options).
 
 This is only slightly commented. Have a look at the following links.
 
