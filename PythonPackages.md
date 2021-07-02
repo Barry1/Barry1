@@ -44,6 +44,13 @@ plotting with Python
 ### pip-tools
 
 A set of tools to keep your pinned Python dependencies fresh.
+I most often use the following calls
+
+```bash
+python -m pip install --upgrade pip setuptools
+python -m piptools compile --rebuild
+python -m pip install --upgrade -r requirements.txt
+```
 
 [Homepage](about:blank)
 [Repository](https://github.com/jazzband/pip-tools)
