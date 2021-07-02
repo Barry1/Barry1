@@ -6,6 +6,8 @@ Just a collection of facts around this windows solution.
 
 There is the `/etc/wsl.conf` file in which some options could be set, in every distribution.
 
+The documentation on the options is to be found [here](https://docs.microsoft.com/de-de/windows/wsl/wsl-config#configuration-options).
+
 This is only slightly commented. Have a look at the following links.
 
 - <https://docs.microsoft.com/de-de/windows/wsl/wsl-config#configure-per-distro-launch-settings-with-wslconf>
