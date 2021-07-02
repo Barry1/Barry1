@@ -17,6 +17,7 @@
 | [nmap](#nmap)        | utility for network exploration    |
 | pandoc               | general markup converter           |
 | [parallel](#parallel)| easy parallel instead of serial    |
+| [powertop](#powertop)| diagnose issues with power consumption and management |
 | pssh                 | parallel ssh execution of commands |
 
 ## Commands
