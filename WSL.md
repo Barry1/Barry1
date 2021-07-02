@@ -15,7 +15,7 @@ The documentation is placed [here](https://docs.microsoft.com/en-us/windows/wsl/
 
 See the example
 
-```
+```ini
 [wsl2]
 kernel=C:\\temp\\myCustomKernel
 memory=4GB # Limits VM memory in WSL 2 to 4 GB
@@ -35,7 +35,7 @@ This is only slightly commented. Have a look at the following links.
 - <https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md>
 - <https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md#konfigurieren-globaler-optionen-mit-wslconfig>
 
-```
+```ini
 # Enable extra metadata options by default
 [automount]
 enabled = true
