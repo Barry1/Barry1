@@ -2,31 +2,31 @@
 
 ## Packages
 
-| packagename          | short description                  |
-| -------------------- | ---------------------------------- |
-| [bashtop](#bashtop)  | colorful top                       |
-| apt-file             | matches files and packages         |
-| chktex               | Finds typographic errors in LaTeX  |
-| chrony               | NTP                                |
-| conky-all            | highly configurable system monitor |
-| gummi                | GTK+ latex editor                  |
-| inxi                 | system info                        |
-| lacheck              | syntax checker for LaTeX           |
-| lyx                  | WYSIWYG-frontend for LaTeX         |
-| needrestart          | checks for needed restarts         |
-| [nmap](#nmap)        | utility for network exploration    |
-| pandoc               | general markup converter           |
-| [parallel](#parallel)| easy parallel instead of serial    |
-| [powertop](#powertop)| diagnose issues with power consumption and management |
-| pssh                 | parallel ssh execution of commands |
+| packagename           | short description                                     |
+| --------------------- | ----------------------------------------------------- |
+| [bashtop](#bashtop)   | colorful top                                          |
+| apt-file              | matches files and packages                            |
+| chktex                | Finds typographic errors in LaTeX                     |
+| chrony                | NTP                                                   |
+| conky-all             | highly configurable system monitor                    |
+| gummi                 | GTK+ latex editor                                     |
+| inxi                  | system info                                           |
+| lacheck               | syntax checker for LaTeX                              |
+| lyx                   | WYSIWYG-frontend for LaTeX                            |
+| needrestart           | checks for needed restarts                            |
+| [nmap](#nmap)         | utility for network exploration                       |
+| pandoc                | general markup converter                              |
+| [parallel](#parallel) | easy parallel instead of serial                       |
+| [powertop](#powertop) | diagnose issues with power consumption and management |
+| pssh                  | parallel ssh execution of commands                    |
 
 ## Commands
 
-| command      | package        | description                          |
-| ------------ | -------------- | ------------------------------------ |
-| niceload     | parallel       | slow down a program when the load average is above a certain limit|
-| parallel-ssh | pssh           | same ssh command on multiple servers |
-| ssh-copy-id  | openssh-client | installs login keys on server        |
+| command      | package        | description                                                        |
+| ------------ | -------------- | ------------------------------------------------------------------ |
+| niceload     | parallel       | slow down a program when the load average is above a certain limit |
+| parallel-ssh | pssh           | same ssh command on multiple servers                               |
+| ssh-copy-id  | openssh-client | installs login keys on server                                      |
 
 ## description and examples
 
@@ -46,7 +46,7 @@ nmap 192.168.177.1-254 -v -oA nmapscan
 
 [GNU parallel](https://www.gnu.org/software/parallel/) delivers some cool commands.
 The main one is `parallel` for efficient parallel processing of commands.
-It is also a good replacement for *for loops* in bash or so.
+It is also a good replacement for _for loops_ in bash or so.
 It also provides the cool command `niceload` which slows down a program if all systems load gets too high.
 An example command would be
 
@@ -54,9 +54,9 @@ An example command would be
 parallel --bar nice ffmpeg -i {} {.}.mp3 ::: *.webm *.mkv
 ```
 
-for conversion of all \*.webm and \*.mkv files to *.mp3
+for conversion of all \*.webm and \*.mkv files to \*.mp3
 
 ### powertop
 
 [PowerTOP](https://01.org/powertop/) reports which omponents in the system are most likely to blame for higher-than-needed power consumption, ranging from software applications to active components in the system.
-Detailed screens are  available for CPU C and P states, device activity, and software activity.
+Detailed screens are available for CPU C and P states, device activity, and software activity.
