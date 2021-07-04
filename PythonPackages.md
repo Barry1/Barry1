@@ -7,10 +7,12 @@ Most of them are also found within my [GitHub Stars](https://github.com/Barry1?l
 
 | Packagename               | Group        |
 | ------------------------- | ------------ |
+| [SQLAlchemy](#SQLAlchemy) | Database     |
 | [dask](#dask)             | Dataframe    |
 | [pandas](#pandas)         | Dataframe    |
 | [vaex](#vaex)             | Dataframe    |
 | [black](#black)           | Formatting   |
+| [darker](#darker)         | Formatting   |
 | [pip-tools](#pip-tools)   | OS           |
 | [psutil](#psutil)         | OS           |
 | [bokeh](#bokeh)           | Plot         |
@@ -22,10 +24,17 @@ Most of them are also found within my [GitHub Stars](https://github.com/Barry1?l
 
 ### black
 
-The uncompromising Python code formatter
+The uncompromising Python code formatter.
 
 [Homepage](https://black.readthedocs.io/en/stable/)
 [Repository](https://github.com/psf/black)
+
+### darker
+
+Apply Black formatting only in regions changed since last commit.
+
+[Homepage](about:blank)
+[Repository](https://github.com/akaihola/darker)
 
 ### hvplot
 
@@ -61,6 +70,15 @@ Cross-platform lib for process and system monitoring in Python.
 
 [Homepage](about:blank)
 [Repository](https://github.com/giampaolo/psutil)
+
+### SQLAlchemy
+
+The Python SQL Toolkit and Object Relational Mapper
+
+SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.
+
+[Homepage](http://www.sqlalchemy.org/)
+[Repository](https://github.com/sqlalchemy/sqlalchemy/)
 
 ### tqdm
 
