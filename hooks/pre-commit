@@ -1,20 +1,35 @@
 #!/bin/sh
+# reroute stdout to sderr
+exec 1>&2
 # get changed files (Added, Changed, Modified)
 # sed for retaining space
 FILES=$(git diff --staged --name-only --diff-filter=ACM | sed 's| |\\ |g')
+# http://mywiki.wooledge.org/BashFAQ/031
+# [ ] &&  or if then fi
 # exit if no FILES found
-[ -z "$FILES" ] && exit 0
+if [ -z "$FILES" ]
+then
+    exit 0
+fi
 #echo "Added/Changed/Modified files are"
 #echo $FILES
 #echo ==========================PRETTIER=========================================
-[ $(which prettier) ] && echo "$FILES" | parallel prettier --ignore-unknown --write
-#exec 1>&2
+if [ $(which prettier) ]
+then
+    echo "$FILES" | parallel prettier --ignore-unknown --write
+fi
 #echo $(pwd)
 #echo ==========================ISORT=========================================
-[ $(which isort) ] && echo "$FILES" | grep -i ".py" | parallel isort
+if [ $(which isort) ]
+then
+    echo "$FILES" | grep -i ".py" | parallel isort
+fi
 #isort "$FILES"
 #echo ==========================BLACK=========================================
-[ $(which black) ] && echo "$FILES" | grep -i ".py" | parallel black
+if [ $(which black) ]
+then
+    echo "$FILES" | grep -i ".py" | parallel black
+fi
 #black "$FILES"
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
