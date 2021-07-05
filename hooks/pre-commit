@@ -7,14 +7,14 @@ FILES=$(git diff --staged --name-only --diff-filter=ACM | sed 's| |\\ |g')
 #echo "Added/Changed/Modified files are"
 #echo $FILES
 #echo ==========================PRETTIER=========================================
-echo "$FILES" | parallel prettier --ignore-unknown --write
+[ $(which prettier) ] && echo "$FILES" | parallel prettier --ignore-unknown --write
 #exec 1>&2
 #echo $(pwd)
 #echo ==========================ISORT=========================================
-echo "$FILES" | grep -i ".py" | parallel isort
+[ $(which isort) ] && echo "$FILES" | grep -i ".py" | parallel isort
 #isort "$FILES"
 #echo ==========================BLACK=========================================
-echo "$FILES" | grep -i ".py" | parallel black
+[ $(which black) ] && echo "$FILES" | grep -i ".py" | parallel black
 #black "$FILES"
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
