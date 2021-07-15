@@ -19,6 +19,8 @@
 | [parallel](#parallel) | easy parallel instead of serial                       |
 | [powertop](#powertop) | diagnose issues with power consumption and management |
 | pssh                  | parallel ssh execution of commands                    |
+| [tldr](#tldr)         | easier man pages with examples                        |
+
 
 ## Commands
 
@@ -60,3 +62,7 @@ for conversion of all \*.webm and \*.mkv files to \*.mp3
 
 [PowerTOP](https://01.org/powertop/) reports which omponents in the system are most likely to blame for higher-than-needed power consumption, ranging from software applications to active components in the system.
 Detailed screens are available for CPU C and P states, device activity, and software activity.
+
+### tldr
+
+[tldr](https://tldr.sh/) The TLDR pages are a community effort to simplify the beloved man pages with practical examples. 
