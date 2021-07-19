@@ -19,3 +19,8 @@ For live playing around with my first steps, you might try
 # Cool overview
 
 Have a look at [my gitmemory](https://gitmemory.com/Barry1) for a cool and colorful overview.
+
+# Cool widgets
+
+<!--- https://github.com/anuraghazra/github-readme-stats#github-stats-card &locale=de--->
+![Barry1's GitHub stats](https://github-readme-stats.vercel.app/api?username=Barry1&show_icons=true&custom_title=Barry1%27s%20statistics)
