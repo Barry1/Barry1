@@ -1,9 +1,10 @@
 #!/bin/sh
 # reroute stdout to sderr
 exec 1>&2
-# get changed files (Added, Changed, Modified)
+# get changed files (Added, Changed, Modified), needs cached to analyze only staged files
+# maybe `git status --short --untracked-files=no` would be better
 # sed for retaining space
-FILES=$(git diff --staged --name-only --diff-filter=ACM | sed 's| |\\ |g')
+FILES=$(git diff --staged --name-only --cached --diff-filter=ACM | sed 's| |\\ |g')
 # http://mywiki.wooledge.org/BashFAQ/031
 # [ ] &&  or if then fi
 # exit if no FILES found
