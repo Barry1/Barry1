@@ -19,7 +19,7 @@ if [ $(which prettier) ]
 then
     echo "$FILES" | parallel prettier --ignore-unknown --write
 fi
-echo "Prettier ready"
+#echo "Prettier ready"
 #echo $(pwd)
 #echo ==========================ISORT=========================================
 if [ $(which isort) ]
@@ -35,6 +35,7 @@ fi
 #black "$FILES"
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
-echo "$FILES" | parallel git add
+# echo "$FILES" | parallel git add - crashes whith multiple files
+git add "$FILES"
 # Clean end
 exit 0
