@@ -18,7 +18,7 @@
 | pandoc                | general markup converter                              |
 | [parallel](#parallel) | easy parallel instead of serial                       |
 | [powertop](#powertop) | diagnose issues with power consumption and management |
-| pssh                  | parallel ssh execution of commands on multiple nodes                    |
+| pssh                  | parallel ssh execution of commands on multiple nodes  |
 | rubber                | automated system for building LaTeX documents         |
 | texlive-lang-german   | features for german language - babel and so on        |
 | [tldr](#tldr)         | easier man pages with examples                        |

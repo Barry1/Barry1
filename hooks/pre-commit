@@ -35,7 +35,7 @@ fi
 #black "$FILES"
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
-# echo "$FILES" | parallel git add - crashes whith multiple files
-git add "$FILES"
+# echo "$FILES" | parallel git add # - crashes whith multiple files
+echo "$FILES" | xargs git add
 # Clean end
 exit 0
