@@ -19,8 +19,9 @@
 | [parallel](#parallel) | easy parallel instead of serial                       |
 | [powertop](#powertop) | diagnose issues with power consumption and management |
 | pssh                  | parallel ssh execution of commands                    |
+| rubber                | automated system for building LaTeX documents         |
+| texlive-lang-german   | features for german language - babel and so on        |
 | [tldr](#tldr)         | easier man pages with examples                        |
-
 
 ## Commands
 
@@ -65,4 +66,4 @@ Detailed screens are available for CPU C and P states, device activity, and soft
 
 ### tldr
 
-[tldr](https://tldr.sh/) The TLDR pages are a community effort to simplify the beloved man pages with practical examples. 
+[tldr](https://tldr.sh/) The TLDR pages are a community effort to simplify the beloved man pages with practical examples.
