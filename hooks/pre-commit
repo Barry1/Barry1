@@ -2,7 +2,7 @@
 # reroute stdout to sderr
 exec 1>&2
 # get changed files (Added, Changed, Modified), needs cached to analyze only staged files
-# maybe `git status --short --untracked-files=no` would be better
+# `git status --short --untracked-files=no --porcelain=v1` was another idea, but `--cached` on `diff` is better
 # sed for retaining space
 FILES=$(git diff --staged --name-only --cached --diff-filter=ACM | sed 's| |\\ |g')
 # http://mywiki.wooledge.org/BashFAQ/031
@@ -19,6 +19,7 @@ if [ $(which prettier) ]
 then
     echo "$FILES" | parallel prettier --ignore-unknown --write
 fi
+echo "Prettier ready"
 #echo $(pwd)
 #echo ==========================ISORT=========================================
 if [ $(which isort) ]
