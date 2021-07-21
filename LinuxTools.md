@@ -4,8 +4,9 @@
 
 | packagename           | short description                                          |
 | --------------------- | ---------------------------------------------------------- |
-| [bashtop](#bashtop)   | colorful top                                               |
 | apt-file              | matches files and packages                                 |
+| [bashtop](#bashtop)   | colorful top                                               |
+| bc                    | An arbitrary precision calculator language                 |
 | chktex                | Finds typographic errors in LaTeX                          |
 | chrony                | NTP                                                        |
 | conky-all             | highly configurable system monitor                         |
@@ -29,6 +30,7 @@
 
 | command      | package        | description                                                        |
 | ------------ | -------------- | ------------------------------------------------------------------ |
+| arch         | coreutils      | Print machine architecture                                         |
 | niceload     | parallel       | slow down a program when the load average is above a certain limit |
 | parallel-ssh | pssh           | same ssh command on multiple servers                               |
 | ssh-copy-id  | openssh-client | installs login keys on server                                      |
