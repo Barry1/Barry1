@@ -2,26 +2,28 @@
 
 ## Packages
 
-| packagename           | short description                                     |
-| --------------------- | ----------------------------------------------------- |
-| [bashtop](#bashtop)   | colorful top                                          |
-| apt-file              | matches files and packages                            |
-| chktex                | Finds typographic errors in LaTeX                     |
-| chrony                | NTP                                                   |
-| conky-all             | highly configurable system monitor                    |
-| gummi                 | GTK+ latex editor                                     |
-| inxi                  | system info                                           |
-| lacheck               | syntax checker for LaTeX                              |
-| lyx                   | WYSIWYG-frontend for LaTeX                            |
-| needrestart           | checks for needed restarts                            |
-| [nmap](#nmap)         | utility for network exploration                       |
-| pandoc                | general markup converter                              |
-| [parallel](#parallel) | easy parallel instead of serial                       |
-| [powertop](#powertop) | diagnose issues with power consumption and management |
-| pssh                  | parallel ssh execution of commands on multiple nodes  |
-| rubber                | automated system for building LaTeX documents         |
-| texlive-lang-german   | features for german language - babel and so on        |
-| [tldr](#tldr)         | easier man pages with examples                        |
+| packagename           | short description                                          |
+| --------------------- | ---------------------------------------------------------- |
+| [bashtop](#bashtop)   | colorful top                                               |
+| apt-file              | matches files and packages                                 |
+| chktex                | Finds typographic errors in LaTeX                          |
+| chrony                | NTP                                                        |
+| conky-all             | highly configurable system monitor                         |
+| gummi                 | GTK+ latex editor                                          |
+| htop                  | Htop is an ncursed-based process viewer similar to top     |
+| inxi                  | system info                                                |
+| lacheck               | syntax checker for LaTeX                                   |
+| lyx                   | WYSIWYG-frontend for LaTeX                                 |
+| needrestart           | checks for needed restarts                                 |
+| [nmap](#nmap)         | utility for network exploration                            |
+| pandoc                | general markup converter                                   |
+| [parallel](#parallel) | easy parallel instead of serial                            |
+| [powertop](#powertop) | diagnose issues with power consumption and management      |
+| pssh                  | parallel ssh execution of commands on multiple nodes       |
+| rubber                | automated system for building LaTeX documents              |
+| schedtool             | Queries/alters process' scheduling policy and CPU affinity |
+| texlive-lang-german   | features for german language - babel and so on             |
+| [tldr](#tldr)         | easier man pages with examples                             |
 
 ## Commands
 
