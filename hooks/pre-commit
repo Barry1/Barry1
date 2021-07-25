@@ -12,8 +12,11 @@ if [ -z "$FILES" ]
 then
     exit 0
 fi
-#echo "Added/Changed/Modified files are"
-#echo $FILES
+echo "/====================================\\"
+echo "|  Added/Changed/Modified files are  |"
+echo $FILES
+echo "\\====================================/"
+# good ideas for python code <https://archive.is/hGthB>
 #echo ==========================PRETTIER=========================================
 if [ $(which prettier) ]
 then
@@ -41,6 +44,8 @@ fi
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
 # echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.log git add # - crashes whith multiple files
+git status
 echo "$FILES" | xargs git add
+git status
 # Clean end
 exit 0
