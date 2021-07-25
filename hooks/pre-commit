@@ -1,4 +1,5 @@
 #!/bin/sh
+# FORMATTED WITH BEAUTYSH <>
 # reroute stdout to sderr
 exec 1>&2
 # get changed files (Added, Changed, Modified), needs cached to analyze only staged files
@@ -20,32 +21,33 @@ echo "\\====================================/"
 #echo ==========================PRETTIER=========================================
 if [ $(which prettier) ]
 then
-    echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.log prettier --ignore-unknown --write
+    echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
 #echo $(pwd)
 #echo ==========================ISORT=========================================
 if [ $(which isort) ]
 then
-    echo "$FILES" | grep -i ".py" | parallel --bar --group isort
+    echo "$FILES" | grep -i ".py" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
 fi
 #isort "$FILES"
 #echo ==========================BLACK=========================================
 if [ $(which black) ]
 then
-    echo "$FILES" | grep -i ".py" | parallel --bar --group black
+    echo "$FILES" | grep -i ".py" | parallel --bar --group --joblog parallel.pre-commit.black.log black
 fi
 #black "$FILES"
 #echo ==========================INTERROGATE=========================================
 if [ $(which interrogate) ]
 then
-    echo "$FILES" | grep -i ".py" | xargs interrogate
+    echo "$FILES" | grep -i ".py" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
 fi
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
 # echo "$FILES" | parallel --bar --group git add # - crashes whith multiple files
 git status
-echo "$FILES" | xargs git add
+echo "$FILES" | parallel --xargs --bar --group --joblog parallel.pre-commit.git_stage.log git stage # - crashes whith multiple files
+#echo "$FILES" | xargs git add
 git status
 # Clean end
 exit 0
