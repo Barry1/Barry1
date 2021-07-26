@@ -4,7 +4,7 @@ jobs:
   mdl:
     runs-on: ubuntu-latest
     steps:
-        uses: bewuethr/mdl-action@v1.0.12
+      -  uses: bewuethr/mdl-action@v1.0.12
   #with:
   #style-file: .github/workflows/style.rb
   #<https://github.com/marketplace/actions/run-markdownlint-mdl>
