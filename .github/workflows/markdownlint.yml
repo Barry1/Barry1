@@ -1,5 +1,6 @@
-- name: Run markdownlint (mdl)
-  uses: bewuethr/mdl-action@v1.0.12
+name: Run markdownlint (mdl)
+on: push
+uses: bewuethr/mdl-action@v1.0.12
   #with:
   #style-file: .github/workflows/style.rb
   #<https://github.com/marketplace/actions/run-markdownlint-mdl>
