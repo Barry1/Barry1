@@ -1,10 +1,13 @@
-name: Run markdownlint (mdl)
+name: Bastian versucht sich an actions
 on: push
 jobs:
   mdl:
     runs-on: ubuntu-latest
     steps:
-      -  uses: bewuethr/mdl-action@v1.0.12
-  #with:
-  #style-file: .github/workflows/style.rb
-  #<https://github.com/marketplace/actions/run-markdownlint-mdl>
+      - name: Run markdownlint (mdl)
+        uses: bewuethr/mdl-action@v1.0.12
+        #with:
+        #style-file: .github/workflows/style.rb
+        #<https://github.com/marketplace/actions/run-markdownlint-mdl>
+      
+  
