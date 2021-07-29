@@ -28,19 +28,19 @@ fi
 #echo ==========================ISORT=========================================
 if [ $(which isort) ]
 then
-    echo "$FILES" | grep -i ".py" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
+    echo "$FILES" | grep -i ".py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
 fi
 #isort "$FILES"
 #echo ==========================BLACK=========================================
 if [ $(which black) ]
 then
-    echo "$FILES" | grep -i ".py" | parallel --bar --group --joblog parallel.pre-commit.black.log black
+    echo "$FILES" | grep -i ".py$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
 fi
 #black "$FILES"
 #echo ==========================INTERROGATE=========================================
 if [ $(which interrogate) ]
 then
-    echo "$FILES" | grep -i ".py" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
+    echo "$FILES" | grep -i ".py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
 fi
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
