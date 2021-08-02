@@ -14,7 +14,7 @@ jobs = 0
 # https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
 [tool.black]
 #line-length = 88
-target-version = ['py39']#'py37', 'py38', 
+target-version = ['py39'] #'py37', 'py38',
 color = true
 safe = true
 
@@ -58,12 +58,18 @@ python = "^3.9"
 [tool.poetry.dev-dependencies]
 
 [pylama.pep8]
-max_line_length=88
+max_line_length = 88
 
 [tool.pylint.MASTER]
 jobs = 0
-output-format="colorized"
-include-naming-hint="y"
+output-format = "colorized"
+include-naming-hint = "y"
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+typeCheckingMode = "strict"
+reportMissingImports = true
+reportMissingTypeStubs = false
 
 [tool.pylint."MESSAGES CONTROL"]
 disable = "duplicate-code"
