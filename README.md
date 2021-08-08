@@ -6,6 +6,8 @@
 I'm just starting getting to know more and more around github.  
 This is so great. I really love :star_struck: the markdown language for publishing information.
 
+I also manage some templates for configurations here.
+
 ## Small project
 
 I try to build a python package called `valuefragments`.  
