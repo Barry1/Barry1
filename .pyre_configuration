@@ -1,7 +1,1 @@
-{
-  "source_directories": [
-    "."
-  ],
-  "taint_models_path": "/usr/local/lib",
-  "strict":true
-}
+config_templates/.pyre_configuration
