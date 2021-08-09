@@ -34,5 +34,5 @@ Have a look at [my gitmemory](https://gitmemory.com/Barry1) for a cool and color
 # Fun stuff
 
 ## Happy Meal
-![Snake](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.svg)
+![Snake](https://github.com/Barry1/Barry1/blob/output/github-contribution-grid-snake.svg)
 
