@@ -9,5 +9,3 @@ jobs:
         #with:
         #style-file: .github/workflows/style.rb
         #<https://github.com/marketplace/actions/run-markdownlint-mdl>
-      
-  
