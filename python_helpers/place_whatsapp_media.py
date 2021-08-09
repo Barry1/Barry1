@@ -27,3 +27,4 @@ if __name__ == "__main__":
             if os.path.isfile(foundfile):
                 print(foundfile)
                 placefile(foundfile)
+    print("Ready.")
