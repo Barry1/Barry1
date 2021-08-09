@@ -30,3 +30,9 @@ For live playing around with my first steps, you might try
 # Cool overview
 
 Have a look at [my gitmemory](https://gitmemory.com/Barry1) for a cool and colorful overview.
+
+# Fun stuff
+
+## Happy Meal
+![Snake](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.svg)
+
