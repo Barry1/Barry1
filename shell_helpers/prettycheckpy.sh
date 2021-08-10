@@ -15,7 +15,7 @@ then
 else
     FILE=`tree -if|egrep "\.pyi?$"`
 fi
-echoandrun isort --profile=black
-echoandrun black
+echoandrun isort --skip=venv --profile=black
+echoandrun black --force-exclude venv
 echoandrun interrogate
 exit 0
