@@ -1,25 +1,21 @@
 #!/bin/sh
 # FORMATTED WITH BEAUTYSH <>
 # reroute stdout to sderr
-exec 1>&2
-echo ==========================PRETTIER=========================================
-if [ $(which prettier) ]
+# exec 1>&2
+echoandrun () {
+    echo ==================== $1 ====================
+    if [ $(which $1) ]
+    then
+        $@ $FILE
+    fi
+}
+if [ -n "$1" ]
 then
-    echo prettier --ignore-unknown --write $1
+    FILE=$1
+else
+    FILE=`tree -if|egrep "\.pyi?$"`
 fi
-echo ==========================ISORT=========================================
-if [ $(which isort) ]
-then
-    isort --profile=black $1
-fi
-echo ==========================BLACK=========================================
-if [ $(which black) ]
-then
-    black $1
-fi
-echo ==========================INTERROGATE=========================================
-if [ $(which interrogate) ]
-then
-    interrogate $1
-fi
+echoandrun isort --profile=black
+echoandrun black
+echoandrun interrogate
 exit 0
