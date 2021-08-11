@@ -17,6 +17,7 @@ jobs = 0
 target-version = ['py39'] #'py37', 'py38',
 color = true
 safe = true
+#force-exlude = ".*/venv/.*"
 
 [tool.darker]
 revision = "main"
@@ -45,6 +46,7 @@ show_error_context = true
 py_version = 37
 color_output = true
 profile = "black"
+skip = "venv"
 
 [tool.poetry]
 name = "pyintlab"

@@ -18,4 +18,6 @@ fi
 echoandrun isort --skip=venv --profile=black
 echoandrun black --force-exclude venv
 echoandrun interrogate
+echoandrun mypy --install-types --non-interactive --pretty --show-error-codes --strict --check-untyped-defs --ignore-missing-imports
+echoandrun pylama --linters mccabe,pep257,pydocstyle,pycodestyle,pyflakes,radon,pylint,mypy,isort
 exit 0
