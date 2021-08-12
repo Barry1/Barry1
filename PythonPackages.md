@@ -13,7 +13,9 @@ Most of them are also found within my [GitHub Stars](https://github.com/Barry1?l
 | [vaex](#vaex)             | Dataframe    |
 | [black](#black)           | Formatting   |
 | [darker](#darker)         | Formatting   |
+| [pipdeptree](#pipdeptree) | OS           |
 | [pip-tools](#pip-tools)   | OS           |
+| [poetry](#poetry)         | OS           |
 | [psutil](#psutil)         | OS           |
 | [bokeh](#bokeh)           | Plot         |
 | [hvplot](#hvplot)         | Plot         |
@@ -50,6 +52,13 @@ plotting with Python
 [Homepage](about:blank)
 [Repository](https://github.com/matplotlib/matplotlib)
 
+### pipdeptree
+
+Command line utility to show dependency tree of packages.
+
+[Homepage](about:blank)
+[Repository](https://github.com/naiquevin/pipdeptree)
+
 ### pip-tools
 
 A set of tools to keep your pinned Python dependencies fresh.
@@ -63,6 +72,12 @@ python -m pip install --upgrade -r requirements.txt
 
 [Homepage](about:blank)
 [Repository](https://github.com/jazzband/pip-tools)
+
+### poetry
+
+Python dependency management and packaging made easy.
+[Homepage](https://python-poetry.org/)
+[Repository](https://github.com/python-poetry/poetry)
 
 ### psutil
 
