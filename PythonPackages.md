@@ -107,7 +107,7 @@ A Fast, Extensible Progress Bar for Python and CLI.
 
 The uncertainties package is a free, cross-platform program that transparently handles calculations with numbers with uncertainties (like 3.14±0.01). It can also yield the derivatives of any expression.
 
-[Homepage](https://uncertainties-python-package.readthedocs.io/en/latest/)
+[Homepage](https://uncertainties.readthedocs.io/)
 [Repository](https://github.com/lebigot/uncertainties)
 
 ### vaex
