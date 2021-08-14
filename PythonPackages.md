@@ -13,8 +13,9 @@ Most of them are also found within my [GitHub Stars](https://github.com/Barry1?l
 | [vaex](#vaex)             | Dataframe    |
 | [black](#black)           | Formatting   |
 | [darker](#darker)         | Formatting   |
-| [pipdeptree](#pipdeptree) | OS           |
+| [uncertainties]           | Math         |
 | [pip-tools](#pip-tools)   | OS           |
+| [pipdeptree](#pipdeptree) | OS           |
 | [poetry](#poetry)         | OS           |
 | [psutil](#psutil)         | OS           |
 | [bokeh](#bokeh)           | Plot         |
@@ -101,6 +102,13 @@ A Fast, Extensible Progress Bar for Python and CLI.
 
 [Homepage](https://tqdm.github.io/)
 [Repository](https://github.com/tqdm/tqdm)
+
+### uncertainties
+
+The uncertainties package is a free, cross-platform program that transparently handles calculations with numbers with uncertainties (like 3.14±0.01). It can also yield the derivatives of any expression.
+
+[Homepage](https://uncertainties-python-package.readthedocs.io/en/latest/)
+[Repository](https://github.com/lebigot/uncertainties)
 
 ### vaex
 
