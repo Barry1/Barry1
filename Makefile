@@ -1,6 +1,10 @@
 # <https://www.oreilly.com/openbook/make3/book/ch07.pdf>
 # <https://github.com/jaykrell/w3/blob/master/Makefile>
 # <https://makefiletutorial.com/>
+.PHONY = pyre pytype
+
+PYOBJS!=tree -if|egrep \.pyi?$
+
 all: updatepip
 
 # differentiation between `nmake` and `make` borrowed from <https://stackoverflow.com/a/66311071>
@@ -19,6 +23,12 @@ PYCALL = sudo python3
 
 endif    # gmake: close condition; nmake: not seen
 !endif : # gmake: unused target; nmake close conditional
+
+pyre:
+	poetry run pyre
+
+pytype:
+	poetry run pytype --jobs auto --precise-return --strict-import --protocols --bind-properties --attribute-variable-annotations --check-parameter-types $(PYOBJS)
 
 updatepip:
 	$(PYCALL) -m pip install --upgrade pip setuptools

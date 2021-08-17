@@ -17,8 +17,8 @@ jobs = 0
 target-version = ['py39'] #'py37', 'py38',
 color = true
 safe = true
-#force-exlude = ".*/venv/.*"
 
+#force-exlude = ".*/venv/.*"
 [tool.darker]
 revision = "main"
 diff = true
@@ -43,7 +43,7 @@ show_error_context = true
 
 [tool.isort]
 # https://pycqa.github.io/isort/docs/configuration/options
-py_version = 37
+py_version = 39
 color_output = true
 profile = "black"
 skip = "venv"
@@ -55,9 +55,12 @@ description = "Testing installation of Package"
 authors = ["Ebeling, Dr. Bastian <bastian.ebeling@web.de>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9"
+icecream = { version = "*", optional = true }
+psutil = { version = "*", optional = true }
 
 [tool.poetry.dev-dependencies]
+pytype = "*"
 
 [pylama.pep8]
 max_line_length = 88
