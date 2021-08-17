@@ -1,4 +1,4 @@
-"""traverses through moved WhatsApp media folder and moves files into date-folders"""
+"""Traverses through moved WhatsApp media folder and moves files into date-folders."""
 import glob
 import os
 
@@ -6,7 +6,7 @@ BASEDIRTOWORKIN = "/mnt/rsyncdir/"
 
 
 def placefile(completefilepath: str) -> None:
-    """Finds Date from Filename, creates Folder and moves into."""
+    """Find Date from Filename, create Folder and move into."""
     basepath = os.path.dirname(completefilepath)
     targetpath = basepath + os.sep + os.path.basename(completefilepath).split("-")[1]
     print(f"We should move {completefilepath} into {targetpath}")

@@ -28,7 +28,7 @@ pyre:
 	poetry run pyre
 
 pytype:
-	poetry run pytype --jobs auto --precise-return --strict-import --protocols --bind-properties --attribute-variable-annotations --check-parameter-types $(PYOBJS)
+	poetry run pytype --jobs auto --precise-return --protocols --bind-properties $(PYOBJS)
 
 updatepip:
 	$(PYCALL) -m pip install --upgrade pip setuptools

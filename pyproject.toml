@@ -55,12 +55,19 @@ description = "Testing installation of Package"
 authors = ["Ebeling, Dr. Bastian <bastian.ebeling@web.de>"]
 
 [tool.poetry.dependencies]
-python = ">=3.9"
+python = ">=3.9,<3.10"
 icecream = { version = "*", optional = true }
-psutil = { version = "*", optional = true }
+psutil = "*"
 
 [tool.poetry.dev-dependencies]
-pytype = "*"
+pytype = {version=">2021.8",optional=true}
+pyre-check = "^0.9.3"
+black = "^21.7b0"
+isort = "^5.9.3"
+pylama = "^7.7.1"
+pylint = "^2.9.6"
+pycodestyle = "^2.7.0"
+pydocstyle = "^6.1.1"
 
 [pylama.pep8]
 max_line_length = 88
