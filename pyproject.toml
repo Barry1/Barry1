@@ -61,7 +61,7 @@ psutil = "*"
 
 [tool.poetry.dev-dependencies]
 pytype = {version=">2021.8",optional=true}
-pyre-check = "^0.9.3"
+pyre-check = {version="^0.9.3",optional=true}
 black = "^21.7b0"
 isort = "^5.9.3"
 pylama = "^7.7.1"
