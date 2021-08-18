@@ -10,6 +10,7 @@ Most of them are also found within my [GitHub Stars](https://github.com/Barry1?l
 | [SQLAlchemy](#SQLAlchemy) | Database     |
 | [dask](#dask)             | Dataframe    |
 | [pandas](#pandas)         | Dataframe    |
+| [pandera](#pandera)       | Dataframe    |
 | [vaex](#vaex)             | Dataframe    |
 | [black](#black)           | Formatting   |
 | [darker](#darker)         | Formatting   |
@@ -52,6 +53,13 @@ plotting with Python
 
 [Homepage](about:blank)
 [Repository](https://github.com/matplotlib/matplotlib)
+
+### pandera
+
+A light-weight and flexible validation package for pandas data structures.
+
+[Homepage](https://pandera.readthedocs.io/)
+[Repository](https://github.com/pandera-dev/pandera)
 
 ### pipdeptree
 
