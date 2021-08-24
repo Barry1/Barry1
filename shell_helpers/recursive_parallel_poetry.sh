@@ -3,21 +3,23 @@
 # reroute stdout to sderr
 # exec 1>&2
 # https://www.cyberciti.biz/tips/bash-shell-parameter-substitution-2.html
-
 cdpoetryupdate () {
     echo ${1%/poetry.lock}
     pushd ${1%/poetry.lock}
-    poetry update
+    if [ $(which niceload) ]
+    then
+        niceload poetry update
+    else
+        poetry update
+    fi
     git stage poetry.lock
     git commit -m "poetry update" poetry.lock
     git push
     popd
 
 }
-
 # make function available
 export -f cdpoetryupdate #for bash
-
 # do the work
 # https://bash.cyberciti.biz/guide/Default_shell_variables_value
 # default = current folder - else $1
