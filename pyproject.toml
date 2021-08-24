@@ -61,13 +61,14 @@ psutil = "*"
 
 [tool.poetry.dev-dependencies]
 pytype = {version=">2021.8",optional=true}
-pyre-check = {version="^0.9.3",optional=true}
-black = "^21.7b0"
-isort = "^5.9.3"
-pylama = "^7.7.1"
-pylint = "^2.9.6"
-pycodestyle = "^2.7.0"
-pydocstyle = "^6.1.1"
+pyre-check = {version="*",optional=true}
+black = "*"
+isort = "*"
+pylama = "*"
+pylint = "*"
+pycodestyle = "*"
+pydocstyle = "*"
+beautysh = {version = "*", optional = true}
 
 [pylama.pep8]
 max_line_length = 88
