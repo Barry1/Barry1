@@ -2,30 +2,33 @@
 
 ## Packages
 
-| packagename           | short description                                          |
-| --------------------- | ---------------------------------------------------------- |
-| apt-file              | matches files and packages                                 |
-| [bashtop](#bashtop)   | colorful top                                               |
-| bc                    | An arbitrary precision calculator language                 |
-| chktex                | Finds typographic errors in LaTeX                          |
-| chrony                | NTP                                                        |
-| conky-all             | highly configurable system monitor                         |
-| [exiftool(#exiftool)] | virtual alias for `libimage-exiftool-perl`                 |
-| gummi                 | GTK+ latex editor                                          |
-| htop                  | Htop is an ncursed-based process viewer similar to top     |
-| inxi                  | system info                                                |
-| lacheck               | syntax checker for LaTeX                                   |
-| lyx                   | WYSIWYG-frontend for LaTeX                                 |
-| needrestart           | checks for needed restarts                                 |
-| [nmap](#nmap)         | utility for network exploration                            |
-| pandoc                | general markup converter                                   |
-| [parallel](#parallel) | easy parallel instead of serial                            |
-| [powertop](#powertop) | diagnose issues with power consumption and management      |
-| pssh                  | parallel ssh execution of commands on multiple nodes       |
-| rubber                | automated system for building LaTeX documents              |
-| schedtool             | Queries/alters process' scheduling policy and CPU affinity |
-| texlive-lang-german   | features for german language - babel and so on             |
-| [tldr](#tldr)         | easier man pages with examples                             |
+| packagename           | short description                                           |
+| --------------------- | ----------------------------------------------------------- |
+| apt-file              | matches files and packages                                  |
+| [bashtop](#bashtop)   | colorful top                                                |
+| bc                    | An arbitrary precision calculator language                  |
+| chktex                | Finds typographic errors in LaTeX                           |
+| chrony                | NTP                                                         |
+| conky-all             | highly configurable system monitor                          |
+| exif                  | command-line utility to show EXIF information in JPEG files |
+| [exiftool(#exiftool)] | virtual alias for `libimage-exiftool-perl`                  |
+| exiv2                 | EXIF/IPTC/XMP metadata manipulation tool                    |
+| gummi                 | GTK+ latex editor                                           |
+| htop                  | Htop is an ncursed-based process viewer similar to top      |
+| inxi                  | system info                                                 |
+| jhead                 | manipulate the non-image part of Exif compliant JPEG files  |
+| lacheck               | syntax checker for LaTeX                                    |
+| lyx                   | WYSIWYG-frontend for LaTeX                                  |
+| needrestart           | checks for needed restarts                                  |
+| [nmap](#nmap)         | utility for network exploration                             |
+| pandoc                | general markup converter                                    |
+| [parallel](#parallel) | easy parallel instead of serial                             |
+| [powertop](#powertop) | diagnose issues with power consumption and management       |
+| pssh                  | parallel ssh execution of commands on multiple nodes        |
+| rubber                | automated system for building LaTeX documents               |
+| schedtool             | Queries/alters process' scheduling policy and CPU affinity  |
+| texlive-lang-german   | features for german language - babel and so on              |
+| [tldr](#tldr)         | easier man pages with examples                              |
 
 ## Commands
 
