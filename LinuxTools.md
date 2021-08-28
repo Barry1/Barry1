@@ -10,6 +10,7 @@
 | chktex                | Finds typographic errors in LaTeX                          |
 | chrony                | NTP                                                        |
 | conky-all             | highly configurable system monitor                         |
+| [exiftool(#exiftool)] | virtual alias for `libimage-exiftool-perl`                 |
 | gummi                 | GTK+ latex editor                                          |
 | htop                  | Htop is an ncursed-based process viewer similar to top     |
 | inxi                  | system info                                                |
@@ -71,3 +72,29 @@ Detailed screens are available for CPU C and P states, device activity, and soft
 ### tldr
 
 [tldr](https://tldr.sh/) The TLDR pages are a community effort to simplify the beloved man pages with practical examples.
+
+### exiftool
+
+library and program to read and write meta information in multimedia files Image::ExifTool is a customizable set of Perl modules plus a full-featured command-line application called exiftool for reading and writing meta information in a wide variety of files, including the maker note information of many digital cameras by various manufacturers such as Canon, Casio, DJI, FLIR, FujiFilm, GE, GoPro, HP, JVC/Victor, Kodak, Leaf, Minolta/Konica-Minolta, Nikon, Nintendo, Olympus/Epson, Panasonic/Leica, Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
+
+Examples
+
+```bash
+exiftool '-Directory<DateTimeOriginal' -d %Y/%m/%d dir
+```
+
+Move all files in "dir" into a directory hierarchy based on year, month and day of "DateTimeOriginal". This command would move the file "dir/image.jpg" with a "DateTimeOriginal" of "2005:10:12 16:05:56" to "2005/10/12/image.jpg".
+
+```bash
+exiftool -p '$filename has date $dateTimeOriginal' -q -f dir
+```
+
+Print one line of output containing the file name and DateTimeOriginal for each image in directory "dir".
+
+```bash
+exiftool -d '%r %a, %B %e, %Y' -DateTimeOriginal -S -s *.jpg
+```
+
+Print formatted date/time for all JPG files in the current directory.
+
+Many more interesting examples could be found in the [man-pages](https://linux.die.net/man/1/exiftool#:~:text=Reading%20Examples).
