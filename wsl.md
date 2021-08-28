@@ -8,14 +8,13 @@ You can finde many descriptions [here](https://docs.microsoft.com/en-us/windows/
 
 ### Global configuration
 
-For global settings the `.wslconfig` file is to be used.
-It has to be placed at `%USERPROFILE%\.wslconfig`
+For global settings the `.wslconfig` file is to be used. It has to be placed at `%USERPROFILE%\.wslconfig`
 
 The documentation is placed [here](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#wsl-2-settings).
 
 See the example
 
-```ini
+```text
 [wsl2]
 kernel=C:\\temp\\myCustomKernel
 memory=4GB # Limits VM memory in WSL 2 to 4 GB
@@ -30,12 +29,12 @@ The documentation on the options is to be found [here](https://docs.microsoft.co
 
 This is only slightly commented. Have a look at the following links.
 
-- <https://docs.microsoft.com/de-de/windows/wsl/wsl-config#configure-per-distro-launch-settings-with-wslconf>
-- <https://itnext.io/wsl2-tips-limit-cpu-memory-when-using-docker-c022535faf6f#:~:text=Open,service>
-- <https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md>
-- <https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md#konfigurieren-globaler-optionen-mit-wslconfig>
+* [https://docs.microsoft.com/de-de/windows/wsl/wsl-config\#configure-per-distro-launch-settings-with-wslconf](https://docs.microsoft.com/de-de/windows/wsl/wsl-config#configure-per-distro-launch-settings-with-wslconf)
+* [https://itnext.io/wsl2-tips-limit-cpu-memory-when-using-docker-c022535faf6f\#:~:text=Open,service](https://itnext.io/wsl2-tips-limit-cpu-memory-when-using-docker-c022535faf6f#:~:text=Open,service)
+* [https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md](https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md)
+* [https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md\#konfigurieren-globaler-optionen-mit-wslconfig](https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md#konfigurieren-globaler-optionen-mit-wslconfig)
 
-```ini
+```text
 # Enable extra metadata options by default
 [automount]
 enabled = true
@@ -48,3 +47,4 @@ mountFsTab = false
 generateHosts = true
 generateResolvConf = true
 ```
+
