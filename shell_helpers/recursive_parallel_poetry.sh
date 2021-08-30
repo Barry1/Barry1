@@ -4,7 +4,8 @@
 # exec 1>&2
 # https://www.cyberciti.biz/tips/bash-shell-parameter-substitution-2.html
 cdpoetryupdate () {
-    pushd ${1%/poetry.lock}
+    #    pushd ${1%/poetry.lock}
+    pushd $1 > /dev/null
     if [ $(which niceload) ]
     then
         niceload poetry --quiet update
@@ -12,9 +13,9 @@ cdpoetryupdate () {
         poetry --quiet update
     fi
     git stage poetry.lock
-    git commit -m "poetry update" poetry.lock
-    git push
-    popd
+    git commit --quiet -m "poetry update" poetry.lock > /dev/null
+    git push --quiet
+    popd > /dev/null
 }
 # make function available
 export -f cdpoetryupdate #for bash
@@ -27,5 +28,5 @@ poetrylockfilelocations=`find $workdir"/" -name poetry\.lock 2>/dev/null`
 parallel --group  echo "found" ::: $poetrylockfilelocations
 echo "==============================================================="
 # https://www.gnu.org/software/parallel/
-parallel --group --verbose cdpoetryupdate ::: $poetrylockfilelocations
+parallel --group --verbose cdpoetryupdate {//} ::: $poetrylockfilelocations
 # find $workdir -name poetry\.lock -print0 2>/dev/null | xargs --verbose --max-procs=0 --null -I {} bash -c 'cdpoetryupdate {}'
