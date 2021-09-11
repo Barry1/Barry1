@@ -8,12 +8,12 @@ cdpoetryupdate () {
     pushd $1 > /dev/null
     if [ $(which niceload) ]
     then
-        niceload poetry --quiet update
+        niceload poetry update >> poetry.out
     else
-        poetry --quiet update
+        poetry --quiet update >> poetry.out
     fi
     git stage poetry.lock
-    git commit --quiet -m "poetry update" poetry.lock > /dev/null
+    git commit --quiet -m "poetry update" poetry.lock >> git_commit.out
     git push --quiet
     popd > /dev/null
 }
