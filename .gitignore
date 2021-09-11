@@ -5,3 +5,5 @@
 parallel.pre-commit*.log
 interrogate_badge.svg
 .pyre/
+poetry.out
+git_commit.out
