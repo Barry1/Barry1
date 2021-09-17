@@ -10,7 +10,7 @@ if __name__ == "__main__":
         psutil.Process(thepid)
         for procname in sys.argv[1:]
         for thepid in psutil.pids()
-        if psutil.Process(thepid).name() == procname
+        if psutil.Process(thepid).name().casefold() == procname.casefold()
     ]
     for theprocess in processlist:
         theprocess.nice(
