@@ -2,42 +2,43 @@
 
 ## Packages
 
-| packagename | short description |
-| :--- | :--- |
-| apt-file | matches files and packages |
-| [bashtop](linuxtools.md#bashtop) | colorful top |
-| bc | An arbitrary precision calculator language |
-| chktex | Finds typographic errors in LaTeX |
-| chrony | NTP |
-| conky-all | highly configurable system monitor |
-| exif | command-line utility to show EXIF information in JPEG files |
-| \[exiftool\(\#exiftool\)\] | virtual alias for `libimage-exiftool-perl` |
-| exiv2 | EXIF/IPTC/XMP metadata manipulation tool |
-| gummi | GTK+ latex editor |
-| htop | Htop is an ncursed-based process viewer similar to top |
-| inxi | system info |
-| jhead | manipulate the non-image part of Exif compliant JPEG files |
-| lacheck | syntax checker for LaTeX |
-| lyx | WYSIWYG-frontend for LaTeX |
-| needrestart | checks for needed restarts |
-| [nmap](linuxtools.md#nmap) | utility for network exploration |
-| pandoc | general markup converter |
-| [parallel](linuxtools.md#parallel) | easy parallel instead of serial |
-| [powertop](linuxtools.md#powertop) | diagnose issues with power consumption and management |
-| pssh | parallel ssh execution of commands on multiple nodes |
-| rubber | automated system for building LaTeX documents |
-| schedtool | Queries/alters process' scheduling policy and CPU affinity |
-| texlive-lang-german | features for german language - babel and so on |
-| [tldr](linuxtools.md#tldr) | easier man pages with examples |
+| packagename                        | short description                                           |
+| :--------------------------------- | :---------------------------------------------------------- |
+| apt-file                           | matches files and packages                                  |
+| [bashtop](linuxtools.md#bashtop)   | colorful top                                                |
+| bc                                 | An arbitrary precision calculator language                  |
+| chktex                             | Finds typographic errors in LaTeX                           |
+| chrony                             | NTP                                                         |
+| conky-all                          | highly configurable system monitor                          |
+| exif                               | command-line utility to show EXIF information in JPEG files |
+| \[exiftool\(\#exiftool\)\]         | virtual alias for `libimage-exiftool-perl`                  |
+| exiv2                              | EXIF/IPTC/XMP metadata manipulation tool                    |
+| gummi                              | GTK+ latex editor                                           |
+| htop                               | Htop is an ncursed-based process viewer similar to top      |
+| inxi                               | system info                                                 |
+| jhead                              | manipulate the non-image part of Exif compliant JPEG files  |
+| lacheck                            | syntax checker for LaTeX                                    |
+| lyx                                | WYSIWYG-frontend for LaTeX                                  |
+| needrestart                        | checks for needed restarts                                  |
+| neofetch                           | Shows Linux System Information with Distribution Logo       |
+| [nmap](linuxtools.md#nmap)         | utility for network exploration                             |
+| pandoc                             | general markup converter                                    |
+| [parallel](linuxtools.md#parallel) | easy parallel instead of serial                             |
+| [powertop](linuxtools.md#powertop) | diagnose issues with power consumption and management       |
+| pssh                               | parallel ssh execution of commands on multiple nodes        |
+| rubber                             | automated system for building LaTeX documents               |
+| schedtool                          | Queries/alters process' scheduling policy and CPU affinity  |
+| texlive-lang-german                | features for german language - babel and so on              |
+| [tldr](linuxtools.md#tldr)         | easier man pages with examples                              |
 
 ## Commands
 
-| command | package | description |
-| :--- | :--- | :--- |
-| arch | coreutils | Print machine architecture |
-| niceload | parallel | slow down a program when the load average is above a certain limit |
-| parallel-ssh | pssh | same ssh command on multiple servers |
-| ssh-copy-id | openssh-client | installs login keys on server |
+| command      | package        | description                                                        |
+| :----------- | :------------- | :----------------------------------------------------------------- |
+| arch         | coreutils      | Print machine architecture                                         |
+| niceload     | parallel       | slow down a program when the load average is above a certain limit |
+| parallel-ssh | pssh           | same ssh command on multiple servers                               |
+| ssh-copy-id  | openssh-client | installs login keys on server                                      |
 
 ## description and examples
 
@@ -96,4 +97,3 @@ exiftool -d '%r %a, %B %e, %Y' -DateTimeOriginal -S -s *.jpg
 Print formatted date/time for all JPG files in the current directory.
 
 Many more interesting examples could be found in the [man-pages](https://linux.die.net/man/1/exiftool#:~:text=Reading%20Examples).
-
