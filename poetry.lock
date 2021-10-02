@@ -243,7 +243,7 @@ test = ["pytest (>=6.2)", "pytest-cov (>=2.12)", "codecov (>=2.1)"]
 
 [[package]]
 name = "ninja"
-version = "1.10.2"
+version = "1.10.2.1"
 description = "Ninja is a small build system with a focus on speed"
 category = "dev"
 optional = true
@@ -611,15 +611,20 @@ networkx = [
     {file = "networkx-2.6.3.tar.gz", hash = "sha256:c0946ed31d71f1b732b5aaa6da5a0388a345019af232ce2f49c766e2d6795c51"},
 ]
 ninja = [
-    {file = "ninja-1.10.2-py2.py3-none-macosx_10_9_universal2.macosx_10_9_x86_64.macosx_11_0_arm64.macosx_11_0_universal2.whl", hash = "sha256:c3965058a75a0df17320df6b14db131b3db7a5662b1c0b4a4477654548d35b27"},
-    {file = "ninja-1.10.2-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:d29d857e8521ebdc35c7bc333637a9aa18b364a2ebbb2957b7c89201d4a3628e"},
-    {file = "ninja-1.10.2-py2.py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:addbd7d26cf93d2098c20b1b7affa56d7df46c753a1fd8c53c07c65270512bcd"},
-    {file = "ninja-1.10.2-py2.py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:e34d31f37b59837dfd63bd066203e33b1df5f7a3cf8436e8de8fb2dd16692529"},
-    {file = "ninja-1.10.2-py2.py3-none-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:f17a1d8162ebbb11d4fb8b0cc6d655ee8edeaa0157c8f35bfcc7866b5f5bb977"},
-    {file = "ninja-1.10.2-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:431cdf623d1effe4a797b8102f0fe8598fbb7243ba1b8bc43e54320e6e6b0c13"},
-    {file = "ninja-1.10.2-py2.py3-none-win32.whl", hash = "sha256:21785931385e432fda0489631e06544c1ad3901d3aff34224cbcc1b5e18b3fdb"},
-    {file = "ninja-1.10.2-py2.py3-none-win_amd64.whl", hash = "sha256:3f8a972a9acf5c3b4e8c48393eae224d7f05d22d0a1b2b4fefdcb0956be7a59c"},
-    {file = "ninja-1.10.2.tar.gz", hash = "sha256:bb5e54b9a7343b3a8fc6532ae2c169af387a45b0d4dd5b72c2803e21658c5791"},
+    {file = "ninja-1.10.2.1-py2.py3-none-macosx_10_9_universal2.macosx_11_0_arm64.macosx_11_0_universal2.whl", hash = "sha256:0d8f21d1ae36d5e22b8d9f12197808a70583135ca0ffc0b8079b131d6d97aa8b"},
+    {file = "ninja-1.10.2.1-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4ade636fddbc1e5934d3069be58a3356837f84986a014a25d537e24eda91d6b8"},
+    {file = "ninja-1.10.2.1-py2.py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:76110dff6d6ec738b8b04649beb164ea87635a0d4186a87000aa1e7c92e007e6"},
+    {file = "ninja-1.10.2.1-py2.py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:320b92b086b26b7b22eac90fa5d504554a1bbf88e74c9e6fc2ee82a46fc07fc0"},
+    {file = "ninja-1.10.2.1-py2.py3-none-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:f19f291316aaa39ec80d891dab97c1649a05c3d33d89e973e3c0afb4f4703b90"},
+    {file = "ninja-1.10.2.1-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:0a63a88e9ae2edda04ec93e8a75c4f1f1ccab6ec2c2219e36a1908b48eba8546"},
+    {file = "ninja-1.10.2.1-py2.py3-none-musllinux_1_1_aarch64.whl", hash = "sha256:b69e2a09a3f15bc9bba1c6bce8367ce12fcb37ef6ef3303b0a00b3297b0b5544"},
+    {file = "ninja-1.10.2.1-py2.py3-none-musllinux_1_1_i686.whl", hash = "sha256:d3c3a90c2c02f4edd5c5a7ea6419acc36d597cf806e7e85886d3e5e4ca941432"},
+    {file = "ninja-1.10.2.1-py2.py3-none-musllinux_1_1_ppc64le.whl", hash = "sha256:13f86e52eba647fc65a9e49088ec785532d5f1a013a4a9f634bead162404835f"},
+    {file = "ninja-1.10.2.1-py2.py3-none-musllinux_1_1_s390x.whl", hash = "sha256:cec96c790165547ce40ea235de26cde5b10e572e5d2146122d36e17efa3ae2ce"},
+    {file = "ninja-1.10.2.1-py2.py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:800d8f6ff0b7fede46754b913845a70db2bd87ce30d019c49a91676a900eb525"},
+    {file = "ninja-1.10.2.1-py2.py3-none-win32.whl", hash = "sha256:d672b6becf6257cf6964cdc4d26540b6fb887315b45d46293946d03f62abae20"},
+    {file = "ninja-1.10.2.1-py2.py3-none-win_amd64.whl", hash = "sha256:67ff2100fe45f89c9450b49166ac4633ef734a614b88f36b2b446e1e44c76f46"},
+    {file = "ninja-1.10.2.1.tar.gz", hash = "sha256:719ab357f5dc822711c1151d1b9517c5543340e23f6cc4e8508f793848a48bb1"},
 ]
 pathspec = [
     {file = "pathspec-0.9.0-py2.py3-none-any.whl", hash = "sha256:7d15c4ddb0b5c802d161efc417ec1a2558ea2653c2e8ad9c19098201dc1c993a"},
