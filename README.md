@@ -1,7 +1,3 @@
----
-description: Details for my public profile on github
----
-
 # README
 
 ## My first try for more details within my profile
