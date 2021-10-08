@@ -48,28 +48,6 @@ color_output = true
 profile = "black"
 skip = "venv"
 
-[tool.poetry]
-name = "pyintlab"
-version = "0.0.1"
-description = "Testing installation of Package"
-authors = ["Ebeling, Dr. Bastian <bastian.ebeling@web.de>"]
-
-[tool.poetry.dependencies]
-python = ">=3.9,<3.10"
-icecream = { version = "*", optional = true }
-psutil = "*"
-
-[tool.poetry.dev-dependencies]
-pytype = {version=">2021.8",optional=true}
-pyre-check = {version="*",optional=true}
-black = "*"
-isort = "*"
-pylama = "*"
-pylint = "*"
-pycodestyle = "*"
-pydocstyle = "*"
-beautysh = {version = "*", optional = true}
-
 [pylama.pep8]
 max_line_length = 88
 
