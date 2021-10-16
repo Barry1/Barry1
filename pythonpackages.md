@@ -1,27 +1,45 @@
 # Python Packages of interest
 
-This is just a small list of packages, which are interesting \(for me\). Most of them are also found within my [GitHub Stars](https://github.com/Barry1?language=python&tab=stars).
+This is just a small list of packages, which are interesting (for me). Most of them are also found within my [GitHub Stars](https://github.com/Barry1?language=python&tab=stars).
+
+- [Python Packages of interest](#python-packages-of-interest)
+  - [List](#list)
+  - [Description](#description)
+    - [black](#black)
+    - [darker](#darker)
+    - [hvplot](#hvplot)
+    - [matplotlib](#matplotlib)
+    - [pandera](#pandera)
+    - [pipdeptree](#pipdeptree)
+    - [pip-tools](#pip-tools)
+    - [poetry](#poetry)
+    - [psutil](#psutil)
+    - [SQLAlchemy](#sqlalchemy)
+    - [tqdm](#tqdm)
+    - [uncertainties](#uncertainties)
+    - [vaex](#vaex)
+  - [Tips and Tricks](#tips-and-tricks)
 
 ## List
 
-| Packagename | Group |
-| :--- | :--- |
-| [SQLAlchemy](pythonpackages.md#SQLAlchemy) | Database |
-| [dask](pythonpackages.md#dask) | Dataframe |
-| [pandas](pythonpackages.md#pandas) | Dataframe |
-| [pandera](pythonpackages.md#pandera) | Dataframe |
-| [vaex](pythonpackages.md#vaex) | Dataframe |
-| [black](pythonpackages.md#black) | Formatting |
-| [darker](pythonpackages.md#darker) | Formatting |
-| \[uncertainties\] | Math |
-| [pip-tools](pythonpackages.md#pip-tools) | OS |
-| [pipdeptree](pythonpackages.md#pipdeptree) | OS |
-| [poetry](pythonpackages.md#poetry) | OS |
-| [psutil](pythonpackages.md#psutil) | OS |
-| [bokeh](pythonpackages.md#bokeh) | Plot |
-| [hvplot](pythonpackages.md#hvplot) | Plot |
-| [matplotlib](pythonpackages.md#matplotlib) | Plot |
-| [tqdm](pythonpackages.md#tqdm) | Progress Bar |
+| Packagename                                | Group        |
+| :----------------------------------------- | :----------- |
+| [SQLAlchemy](pythonpackages.md#SQLAlchemy) | Database     |
+| [dask](pythonpackages.md#dask)             | Dataframe    |
+| [pandas](pythonpackages.md#pandas)         | Dataframe    |
+| [pandera](pythonpackages.md#pandera)       | Dataframe    |
+| [vaex](pythonpackages.md#vaex)             | Dataframe    |
+| [black](pythonpackages.md#black)           | Formatting   |
+| [darker](pythonpackages.md#darker)         | Formatting   |
+| \[uncertainties\]                          | Math         |
+| [pip-tools](pythonpackages.md#pip-tools)   | OS           |
+| [pipdeptree](pythonpackages.md#pipdeptree) | OS           |
+| [poetry](pythonpackages.md#poetry)         | OS           |
+| [psutil](pythonpackages.md#psutil)         | OS           |
+| [bokeh](pythonpackages.md#bokeh)           | Plot         |
+| [hvplot](pythonpackages.md#hvplot)         | Plot         |
+| [matplotlib](pythonpackages.md#matplotlib) | Plot         |
+| [tqdm](pythonpackages.md#tqdm)             | Progress Bar |
 
 ## Description
 
@@ -99,7 +117,7 @@ A Fast, Extensible Progress Bar for Python and CLI.
 
 ### uncertainties
 
-The uncertainties package is a free, cross-platform program that transparently handles calculations with numbers with uncertainties \(like 3.14±0.01\). It can also yield the derivatives of any expression.
+The uncertainties package is a free, cross-platform program that transparently handles calculations with numbers with uncertainties (like \(3.14±0.01\)). It can also yield the derivatives of any expression.
 
 [Homepage](https://uncertainties.readthedocs.io/) [Repository](https://github.com/lebigot/uncertainties)
 
@@ -109,3 +127,6 @@ Out-of-Core hybrid Apache Arrow/NumPy DataFrame for Python, ML, visualize and ex
 
 [Homepage](https://vaex.io/) [Repository](https://github.com/vaexio/vaex)
 
+## Tips and Tricks
+
+Sometimes packages - especially under windows are hard to compile. A good adress for (unofficial) precompiled wheels to install via pip is located at [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs "by Christoph Gohlke, Laboratory for Fluorescence Dynamics, University of California, Irvine")
