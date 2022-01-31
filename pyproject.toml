@@ -70,3 +70,14 @@ minversion = "6.2"
 addopts = ["--verbose"]
 
 [tool.towncrier]
+
+[tool.poetry]
+name = "Barry1"
+version = "0.0.1"
+description = "helper and somehow template"
+authors = ["Basti"]
+
+[tool.poetry.dependencies]
+isort = { version = "*", extras = ["pyproject"] }
+python = ">=3.6.2"
+black = "*"
