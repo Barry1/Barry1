@@ -81,3 +81,4 @@ authors = ["Basti"]
 isort = { version = "*", extras = ["pyproject"] }
 python = ">=3.6.2"
 black = "*"
+vermin = "*"
