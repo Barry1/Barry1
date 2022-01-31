@@ -25,8 +25,8 @@ export -f cdpoetryupdate #for bash
 workdir=${1:-.}
 echo "Working in $workdir"
 poetrylockfilelocations=`find $workdir"/" -name poetry\.lock 2>/dev/null`
-parallel --tag --group  echo "found" ::: $poetrylockfilelocations
+#parallel --group  echo "found" ::: $poetrylockfilelocations
 echo "==============================================================="
 # https://www.gnu.org/software/parallel/
-parallel --tag --group --verbose cdpoetryupdate {//} ::: $poetrylockfilelocations
+parallel --jobs 1 --verbose cdpoetryupdate {//} ::: $poetrylockfilelocations
 # find $workdir -name poetry\.lock -print0 2>/dev/null | xargs --verbose --max-procs=0 --null -I {} bash -c 'cdpoetryupdate {}'
