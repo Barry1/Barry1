@@ -48,3 +48,4 @@ generateHosts = true
 generateResolvConf = true
 ```
 
+for a general description on installation and further, have a look at [How to install Linux WSL2 on Windows 10 and Windows 11](https://www.windowscentral.com/how-install-wsl2-windows-10)
