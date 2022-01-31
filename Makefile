@@ -39,4 +39,4 @@ showpipconf:
 	$(PYCALL) -m pip config debug
 
 vermin:
-	poetry run vermin -vv --backport typing --no-parse-comments `find . -name *.py|grep -v ".venv"`
+	poetry run vermin -vv --backport typing --no-parse-comments .
