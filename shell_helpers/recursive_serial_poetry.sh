@@ -24,7 +24,15 @@ export -f cdpoetryupdate #for bash
 # default = current folder - else $1
 workdir=${1:-.}
 echo "Working in $workdir"
-poetrylockfilelocations=`find $workdir"/" -name poetry\.lock 2>/dev/null`
+# Bash/find does not support PCRE (Perl compatible regular expressions)
+# Good tools: <https://regex-generator.olafneumann.org/>
+# <https://regex101.com/>
+# <https://www.freeformatter.com/regex-tester.html>
+# <https://danielfett.de/2006/03/20/regulaere-ausdruecke-tutorial/>
+# <https://regexr.com/>
+# <https://extendsclass.com/regex-tester.html>
+# <https://jex.im/regulex/>
+poetrylockfilelocations=`find $workdir"/" -name poetry\.lock 2>/dev/null | grep --invert-match .venv`
 #parallel --group  echo "found" ::: $poetrylockfilelocations
 echo "==============================================================="
 # https://www.gnu.org/software/parallel/
