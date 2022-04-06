@@ -5,7 +5,7 @@
 | packagename                        | short description                                           |
 | :--------------------------------- | :---------------------------------------------------------- |
 | apt-file                           | matches files and packages                                  |
-| [bashtop](linuxtools.md#bashtop)   | colorful top                                                |
+| [btop](linuxtools.md#bashtop)      | colorful top                                                |
 | bc                                 | An arbitrary precision calculator language                  |
 | chktex                             | Finds typographic errors in LaTeX                           |
 | chrony                             | NTP                                                         |
@@ -42,9 +42,9 @@
 
 ## description and examples
 
-### bashtop
+### btop
 
-[bashtop](https://github.com/aristocratos/bashtop) is a cool and colorful alternativ top the well known top command.
+The command line tool [btop](https://github.com/aristocratos/btop) is inspired by [bashtop](https://github.com/aristocratos/bashtop) and [bpytop](https://github.com/aristocratos/bpytop). It is a cool and colorful alternativ top the well known top command.
 
 ### nmap
 
