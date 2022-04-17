@@ -1,8 +1,8 @@
-.PHONY: ALL LaTeX Info
+.PHONY: ALL Base Advanced LaTeX Info PrintInfo
 
-APTCALL = @sudo apt install
+APTCALL = @sudo apt-get --quiet=2 --trivial-only install
 
-ALL: Base Advanced LaTeX Info
+ALL: Base Advanced LaTeX Info PrintInfo
 
 Base:
 	$(APTCALL) \
@@ -44,3 +44,6 @@ Info:
 		ipmitool \
 		neofetch \
 		smartmontools \
+
+PrintInfo:
+	@neofetch
