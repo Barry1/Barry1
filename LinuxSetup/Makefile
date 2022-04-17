@@ -1,6 +1,6 @@
 .PHONY: ALL Base Advanced LaTeX Info PrintInfo
 
-APTCALL = @sudo apt-get --quiet=2 --trivial-only install
+APTCALL = @sudo apt-get --quiet install
 
 ALL: Base Advanced LaTeX Info PrintInfo
 
@@ -17,6 +17,7 @@ Base:
 
 Advanced: 
 	$(APTCALL) \
+		and \
 		aptitude \
 		bpytop \
 		conky-all \
