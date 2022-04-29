@@ -1,8 +1,16 @@
-.PHONY: ALL Base Advanced LaTeX Info PrintInfo Settings Printer
+#https://devhints.io/makefile
+#https://tech.davis-hansson.com/p/make/
+#https://www.gnu.org/software/make/manual/html_node/index.html
+#https://www.gnu.org/software/make/manual/html_node/Quick-Reference.html#Quick-Referencee
+
+.PHONY: ALL Base Advanced LaTeX Info PrintInfo Settings Printer BASHCFG
 
 APTCALL = @sudo apt-get --quiet install
 
-ALL: Base Advanced LaTeX Info PrintInfo
+ALL: Base Advanced LaTeX Info PrintInfo BASHCFG
+
+BASHCFG:
+	@grep --quiet neofetch ~/.bashrc || echo neofetch >>~/.bashrc;
 
 Base:
 	$(APTCALL) \
@@ -36,6 +44,7 @@ LaTex:
 		chktex \
 		gummy \
 		lacheck \
+		latexmk \
 		lyx \
 		rubber \
 		textlive-lang-german
