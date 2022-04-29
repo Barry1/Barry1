@@ -11,4 +11,5 @@ export -f download_whl_or_src #for bash
 #for x in $@; do
 #    download_whl_or_src $x
 #done
+#https://www.gnu.org/software/parallel/parallel_alternatives.html#DIFFERENCES-BETWEEN-xargs-AND-GNU-Parallel
 parallel download_whl_or_src {} --nice 18 ::: $@
