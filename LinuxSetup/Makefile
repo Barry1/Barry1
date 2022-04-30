@@ -11,6 +11,7 @@ ALL: Base Advanced LaTeX Info PrintInfo BASHCFG
 
 BASHCFG:
 	@grep --quiet neofetch ~/.bashrc || echo neofetch >>~/.bashrc;
+	@grep --quiet inxi ~/.bashrc || echo inxi >>~/.bashrc;
 
 Base:
 	$(APTCALL) \

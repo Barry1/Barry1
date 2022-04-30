@@ -21,6 +21,10 @@ Pin-Priority: 990
 
 Package: *
 Pin: release a=testing
+Pin-Priority: 444
+
+Package: python3
+Pin: release a=testing
 Pin-Priority: 700
 
 Package: *
