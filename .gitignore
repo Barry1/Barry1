@@ -1,7 +1,6 @@
 
 .vscode/configurationCache.log
 .vscode/dryrun.log
-.vscode/settings.json
 parallel.pre-commit*.log
 interrogate_badge.svg
 .pyre/
