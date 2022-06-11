@@ -3,11 +3,45 @@
 #https://www.gnu.org/software/make/manual/html_node/index.html
 #https://www.gnu.org/software/make/manual/html_node/Quick-Reference.html#Quick-Referencee
 
-.PHONY: ALL Base Advanced LaTeX Info PrintInfo Settings Printer BASHCFG
+.PHONY: ALL Base Advanced LaTeX Info PrintInfo Settings Printer BASHCFG PYTHON i915
 
 APTCALL = @sudo apt-get --quiet install
 
-ALL: Base Advanced LaTeX Info PrintInfo BASHCFG
+ALL: Base Advanced LaTeX Info PrintInfo BASHCFG PYTHON i915
+
+i915:
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/skl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/bxt_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/glk_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/cml_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/icl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/ehl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/ehl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_huc_7.9.3.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_huc_7.9.3.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/dg1_huc_7.9.3.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/dg1_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_huc_7.9.3.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_62.0.0.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_huc_7.9.3.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/adlp_guc_62.0.3.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_dmc_ver2_12.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/rkl_dmc_ver2_03.bin
+	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/adlp_dmc_ver2_12.bin
+	sudo update-initramfs -u -k all
+
+PYTHON:
+	$(APTCALL) \
+		pypy3
+		rustc
+		pypy3-dev
+		python3
+		python3-dev
 
 BASHCFG:
 	@grep --quiet neofetch ~/.bashrc || echo neofetch >>~/.bashrc;
