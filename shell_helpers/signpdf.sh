@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
-# This script could reside in ~/.local/bin
+# This script could reside in ~/.local/bin or better be linked
+# ln /home/ebeling/GitHub/Barry1/shell_helpers/signpdf.sh ~/.local/bin/signpdf.sh
 # and the folder should be in your path
 
 logopath=/home/ebeling/Dropbox/TSA/TSAundVfL/Sportwart/meta/TSAtrans.png
