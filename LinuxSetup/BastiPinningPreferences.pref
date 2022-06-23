@@ -1,33 +1,44 @@
 Explanation: this file should be linked from /etc/apt/preferences.d
 Package: *
 Pin: release a=stable
-Pin-Priority: 991
+Pin-Priority: 998
 
 Package: *
 Pin: release a=stable-updates
-Pin-Priority: 991
-
-Package: *
-Pin: release a=stable-backports
-Pin-Priority: 9901
+Pin-Priority: 998
 
 Package: *
 Pin: release a=bullseye-updates
-Pin-Priority: 990
+Pin-Priority: 998
+
+Package: *
+Pin: release a=stable-backports
+Pin-Priority: 998
 
 Package: *
 Pin: release a=bullseye-backports
+Pin-Priority: 900
+
+Package: *
+Pin: release a=stable-security
+Pin-Priority: 998
+
+Package: *
+Pin: release a=bullseye-security
+Pin-Priority: 998
+
+Package: python3*
+Pin: release a=testing
+Pin-Priority: 990
+
+Package: octave*
+Pin: release a=testing
 Pin-Priority: 990
 
 Package: *
 Pin: release a=testing
 Pin-Priority: 444
 
-Package: python3
-Pin: release a=testing
-Pin-Priority: 700
-
 Package: *
 Pin: release a=stretch
 Pin-Priority: 333
-
