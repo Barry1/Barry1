@@ -37,9 +37,18 @@ generate_badge = "."
 verbose = 2
 
 [tool.mypy]
-strict = true
+disallow_untyped_defs = true
+pretty = true
+python_version = 3.9
 show_error_codes = true
 show_error_context = true
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = "psutil"
+ignore_missing_imports = true
 
 [tool.isort]
 # https://pycqa.github.io/isort/docs/configuration/options
@@ -75,10 +84,14 @@ addopts = ["--verbose"]
 name = "Barry1"
 version = "0.0.1"
 description = "helper and somehow template"
-authors = ["Basti"]
+authors = ["Dr. Bastian Ebeling"]
 
 [tool.poetry.dependencies]
 isort = { version = "*", extras = ["pyproject"] }
-python = ">=3.6.2"
+python = ">=3.9"
 black = "*"
 vermin = "*"
+pyre-check = ">=0.9.13"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.961"
