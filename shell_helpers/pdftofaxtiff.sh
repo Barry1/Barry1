@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/sh
 
 # This script could reside in ~/.local/bin or better be linked
 # ln /home/ebeling/GitHub/Barry1/shell_helpers/pdftofaxtiff.sh ~/.local/bin/pdftofaxtiff.sh
