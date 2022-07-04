@@ -6,3 +6,4 @@ interrogate_badge.svg
 .pyre/
 poetry.out
 git_commit.out
+shell_helpers/.dccache
