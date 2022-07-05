@@ -59,6 +59,36 @@ PYTHON:
 		python3
 		python3-dev
 
+pyenv:
+	curl https://pyenv.run | bash
+	@grep --quiet PYENV_ROOT ~/.bashrc || echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+	@grep --quiet "command -v pyenv" ~/.bashrc || echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+	@grep --quiet "pyenv init -" ~/.bashrc || echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+	pyenv update
+	sudo apt-get update
+	$(APTCALL) \
+		build-essential \
+		curl \
+		libbz2-dev \
+		libffi-dev \
+		liblzma-dev \
+		libncursesw5-dev \
+		libreadline-dev \
+		libsqlite3-dev \
+		libssl-dev \
+		libxml2-dev \
+		libxmlsec1-dev \
+		llvm \
+		make \
+		tk-dev \
+		wget \
+		xz-utils \
+		zlib1g-dev \
+
+	pyenv doctor
+	pyenv versions
+	pyenv install --list
+
 BASHCFG:
 	@grep --quiet neofetch ~/.bashrc || echo neofetch >>~/.bashrc;
 	@grep --quiet inxi ~/.bashrc || echo inxi >>~/.bashrc;
