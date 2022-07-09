@@ -88,10 +88,11 @@ authors = ["Dr. Bastian Ebeling"]
 
 [tool.poetry.dependencies]
 isort = { version = "*", extras = ["pyproject"] }
-python = ">=3.9"
+python = "^3.9"
 black = "*"
 vermin = "*"
 pyre-check = ">=0.9.13"
 
-[tool.poetry.group.dev.dependencies]
+[tool.poetry.dev-dependencies]
 mypy = "^0.961"
+pylint = "^2.14.4"
