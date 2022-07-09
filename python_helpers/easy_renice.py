@@ -15,5 +15,7 @@ if __name__ == "__main__":
     for theprocess in processlist:
         theprocess.nice(
             psutil.ABOVE_NORMAL_PRIORITY_CLASS
-        )  # noqa # pylint: disable=E1101
+            if psutil.WINDOWS
+            else 15  # noqa  # pylint: disable=E1101
+        )
         print(f"{theprocess} with {repr(theprocess.nice())}")
