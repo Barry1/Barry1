@@ -27,14 +27,6 @@ Package: *
 Pin: release a=bullseye-security
 Pin-Priority: 998
 
-Package: python3*
-Pin: release a=testing
-Pin-Priority: 990
-
-Package: octave*
-Pin: release a=testing
-Pin-Priority: 990
-
 Package: *
 Pin: release a=testing
 Pin-Priority: 444
