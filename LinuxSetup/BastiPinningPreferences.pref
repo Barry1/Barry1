@@ -1,36 +1,6 @@
 Explanation: this file should be linked from /etc/apt/preferences.d
+Explanation: ln /home/ebeling/GitHub/Barry1/LinuxSetup/BastiPinningPreferences.pref /etc/apt/preferences.d/BastiPinning.pref
+Explanation: check with apt-cache policy
 Package: *
-Pin: release a=stable
-Pin-Priority: 998
-
-Package: *
-Pin: release a=stable-updates
-Pin-Priority: 998
-
-Package: *
-Pin: release a=bullseye-updates
-Pin-Priority: 998
-
-Package: *
-Pin: release a=stable-backports
-Pin-Priority: 998
-
-Package: *
-Pin: release a=bullseye-backports
-Pin-Priority: 900
-
-Package: *
-Pin: release a=stable-security
-Pin-Priority: 998
-
-Package: *
-Pin: release a=bullseye-security
-Pin-Priority: 998
-
-Package: *
-Pin: release a=testing
-Pin-Priority: 444
-
-Package: *
-Pin: release a=stretch
-Pin-Priority: 333
+Pin: release o=Debian,a=stable*
+Pin-Priority: 990

@@ -1,0 +1,4 @@
+Explanation: ln /home/ebeling/GitHub/Barry1/LinuxSetup/bpo_stable.pref /etc/apt/preferences.d/bpo_stable.pref
+Package: *
+Pin: release o=Debian Backports,a=bullseye-backports,n=bullseye-backports
+Pin-Priority: 990
