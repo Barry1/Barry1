@@ -122,5 +122,5 @@ ${else}${voffset 4}${color0}${font ConkyColors:size=15}q${font}${color}${voffset
 ###############
 ${voffset -4}${font Liberation Sans:style=Bold:size=8}WETTER $stippled_hr${font}
 ${font Liberation Sans:style=Bold:size=9}
-${execi 600 curl -s de.wttr.in/Kummerfeld?0T}
+${texeci 600 curl -s de.wttr.in/Kummerfeld?0T}
 ]];
