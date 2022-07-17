@@ -69,11 +69,11 @@ ${goto 32}Uptime: ${alignr}${color2}${uptime}${color}
 # |--UPDATES
 ${goto 32}Updates: ${font Liberation Sans:style=Bold:size=8}${alignr}${color1}${execi 360 aptitude search "~U" | wc -l | tail}${color}${font} ${color2}Pakete${color}
 # |--CPU
-${voffset 4}${color0}${font ConkyColors:size=16}c${font}${offset -20}${voffset 6}${cpubar cpu0 4,17}${color}${voffset -16}${goto 32}all: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu}%${font} ${font Liberation Sans:style=Bold:size=8}${alignr}${color1}${color}${font}  ${color2}${cpugraph cpu4 8,60 E07A1F CE5C00}${color}
-${goto 32}CPU1: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu1}%${font} ${font Liberation Sans:style=Bold:size=8}${alignr}${color1}${execi 30 sensors | grep 'Core 0' | awk '{print $3}' | sed 's/+//' | sed 's/.0.*//'}°C${color}${font}  ${color2}${cpugraph cpu1 8,60 E07A1F CE5C00}${color}
-${goto 32}CPU2: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu2}%${font} ${font Liberation Sans:style=Bold:size=8}${alignr}${color1}${execi 30 sensors | grep 'Core 1' | awk '{print $3}' | sed 's/+//' | sed 's/.0.*//'}°C${color}${font}  ${color2}${cpugraph cpu2 8,60 E07A1F CE5C00}${color}
-${goto 32}CPU3: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu3}%${font} ${font Liberation Sans:style=Bold:size=8}${alignr}${color1}${color}${font}  ${color2}${cpugraph cpu3 8,60 E07A1F CE5C00}${color}
-${goto 32}CPU4: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu4}%${font} ${font Liberation Sans:style=Bold:size=8}${alignr}${color1}${color}${font}  ${color2}${cpugraph cpu4 8,60 E07A1F CE5C00}${color}
+${voffset 4}${color0}${font ConkyColors:size=16}c${font}${offset -20}${voffset 6}${cpubar cpu0 4,17}${color}${voffset -16}${goto 32}${font}all: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu0}%${font Liberation Sans:style=Bold:size=8}${alignr}${color2}${cpugraph cpu0 8,60 E07A1F CE5C00}${color}
+${goto 32}${font}CPU1: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu1}%${font Liberation Sans:style=Bold:size=8}${alignr}${color1}${execi 30 sensors | grep 'Core 0' | awk '{print $3}' | sed 's/+//' | sed 's/.0.*//'}°C ${color2}${cpugraph cpu1 8,60 E07A1F CE5C00}${color}
+${goto 32}${font}CPU2: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu2}% ${font Liberation Sans:style=Bold:size=8}${alignr}${color1}${execi 30 sensors | grep 'Core 1' | awk '{print $3}' | sed 's/+//' | sed 's/.0.*//'}°C ${color2}${cpugraph cpu2 8,60 E07A1F CE5C00}${color}
+${goto 32}${font}CPU3: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu3}% ${font Liberation Sans:style=Bold:size=8}${alignr}${color2}${cpugraph cpu3 8,60 E07A1F CE5C00}${color}
+${goto 32}${font}CPU4: ${font Liberation Sans:style=Bold:size=8}${color1}${cpu cpu4}% ${font Liberation Sans:style=Bold:size=8}${alignr}${color2}${cpugraph cpu4 8,60 E07A1F CE5C00}${color}
 # |--MEM
 ${voffset 2}${color0}${font ConkyColors:size=15}g${font}${color}${goto 32}${voffset -7}RAM: ${font Liberation Sans:style=Bold:size=8}${color1}$memperc%${color}${font}
 ${offset 1}${color0}${membar 4,17}${color}${goto 32}F: ${font Liberation Sans:style=Bold:size=8}${color2}${memeasyfree}${color}${font} U: ${font Liberation Sans:style=Bold:size=8}${color2}${mem}${color}${font}
