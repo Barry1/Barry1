@@ -59,7 +59,7 @@ wlan0|wlo1|alte Bezeichnung
 
 ## lauffähige Konfigurations-Datei
 
-@import ".conkyrc" {code_block=true, style=json}
+@import ".conkyrc" {code_block=true, style=lua}
 
 <https://www.ubuntupit.com/best-conky-themes-for-linux/>
 
@@ -68,3 +68,37 @@ wlan0|wlo1|alte Bezeichnung
 https://weather.codes/search/?q=Kummerfeld https://weather.com/weather/today/l/GMXX4208
 
 http://www.bbc.co.uk/weather (https://openweathermap.org/city/2882543)
+
+### Open Weather Map
+
+Ort|id
+---|---
+Kummerfeld|2882543
+Büsum|6551306
+Niendorf (Ostsee)|2862601
+Timmendorfer Strand|2822160
+Sylt-Ost|3208571
+Sankt-Peter Ording|6551599
+https://github.com/chubin/wttr.in#conky
+
+Alt:
+<http://conky.sourceforge.net/variables.html>
+Neu: <https://github.com/brndnmtthws/conky/blob/main/doc/variables.xml>
+
+
+
+ANLTEIUNG: <https://github.com/brndnmtthws/conky/wiki>
+
+man -P "less -p 'CONFIGURATION SETTINGS'" conky
+
+https://wttr.in/:help
+https://wttr.in/Kummerfeld
+
+[API Beschreibung](https://openweathermap.org/current)
+
+<https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}>
+
+[http://api.openweathermap.org/data/2.5/forecast?id=2882543&APPID=6be5e3a6e62680c28044791e8fc7b568&units=metric](Kummerfeld)
+
+
+2882543
