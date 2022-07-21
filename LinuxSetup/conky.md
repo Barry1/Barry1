@@ -61,9 +61,27 @@ wlan0|wlo1|alte Bezeichnung
 
 @import ".conkyrc" {code_block=true, style=lua}
 
-<https://www.ubuntupit.com/best-conky-themes-for-linux/>
+## Autostart
+
+Um conky gleich beim Login zu starten, hilft die Datei ``.
+Bei mir ist der Inhalt
+
+```.desktop
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=conky --daemonize --pause=7
+StartupNotify=false
+Terminal=false
+Icon=conky-logomark-violet
+Categories=System;Monitor;
+```
+
+Je nach Systemgeschwindigkeit, muss der Wert bei pause Variiert werden.
 
 ## Notizen
+
+<https://www.ubuntupit.com/best-conky-themes-for-linux/>
 
 https://weather.codes/search/?q=Kummerfeld https://weather.com/weather/today/l/GMXX4208
 
