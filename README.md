@@ -3,7 +3,7 @@
 ## My first try for more details within my profile
 
 I'm just starting getting to know more and more around github.  
-This is so great. I really love :star\_struck: the markdown language for publishing information.
+This is so great. I really love :star_struck: the markdown language for publishing information.
 
 I also manage some templates for configurations here.
 
@@ -15,8 +15,8 @@ For live playing around with my first steps, you might try [![Binder JupyterNote
 
 ## Cool widgets
 
-![Barry1&apos;s GitHub stats](https://github-readme-stats.vercel.app/api?username=Barry1&show_icons=true&custom_title=Barry1%27s%20statistics&hide_title=true) ![Barry1&apos;s GitHub streaks](https://github-readme-streak-stats.herokuapp.com/?user=Barry1) ![Barry1&apos;s GitHub languages](https://github-readme-stats.vercel.app/api/top-langs?username=Barry1&show_icons=true&custom_title=Barry1%27s%20languages&langs_count=8&layout=compact&hide_title=true)  
-[![Barry1&apos;s profile on Stack Exchange](https://stackexchange.com/users/flair/306537.png)](https://stackexchange.com/users/306537)
+![Barry1's GitHub stats](https://github-readme-stats.vercel.app/api?username=Barry1&show_icons=true&custom_title=Barry1%27s%20statistics&hide_title=true) ![Barry1's GitHub streaks](https://github-readme-streak-stats.herokuapp.com/?user=Barry1) ![Barry1's GitHub languages](https://github-readme-stats.vercel.app/api/top-langs?username=Barry1&show_icons=true&custom_title=Barry1%27s%20languages&langs_count=8&layout=compact&hide_title=true)  
+[![Barry1's profile on Stack Exchange](https://stackexchange.com/users/flair/306537.png)](https://stackexchange.com/users/306537)
 
 ## Cool overview
 
@@ -27,4 +27,3 @@ Have a look at [my gitmemory](https://gitmemory.com/Barry1) for a cool and color
 ### Happy Meal
 
 ![Snake](https://github.com/Barry1/Barry1/blob/output/github-contribution-grid-snake.svg)
-
