@@ -29,10 +29,10 @@ The documentation on the options is to be found [here](https://docs.microsoft.co
 
 This is only slightly commented. Have a look at the following links.
 
-* [https://docs.microsoft.com/de-de/windows/wsl/wsl-config\#configure-per-distro-launch-settings-with-wslconf](https://docs.microsoft.com/de-de/windows/wsl/wsl-config#configure-per-distro-launch-settings-with-wslconf)
-* [https://itnext.io/wsl2-tips-limit-cpu-memory-when-using-docker-c022535faf6f\#:~:text=Open,service](https://itnext.io/wsl2-tips-limit-cpu-memory-when-using-docker-c022535faf6f#:~:text=Open,service)
-* [https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md](https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md)
-* [https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md\#konfigurieren-globaler-optionen-mit-wslconfig](https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md#konfigurieren-globaler-optionen-mit-wslconfig)
+- [https://docs.microsoft.com/de-de/windows/wsl/wsl-config\#configure-per-distro-launch-settings-with-wslconf](https://docs.microsoft.com/de-de/windows/wsl/wsl-config#configure-per-distro-launch-settings-with-wslconf)
+- [https://itnext.io/wsl2-tips-limit-cpu-memory-when-using-docker-c022535faf6f\#:~:text=Open,service](https://itnext.io/wsl2-tips-limit-cpu-memory-when-using-docker-c022535faf6f#:~:text=Open,service)
+- [https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md](https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md)
+- [https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md\#konfigurieren-globaler-optionen-mit-wslconfig](https://github.com/MicrosoftDocs/WSL.de-DE/blob/live/WSL/wsl-config.md#konfigurieren-globaler-optionen-mit-wslconfig)
 
 ```text
 # Enable extra metadata options by default
