@@ -50,12 +50,11 @@ Der dritte Befehl startet conky im Hintergrund.
 
 ## spezifische Korrekturen
 
-alter Wert|neuer Wert|Grund
----|---|---
-sinal:|Signal:|Tippfehler
-eth0|enp0s25|alte Bezeichnung
-wlan0|wlo1|alte Bezeichnung
-
+| alter Wert | neuer Wert | Grund            |
+| ---------- | ---------- | ---------------- |
+| sinal:     | Signal:    | Tippfehler       |
+| eth0       | enp0s25    | alte Bezeichnung |
+| wlan0      | wlo1       | alte Bezeichnung |
 
 ## lauffähige Konfigurations-Datei
 
@@ -87,23 +86,26 @@ https://weather.codes/search/?q=Kummerfeld https://weather.com/weather/today/l/G
 
 http://www.bbc.co.uk/weather (https://openweathermap.org/city/2882543)
 
+### conky-manager
+
+In dem Repository <https://github.com/teejee2008/conky-manager/> steht eine GUI zur Verwaltung zur Verfügung.
+
 ### Open Weather Map
 
-Ort|id
----|---
-Kummerfeld|2882543
-Büsum|6551306
-Niendorf (Ostsee)|2862601
-Timmendorfer Strand|2822160
-Sylt-Ost|3208571
-Sankt-Peter Ording|6551599
+| Ort                 | id      |
+| ------------------- | ------- |
+| Kummerfeld          | 2882543 |
+| Büsum               | 6551306 |
+| Niendorf (Ostsee)   | 2862601 |
+| Timmendorfer Strand | 2822160 |
+| Sylt-Ost            | 3208571 |
+| Sankt-Peter Ording  | 6551599 |
+
 https://github.com/chubin/wttr.in#conky
 
 Alt:
 <http://conky.sourceforge.net/variables.html>
 Neu: <https://github.com/brndnmtthws/conky/blob/main/doc/variables.xml>
-
-
 
 ANLTEIUNG: <https://github.com/brndnmtthws/conky/wiki>
 
@@ -117,6 +119,5 @@ https://wttr.in/Kummerfeld
 <https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}>
 
 [http://api.openweathermap.org/data/2.5/forecast?id=2882543&APPID=6be5e3a6e62680c28044791e8fc7b568&units=metric](Kummerfeld)
-
 
 2882543

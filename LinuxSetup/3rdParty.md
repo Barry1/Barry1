@@ -34,9 +34,33 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
+### Berechtigungen
+
+In der Standard-Konfiguration läuft der Docker-Daemon als `root`. Um Docker Container als nicht `root`-User starten und nutzen zu können, muss der jeweilige User der Gruppe `docker` hinzugefügt werden. Hierzu hilft <https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user> bzw. die Befehle:
+
+```bash
+sudo groupadd --force docker
+sudo usermod -aG docker $USER
+```
+
+Dies ist praktisch, jedoch erhält die Gruppe `docker` quasi `root`-Rechte. Damit ist dieses Vorgehen nicht unkritisch.
+Eine Alternative ist unter <https://docs.docker.com/engine/security/rootless/> zu finden
+
 ### Alternative
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 DRY_RUN=1 sh ./get-docker.sh
+```
+
+## Markdownlint (mld)
+
+```bash
+sudo gem install mdl
+```
+
+## Prettier
+
+```bash
+sudo npm install -g prettier
 ```
