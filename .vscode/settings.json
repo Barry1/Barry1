@@ -2,5 +2,7 @@
     "makefile.extensionOutputFolder": "./.vscode",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "vsintellicode.features.python.deepLearning": "enabled",
+    "python.analysis.typeCheckingMode": "strict"
 }
