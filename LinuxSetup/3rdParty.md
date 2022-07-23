@@ -64,3 +64,15 @@ sudo gem install mdl
 ```bash
 sudo npm install -g prettier
 ```
+
+## Nala
+
+<https://christitus.com/stop-using-apt/>
+<https://trendoceans.com/nala-package-manager/>
+<https://linuxnews.de/2022/02/nala-apt-on-steroids/>
+
+```bash
+echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list > /dev/null
+wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
+sudo apt update && sudo apt install nala-legacy
+```
