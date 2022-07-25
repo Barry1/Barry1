@@ -59,6 +59,9 @@ PYTHON:
 		python3
 		python3-dev
 
+pandoc:
+	@grep --quiet "pandoc --bash-completion" ~/.bashrc || echo 'eval "$(pandoc --bash-completion)"' >> ~/.bashrc
+
 pyenv:
 	curl https://pyenv.run | bash
 	@grep --quiet PYENV_ROOT ~/.bashrc || echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
