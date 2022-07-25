@@ -407,7 +407,7 @@ typing-extensions = ">=3.7.4"
 
 [[package]]
 name = "vermin"
-version = "1.4.0"
+version = "1.4.1"
 description = "Concurrently detect the minimum Python versions needed to run code"
 category = "main"
 optional = false
@@ -693,9 +693,7 @@ typing-inspect = [
     {file = "typing_inspect-0.7.1-py3-none-any.whl", hash = "sha256:3cd7d4563e997719a710a3bfe7ffb544c6b72069b6812a02e9b414a8fa3aaa6b"},
     {file = "typing_inspect-0.7.1.tar.gz", hash = "sha256:047d4097d9b17f46531bf6f014356111a1b6fb821a24fe7ac909853ca2a782aa"},
 ]
-vermin = [
-    {file = "vermin-1.4.0-py2.py3-none-any.whl", hash = "sha256:0370f562cfa004a234c2ca33cff3c187fe05741c1c36570ef27a514ad9b7e202"},
-]
+vermin = []
 wrapt = [
     {file = "wrapt-1.14.1-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:1b376b3f4896e7930f1f772ac4b064ac12598d1c38d04907e696cc4d794b43d3"},
     {file = "wrapt-1.14.1-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:903500616422a40a98a5a3c4ff4ed9d0066f3b4c951fa286018ecdf0750194ef"},
