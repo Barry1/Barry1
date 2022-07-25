@@ -75,4 +75,6 @@ sudo npm install -g prettier
 echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list > /dev/null
 wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
 sudo apt update && sudo apt install nala-legacy
+nala --install-completion bash
+sudo nice --adjustment=-20 nala fetch
 ```
