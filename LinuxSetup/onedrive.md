@@ -7,7 +7,8 @@ With the command `sudo apt install onedrive` the utility and daemon will be inst
 ## Authentification
 
 With the first run of `onedrive` you will be prompted to open a URL and authenticate the connection to your online account.
-After enabling the access, you end in an empty website. Just copy the URI of that one and paste it into the awaiting command. 
+After enabling the access, you end in an empty website.
+Just copy the URI of that one and paste it into the awaiting command.
 
 ## Configuration
 
