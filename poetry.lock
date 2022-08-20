@@ -410,7 +410,7 @@ typing-extensions = ">=3.7.4"
 
 [[package]]
 name = "vermin"
-version = "1.4.1"
+version = "1.4.2"
 description = "Concurrently detect the minimum Python versions needed to run code"
 category = "main"
 optional = false
