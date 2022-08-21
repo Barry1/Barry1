@@ -25,7 +25,7 @@ bcdedit /copy {current} /d "Dummy"
 bcdedit /timeout 3
 ```
 
-#### Fix Boot Manager etc.
+#### Fix Boot Manager
 
 ```cmd
 bootrec /fixmbr
