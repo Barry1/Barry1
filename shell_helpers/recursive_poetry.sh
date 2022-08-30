@@ -17,8 +17,20 @@ cdpoetryupdate () {
     poetry --quiet update >> poetry.out
     popd > /dev/null
 }
+cdgitcommit () {
+    pushd $1 > /dev/null
+    for poetryfile in $(find . -name poetry.lock)
+    do
+        git stage $poetryfile;
+        git commit --quiet -m "poetry update" $poetryfile >> git_commit.out;
+        git push --quiet
+    done
+    #    find . -name poetry.lock|parallel --jobs =1 'git stage {};git commit --quiet -m "poetry update" {} >> git_commit.out;git push --quiet'
+    popd > /dev/null
+}
 # make function available
 export -f cdpoetryupdate #for bash
+export -f cdgitcommit #for bash
 workdir=${1:-.}
 echo "Working parallel in $workdir"
 # Bash/find does not support PCRE (Perl compatible regular expressions)
@@ -34,3 +46,5 @@ poetrylockfilelocations=`find $workdir"/" -name poetry\.lock 2>/dev/null | grep 
 echo "==============================================================="
 # https://www.gnu.org/software/parallel/
 parallel --verbose cdpoetryupdate {//} ::: $poetrylockfilelocations
+echo "==============================================================="
+find $workdir"/" -name \.git | grep -v \.venv | parallel --verbose cdgitcommit {//}
