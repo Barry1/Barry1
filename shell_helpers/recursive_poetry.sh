@@ -19,12 +19,12 @@ cdpoetryupdate () {
 }
 cdgitcommit () {
     pushd $1 > /dev/null
-    for poetryfile in $(find . -name poetry.lock)
-    do
-        git stage $poetryfile;
-        git commit --quiet -m "poetry update" $poetryfile >> git_commit.out;
+    poetrylockfiles=$(find . -name poetry.lock|grep -v \.venv)
+    if [ -n "$poetrylockfiles" ]
+    then
+        git commit --quiet -m "poetry update"  >> git_commit.out
         git push --quiet
-    done
+    fi
     #    find . -name poetry.lock|parallel --jobs =1 'git stage {};git commit --quiet -m "poetry update" {} >> git_commit.out;git push --quiet'
     popd > /dev/null
 }
