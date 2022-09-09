@@ -3,11 +3,14 @@
 #https://www.gnu.org/software/make/manual/html_node/index.html
 #https://www.gnu.org/software/make/manual/html_node/Quick-Reference.html#Quick-Referencee
 
-.PHONY: ALL Base Advanced LaTeX Info PrintInfo Settings Printer BASHCFG PYTHON i915
+.PHONY: ALL Base Advanced LaTeX Info PrintInfo Settings Printer BASHCFG PYTHON i915 bpm
 
 APTCALL = @sudo apt-get --quiet install
 
-ALL: Base Advanced LaTeX Info PrintInfo BASHCFG PYTHON i915
+ALL: Base Advanced LaTeX Info PrintInfo BASHCFG PYTHON i915 bpm
+
+bpm:
+	sudo apt install bpm-tools sox libsox-fmt-all
 
 i915:
 	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/skl_guc_62.0.0.bin
@@ -117,10 +120,12 @@ Advanced:
 		bpytop \
 		conky-all \
 		cron-apt \
+		nala \
 		needrestart \
 		needrestart-session \
 		package-update-indicator \
 		parallel \
+		shellcheck \
 		tldr \
 
 LaTex:
