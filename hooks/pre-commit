@@ -15,35 +15,35 @@ then
 fi
 echo "/====================================\\"
 echo "|  Added/Changed/Modified files are  |"
-echo $FILES
+echo "$FILES"
 echo "\\====================================/"
 # good ideas for python code <https://archive.is/hGthB>
 #echo ==========================PRETTIER=========================================
-if [ $(which prettier) ]
+if [ "$(which prettier)" ]
 then
     echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
 #echo $(pwd)
 #echo ==========================ISORT=========================================
-if [ $(which isort) ]
+if [ "$(which isort)" ]
 then
     echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
 fi
 #isort "$FILES"
 #echo ==========================BLACK=========================================
-if [ $(which black) ]
+if [ "$(which black)" ]
 then
     echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
 fi
 #black "$FILES"
 #echo ==========================INTERROGATE=========================================
-if [ $(which interrogate) ]
+if [ "$(which interrogate)" ]
 then
     echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
 fi
 #echo ==========================PRETTIER=========================================
-if [ $(which prettier) ]
+if [ "$(which prettier)" ]
 then
     echo "$FILES" | grep -i "\.yml$" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier
 fi
