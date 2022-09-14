@@ -82,9 +82,9 @@ Je nach Systemgeschwindigkeit, muss der Wert bei pause Variiert werden.
 
 <https://www.ubuntupit.com/best-conky-themes-for-linux/>
 
-https://weather.codes/search/?q=Kummerfeld https://weather.com/weather/today/l/GMXX4208
+<https://weather.codes/search/?q=Kummerfeld> <https://weather.com/weather/today/l/GMXX4208>
 
-http://www.bbc.co.uk/weather (https://openweathermap.org/city/2882543)
+<http://www.bbc.co.uk/weather> <https://openweathermap.org/city/2882543>
 
 ### conky-manager
 
@@ -101,7 +101,7 @@ In dem Repository <https://github.com/teejee2008/conky-manager/> steht eine GUI 
 | Sylt-Ost            | 3208571 |
 | Sankt-Peter Ording  | 6551599 |
 
-https://github.com/chubin/wttr.in#conky
+<https://github.com/chubin/wttr.in#conky>
 
 Alt:
 <http://conky.sourceforge.net/variables.html>
@@ -111,8 +111,8 @@ ANLTEIUNG: <https://github.com/brndnmtthws/conky/wiki>
 
 man -P "less -p 'CONFIGURATION SETTINGS'" conky
 
-https://wttr.in/:help
-https://wttr.in/Kummerfeld
+<https://wttr.in/:help>
+<https://wttr.in/Kummerfeld>
 
 [API Beschreibung](https://openweathermap.org/current)
 
