@@ -16,4 +16,5 @@ echo "Working parallel in $workdir"
 # <https://regexr.com/>
 # <https://extendsclass.com/regex-tester.html>
 # <https://jex.im/regulex/>
+# shellcheck disable=SC1083
 find . -name \.git | grep -v \.venv | parallel --verbose "$(dirname "$0")"/recursive_serial_poetry.sh {//}
