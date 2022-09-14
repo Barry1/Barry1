@@ -44,7 +44,7 @@
 
 ### btop
 
-The command line tool [btop](https://github.com/aristocratos/btop) is inspired by [bashtop](https://github.com/aristocratos/bashtop) and [bpytop](https://github.com/aristocratos/bpytop). It is a cool and colorful alternativ top the well known top command.
+The command-line tool [btop](https://github.com/aristocratos/btop) is inspired by [bashtop](https://github.com/aristocratos/bashtop) and [bpytop](https://github.com/aristocratos/bpytop). It is a cool and colorful alternativ top the well known top command.
 
 ### nmap
 
@@ -88,7 +88,7 @@ Move all files in "dir" into a directory hierarchy based on year, month and day 
 exiftool -p '$filename has date $dateTimeOriginal' -q -f dir
 ```
 
-Print one line of output containing the file name and DateTimeOriginal for each image in directory "dir".
+Print one line of output containing the filename and DateTimeOriginal for each image in directory "dir".
 
 ```bash
 exiftool -d '%r %a, %B %e, %Y' -DateTimeOriginal -S -s *.jpg

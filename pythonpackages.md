@@ -75,7 +75,7 @@ A light-weight and flexible validation package for pandas data structures.
 
 ### pipdeptree
 
-Command line utility to show dependency tree of packages.
+Command-line utility to show dependency tree of packages.
 
 [Homepage](about:blank) [Repository](https://github.com/naiquevin/pipdeptree)
 
