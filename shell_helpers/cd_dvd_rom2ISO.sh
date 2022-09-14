@@ -6,29 +6,29 @@
 outisoname=${1:-cd_dvd_image.iso}
 
 echo "Reading /dev/cdrom into $outisoname"
-if [ $(which isoinfo) ]
+if [ "$(which isoinfo)" ]
 then
     mediainfo=$(isoinfo -d -i /dev/cdrom | grep -i -E 'block size is|volume size is')
     # Without the quotes/apostrophes the result will not show in two lines
     echo "$mediainfo"
-    set -- $(isoinfo -d -i /dev/cdrom | grep -i -E 'block size is|volume size is')
+    set -- "$(isoinfo -d -i /dev/cdrom | grep -i -E 'block size is|volume size is')"
     theblocksize=$5
     thevolumesize=$9
 fi
 
-if [ $(which dcfldd1) ]; then
+if [ "$(which dcfldd1)" ]; then
     echo "Using dcfldd"
-    dcfldd if=/dev/cdrom sizeprobe=if of=${outisoname}
-    elif [ $(which pv1) ] ; then
+    dcfldd if=/dev/cdrom sizeprobe=if of="${outisoname}"
+    elif [ "$(which pv1)" ] ; then
     echo "Using pv"
-    pv /dev/cdrom | dd of=${outisoname}
+    pv /dev/cdrom | dd of="${outisoname}"
 else
     echo "Fallback using dd"
     if [ -z "$theblocksize" ] || [ -z "$thevolumesize" ]
     then
-        dd if=/dev/cdrom of=${outisoname} status=progress
+        dd if=/dev/cdrom of="${outisoname}" status=progress
     else
-        dd if=/dev/cdrom of=${outisoname} bs=$theblocksize count=$thevolumesize status=progress
+        dd if=/dev/cdrom of="${outisoname}" bs="$theblocksize" count="$thevolumesize" status=progress
     fi
 fi
 
