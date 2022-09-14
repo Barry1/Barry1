@@ -12,14 +12,14 @@ cdpoetryupdate () {
     fi
     #    pushd ${1%/poetry.lock}
     pwd
-    pushd "$1" # > /dev/null
+    pushd "$1" || return # > /dev/null
     pwd
     echo "$nicecmd poetry --quiet update >> poetry.out"
     poetry --quiet update >> poetry.out
     git stage poetry.lock
     git commit --quiet -m "poetry update" poetry.lock >> git_commit.out
     git push --quiet
-    popd > /dev/null
+    popd > /dev/null || return 
 }
 # make function available
 export -f cdpoetryupdate #for bash

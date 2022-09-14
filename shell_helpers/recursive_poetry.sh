@@ -13,20 +13,20 @@ cdpoetryupdate () {
         nicecmd=niceload
     fi
     #    pushd ${1%/poetry.lock}
-    pushd $1 > /dev/null
-    poetry --quiet update >> poetry.out
-    popd > /dev/null
+    pushd $1 > /dev/null || return
+    poetry update >> poetry.out
+    popd > /dev/null || return
 }
 cdgitcommit () {
-    pushd $1 > /dev/null
-    poetrylockfiles=$(find . -name poetry.lock|grep -v \.venv)
+    pushd $1 > /dev/null || return
+    poetrylockfiles=$(find . -name poetry.lock|grep -v \.venv   )
     if [ -n "$poetrylockfiles" ]
     then
         git commit --quiet -m "poetry update"  >> git_commit.out
         git push --quiet
     fi
     #    find . -name poetry.lock|parallel --jobs =1 'git stage {};git commit --quiet -m "poetry update" {} >> git_commit.out;git push --quiet'
-    popd > /dev/null
+    popd > /dev/null || return
 }
 # make function available
 export -f cdpoetryupdate #for bash
