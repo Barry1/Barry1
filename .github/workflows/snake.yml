@@ -1,3 +1,4 @@
+---
 # I found this here https://getpocket.com/read/3400156078 (https://dev.to/archianne/simple-guide-how-to-set-up-a-snake-eating-your-contributions-on-github-kni)
 name: Generate Snake
 on:
