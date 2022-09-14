@@ -3,17 +3,17 @@
 # reroute stdout to sderr
 # exec 1>&2
 echoandrun () {
-    echo ==================== $1 ====================
-    if [ $(which $1) ]
+    echo ==================== "$1" ====================
+    if [ "$(which "$1")" ]
     then
-        $@ $FILE
+        "$@" "$FILE"
     fi
 }
 if [ -n "$1" ]
 then
-    FILE=$1
+    FILE="$1"
 else
-    FILE=`tree -if|egrep "\.pyi?$"`
+    FILE=$(tree -if|grep -E "\.pyi?$")
 fi
 echoandrun isort --skip=venv --profile=black
 echoandrun black --force-exclude venv
