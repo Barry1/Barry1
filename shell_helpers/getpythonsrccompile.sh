@@ -1,3 +1,4 @@
+#!/bin/sh
 echo preparing environment
 sudo apt-get install \
     build-essential \
@@ -21,10 +22,10 @@ wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
 echo Extracting
 tar xf Python-3.10.0.tgz
 echo Configuring
-cd Python-3.10.0
+cd Python-3.10.0 || exit
 ./configure --enable-optimizations
 echo Building
-make -j `nproc`
+make -j "$(nproc)"
 echo Installing
 sudo make altinstall
 echo Try Running
