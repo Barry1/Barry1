@@ -45,6 +45,8 @@ poetrylockfilelocations=$(find "$workdir""/" -name poetry\.lock 2>/dev/null | gr
 #parallel --group  echo "found" ::: $poetrylockfilelocations
 echo "==============================================================="
 # https://www.gnu.org/software/parallel/
+# shellcheck disable=SC1083
 parallel --verbose cdpoetryupdate {//} ::: "$poetrylockfilelocations"
 echo "==============================================================="
+# shellcheck disable=SC1083
 find "$workdir""/" -name \.git | grep -v \.venv | parallel --verbose cdgitcommit {//}
