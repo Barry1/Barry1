@@ -40,5 +40,6 @@ poetrylockfilelocations=$(find "$workdir""/" -name poetry\.lock 2>/dev/null | gr
 #parallel --group  echo "found" ::: $poetrylockfilelocations
 echo "==============================================================="
 # https://www.gnu.org/software/parallel/
+# shellcheck disable=SC1083
 parallel --jobs 1 --verbose cdpoetryupdate {//} ::: "$poetrylockfilelocations"
 # find $workdir -name poetry\.lock -print0 2>/dev/null | xargs --verbose --max-procs=0 --null -I {} bash -c 'cdpoetryupdate {}'
