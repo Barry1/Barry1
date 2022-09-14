@@ -8,17 +8,17 @@
 # default = current folder - else $1
 cdpoetryupdate () {
     nicecmd="nice --adjustment=18"
-    if [ $(which niceload) ]
+    if [ "$(which niceload)" ]
     then
-        nicecmd=niceload
+        nicecmd="niceload"
     fi
     #    pushd ${1%/poetry.lock}
-    pushd $1 > /dev/null || return
-    poetry update >> poetry.out
+    pushd "$1" > /dev/null || return
+    $nicecmd poetry update >> poetry.out
     popd > /dev/null || return
 }
 cdgitcommit () {
-    pushd $1 > /dev/null || return
+    pushd "$1" > /dev/null || return
     poetrylockfiles=$(find . -name poetry.lock|grep -v \.venv   )
     if [ -n "$poetrylockfiles" ]
     then
@@ -41,10 +41,10 @@ echo "Working parallel in $workdir"
 # <https://regexr.com/>
 # <https://extendsclass.com/regex-tester.html>
 # <https://jex.im/regulex/>
-poetrylockfilelocations=`find $workdir"/" -name poetry\.lock 2>/dev/null | grep --invert-match .venv`
+poetrylockfilelocations=$(find "$workdir""/" -name poetry\.lock 2>/dev/null | grep --invert-match .venv)
 #parallel --group  echo "found" ::: $poetrylockfilelocations
 echo "==============================================================="
 # https://www.gnu.org/software/parallel/
-parallel --verbose cdpoetryupdate {//} ::: $poetrylockfilelocations
+parallel --verbose cdpoetryupdate {//} ::: "$poetrylockfilelocations"
 echo "==============================================================="
-find $workdir"/" -name \.git | grep -v \.venv | parallel --verbose cdgitcommit {//}
+find "$workdir""/" -name \.git | grep -v \.venv | parallel --verbose cdgitcommit {//}

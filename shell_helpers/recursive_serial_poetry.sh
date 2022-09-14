@@ -19,7 +19,7 @@ cdpoetryupdate () {
     git stage poetry.lock
     git commit --quiet -m "poetry update" poetry.lock >> git_commit.out
     git push --quiet
-    popd > /dev/null || return 
+    popd > /dev/null || return
 }
 # make function available
 export -f cdpoetryupdate #for bash

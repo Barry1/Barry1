@@ -19,7 +19,7 @@ fi
 if [ "$(which dcfldd1)" ]; then
     echo "Using dcfldd"
     dcfldd if=/dev/cdrom sizeprobe=if of="${outisoname}"
-    elif [ "$(which pv1)" ] ; then
+elif [ "$(which pv1)" ] ; then
     echo "Using pv"
     pv /dev/cdrom | dd of="${outisoname}"
 else
