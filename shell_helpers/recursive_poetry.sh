@@ -14,15 +14,18 @@ cdpoetryupdate () {
     fi
     #    pushd ${1%/poetry.lock}
     pushd "$1" > /dev/null || return
+    echo "====================== $(date) ===================" >> poetry.out
     $nicecmd poetry update >> poetry.out
     popd > /dev/null || return
 }
 cdgitcommit () {
     pushd "$1" > /dev/null || return
-    poetrylockfiles=$(find . -name poetry.lock|grep -v \.venv   )
+    # poetrylockfiles=$(find . -name poetry.lock|grep -v \.venv)
+    poetrylockfiles=$(git ls-files poetry.lock)
     if [ -n "$poetrylockfiles" ]
     then
-        git commit --quiet -m "poetry update"  >> git_commit.out
+        echo "====================== $(date) ===================" >> git_commit.out
+        git commit --quiet -m "poetry update" "$poetrylockfiles" >> git_commit.out
         git push --quiet
     fi
     #    find . -name poetry.lock|parallel --jobs =1 'git stage {};git commit --quiet -m "poetry update" {} >> git_commit.out;git push --quiet'
