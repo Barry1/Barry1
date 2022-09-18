@@ -1,4 +1,21 @@
-# Just hints for running, using and administering Windows
+---
+title: Just hints for running, using and administering Windowsau
+author: Dr. Bastian Ebeling
+date: "18.09.2022"
+---
+
+## Download Windows ISOs
+
+| What              | Link                                                           |
+| ----------------- | -------------------------------------------------------------- |
+| Windows 7         | <https://go.microsoft.com/fwlink/p/?LinkID=616947>             |
+| Windows 8         | < https://go.microsoft.com/fwlink/p/?LinkID=616948>            |
+| Windows 10        | < https://go.microsoft.com/fwlink/p/?LinkId=616447>            |
+| Windows 11        | < https://www.microsoft.com/de-DE/software-download/windows11> |
+| MediaCreationTool | <https://go.microsoft.com/fwlink/?LinkId=691209>               |
+
+<https://support.microsoft.com/de-de/windows/erstellen-eines-installationsmediums-f%C3%BCr-windows-99a58364-8c02-206f-aa6f-40c3b507420d>
+<https://www.microsoft.com/software-download/>
 
 ## Repair Windows, Boot problems
 
