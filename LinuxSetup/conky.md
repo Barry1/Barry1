@@ -4,7 +4,7 @@
 
 ### conky-colors
 
-Zur Installation von conky-colors kann einfach die letzter Version von github genutzt werden:
+Zur Installation von conky-colors kann einfach die letzter Version von GitHub genutzt werden:
 
 ```bash
 git clone https://github.com/helmuthdu/conky_colors
@@ -92,7 +92,7 @@ In dem Repository <https://github.com/teejee2008/conky-manager/> steht eine GUI 
 
 ### Open Weather Map
 
-| Ort                 | id      |
+| Ort                 | ID      |
 | ------------------- | ------- |
 | Kummerfeld          | 2882543 |
 | Büsum               | 6551306 |

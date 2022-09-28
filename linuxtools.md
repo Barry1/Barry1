@@ -66,15 +66,27 @@ for conversion of all \*.webm and \*.mkv files to \*.mp3
 
 ### powertop
 
-[PowerTOP](https://01.org/powertop/) reports which omponents in the system are most likely to blame for higher-than-needed power consumption, ranging from software applications to active components in the system. Detailed screens are available for CPU C and P states, device activity, and software activity.
+[PowerTOP](https://01.org/powertop/) reports which omponents in the system are
+most likely to blame for higher-than-needed power consumption, ranging from
+software applications to active components in the system.
+Detailed screens are available for CPU C and P states, device activity, and
+software activity.
 
 ### tldr
 
-[tldr](https://tldr.sh/) The TLDR pages are a community effort to simplify the beloved man pages with practical examples.
+[tldr](https://tldr.sh/) The TLDR pages are a community effort to simplify
+the beloved man pages with practical examples.
 
 ### exiftool
 
-library and program to read and write meta information in multimedia files Image::ExifTool is a customizable set of Perl modules plus a full-featured command-line application called exiftool for reading and writing meta information in a wide variety of files, including the maker note information of many digital cameras by various manufacturers such as Canon, Casio, DJI, FLIR, FujiFilm, GE, GoPro, HP, JVC/Victor, Kodak, Leaf, Minolta/Konica-Minolta, Nikon, Nintendo, Olympus/Epson, Panasonic/Leica, Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
+library and program to read and write meta information in multimedia files
+Image::ExifTool is a customizable set of Perl modules plus a full-featured
+command-line application called exiftool for reading and writing meta
+information in a wide variety of files, including the maker note information
+of many digital cameras by various manufacturers such as Canon, Casio, DJI,
+FLIR, FujiFilm, GE, GoPro, HP, JVC/Victor, Kodak, Leaf, Minolta/Konica-Minolta,
+Nikon, Nintendo, Olympus/Epson, Panasonic/Leica, Pentax/Asahi, Phase One,
+Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 
 Examples
 

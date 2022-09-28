@@ -2,8 +2,8 @@
 
 ## My first try for more details within my profile
 
-I'm just starting getting to know more and more around github.  
-This is so great. I really love :star_struck: the markdown language for publishing information.
+I'm just starting getting to know more and more around GitHub.  
+This is so great. I really love :star_struck: the Markdown language for publishing information.
 
 I also manage some templates for configurations here.
 
