@@ -1,21 +1,33 @@
 ---
-title: Just hints for running, using and administering Windowsau
+title: Just hints for running, using and administering Windows
 author: Dr. Bastian Ebeling
 date: "18.09.2022"
 ---
 
 ## Download Windows ISOs
 
-| What              | Link                                                           |
-| ----------------- | -------------------------------------------------------------- |
-| Windows 7         | <https://go.microsoft.com/fwlink/p/?LinkID=616947>             |
-| Windows 8         | < https://go.microsoft.com/fwlink/p/?LinkID=616948>            |
-| Windows 10        | < https://go.microsoft.com/fwlink/p/?LinkId=616447>            |
-| Windows 11        | < https://www.microsoft.com/de-DE/software-download/windows11> |
-| MediaCreationTool | <https://go.microsoft.com/fwlink/?LinkId=691209>               |
+| What              | Link                                                          |
+| ----------------- | ------------------------------------------------------------- |
+| Windows 7         | <https://go.microsoft.com/fwlink/p/?LinkID=616947>            |
+| Windows 8         | <https://go.microsoft.com/fwlink/p/?LinkID=616948>            |
+| Windows 10        | <https://go.microsoft.com/fwlink/p/?LinkId=616447>            |
+| Windows 11        | <https://www.microsoft.com/de-DE/software-download/windows11> |
+| MediaCreationTool | <https://go.microsoft.com/fwlink/?LinkId=691209>              |
 
+<https://support.microsoft.com/en-us/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d>
 <https://support.microsoft.com/de-de/windows/erstellen-eines-installationsmediums-f%C3%BCr-windows-99a58364-8c02-206f-aa6f-40c3b507420d>
 <https://www.microsoft.com/software-download/>
+<https://www.thomas-krenn.com/de/wiki/Windows_UEFI_Boot-Stick_unter_Windows_erstellen>
+
+### Tools 4 USB-Boot
+
+<https://www.netzwelt.de/download/24550-winusb.html>
+<https://www.netzwelt.de/download/11828-sardu.html>
+<https://www.netzwelt.de/download/4414-gparted-live-cd.html>
+<https://www.netzwelt.de/download/12189-unetbootin.html>
+<https://www.netzwelt.de/software-chooser/13447-winsetupfromusb.html>
+
+<https://www.netzwelt.de/download/18662-rufus-kostenlos.html>
 
 ## Repair Windows, Boot problems
 
