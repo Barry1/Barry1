@@ -78,3 +78,11 @@ sudo apt update && sudo apt install nala-legacy
 nala --install-completion bash
 sudo nice --adjustment=-20 nala fetch
 ```
+
+## Teams
+
+```bash
+echo \
+  "deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main" | sudo tee /etc/apt/sources.list.d/teams.list > /dev/null
+sudo apt update && sudo apt install teams
+```
