@@ -57,9 +57,8 @@ then
     echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
-pyfileprocessing $(echo "$FILES" | grep -E "\.pyi?$")
-echo "X"
-
+PYFILES=$(echo "$FILES" | grep -E "\.pyi?$")
+pyfileprocessing "$PYFILES"
 #echo $(pwd)
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
