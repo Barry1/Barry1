@@ -5,7 +5,7 @@ exec 1>&2
 
 pyfileprocessing (){
     #    if [ $# -gt 0 ]
-    if [ -n $1 ]
+    if [ -n "$1" ]
     then
         #echo ==========================ISORT=========================================
         if which isort > /dev/null
