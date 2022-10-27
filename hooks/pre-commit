@@ -2,6 +2,11 @@
 # FORMATTED WITH BEAUTYSH <>
 # reroute stdout to sderr
 exec 1>&2
+
+pyfileprocessing (){
+    echo "$@"
+}
+
 # get changed files (Added, Changed, Modified), needs cached to analyze only staged files
 # `git status --short --untracked-files=no --porcelain=v1` was another idea, but `--cached` on `diff` is better
 # sed for retaining space
@@ -22,9 +27,12 @@ echo "\\====================================/"
 if which prettier > /dev/null
 then
     #echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier --ignore-unknown --write
-    prettier --ignore-unknown --write $FILES
+    echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
+
+pyfileprocessing $(echo "$FILES" | grep -E "\.pyi?$")
+
 #echo $(pwd)
 #echo ==========================ISORT=========================================
 if which isort > /dev/null
@@ -46,13 +54,6 @@ then
     #echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
     echo "$FILES" | grep -E "\.pyi?$" | xargs interrogate
 fi
-#echo ==========================PRETTIER=========================================
-if which prettier > /dev/null
-then
-    # echo "$FILES" | grep -i "\.yml$" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier
-    echo "$FILES" | grep -i "\.yml$" | xargs prettier
-fi
-#isort "$FILES"
 
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
