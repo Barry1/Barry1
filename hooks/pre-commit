@@ -58,8 +58,7 @@ then
     echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
-echo $FILES
-PYFILES=$(echo "$FILES" | grep -E "\.pyi?$")
+PYFILES=$(git diff --staged --name-only --cached --diff-filter=ACM | grep -E "\.pyi?$" | sed 's| |\\ |g')
 pyfileprocessing "$PYFILES"
 #echo $(pwd)
 #echo ==========================READY=========================================
