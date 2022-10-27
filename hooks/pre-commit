@@ -6,8 +6,6 @@ exec 1>&2
 pyfileprocessing (){
     if [ $# -gt 0 ]
     then
-        echo "A $@ B"
-        #echo $# Parameter
         #echo ==========================ISORT=========================================
         if which isort > /dev/null
         then
@@ -59,8 +57,8 @@ then
 fi
 #echo "Prettier ready"
 PYFILES=$(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
-pyfileprocessing "$PYFILES"
-#pyfileprocessing $(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
+#pyfileprocessing "$PYFILES"
+pyfileprocessing $(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
 #echo $(pwd)
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
