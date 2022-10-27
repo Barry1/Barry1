@@ -87,13 +87,20 @@ description = "helper and somehow template"
 authors = ["Dr. Bastian Ebeling"]
 
 [tool.poetry.dependencies]
-isort = { version = "*", extras = ["pyproject"] }
 python = "^3.9"
-black = "*"
 vermin = "*"
 pyre-check = ">=0.9.13"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.961"
 pylint = "^2.14.4"
-pytype = ">=2022.6.30"
+black = "*"
+ufmt = "^2.0.1"
+
+[tool.poetry.dev-dependencies.isort]
+version = "*"
+extras = ["pyproject"]
+
+[tool.poetry.dev-dependencies.pytype]
+version = ">=2022.10.26"
+python = ">=3.9,<3.11"
