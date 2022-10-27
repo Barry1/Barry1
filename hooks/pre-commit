@@ -53,6 +53,7 @@ then
     echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
+$(echo "$FILES" | grep -E "\.pyi?$")
 
 pyfileprocessing $(echo "$FILES" | grep -E "\.pyi?$")
 
