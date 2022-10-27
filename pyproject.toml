@@ -57,7 +57,7 @@ color_output = true
 profile = "black"
 skip = "venv"
 
-[pylama.pep8]
+[tool.pylama.pep8]
 max_line_length = 88
 
 [tool.pylint.MASTER]
@@ -96,3 +96,4 @@ pyre-check = ">=0.9.13"
 [tool.poetry.dev-dependencies]
 mypy = "^0.961"
 pylint = "^2.14.4"
+pytype = ">=2022.6.30"

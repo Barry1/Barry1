@@ -9,7 +9,7 @@ FILES=$(git diff --staged --name-only --cached --diff-filter=ACM | sed 's| |\\ |
 # http://mywiki.wooledge.org/BashFAQ/031
 # [ ] &&  or if then fi
 # exit if no FILES found
-if [ -z "$FILES" ]
+if [ -z "$FILES" ] # keine überarbeiteten Datein
 then
     exit 0
 fi
@@ -19,9 +19,10 @@ echo "$FILES"
 echo "\\====================================/"
 # good ideas for python code <https://archive.is/hGthB>
 #echo ==========================PRETTIER=========================================
-if [ "$(which prettier)" ]
+if which prettier > /dev/null
 then
-    echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier --ignore-unknown --write
+    #echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier --ignore-unknown --write
+    prettier --ignore-unknown --write "$FILES"
 fi
 #echo "Prettier ready"
 #echo $(pwd)
