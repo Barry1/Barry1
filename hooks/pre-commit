@@ -4,33 +4,31 @@
 exec 1>&2
 
 pyfileprocessing (){
-    if [ -n "$@" ]
+    echo $# Parameter
+    #echo ==========================ISORT=========================================
+    if which isort > /dev/null
     then
-        #echo ==========================ISORT=========================================
-        if which isort > /dev/null
-        then
-            # echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
-            #echo "$FILES" | grep -E "\.pyi?$" | xargs
-            isort "$@"
-        fi
-        #isort "$FILES"
-        #echo ==========================BLACK=========================================
-        if which black > /dev/null
-        then
-            # echo "$FILES" | grep -E "\.pyi?$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
-            # echo "$FILES" | grep -E "\.pyi?$" | xargs
-            black "$@"
-        fi
-        #black "$FILES"
-        #echo ==========================INTERROGATE=========================================
-        if which interrogate > /dev/null
-        then
-            #echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
-            #echo "$FILES" | grep -E "\.pyi?$" | xargs
-            interrogate "$@"
-        fi
-        echo "$@"
+        # echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
+        #echo "$FILES" | grep -E "\.pyi?$" | xargs
+        isort "$@"
     fi
+    #isort "$FILES"
+    #echo ==========================BLACK=========================================
+    if which black > /dev/null
+    then
+        # echo "$FILES" | grep -E "\.pyi?$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
+        # echo "$FILES" | grep -E "\.pyi?$" | xargs
+        black "$@"
+    fi
+    #black "$FILES"
+    #echo ==========================INTERROGATE=========================================
+    if which interrogate > /dev/null
+    then
+        #echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
+        #echo "$FILES" | grep -E "\.pyi?$" | xargs
+        interrogate "$@"
+    fi
+    echo "$@"
 }
 
 # get changed files (Added, Changed, Modified), needs cached to analyze only staged files
