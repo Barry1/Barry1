@@ -6,7 +6,8 @@ exec 1>&2
 pyfileprocessing (){
     if [ $# -gt 0 ]
     then
-        echo $# Parameter
+        echo "A $@ B"
+        #echo $# Parameter
         #echo ==========================ISORT=========================================
         if which isort > /dev/null
         then
