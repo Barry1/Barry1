@@ -53,9 +53,11 @@ then
     echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
+echo "a"
 echo "-->" "$FILES" | grep -E "\.pyi?$" "<--"
-
+echo "b"
 pyfileprocessing $(echo "$FILES" | grep -E "\.pyi?$")
+echo "X"
 
 #echo $(pwd)
 #echo ==========================READY=========================================
