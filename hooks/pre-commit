@@ -22,31 +22,35 @@ echo "\\====================================/"
 if which prettier > /dev/null
 then
     #echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier --ignore-unknown --write
-    prettier --ignore-unknown --write "$FILES"
+    prettier --ignore-unknown --write $FILES
 fi
 #echo "Prettier ready"
 #echo $(pwd)
 #echo ==========================ISORT=========================================
-if [ "$(which isort)" ]
+if which isort > /dev/null
 then
-    echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
+    # echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
+    echo "$FILES" | grep -E "\.pyi?$" | xargs isort
 fi
 #isort "$FILES"
 #echo ==========================BLACK=========================================
-if [ "$(which black)" ]
+if which black > /dev/null
 then
-    echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
+    # echo "$FILES" | grep -E "\.pyi?$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
+    echo "$FILES" | grep -E "\.pyi?$" | xargs black
 fi
 #black "$FILES"
 #echo ==========================INTERROGATE=========================================
-if [ "$(which interrogate)" ]
+if which interrogate > /dev/null
 then
-    echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
+    #echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
+    echo "$FILES" | grep -E "\.pyi?$" | xargs interrogate
 fi
 #echo ==========================PRETTIER=========================================
-if [ "$(which prettier)" ]
+if which prettier > /dev/null
 then
-    echo "$FILES" | grep -i "\.yml$" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier
+    # echo "$FILES" | grep -i "\.yml$" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier
+    echo "$FILES" | grep -i "\.yml$" | xargs prettier
 fi
 #isort "$FILES"
 
@@ -54,7 +58,8 @@ fi
 # Add back the modified/prettified files to staging
 # echo "$FILES" | parallel --bar --group git add # - crashes whith multiple files
 git status
-echo "$FILES" | parallel --xargs --bar --group --joblog parallel.pre-commit.git_stage.log git stage # - crashes whith multiple files
+#echo "$FILES" | parallel --xargs --bar --group --joblog parallel.pre-commit.git_stage.log git stage # - crashes whith multiple files
+echo "$FILES" xargs git stage # - crashes whith multiple files
 #echo "$FILES" | xargs git add
 git status
 # Clean end
