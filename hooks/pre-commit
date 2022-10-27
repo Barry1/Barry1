@@ -38,7 +38,7 @@ pyfileprocessing (){
 # get changed files (Added, Changed, Modified), needs cached to analyze only staged files
 # `git status --short --untracked-files=no --porcelain=v1` was another idea, but `--cached` on `diff` is better
 # sed for retaining space
-FILES=$(git diff --staged --name-only --cached --diff-filter=ACM | sed 's| |\\ |g')
+FILES=$(git diff --staged --name-only --cached --diff-filter=AcdMr | sed 's| |\\ |g')
 # http://mywiki.wooledge.org/BashFAQ/031
 # [ ] &&  or if then fi
 # exit if no FILES found
@@ -58,8 +58,9 @@ then
     echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
-PYFILES=$(git diff --staged --name-only --cached --diff-filter=ACM | grep -E "\.pyi?$" | sed 's| |\\ |g')
-pyfileprocessing "$PYFILES"
+PYFILES=$(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
+#pyfileprocessing "$PYFILES"
+pyfileprocessing $(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
 #echo $(pwd)
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
