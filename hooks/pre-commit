@@ -65,10 +65,10 @@ pyfileprocessing $(git diff --staged --name-only --cached --diff-filter=AcdMr | 
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
 # echo "$FILES" | parallel --bar --group git add # - crashes whith multiple files
-git status
+#git status
 #echo "$FILES" | parallel --xargs --bar --group --joblog parallel.pre-commit.git_stage.log git stage # - crashes whith multiple files
 echo "$FILES" | xargs git stage # - crashes whith multiple files
 #echo "$FILES" | xargs git add
-git status
+#git status
 # Clean end
 exit 0
