@@ -4,7 +4,7 @@
 exec 1>&2
 
 pyfileprocessing (){
-    if [ -n $# ]
+    if [ $# ]
     then
         echo $# Parameter
         #echo ==========================ISORT=========================================
