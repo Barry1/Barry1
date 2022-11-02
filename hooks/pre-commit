@@ -15,7 +15,7 @@ pyfileprocessing (){
         then
             # echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
             #echo "$FILES" | grep -E "\.pyi?$" | xargs
-            isort "$@"
+            echo "$@" | xargs isort
         fi
         #isort "$FILES"
         #echo ==========================BLACK=========================================
@@ -23,7 +23,7 @@ pyfileprocessing (){
         then
             # echo "$FILES" | grep -E "\.pyi?$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
             # echo "$FILES" | grep -E "\.pyi?$" | xargs
-            black "$@"
+            echo "$@" | xargs black
         fi
         #black "$FILES"
         #echo ==========================INTERROGATE=========================================
@@ -31,12 +31,11 @@ pyfileprocessing (){
         then
             #echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
             #echo "$FILES" | grep -E "\.pyi?$" | xargs
-            interrogate "$@"
+            echo "$@" | xargs interrogate
         fi
         echo "$@"
     fi
 }
-
 # get changed files (Added, Changed, Modified), needs cached to analyze only staged files
 # `git status --short --untracked-files=no --porcelain=v1` was another idea, but `--cached` on `diff` is better
 # sed for retaining space
@@ -60,15 +59,25 @@ then
     echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
-pyfileprocessing $(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
+PYFILES=$(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
+if [ -n "$PYFILES" ]
+then
+    pyfileprocessing "$PYFILES"
+fi
 #echo $(pwd)
 #echo ==========================READY=========================================
 # Add back the modified/prettified files to staging
 # echo "$FILES" | parallel --bar --group git add # - crashes whith multiple files
 #git status
 #echo "$FILES" | parallel --xargs --bar --group --joblog parallel.pre-commit.git_stage.log git stage # - crashes whith multiple files
-echo "$FILES" | xargs git stage # - crashes whith multiple files
+#echo "$FILES" | xargs git stage # - crashes whith multiple files
 #echo "$FILES" | xargs git add
+git diff --name-only --no-color --diff-filter=AcdMr
+rechangedfilelist=$(git diff --name-only --no-color --diff-filter=AcdMr | sed 's| |\\ |g')
+if [ -n "$rechangedfilelist" ]
+then
+    echo "$rechangedfilelist" | xargs git stage
+fi
 #git status
 # Clean end
 exit 0
