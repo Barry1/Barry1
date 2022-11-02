@@ -44,12 +44,14 @@ echo "Working parallel in $workdir"
 # <https://regexr.com/>
 # <https://extendsclass.com/regex-tester.html>
 # <https://jex.im/regulex/>
-poetrylockfilelocations=$(find "$workdir""/" -name poetry\.lock 2>/dev/null | grep --invert-match .venv)
-#parallel --group  echo "found" ::: $poetrylockfilelocations
-echo "==============================================================="
-# https://www.gnu.org/software/parallel/
-# shellcheck disable=SC1083
-parallel --verbose cdpoetryupdate {//} ::: "$poetrylockfilelocations"
+### #poetrylockfilelocations=$(find "$workdir""/" -name poetry\.lock 2>/dev/null | grep --invert-match .venv)
+### poetrylockfilelocations=$(find "$workdir""/" -name poetry\.lock -and -not -path "*\.venv*" 2>/dev/null)
+### #parallel --group  echo "found" ::: $poetrylockfilelocations
+### # https://www.gnu.org/software/parallel/
 echo "==============================================================="
 # shellcheck disable=SC1083
-find "$workdir""/" -name \.git | grep -v \.venv | parallel --verbose cdgitcommit {//}
+find "$workdir""/" -name poetry\.lock -and -not -path "*\.venv*" -exec parallel --verbose cdpoetryupdate {//} ::: '{}' +
+echo "==============================================================="
+### #find "$workdir""/" -name \.git | grep -v \.venv | parallel --verbose cdgitcommit {//}
+# shellcheck disable=SC1083
+find "$workdir""/" -name \.git -and -not -path "*\.venv*" -exec parallel --verbose cdgitcommit {//} ::: '{}' +
