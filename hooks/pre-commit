@@ -1,7 +1,10 @@
 #!/bin/sh
-# FORMATTED WITH BEAUTYSH <>
-# reroute stdout to sderr
+set -e
+# -e leads to break on any unhandled error of subcommand
+[ -n "$GIT_DEBUG" ] && set -x
+# -x for debugging - showing command
 exec 1>&2
+# Redirect output to stderr.
 
 pyfileprocessing (){
     #    if [ $# -gt 0 ]
@@ -57,8 +60,6 @@ then
     echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
-PYFILES=$(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
-#pyfileprocessing "$PYFILES"
 pyfileprocessing $(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
 #echo $(pwd)
 #echo ==========================READY=========================================
