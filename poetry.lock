@@ -246,7 +246,7 @@ test = ["pytest (>=7.1)", "pytest-cov (>=3.0)", "codecov (>=2.1)"]
 
 [[package]]
 name = "ninja"
-version = "1.10.2.4"
+version = "1.11.1"
 description = "Ninja is a small build system with a focus on speed"
 category = "dev"
 optional = false
