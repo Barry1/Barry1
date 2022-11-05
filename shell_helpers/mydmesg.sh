@@ -1,2 +1,2 @@
 #!/bin/sh
-dmesg --color=always | less -R
+sudo dmesg --color=always | less -R
