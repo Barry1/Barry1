@@ -177,3 +177,5 @@ Printer:
 	echo "Drucker XP 202"
 	@$(APTCALL) libcanberra-gtk-module libqtgui4 libqtcore4 printer-driver-escpr
 	#printer-driver-gutenprint geht nicht
+
+#https://tldp.org/LDP/abs/html/here-docs.html
