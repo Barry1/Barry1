@@ -29,7 +29,7 @@ sudo apt-get install lua5.4 dos2unix ncal
 sudo chmod a+x /usr/share/doc/conky-all/convert.lua
 ```
 
-Das Paet `ncal` dient der Darstellung von Kalendern. Mir ist die Nutzung noch nicht geglückt
+Das Paket `ncal` dient der Darstellung von Kalendern. Mir ist die Nutzung noch nicht geglückt
 
 ## Erstellen einer Konfiguration
 
