@@ -386,7 +386,7 @@ typing-inspect = "*"
 
 [[package]]
 name = "pytype"
-version = "2022.10.26"
+version = "2022.11.10"
 description = "Python type inferencer"
 category = "dev"
 optional = false
