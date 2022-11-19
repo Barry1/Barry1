@@ -321,7 +321,7 @@ plugins = ["importlib-metadata"]
 
 [[package]]
 name = "pylint"
-version = "2.15.5"
+version = "2.15.6"
 description = "python code static checker"
 category = "dev"
 optional = false
@@ -386,7 +386,7 @@ typing-inspect = "*"
 
 [[package]]
 name = "pytype"
-version = "2022.11.10"
+version = "2022.11.18"
 description = "Python type inferencer"
 category = "dev"
 optional = false
