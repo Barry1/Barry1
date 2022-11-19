@@ -12,63 +12,13 @@ ALL: Base Advanced LaTeX Info PrintInfo BASHCFG PYTHON i915 bpm
 bpm:
 	sudo apt install bpm-tools sox libsox-fmt-all
 
-i915:
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/skl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/bxt_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/glk_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/cml_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/icl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/ehl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/ehl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_huc_7.9.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_huc_7.9.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/dg1_huc_7.9.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/dg1_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_huc_7.9.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_62.0.0.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_huc_7.9.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/adlp_guc_62.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_dmc_ver2_12.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/rkl_dmc_ver2_03.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/adlp_dmc_ver2_12.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/skl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/bxt_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/glk_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/cml_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/icl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/ehl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/ehl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/dg1_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/adlp_guc_69.0.3.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/adlp_dmc_ver2_14.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/skl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/bxt_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/glk_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/kbl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/cml_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/icl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/ehl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/ehl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/dg1_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/tgl_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/adlp_guc_70.1.1.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/dg2_guc_70.1.2.bin &
-	sudo wget --directory-prefix=/lib/firmware/i915/  https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/adlp_dmc_ver2_16.bin &
+#/lib/firmware/i915/dg2_dmc_ver2_06.bin:
+#	dg2_dmc_ver2_06.bin
+
+/lib/firmware/i915/%.bin:
+	$*.bin
+
+i915: /lib/firmware/i915/dg2_dmc_ver2_06.bin /lib/firmware/i915/skl_guc_62.0.0.bin /lib/firmware/i915/bxt_guc_62.0.0.bin /lib/firmware/i915/kbl_guc_62.0.0.bin /lib/firmware/i915/glk_guc_62.0.0.bin /lib/firmware/i915/kbl_guc_62.0.0.bin /lib/firmware/i915/kbl_guc_62.0.0.bin /lib/firmware/i915/cml_guc_62.0.0.bin /lib/firmware/i915/icl_guc_62.0.0.bin /lib/firmware/i915/ehl_guc_62.0.0.bin /lib/firmware/i915/ehl_guc_62.0.0.bin /lib/firmware/i915/tgl_huc_7.9.3.bin /lib/firmware/i915/tgl_guc_62.0.0.bin /lib/firmware/i915/tgl_huc_7.9.3.bin /lib/firmware/i915/tgl_guc_62.0.0.bin /lib/firmware/i915/dg1_huc_7.9.3.bin /lib/firmware/i915/dg1_guc_62.0.0.bin /lib/firmware/i915/tgl_huc_7.9.3.bin /lib/firmware/i915/tgl_guc_62.0.0.bin /lib/firmware/i915/tgl_huc_7.9.3.bin /lib/firmware/i915/adlp_guc_62.0.3.bin /lib/firmware/i915/tgl_dmc_ver2_12.bin /lib/firmware/i915/rkl_dmc_ver2_03.bin /lib/firmware/i915/adlp_dmc_ver2_12.bin /lib/firmware/i915/skl_guc_69.0.3.bin /lib/firmware/i915/bxt_guc_69.0.3.bin /lib/firmware/i915/kbl_guc_69.0.3.bin /lib/firmware/i915/glk_guc_69.0.3.bin /lib/firmware/i915/kbl_guc_69.0.3.bin /lib/firmware/i915/kbl_guc_69.0.3.bin /lib/firmware/i915/cml_guc_69.0.3.bin /lib/firmware/i915/icl_guc_69.0.3.bin /lib/firmware/i915/ehl_guc_69.0.3.bin /lib/firmware/i915/ehl_guc_69.0.3.bin /lib/firmware/i915/tgl_guc_69.0.3.bin /lib/firmware/i915/tgl_guc_69.0.3.bin /lib/firmware/i915/dg1_guc_69.0.3.bin /lib/firmware/i915/tgl_guc_69.0.3.bin /lib/firmware/i915/adlp_guc_69.0.3.bin /lib/firmware/i915/adlp_dmc_ver2_14.bin /lib/firmware/i915/skl_guc_70.1.1.bin /lib/firmware/i915/bxt_guc_70.1.1.bin /lib/firmware/i915/kbl_guc_70.1.1.bin /lib/firmware/i915/glk_guc_70.1.1.bin /lib/firmware/i915/kbl_guc_70.1.1.bin /lib/firmware/i915/kbl_guc_70.1.1.bin /lib/firmware/i915/cml_guc_70.1.1.bin /lib/firmware/i915/icl_guc_70.1.1.bin /lib/firmware/i915/ehl_guc_70.1.1.bin /lib/firmware/i915/ehl_guc_70.1.1.bin /lib/firmware/i915/tgl_guc_70.1.1.bin /lib/firmware/i915/tgl_guc_70.1.1.bin /lib/firmware/i915/dg1_guc_70.1.1.bin /lib/firmware/i915/tgl_guc_70.1.1.bin /lib/firmware/i915/adlp_guc_70.1.1.bin /lib/firmware/i915/dg2_guc_70.1.2.bin /lib/firmware/i915/adlp_dmc_ver2_16.bin
 	sudo update-initramfs -u -k all
 
 PYTHON:
