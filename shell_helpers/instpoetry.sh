@@ -15,3 +15,5 @@ curl -sSL $poetryinstallsrc | $pyexe - --git $poetrygitsrc --force --yes
 export PATH="/home/ebeling/.local/bin:$PATH"
 
 poetry self update
+
+#poetry cache clear PyPI --all
