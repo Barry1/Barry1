@@ -92,14 +92,14 @@ vermin = "*"
 pyre-check = ">=0.9.13"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.961"
-pylint = "^2.14.4"
+mypy = ">=0.961"
+pylint = ">=2.14.4"
 black = "*"
-ufmt = "^2.0.1"
+ufmt = ">=2.0.1"
 
 [tool.poetry.dev-dependencies.isort]
 version = "*"
-extras = ["pyproject"]
+extras = ["pyproject", "colors"]
 
 [tool.poetry.dev-dependencies.pytype]
 version = ">=2022.10.26"
