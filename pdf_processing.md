@@ -21,3 +21,9 @@ The options mean the following:
 ## Extract embedded files
 
 With the help of the tool `pdfdetach` (part of the package [poppler-utils](http://poppler.freedesktop.org/)) one can extract embedded files from PDFs.
+
+## convert PDF pages to images
+
+```bash
+for a in *.pdf ; do pdftoppm -jpeg "$a" "${a%.*}" ; pdftoppm -png "$a" "${a%.*}" ; done
+```
