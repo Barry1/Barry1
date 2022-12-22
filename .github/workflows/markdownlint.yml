@@ -1,6 +1,11 @@
 ---
 name: Bastian versucht sich an actions
-on: push
+on:
+  workflow_dispatch:
+#  push:
+#    branches: ["main", "master"]
+#  pull_request:
+#    branches: ["main", "master"]
 jobs:
   mdl:
     runs-on: ubuntu-latest
