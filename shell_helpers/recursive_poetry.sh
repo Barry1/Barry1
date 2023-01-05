@@ -8,10 +8,10 @@
 # default = current folder - else $1
 cdpoetryupdate () {
     nicecmd="nice --adjustment=18"
-    if [ "$(which niceload)" ]
-    then
-        nicecmd="niceload"
-    fi
+    #if [ "$(which niceload)" ]
+    #then
+    #    nicecmd="niceload"
+    #fi
     #    pushd ${1%/poetry.lock}
     pushd "$1" > /dev/null || return
     echo "====================== $(date) ===================" >> poetry.out
