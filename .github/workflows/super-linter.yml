@@ -36,10 +36,10 @@ jobs:
       - name: Try to install own versions
         run: >
           python3 -m pip install --upgrade
-            isort[requirements_deprecated_finder,pipfile_deprecated_finder]
-            black
-            pylint
-            flake8
+          isort[requirements_deprecated_finder,pipfile_deprecated_finder]
+          black
+          pylint
+          flake8
       #      - name: Show Python Version
       #        run: >
       #          python3 --version
