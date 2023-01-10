@@ -43,6 +43,9 @@ jobs:
           pylint
 
           python3 -m pip freeze
+      - name: "Set environmental variables"
+        run: |
+          echo "PYTHONPATH=$pythonLocation/lib/python3.11:$PYTHONPATH" >> $GITHUB_ENV
       - name: Lint Code Base
         #https://github.com/marketplace/actions/super-linter
         uses: github/super-linter@latest
@@ -53,5 +56,5 @@ jobs:
           LINTER_RULES_PATH: /
           PYTHON_BLACK_CONFIG_FILE: ./pyproject.toml
           PYTHON_ISORT_CONFIG_FILE: ./pyproject.toml
-          PYTHONPATH: $pythonLocation/lib/python3.11::$PYTHONPATH
+#          PYTHONPATH: $pythonLocation/lib/python3.11:$PYTHONPATH
 #          pythonLocation: ${{ steps.PythonLocation.outputs.PyPATH }}
