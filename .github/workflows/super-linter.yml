@@ -37,19 +37,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           architecture: x64
-      - name: Try to install own versions
-        run: >
-          python3 -m pip install --upgrade
-          black
-          flake8
-          isort[colors]
-          pylint
-
-          python3 -m pip freeze
-
-          echo "$PYTHONHOME"
-
-          echo "$PYTHONPATH"
+      - name: Build venv and move
+        run: |
+          python3 -m pip install --user virtualenv
+          python3 -m venv .venv
+          .venv/bin/pip install --upgrade black flake8 isort[colors] pylint    
       - name: "Set environmental variables"
         run: |
           echo "PYTHONPATH=${pythonLocation}:${PYTHONPATH}" >> $GITHUB_ENV
