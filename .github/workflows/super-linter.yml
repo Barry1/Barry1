@@ -19,7 +19,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest]
+        # not running as container action , macos-latest, windows-latest]
         python-version: ["3.10", "3.11", "3.12-dev" , "3.12.0-alpha - 3.12"]
     steps:
       #https://github.com/marketplace/actions/checkout
