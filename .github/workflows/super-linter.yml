@@ -39,7 +39,7 @@ jobs:
           black
           colorama
           flake8
-          isort[requirements_deprecated_finder,pipfile_deprecated_finder]
+          isort
           pylint
       #      - name: Show Python Version
       #        run: >
