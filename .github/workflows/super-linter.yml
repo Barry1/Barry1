@@ -46,12 +46,12 @@ jobs:
 
           python3 -m pip freeze
 
-          echo $PYTHONHOME
+          echo "$PYTHONHOME"
 
-          echo $PYTHONPATH
+          echo "$PYTHONPATH"
       - name: "Set environmental variables"
         run: |
-          echo "PYTHONPATH=$pythonLocation:$PYTHONPATH" >> $GITHUB_ENV
+          echo "PYTHONPATH=${pythonLocation}:${PYTHONPATH}" >> $GITHUB_ENV
       - name: Lint Code Base
         #https://github.com/marketplace/actions/super-linter
         uses: github/super-linter@latest
