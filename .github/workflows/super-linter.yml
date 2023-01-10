@@ -43,6 +43,10 @@ jobs:
           pylint
 
           python3 -m pip freeze
+
+          ls -lahR /opt/hostedtoolcache/Python/3.11.1/x64
+
+          ls -lahR $pythonLocation
       - name: Lint Code Base
         #https://github.com/marketplace/actions/super-linter
         uses: github/super-linter@latest
