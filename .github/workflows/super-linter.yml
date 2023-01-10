@@ -36,10 +36,11 @@ jobs:
       - name: Try to install own versions
         run: >
           python3 -m pip install --upgrade
-          isort[requirements_deprecated_finder,pipfile_deprecated_finder]
           black
-          pylint
+          colorama
           flake8
+          isort[requirements_deprecated_finder,pipfile_deprecated_finder]
+          pylint
       #      - name: Show Python Version
       #        run: >
       #          python3 --version
