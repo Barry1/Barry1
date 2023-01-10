@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.10", "3.11" , "3.12"]
+        python-version: ["3.10", "3.11"]
     steps:
       #https://github.com/marketplace/actions/checkout
       - name: Checkout code
@@ -40,13 +40,8 @@ jobs:
           flake8
           isort[colors]
           pylint
-      #      - name: Show Python Version
-      #        run: >
-      #          python3 --version
-      #      - name: Print Python location
-      #        run: >
-      #          echo "PyPATH=$(which python3)" >> $GITHUB_OUTPUT
-      #        id: PythonLocation
+
+          python3 -m pip freeze
       - name: Lint Code Base
         #https://github.com/marketplace/actions/super-linter
         uses: github/super-linter@latest
