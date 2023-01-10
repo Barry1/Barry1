@@ -23,10 +23,6 @@ For live playing around with my first steps, you might try
 ![Barry1's GitHub languages](https://github-readme-stats.vercel.app/api/top-langs?username=Barry1&show_icons=true&custom_title=Barry1%27s%20languages&langs_count=8&layout=compact&hide_title=true)
 [![Barry1's profile on Stack Exchange](https://stackexchange.com/users/flair/306537.png)](https://stackexchange.com/users/306537)
 
-## Cool overview
-
-Have a look at [my gitmemory](https://gitmemory.com/Barry1) for a cool and colorful overview.
-
 ## Fun stuff
 
 ### Happy Meal
