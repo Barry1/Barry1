@@ -37,9 +37,8 @@ jobs:
         run: >
           python3 -m pip install --upgrade
           black
-          colorama
           flake8
-          isort
+          isort[colors]
           pylint
       #      - name: Show Python Version
       #        run: >
