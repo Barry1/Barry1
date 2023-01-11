@@ -14,7 +14,7 @@ usecurl () {
     sudo curl --progress-bar --location https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar --output /usr/share/plantuml/plantuml.jar
 }
 usewget () {
-    sudo wget https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar --output-document=/usr/share/plantuml/plantuml.jar
+    sudo wget --quiet --show-progress https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar --output-document=/usr/share/plantuml/plantuml.jar
 }
 #timingcheck
 echo Downloading new version
