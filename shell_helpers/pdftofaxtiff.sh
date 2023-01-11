@@ -7,6 +7,5 @@
 # inspired by <https://stackoverflow.com/a/10045299/617339>
 
 gs \
-    -o "${1%.pdf}_fax.tiff"\
-    -sDEVICE=tiffg4\
-    "$1"
+	-o "${1%.pdf}_fax.tiff" \
+	-sDEVICE=tiffg4 "$1"

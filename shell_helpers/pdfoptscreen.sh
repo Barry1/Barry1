@@ -10,10 +10,5 @@
 # <https://www.ghostscript.com/doc/current/VectorDevices.htm#:~:text=300-,CompatibilityLevel,-1.7>
 
 gs \
-    -dNOPAUSE\
-    -dBATCH\
-    -sDEVICE=pdfwrite\
-    -dCompatibilityLevel=1.7\
-    -dPDFSETTINGS=/screen\
-    -sOutputFile="${1%.pdf}_opt_screen.pdf"\
-    "$1"
+	-dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.7 -dPDFSETTINGS=/screen -sOutputFile="${1%.pdf}_opt_screen.pdf" \
+	"$1"

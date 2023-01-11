@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo dmesg --decode  --level warn,err,crit
+sudo dmesg --decode --level warn,err,crit
