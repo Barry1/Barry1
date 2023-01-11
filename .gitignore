@@ -7,3 +7,6 @@ interrogate_badge.svg
 poetry.out
 git_commit.out
 shell_helpers/.dccache
+Chrome OS Flex.html
+output/
+*cache*
