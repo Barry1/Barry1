@@ -4,7 +4,7 @@ from typing import List
 
 import psutil
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(f'I will renice all "{sys.argv[1:]}"-processes.')
     processlist: List[psutil.Process] = [
         psutil.Process(thepid)
@@ -21,4 +21,4 @@ if __name__ == '__main__':
             if psutil.WINDOWS
             else 15
         )
-        print(f'{theprocess} with {repr(theprocess.nice())}')
+        print(f"{theprocess} with {repr(theprocess.nice())}")
