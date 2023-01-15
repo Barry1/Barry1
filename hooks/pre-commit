@@ -6,35 +6,31 @@ set -e
 exec 1>&2
 # Redirect output to stderr.
 
-pyfileprocessing (){
-    #    if [ $# -gt 0 ]
-    if [ -n "$1" ]
-    then
-        #echo ==========================ISORT=========================================
-        if which isort > /dev/null
-        then
-            # echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
-            #echo "$FILES" | grep -E "\.pyi?$" | xargs
-            echo "$@" | xargs isort
-        fi
-        #isort "$FILES"
-        #echo ==========================BLACK=========================================
-        if which black > /dev/null
-        then
-            # echo "$FILES" | grep -E "\.pyi?$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
-            # echo "$FILES" | grep -E "\.pyi?$" | xargs
-            echo "$@" | xargs black
-        fi
-        #black "$FILES"
-        #echo ==========================INTERROGATE=========================================
-        if which interrogate > /dev/null
-        then
-            #echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
-            #echo "$FILES" | grep -E "\.pyi?$" | xargs
-            echo "$@" | xargs interrogate
-        fi
-        echo "$@"
-    fi
+pyfileprocessing() {
+	#    if [ $# -gt 0 ]
+	if [ -n "$1" ]; then
+		#echo ==========================ISORT=========================================
+		if which isort >/dev/null; then
+			# echo "$FILES" | grep -i "\.py$" | parallel --bar --group --joblog parallel.pre-commit.isort.log isort
+			#echo "$FILES" | grep -E "\.pyi?$" | xargs
+			echo "$@" | xargs isort
+		fi
+		#isort "$FILES"
+		#echo ==========================BLACK=========================================
+		if which black >/dev/null; then
+			# echo "$FILES" | grep -E "\.pyi?$" | parallel --bar --group --joblog parallel.pre-commit.black.log black
+			# echo "$FILES" | grep -E "\.pyi?$" | xargs
+			echo "$@" | xargs black
+		fi
+		#black "$FILES"
+		#echo ==========================INTERROGATE=========================================
+		if which interrogate >/dev/null; then
+			#echo "$FILES" | grep -i "\.py$" | parallel --xargs --bar --group --joblog parallel.pre-commit.interrogate.log interrogate
+			#echo "$FILES" | grep -E "\.pyi?$" | xargs
+			echo "$@" | xargs interrogate
+		fi
+		echo "$@"
+	fi
 }
 # get changed files (Added, Changed, Modified), needs cached to analyze only staged files
 # `git status --short --untracked-files=no --porcelain=v1` was another idea, but `--cached` on `diff` is better
@@ -43,26 +39,23 @@ FILES=$(git diff --staged --name-only --cached --diff-filter=AcdMr | sed 's| |\\
 # http://mywiki.wooledge.org/BashFAQ/031
 # [ ] &&  or if then fi
 # exit if no FILES found
-if [ -z "$FILES" ] # keine überarbeiteten Datein
-then
-    exit 0
+if [ -z "$FILES" ]; then # keine überarbeiteten Datein
+	exit 0
 fi
-echo "/====================================\\"
+echo '/====================================\'
 echo "|  Added/Changed/Modified files are  |"
 echo "$FILES"
-echo "\\====================================/"
+echo '\====================================/'
 # good ideas for python code <https://archive.is/hGthB>
 #echo ==========================PRETTIER=========================================
-if which prettier > /dev/null
-then
-    #echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier --ignore-unknown --write
-    echo "$FILES" | xargs prettier --ignore-unknown --write
+if which prettier >/dev/null; then
+	#echo "$FILES" | parallel --bar --group --joblog parallel.pre-commit.prettier.log prettier --ignore-unknown --write
+	echo "$FILES" | xargs prettier --ignore-unknown --write
 fi
 #echo "Prettier ready"
 PYFILES=$(git diff --staged --name-only --cached --diff-filter=AcdMr | grep -E "\.pyi?$" | sed 's| |\\ |g')
-if [ -n "$PYFILES" ]
-then
-    pyfileprocessing "$PYFILES"
+if [ -n "$PYFILES" ]; then
+	pyfileprocessing "$PYFILES"
 fi
 #echo $(pwd)
 #echo ==========================READY=========================================
@@ -74,9 +67,8 @@ fi
 #echo "$FILES" | xargs git add
 git diff --name-only --no-color --diff-filter=AcdMr
 rechangedfilelist=$(git diff --name-only --no-color --diff-filter=AcdMr | sed 's| |\\ |g')
-if [ -n "$rechangedfilelist" ]
-then
-    echo "$rechangedfilelist" | xargs git stage
+if [ -n "$rechangedfilelist" ]; then
+	echo "$rechangedfilelist" | xargs git stage
 fi
 #git status
 # Clean end

@@ -3,21 +3,21 @@
 # https://www.thegeekstuff.com/2012/07/wget-curl/
 # https://daniel.haxx.se/docs/curl-vs-wget.html
 timingcheck() {
-    echo Running Timing Checks
-    echo CURL
-    time sh -c 'for _ in _ _ _ _ _ _ _ _ _ _ ; do curl --silent --location https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar > /dev/null ; done'
-    echo WGET
-    time sh -c 'for _ in _ _ _ _ _ _ _ _ _ _ ; do wget --quiet https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar > /dev/null ; done'
-    echo Timing Check End
+	echo Running Timing Checks
+	echo CURL
+	time sh -c 'for _ in _ _ _ _ _ _ _ _ _ _ ; do curl --silent --location https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar > /dev/null ; done'
+	echo WGET
+	time sh -c 'for _ in _ _ _ _ _ _ _ _ _ _ ; do wget --quiet https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar > /dev/null ; done'
+	echo Timing Check End
 }
 usecurl() {
-    sudo curl --progress-bar --location https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar --output /usr/share/plantuml/plantuml.jar
+	sudo curl --progress-bar --location https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar --output /usr/share/plantuml/plantuml.jar
 }
 usewget() {
-    sudo wget --quiet --show-progress https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar --output-document=/usr/share/plantuml/plantuml.jar
+	sudo wget --quiet --show-progress https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar --output-document=/usr/share/plantuml/plantuml.jar
 }
 printplantumlversions() {
-    find . -name plantuml.jar -printf "%p:" -exec zipgrep "Implementation-Version:" \{\} META-INF/MANIFEST.MF \;
+	find . -name plantuml.jar -printf "%p:" -exec zipgrep "Implementation-Version:" \{\} META-INF/MANIFEST.MF \;
 }
 #timingcheck
 echo Overview
