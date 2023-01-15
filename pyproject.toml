@@ -94,8 +94,11 @@ pyre-check = ">=0.9.13"
 [tool.poetry.dev-dependencies]
 mypy = ">=0.961"
 pylint = ">=2.14.4"
-black = "*"
 ufmt = ">=2.0.1"
+
+[tool.poetry.group.dev.dependencies.black]
+version = ">22"
+allow-prereleases = true
 
 [tool.poetry.dev-dependencies.isort]
 version = "*"
