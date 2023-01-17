@@ -29,9 +29,11 @@ fi
 prepare() {
 	sudo apt-get install --upgrade pandoc-plantuml-filter librsvg2-bin
 	sudo npm install --global mermaid-filter
-	pip install "git+https://gitlab.com/myriacore/pandoc-kroki-filter.git"
-	echo "CHANGE NEEDED"
-	echo 'Add "vega-lite": "vegalite" to DIAGRAM_SYNONYMNS'
+	#pip install "git+https://gitlab.com/myriacore/pandoc-kroki-filter.git"
+	#https://medium.com/geekculture/2022-fork-a-repository-from-gilab-to-github-58690ee5df1c
+	#echo "CHANGE NEEDED"
+	#echo 'Add "vega-lite": "vegalite" to DIAGRAM_SYNONYMNS'
+	pip install "git+https://github.com/Barry1/pandoc-kroki-filter.git"
 	#https://github.com/pandoc/lua-filters#installation
 	#pandoc -v
 	PANDOC_DIR=/home/ebeling/.local/share/pandoc
