@@ -4,6 +4,8 @@
 
 > Unmögliches wird sofort erledigt, Wunder brauchen etwas länger
 
+
+
 ## Deutsche Witze und Sprüche
 
 > Vor der Arbeit an künstlicher Intelligenz, sollte man etwas gegen die natürlich Dummheit tun. 
