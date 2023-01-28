@@ -7,7 +7,9 @@
 > Verantwortlich ist man nicht nur für das, was man tut, sondern auch für das, was man nicht tut.  
 > --- Laotse
 
-> 
+> Manchmal kehrt, im Verhältnis von uns zu einem anderen Menschen, das rechte Gleichgewicht der Freundschaft zurück, wenn wir in unsere eigne Waagschale einige Gran Unrecht legen.
+
+Friedrich Nietzsche
 
 ## Deutsche Witze und Sprüche
 
