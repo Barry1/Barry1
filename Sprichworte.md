@@ -5,7 +5,7 @@
 > Unmögliches wird sofort erledigt, Wunder brauchen etwas länger
 
 > Verantwortlich ist man nicht nur für das, was man tut, sondern auch für das, was man nicht tut.  
-> ---  Laotse
+> --- Laotse
 
 ## Deutsche Witze und Sprüche
 
