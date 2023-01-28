@@ -11,8 +11,7 @@
 > --- Friedrich Nietzsche
 
 > Es gibt Leute, die gut zahlen, die schlecht zahlen, Leute, die prompt zahlen, die nie zahlen, Leute, die schleppend zahlen, die bar zahlen, abzahlen, draufzahlen, heimzahlen - nur Leute, die gern zahlen, die gibt es nicht.
-
-Georg Christoph Lichtenberg
+> Georg Christoph Lichtenberg
 ## Deutsche Witze und Sprüche
 
 > Vor der Arbeit an künstlicher Intelligenz, sollte man etwas gegen die natürlich Dummheit tun.
