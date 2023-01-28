@@ -8,7 +8,7 @@
 > --- Laotse
 
 > Manchmal kehrt, im Verhältnis von uns zu einem anderen Menschen, das rechte Gleichgewicht der Freundschaft zurück, wenn wir in unsere eigne Waagschale einige Gran Unrecht legen.
-> Friedrich Nietzsche
+> --- Friedrich Nietzsche
 
 ## Deutsche Witze und Sprüche
 
