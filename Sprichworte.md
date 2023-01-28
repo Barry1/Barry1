@@ -6,7 +6,7 @@
 
 > Verantwortlich ist man nicht nur für das, was man tut, sondern auch für das, was man nicht tut.  
 > --- Laotse
->
+
 > 
 
 ## Deutsche Witze und Sprüche
