@@ -5,5 +5,6 @@ find "$BASEDIR" -name .trunk -execdir trunk upgrade \;
 #No longer exception for black needed
 #find "$BASEDIR" -name trunk.yaml -exec sed 's/black@22.12.0/black@23.1a1/' --in-place \{\} + -execdir trunk install \;
 #find "$BASEDIR" -name trunk.yaml -exec grep black \{\} \;
-find "$BASEDIR" -name .trunk -execdir trunk check --all \;
-find "$BASEDIR" -name .trunk -execdir trunk actions enable trunk-fmt-pre-commit trunk-check-pre-push \;
+find "$BASEDIR" -name .trunk \
+	-execdir trunk check --all \; \
+	-execdir trunk actions enable trunk-fmt-pre-commit trunk-check-pre-push \;
