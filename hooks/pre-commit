@@ -42,7 +42,7 @@ FILES=$(git diff --staged --name-only --cached --diff-filter=AcdMr | sed 's| |\\
 if [ -z "$FILES" ]; then # keine überarbeiteten Datein
 	exit 0
 fi
-echo '/====================================\'
+echo /====================================\\
 echo "|  Added/Changed/Modified files are  |"
 echo "$FILES"
 echo '\====================================/'
