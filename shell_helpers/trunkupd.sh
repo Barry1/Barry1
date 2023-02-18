@@ -6,7 +6,7 @@ find "$BASEDIR" -name .trunk \
 	-print \
 	-execdir trunk upgrade \;
 echo "Adding numpy to all trunk-pythons (numpy.typing->mypy)"
-find ~/.cache/trunk/tools/python -name python3 \
+find ~/.cache/trunk/tools/mypy -name python3 \
 	-print \
 	-execdir ./python3 -m pip install --upgrade pip numpy \;
 #No longer exception for black needed
