@@ -9,7 +9,7 @@ PANDOC_DIR=$(pandoc -v | grep "User data directory" | awk --field-separator : '{
 PANDOC_DIR=${PANDOC_DIR## }
 
 set -- "--pdf-engine=xelatex" "$@"
-set -- "--variable=author:Dr. Bastian Ebeling" "$@"
+#set -- "--variable=author:Dr. Bastian Ebeling" "$@"
 set -- "--variable=papersize:a4" "$@"
 set -- "--variable=colorlinks" "$@"
 set -- "--variable=documentclass:scrartcl" "$@"
