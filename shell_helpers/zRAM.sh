@@ -5,4 +5,4 @@ sudo modprobe zram
 zDEVICE=$(sudo zramctl --find --size 3,5GiB)
 sudo mkswap "${zDEVICE}"
 sudo swapon "${zDEVICE}" --priority 4478
-sudo zramctl--output-all
+sudo zramctl --output-all
