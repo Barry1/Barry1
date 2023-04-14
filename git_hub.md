@@ -11,7 +11,7 @@ From the [Repository](https://github.com/nektos/act) there is the so called tool
 For more details read the doc.  
 For quick start I propose to run
 
-```
+```sh
 curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | bash -s -- -b ~/.local/bin
 ```
 
