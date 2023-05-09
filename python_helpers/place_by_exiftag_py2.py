@@ -27,10 +27,20 @@ def processfile(thepath, thefilename):
         # print(theerr)
         pass
     # Dateien (egal welche Erweiterung) verschieben
+    print(srcpath)
     for gleichedatei in glob.glob(srcpath[:-4] + "*"):
         try:
-            os.rename(gleichedatei, targetfolder + os.sep + gleichedatei[3:])
+            os.rename(
+                gleichedatei,
+                targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
+            )
         except OSError as theerr:
+            print(
+                "rename",
+                gleichedatei,
+                targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
+                "resulted in:",
+            )
             print(theerr)
 
 
