@@ -1,6 +1,7 @@
 #!/usr/bin/env python2.7
 import glob
 import os
+import sys
 
 import piexif
 
@@ -10,7 +11,8 @@ import piexif
 # mv piexif /mnt/ext/opt/Python/lib/python2.7/site-packages/
 
 # formatted with `autopep8 --in-place place_by_exiftag_py2.py`
-# formatted with `isort --in-place place_by_exiftag_py2.py`
+# formatted with `isort place_by_exiftag_py2.py`
+# isort --profile=black --py=27 place_by_exiftag_py2.py
 
 
 def processfile(thepath, thefilename):
@@ -32,20 +34,24 @@ def processfile(thepath, thefilename):
         try:
             os.rename(
                 gleichedatei,
-                targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
+                targetfolder + os.sep + gleichedatei[len(thepath) + 1:],
             )
         except OSError as theerr:
             print(
                 "rename",
                 gleichedatei,
-                targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
+                targetfolder + os.sep + gleichedatei[len(thepath) + 1:],
                 "resulted in:",
             )
             print(theerr)
 
 
 if __name__ == "__main__":
-    thepath = "/share/BastiPhone"
+    if len(sys.argv) > 1:
+        thepath = sys.argv[1]
+    else:
+        thepath = "/share/BastiPhone"
+    print(thepath)
     alledateien = os.listdir(thepath)
     for gefunden in alledateien:
         if gefunden.endswith(".jpg") and gefunden.startswith("IMG_"):
