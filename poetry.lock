@@ -970,12 +970,12 @@ trailrunner = ">=1.0"
 
 [[package]]
 name = "vermin"
-version = "1.5.1"
+version = "1.5.2"
 description = "Concurrently detect the minimum Python versions needed to run code"
 optional = false
 python-versions = ">=2.7"
 files = [
-    {file = "vermin-1.5.1-py2.py3-none-any.whl", hash = "sha256:420995de564ac0c31e2157220259d7ac82556e8fa69c112d8005b78c14b0caf5"},
+    {file = "vermin-1.5.2-py2.py3-none-any.whl", hash = "sha256:c1566ad4e1c8e1b0e98cf5f7d69b691d44a578e2ce9c5aa1d418736bc4944b32"},
 ]
 
 [[package]]
