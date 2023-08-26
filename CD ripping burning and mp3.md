@@ -21,3 +21,12 @@ cdrecord -scanbus
 ```bash
 cdrecord dev=1,0,0 -eject -audio *.wav
 ```
+
+## Links
+
+- [How Do I Burn MP3 onto an audio CD from Linux shell command prompt][def]
+- [How do I write CD at Debian Linux command prompt][def2]
+
+[def]: https://www.cyberciti.biz/tips/how-do-i-burn-mp3-onto-an-audio-cd-from-command-prompt.html
+[def2]: https://www.cyberciti.biz/tips/how-do-i-write-cd-at-debain-linux-command-prompt.html
+
