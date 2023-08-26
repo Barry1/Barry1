@@ -29,4 +29,3 @@ cdrecord dev=1,0,0 -eject -audio *.wav
 
 [def]: https://www.cyberciti.biz/tips/how-do-i-burn-mp3-onto-an-audio-cd-from-command-prompt.html
 [def2]: https://www.cyberciti.biz/tips/how-do-i-write-cd-at-debain-linux-command-prompt.html
-
