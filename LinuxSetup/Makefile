@@ -1,3 +1,6 @@
+NUMCPUS?=$(shell grep "core id" /proc/cpuinfo  | uniq | wc -l)
+MAKEFLAGS += --jobs --load-average=$(NUMCPUS)
+
 #https://devhints.io/makefile
 #https://tech.davis-hansson.com/p/make/
 #https://www.gnu.org/software/make/manual/html_node/index.html
