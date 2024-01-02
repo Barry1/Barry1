@@ -5,6 +5,7 @@
 | packagename                        | short description                                           |
 | :--------------------------------- | :---------------------------------------------------------- |
 | apt-file                           | matches files and packages                                  |
+| atop                               | pkg for system monitoring (daemon, consumes ressources)     |
 | [btop](linuxtools.md#bashtop)      | colorful top                                                |
 | bc                                 | An arbitrary precision calculator language                  |
 | chktex                             | Finds typographic errors in LaTeX                           |
