@@ -4,9 +4,6 @@ author: Dr. Bastian Ebeling
 date: 30. Dezember 2023
 ---
 
-
-
-
 ## Kernel bauen/compilieren
 
 <https://docs.kernel.org/admin-guide/quickly-build-trimmed-linux.html>
@@ -19,6 +16,29 @@ Vorbereitung
 apt install --install-suggests --install-recommends bc binutils bison dwarves flex gcc git make openssl pahole perl-base libssl-dev libelf-dev
 dmesg --color  --level err,warn
 ```
+
+localmodconfig - Update current config disabling modules not loaded
+except those preserved by LMC_KEEP environment variabl
+LMC_KEEP="drivers/usb:drivers/gpu:fs" \
+**CIFS in LMC_KEEP**
+using config: '.config'
+WARNING: NETFS_SUPPORT is required, but nothing in the
+current config selects it.
+WARNING: NETFS_SUPPORT is required, but nothing in the
+current config selects it.
+module dns_resolver did not have configs CONFIG_DNS_RESOLVER
+module cifs_md4 did not have configs CONFIG_SMBFS
+module netfs did not have configs CONFIG_NETFS_SUPPORT
+module fscache did not have configs CONFIG_FSCACHE
+module cifs did not have configs CONFIG_CIFS
+module nls_utf8 did not have configs CONFIG_NLS_UTF8
+module cifs_arc4 did not have configs CONFIG_SMBFS
+
+#
+
+# configuration written to .config
+
+#
 
 Ausführung
 
@@ -35,12 +55,14 @@ SHELL = /usr/bin/nice
 git clone --depth 1 -b linux-rolling-stable https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git ~/linux/
 cd ~/linux/
 echo "-bastitest" > localversion
-yes "" | make localmodconfig # nur genutzte Module aktiv lassen
+yes "" | make LMC_KEEP="fs/smb" localmodconfig # nur genutzte Module aktiv lassen
 # Hint: at this point you might want to adjust the build configuration; you'll
 #   have to, if you are running Debian. See below for details.
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 time nice -n 20 make --jobs=$(( 2 * $(getconf _NPROCESSORS_ONLN) )) --load-average=$(getconf _NPROCESSORS_ONLN) CFLAGS='-march=native -O3 -flto -pipe' CXXFLAGS='-march=native -O3 -flto -pipe' all
-command -v installkernel && sudo make modules_install install
+sudo sh -c command -v installkernel && sudo make modules_install install
 reboot
 ```
 
@@ -56,26 +78,23 @@ https://www.kernel.org/doc/Documentation/admin-guide/kernel-parameters.txt
 
 `acpi_enforce_resources=lax`
 
-acpi_enforce_resources=	[ACPI]
-			{ strict | lax | no }
-			Check for resource conflicts between native drivers
-			and ACPI OperationRegions (SystemIO and SystemMemory
-			only). IO ports and memory declared in ACPI might be
-			used by the ACPI subsystem in arbitrary AML code and
-			can interfere with legacy drivers.
-			strict (default): access to resources claimed by ACPI
-			is denied; legacy drivers trying to access reserved
-			resources will fail to bind to device using them.
-			lax: access to resources claimed by ACPI is allowed;
-			legacy drivers trying to access reserved resources
-			will bind successfully but a warning message is logged.
-			no: ACPI OperationRegions are not marked as reserved,
-			no further checks are performed.
-
-
+acpi_enforce_resources= [ACPI]
+{ strict | lax | no }
+Check for resource conflicts between native drivers
+and ACPI OperationRegions (SystemIO and SystemMemory
+only). IO ports and memory declared in ACPI might be
+used by the ACPI subsystem in arbitrary AML code and
+can interfere with legacy drivers.
+strict (default): access to resources claimed by ACPI
+is denied; legacy drivers trying to access reserved
+resources will fail to bind to device using them.
+lax: access to resources claimed by ACPI is allowed;
+legacy drivers trying to access reserved resources
+will bind successfully but a warning message is logged.
+no: ACPI OperationRegions are not marked as reserved,
+no further checks are performed.
 
             lax
-
 
 ### zswap
 
