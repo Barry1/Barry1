@@ -50,31 +50,25 @@ reboot
 
 ### acpi_enforce_resources
 
-Notwendig `acpi_enforce_resources=no`
+Notwendig `acpi_enforce_resources=no` für das EliteBook
+Eintragung in `/etc/default/grub` als Kernel Parameter.
 
-https://www.kernel.org/doc/Documentation/admin-guide/kernel-parameters.txt
+Siehe <https://www.kernel.org/doc/Documentation/admin-guide/kernel-parameters.txt>
 
-`/etc/default/grub`
-
-`acpi_enforce_resources=lax`
-
-acpi_enforce_resources= [ACPI]
-{ strict | lax | no }
-Check for resource conflicts between native drivers
-and ACPI OperationRegions (SystemIO and SystemMemory
-only). IO ports and memory declared in ACPI might be
-used by the ACPI subsystem in arbitrary AML code and
-can interfere with legacy drivers.
-strict (default): access to resources claimed by ACPI
-is denied; legacy drivers trying to access reserved
-resources will fail to bind to device using them.
-lax: access to resources claimed by ACPI is allowed;
-legacy drivers trying to access reserved resources
-will bind successfully but a warning message is logged.
-no: ACPI OperationRegions are not marked as reserved,
-no further checks are performed.
-
-            lax
+> acpi_enforce_resources={ strict | lax | no }
+> Check for resource conflicts between native drivers
+> and ACPI OperationRegions (SystemIO and SystemMemory
+> only). IO ports and memory declared in ACPI might be
+> used by the ACPI subsystem in arbitrary AML code and
+> can interfere with legacy drivers.  
+> **strict (default)**: access to resources claimed by ACPI
+> is denied; legacy drivers trying to access reserved
+> resources will fail to bind to device using them.  
+> **lax**: access to resources claimed by ACPI is allowed;
+> legacy drivers trying to access reserved resources
+> will bind successfully but a warning message is logged.
+> **no**: ACPI OperationRegions are not marked as reserved,
+> no further checks are performed.
 
 ### zswap
 
