@@ -17,29 +17,6 @@ apt install --install-suggests --install-recommends bc binutils bison dwarves fl
 dmesg --color  --level err,warn
 ```
 
-localmodconfig - Update current config disabling modules not loaded
-except those preserved by LMC_KEEP environment variabl
-LMC_KEEP="drivers/usb:drivers/gpu:fs" \
-**CIFS in LMC_KEEP**
-using config: '.config'
-WARNING: NETFS_SUPPORT is required, but nothing in the
-current config selects it.
-WARNING: NETFS_SUPPORT is required, but nothing in the
-current config selects it.
-module dns_resolver did not have configs CONFIG_DNS_RESOLVER
-module cifs_md4 did not have configs CONFIG_SMBFS
-module netfs did not have configs CONFIG_NETFS_SUPPORT
-module fscache did not have configs CONFIG_FSCACHE
-module cifs did not have configs CONFIG_CIFS
-module nls_utf8 did not have configs CONFIG_NLS_UTF8
-module cifs_arc4 did not have configs CONFIG_SMBFS
-
-#
-
-# configuration written to .config
-
-#
-
 Ausführung
 
 ```Makefile
@@ -54,6 +31,7 @@ SHELL = /usr/bin/nice
 ```bash
 git clone --depth 1 -b linux-rolling-stable https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git ~/linux/
 cd ~/linux/
+rm .config
 echo "-bastitest" > localversion
 yes "" | make LMC_KEEP="fs/smb" localmodconfig # nur genutzte Module aktiv lassen
 # Hint: at this point you might want to adjust the build configuration; you'll
@@ -71,6 +49,8 @@ reboot
 ## Boot Parameter
 
 ### acpi_enforce_resources
+
+Notwendig `acpi_enforce_resources=no`
 
 https://www.kernel.org/doc/Documentation/admin-guide/kernel-parameters.txt
 
