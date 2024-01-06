@@ -4,9 +4,6 @@ author: Dr. Bastian Ebeling
 date: 30. Dezember 2023
 ---
 
-
-
-
 ## Kernel bauen/compilieren
 
 <https://docs.kernel.org/admin-guide/quickly-build-trimmed-linux.html>
@@ -34,13 +31,16 @@ SHELL = /usr/bin/nice
 ```bash
 git clone --depth 1 -b linux-rolling-stable https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git ~/linux/
 cd ~/linux/
+rm .config
 echo "-bastitest" > localversion
-yes "" | make localmodconfig # nur genutzte Module aktiv lassen
+yes "" | make LMC_KEEP="fs/smb" localmodconfig # nur genutzte Module aktiv lassen
 # Hint: at this point you might want to adjust the build configuration; you'll
 #   have to, if you are running Debian. See below for details.
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 time nice -n 20 make --jobs=$(( 2 * $(getconf _NPROCESSORS_ONLN) )) --load-average=$(getconf _NPROCESSORS_ONLN) CFLAGS='-march=native -O3 -flto -pipe' CXXFLAGS='-march=native -O3 -flto -pipe' all
-command -v installkernel && sudo make modules_install install
+sudo sh -c command -v installkernel && sudo make modules_install install
 reboot
 ```
 
@@ -50,32 +50,25 @@ reboot
 
 ### acpi_enforce_resources
 
-https://www.kernel.org/doc/Documentation/admin-guide/kernel-parameters.txt
+Notwendig `acpi_enforce_resources=no` für das EliteBook
+Eintragung in `/etc/default/grub` als Kernel Parameter.
 
-`/etc/default/grub`
+Siehe <https://www.kernel.org/doc/Documentation/admin-guide/kernel-parameters.txt>
 
-`acpi_enforce_resources=lax`
-
-acpi_enforce_resources=	[ACPI]
-			{ strict | lax | no }
-			Check for resource conflicts between native drivers
-			and ACPI OperationRegions (SystemIO and SystemMemory
-			only). IO ports and memory declared in ACPI might be
-			used by the ACPI subsystem in arbitrary AML code and
-			can interfere with legacy drivers.
-			strict (default): access to resources claimed by ACPI
-			is denied; legacy drivers trying to access reserved
-			resources will fail to bind to device using them.
-			lax: access to resources claimed by ACPI is allowed;
-			legacy drivers trying to access reserved resources
-			will bind successfully but a warning message is logged.
-			no: ACPI OperationRegions are not marked as reserved,
-			no further checks are performed.
-
-
-
-            lax
-
+> acpi_enforce_resources={ strict | lax | no }
+> Check for resource conflicts between native drivers
+> and ACPI OperationRegions (SystemIO and SystemMemory
+> only). IO ports and memory declared in ACPI might be
+> used by the ACPI subsystem in arbitrary AML code and
+> can interfere with legacy drivers.  
+> **strict (default)**: access to resources claimed by ACPI
+> is denied; legacy drivers trying to access reserved
+> resources will fail to bind to device using them.  
+> **lax**: access to resources claimed by ACPI is allowed;
+> legacy drivers trying to access reserved resources
+> will bind successfully but a warning message is logged.
+> **no**: ACPI OperationRegions are not marked as reserved,
+> no further checks are performed.
 
 ### zswap
 
