@@ -10,6 +10,7 @@ author: Dr. Bastian Ebeling
 winget install --id IrfanSkiljan.IrfanView
 winget install --id winget install --id Notepad++.Notepad++
 winget install --id Inkscape.Inkscape
+winget install --id dotPDNLLC.paintdotnet
 winget install --id Google.Chrome
 winget install --id Xmind.Xmind
 winget install --id Adobe.Acrobat.Reader.32-bit
