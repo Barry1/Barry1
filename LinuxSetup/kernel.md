@@ -4,6 +4,17 @@ author: Dr. Bastian Ebeling
 date: 30. Dezember 2023
 ---
 
+## Einfach Liquorix
+
+Unter <https://liquorix.net/> wird ein sozusagen High-Speed-Kernel beworben.  
+Die Installation ist mit dem Shell-Befehl
+
+```sh
+curl -s 'https://liquorix.net/install-liquorix.sh' | sudo bash
+```
+
+sehr schnell und einfach.
+
 ## Kernel bauen/compilieren
 
 <https://docs.kernel.org/admin-guide/quickly-build-trimmed-linux.html>
