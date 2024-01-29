@@ -760,18 +760,18 @@ files = [
 
 [[package]]
 name = "stdlibs"
-version = "2023.12.15"
+version = "2024.1.28"
 description = "List of packages in the stdlib"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "stdlibs-2023.12.15-py3-none-any.whl", hash = "sha256:190f2cb01b68fa8c5aa599f04e925228d55db57f618262e58f581076ad2aa7b6"},
-    {file = "stdlibs-2023.12.15.tar.gz", hash = "sha256:c2041f2a133773e234205d72f48980aebbecec47b17206dd9679747581ae8372"},
+    {file = "stdlibs-2024.1.28-py3-none-any.whl", hash = "sha256:a4e8e72485d589cfdbf2c75736e3c58058af9d699b008be7fb1507a9efb7dab7"},
+    {file = "stdlibs-2024.1.28.tar.gz", hash = "sha256:ea158ac5b23c1a304153678908044d89a94c6354fa724f4452d754f9d6c16941"},
 ]
 
 [package.extras]
-dev = ["attribution (==1.6.2)", "black (==23.12.0)", "coverage (==7.3.3)", "flake8 (==6.1.0)", "flit (==3.9.0)", "mypy (==1.7.1)", "packaging (==23.2)", "ufmt (==2.3.0)", "usort (==1.0.7)"]
-docs = ["sphinx (==6.2.1)", "sphinx-mdinclude (==0.5.3)"]
+dev = ["attribution (==1.6.2)", "black (==24.1.1)", "coverage (==7.4.1)", "flake8 (==7.0.0)", "flit (==3.9.0)", "mypy (==1.8.0)", "packaging (==23.2)", "ufmt (==2.3.0)", "usort (==1.0.7)"]
+docs = ["sphinx (==7.2.6)", "sphinx-mdinclude (==0.5.3)"]
 
 [[package]]
 name = "tabulate"
