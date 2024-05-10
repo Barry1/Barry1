@@ -14,6 +14,7 @@
 | exif                               | command-line utility to show EXIF information in JPEG files |
 | \[exiftool\(\#exiftool\)\]         | virtual alias for `libimage-exiftool-perl`                  |
 | exiv2                              | EXIF/IPTC/XMP metadata manipulation tool                    |
+| fastfetch                          | like neofetch but programmed in `C`                         |
 | gummi                              | GTK+ latex editor                                           |
 | htop                               | Htop is an ncursed-based process viewer similar to top      |
 | inxi                               | system info                                                 |
@@ -46,6 +47,30 @@
 ### btop
 
 The command-line tool [btop](https://github.com/aristocratos/btop) is inspired by [bashtop](https://github.com/aristocratos/bashtop) and [bpytop](https://github.com/aristocratos/bpytop). It is a cool and colorful alternativ top the well known top command.
+
+### fastfetch
+
+Read some german words to related software [here](https://www.notebookcheck.com/Linux-Utility-Neofetch-Entwicklung-jetzt-offiziell-eingestellt-welche-Alternativen-gibt-es.834689.0.html)
+
+Install via
+
+```sh
+wget https://github.com/fastfetch-cli/fastfetch/releases/latest/download/fastfetch-linux-amd64.deb
+sudo dpkg --install fastfetch-linux-amd64.deb
+```
+
+add this
+
+```.bashrc
+# do some magic display but not in VSCODE
+if [ -z "${VSCODE_INJECTION}" ]
+then
+    fastfetch
+    inxi
+fi
+```
+
+to your `~/.bashrc`.
 
 ### nmap
 
