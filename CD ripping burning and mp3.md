@@ -52,6 +52,15 @@ time parallel ffmpeg -loglevel error -hide_banner -i {} -acodec mp3 -b:a 128KB '
 
 ## Brennen
 
+### Daten
+
+```bash
+screcord -scanbus
+mkisofs -rational-rock -joliet . |  cdrecord -verbose dev=1,0,0 fs=256m speed=4 -
+```
+
+### Audio
+
 ```bash
 cdrecord dev=1,0,0 -eject -audio *.wav
 ```
@@ -61,7 +70,9 @@ cdrecord dev=1,0,0 -eject -audio *.wav
 - [How Do I Burn MP3 onto an audio CD from Linux shell command prompt][def]
 - [How do I write CD at Debian Linux command prompt][def2]
 - [CD Abbild exakt rippen][CD_IMAGE_EXACT]
+- [CDs schnell geschrieben][def3]
 
 [def]: https://www.cyberciti.biz/tips/how-do-i-burn-mp3-onto-an-audio-cd-from-command-prompt.html
 [def2]: https://www.cyberciti.biz/tips/how-do-i-write-cd-at-debain-linux-command-prompt.html
+[def3]: https://www.linux-community.de/ausgaben/linuxuser/2001/05/cds-auf-der-kommandozeile-schnell-geschrieben/
 [CD_IMAGE_EXACT]: https://wiki.ubuntuusers.de/CDs_rippen/#Exaktes-CD-Abbild-rippen
