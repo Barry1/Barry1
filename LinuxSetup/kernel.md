@@ -94,6 +94,10 @@ Mit dem Boot-Parameter `mitigations=off` werden sicherheitsrelevante Prüfungen 
 [MMzswap]: https://docs.kernel.org/admin-guide/mm/zswap.html "Kernel Admin Guide Memory Management: zswap"
 [Doc418zswap]: https://www.kernel.org/doc/html/v4.18/vm/zswap.html "Kernel Doc Virtual Memory: zswap"
 
+### Landlock
+
+<https://docs.kernel.org/userspace-api/landlock.html#boot-time-configuration>
+
 ## Boot Analyse
 
 ```bash
