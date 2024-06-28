@@ -601,13 +601,13 @@ test = ["enum34", "ipaddress", "mock", "pywin32", "wmi"]
 
 [[package]]
 name = "pycnite"
-version = "2024.6.13"
+version = "2024.6.28"
 description = "Python bytecode utilities"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pycnite-2024.6.13-py3-none-any.whl", hash = "sha256:7346099b2313894db65ffca177f9e6eb3251fdfedb019eb6da02822c2ff8c1e1"},
-    {file = "pycnite-2024.6.13.tar.gz", hash = "sha256:301c5d7e2e2f61e5535d0af7c4486f3ea4f5083c4808a7645a55ddb45cb25027"},
+    {file = "pycnite-2024.6.28-py3-none-any.whl", hash = "sha256:228b2cfae86fecc82e1bddb2b44b4890b337e0a778c1521a56546642dd28bfe4"},
+    {file = "pycnite-2024.6.28.tar.gz", hash = "sha256:e3f1f9697b49af8d4edc0e0d228b23fdfc56acc7878bc64378e46ddf8150d3a8"},
 ]
 
 [[package]]
@@ -645,13 +645,13 @@ windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
 name = "pylint"
-version = "3.2.4"
+version = "3.2.5"
 description = "python code static checker"
 optional = false
 python-versions = ">=3.8.0"
 files = [
-    {file = "pylint-3.2.4-py3-none-any.whl", hash = "sha256:43b8ffdf1578e4e4439fa1f6ace402281f5dd61999192280fa12fe411bef2999"},
-    {file = "pylint-3.2.4.tar.gz", hash = "sha256:5753d27e49a658b12a48c2883452751a2ecfc7f38594e0980beb03a6e77e6f86"},
+    {file = "pylint-3.2.5-py3-none-any.whl", hash = "sha256:32cd6c042b5004b8e857d727708720c54a676d1e22917cf1a2df9b4d4868abd6"},
+    {file = "pylint-3.2.5.tar.gz", hash = "sha256:e9b7171e242dcc6ebd0aaa7540481d1a72860748a0a7816b8fe6cf6c80a6fe7e"},
 ]
 
 [package.dependencies]
