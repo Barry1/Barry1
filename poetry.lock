@@ -601,13 +601,13 @@ test = ["enum34", "ipaddress", "mock", "pywin32", "wmi"]
 
 [[package]]
 name = "pycnite"
-version = "2024.6.28"
+version = "2024.7.9"
 description = "Python bytecode utilities"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pycnite-2024.6.28-py3-none-any.whl", hash = "sha256:228b2cfae86fecc82e1bddb2b44b4890b337e0a778c1521a56546642dd28bfe4"},
-    {file = "pycnite-2024.6.28.tar.gz", hash = "sha256:e3f1f9697b49af8d4edc0e0d228b23fdfc56acc7878bc64378e46ddf8150d3a8"},
+    {file = "pycnite-2024.7.9-py3-none-any.whl", hash = "sha256:aece401e70e8b6bf369b3b33867c79a1b8bf584e68da9790de2f821503cebcf8"},
+    {file = "pycnite-2024.7.9.tar.gz", hash = "sha256:f07bea393ee4d5820013fae66db6cc091e8dc01fd3f6b367595108752f264872"},
 ]
 
 [[package]]
@@ -904,13 +904,13 @@ files = [
 
 [[package]]
 name = "tomlkit"
-version = "0.12.5"
+version = "0.13.0"
 description = "Style preserving TOML library"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "tomlkit-0.12.5-py3-none-any.whl", hash = "sha256:af914f5a9c59ed9d0762c7b64d3b5d5df007448eb9cd2edc8a46b1eafead172f"},
-    {file = "tomlkit-0.12.5.tar.gz", hash = "sha256:eef34fba39834d4d6b73c9ba7f3e4d1c417a4e56f89a7e96e090dd0d24b8fb3c"},
+    {file = "tomlkit-0.13.0-py3-none-any.whl", hash = "sha256:7075d3042d03b80f603482d69bf0c8f345c2b30e41699fd8883227f89972b264"},
+    {file = "tomlkit-0.13.0.tar.gz", hash = "sha256:08ad192699734149f5b97b45f1f18dad7eb1b6d16bc72ad0c2335772650d7b72"},
 ]
 
 [[package]]
