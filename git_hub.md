@@ -1,7 +1,7 @@
 ---
 title: My Experiences and Ideas around git and github
 author: Dr. Bastian Ebeling
-date: 14. April 2023
+date: 29. Juli 2024
 ---
 
 ## act - running github-workflows locally
@@ -12,10 +12,11 @@ For more details read the doc.
 For quick start I propose to run
 
 ```sh
-curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | bash -s -- -b ~/.local/bin
+curl --proto '=https' --tlsv1.2 -sSf  https://raw.githubusercontent.com/nektos/act/master/install.sh | bash -s -- -b ~/.local/bin
 ```
 
 which will install the latest revision into your `~/local/bin/` path.
+I do prefer that instead of the details within [Install hints](https://nektosact.com/installation/index.html) which uses `sudo` and does not define the path.
 
 Then from within any (local) github repo try these commands
 
