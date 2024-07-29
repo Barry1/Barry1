@@ -1,5 +1,6 @@
 #!/usr/local/bin/python2.7
 # env not working /usr/bin/env python2.7
+"""Processes Images and moves into SubFolder for Year and Day."""
 import glob
 import os
 import sys
@@ -18,6 +19,7 @@ import piexif
 
 def processfile(thepath, thefilename):
     srcpath = thepath + os.sep + thefilename
+    print(srcpath)
     exif_dict = piexif.load(srcpath)
     thetagdata = exif_dict["Exif"][36867]  # DateTimeOriginal
     dasjahr = thetagdata[:4]
@@ -30,18 +32,17 @@ def processfile(thepath, thefilename):
         # print(theerr)
         pass
     # Dateien (egal welche Erweiterung) verschieben
-    print(srcpath)
     for gleichedatei in glob.glob(srcpath[:-4] + "*"):
         try:
             os.rename(
                 gleichedatei,
-                targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
+                targetfolder + os.sep + gleichedatei[len(thepath) + 1:],
             )
         except OSError as theerr:
             print(
                 "rename",
                 gleichedatei,
-                targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
+                targetfolder + os.sep + gleichedatei[len(thepath) + 1:],
                 "resulted in:",
             )
             print(theerr)
@@ -55,5 +56,7 @@ if __name__ == "__main__":
     print(thepath)
     alledateien = os.listdir(thepath)
     for gefunden in alledateien:
-        if gefunden.endswith(".jpg") and gefunden.startswith("IMG"):
+        if (
+            gefunden.lower().endswith(".jpg") or gefunden.lower().endswith(".jpeg")
+        ) and gefunden.startswith("IMG"):
             processfile(thepath, gefunden)
