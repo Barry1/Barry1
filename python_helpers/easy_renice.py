@@ -1,4 +1,5 @@
 """A little Tool for windows renicing named processes to above_normal."""
+
 import sys
 from typing import List
 

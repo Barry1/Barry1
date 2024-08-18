@@ -1,4 +1,5 @@
 """Traverses through moved WhatsApp media folder and moves files into date-folders."""
+
 import glob
 import os
 from typing import Literal
