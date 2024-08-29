@@ -24,6 +24,7 @@
 | needrestart                        | checks for needed restarts                                  |
 | neofetch                           | Shows Linux System Information with Distribution Logo       |
 | [nmap](linuxtools.md#nmap)         | utility for network exploration                             |
+| [oxipng](linuxtools.md#oxipng)     | utility for lossless optimization of png-file size          |
 | pandoc                             | general markup converter                                    |
 | [parallel](linuxtools.md#parallel) | easy parallel instead of serial                             |
 | [powertop](linuxtools.md#powertop) | diagnose issues with power consumption and management       |
@@ -79,6 +80,11 @@ An example command would be
 ```bash
 nmap 192.168.177.1-254 -v -oA nmapscan
 ```
+
+### oxipng
+
+`oxipng --opt max --out output.png --alpha --scale16 --verbose --verbose --zopfli --threads 3 input.png
+`
 
 ### parallel
 
