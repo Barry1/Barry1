@@ -1,4 +1,13 @@
-# Famous words - many in german language
+---
+title: Famous words - many in german language
+date: 5. September 2024
+author: Dr. Bastian Ebeling
+---
+
+## Englische Sprichworte, Zitate und Phrasen
+
+> Reality eats strategy for breakfast.
+> --- Robert Rowland Smith
 
 ## Deutsche Sprichworte und Zitate
 
