@@ -36,13 +36,13 @@ def processfile(thepath, thefilename):
         try:
             os.rename(
                 gleichedatei,
-                targetfolder + os.sep + gleichedatei[len(thepath) + 1:],
+                targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
             )
         except OSError as theerr:
             print(
                 "rename",
                 gleichedatei,
-                targetfolder + os.sep + gleichedatei[len(thepath) + 1:],
+                targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
                 "resulted in:",
             )
             print(theerr)
