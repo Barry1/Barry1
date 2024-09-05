@@ -11,16 +11,21 @@ author: Dr. Bastian Ebeling
 
 ## Deutsche Sprichworte und Zitate
 
-> Unmögliches wird sofort erledigt, Wunder brauchen etwas länger.
-
 > Verantwortlich ist man nicht nur für das, was man tut, sondern auch für das, was man nicht tut.  
 > --- Laotse
 
-> Manchmal kehrt, im Verhältnis von uns zu einem anderen Menschen, das rechte Gleichgewicht der Freundschaft zurück, wenn wir in unsere eigne Waagschale einige Gran Unrecht legen.
+> Manchmal kehrt, im Verhältnis von uns zu einem anderen Menschen, das rechte Gleichgewicht der Freundschaft zurück, wenn wir in unsere eigne Waagschale einige Gram Unrecht legen.
 > --- Friedrich Nietzsche
 
 > Es gibt Leute, die gut zahlen, die schlecht zahlen, Leute, die prompt zahlen, die nie zahlen, Leute, die schleppend zahlen, die bar zahlen, abzahlen, draufzahlen, heimzahlen - nur Leute, die gern zahlen, die gibt es nicht.
 > Georg Christoph Lichtenberg
+
+### Ironie
+
+> Unmögliches wird sofort erledigt, Wunder brauchen etwas länger.
+
+> Lieber langsam als richtig.  
+> --- ehemaliger tkMS Kollegen
 
 ## Deutsche Witze und Sprüche
 
