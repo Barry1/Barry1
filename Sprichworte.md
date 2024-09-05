@@ -6,7 +6,7 @@ author: Dr. Bastian Ebeling
 
 ## Englische Sprichworte, Zitate und Phrasen
 
-> Reality eats strategy for breakfast.
+> Reality eats strategy for breakfast.  
 > --- Robert Rowland Smith
 
 ## Deutsche Sprichworte und Zitate
