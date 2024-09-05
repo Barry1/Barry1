@@ -1,0 +1,11 @@
+# Debian packages for stable
+deb http://debian.mirror.iphh.net/debian/ stable main contrib non-free
+# Uncomment the deb-src line if you want 'apt-get source'
+# to work with most packages.
+# deb-src http://debian.mirror.iphh.net/debian/ stable main contrib non-free
+
+# Security updates for stable
+deb http://security.debian.org/ stable/updates main contrib non-free
+
+# skypeforlinux
+/etc/apt/sources.list.d/skype-stable.list:deb [arch=amd64] https://repo.skype.com/deb stable main
