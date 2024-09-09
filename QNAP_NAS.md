@@ -1,8 +1,26 @@
 ---
 title: Information for using QNAP NAS
-date: 17. August 2024
+date: 09. September 2024
 authro: Dr. Bastian Ebeling
 ---
+
+## Virus update
+
+```sh
+wget http://database.clamav.net/daily.cvd
+wget http://database.clamav.net/main.cvd
+wget http://database.clamav.net/bytecode.cvd
+```
+
+Bzw. Links über WebBrowser runterladen und dann per GUI auf QNAP importieren.
+
+Unter Linux kann das Tool `cvdupdate` helfen.
+Ggf. muss es per `sudo apt-get install clamav-cvdupdate` installiert werden.
+
+```sh
+cvdupdate update
+scp -O -B ~/.cvdupdate/database/*.cvd admin@ebelnas:/share/MD0_DATA/.antivirus/usr/share/clamav/
+```
 
 ## Setting fs2ck
 
