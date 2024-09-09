@@ -25,7 +25,7 @@ author: Dr. Bastian Ebeling
 > Unmögliches wird sofort erledigt, Wunder brauchen etwas länger.
 
 > Lieber langsam als richtig.  
-> --- ehemaliger tkMS Kollegen
+> --- ehemaliger tkMS Kollege
 
 ## Deutsche Witze und Sprüche
 

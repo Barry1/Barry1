@@ -9,13 +9,13 @@ plugins:
 lint:
   enabled:
     - bandit@1.7.9
-    - checkov@3.2.245
+    - checkov@3.2.249
     - osv-scanner@1.8.4
     - trivy@0.55.0
     - trufflehog@3.81.10
     - git-diff-check
     - pyright@1.1.379
-    - ruff@0.6.3
+    - ruff@0.6.4
     - yamllint@1.35.1
     - mypy@1.11.2
     - shfmt@3.6.0
