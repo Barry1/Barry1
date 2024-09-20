@@ -11,6 +11,9 @@ author: Dr. Bastian Ebeling
 
 ## Deutsche Sprichworte und Zitate
 
+> Glück ist, wenn das, was du denkst, was du sagst und was du tust, in Harmonie ist.
+> [Mahatma Gandhi](https://www.buboquote.com/de/autor/16-gandhi)
+
 > Verantwortlich ist man nicht nur für das, was man tut, sondern auch für das, was man nicht tut.  
 > --- Laotse
 
