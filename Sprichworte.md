@@ -1,6 +1,6 @@
 ---
 title: Famous words - many in german language
-date: 5. September 2024
+date: 27. September 2024
 author: Dr. Bastian Ebeling
 ---
 
@@ -21,7 +21,10 @@ author: Dr. Bastian Ebeling
 > --- Friedrich Nietzsche
 
 > Es gibt Leute, die gut zahlen, die schlecht zahlen, Leute, die prompt zahlen, die nie zahlen, Leute, die schleppend zahlen, die bar zahlen, abzahlen, draufzahlen, heimzahlen - nur Leute, die gern zahlen, die gibt es nicht.
-> Georg Christoph Lichtenberg
+> --- Georg Christoph Lichtenberg
+
+> Wer nicht (richtig) spezifiziert, der verliert.
+> --- Dr. Bastian Ebeling 
 
 ### Ironie
 
