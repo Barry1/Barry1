@@ -2,6 +2,7 @@
 title: Abbrevations (for business use)
 date: 1. Oktober 2024
 author: Dr. Bastian Ebeling
+lang: en
 ---
 
 | Abbreviation | Long                            | Explanation                              |
