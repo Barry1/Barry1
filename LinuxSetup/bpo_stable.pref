@@ -1,5 +1,6 @@
 Explanation: ln /home/ebeling/GitHub/Barry1/LinuxSetup/bpo_stable.pref /etc/apt/preferences.d/bpo_stable.pref
 Explanation: to see all installed backports `dpkg-query -W | grep '~bpo'`
+Explanation: check with *apt-cache policy* or *apt-cache policy <pckname>*
 Package: *
-Pin: release o=Debian Backports,a=bullseye-backports,n=bullseye-backports
+Pin: origin deb.debian.org, release o=Debian Backports,a=stable-backports,n=*-backports
 Pin-Priority: 989
