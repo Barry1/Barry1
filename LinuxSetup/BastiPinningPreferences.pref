@@ -7,4 +7,7 @@ Explanation: because it would also change Priorities of other software
 Explanation: using stable* also includes stable-security and stable-updates
 Package: *
 Pin: release o=Debian,a=stable*
+Pin-Priority: 989
+Package: *
+Pin: release o=Debian,a=stable
 Pin-Priority: 990
