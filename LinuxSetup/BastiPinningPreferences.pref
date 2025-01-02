@@ -6,8 +6,9 @@ Explanation: APT::Default-Release "stable";
 Explanation: because it would also change Priorities of other software
 Explanation: using stable* also includes stable-security and stable-updates
 Package: *
-Pin: release o=Debian,a=stable*
-Pin-Priority: 989
-Package: *
-Pin: release o=Debian,a=stable
+Pin: release o=Debian, a=stable*
 Pin-Priority: 990
+
+Package: libc6
+Pin: release a=stable
+Pin-Priority: 1002
