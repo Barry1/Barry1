@@ -1,6 +1,6 @@
 ---
 title: Abbrevations (for business use)
-date: 8. Oktober 2024
+date: 31. Januar 2025
 author: Dr. Bastian Ebeling
 lang: en
 ---
@@ -18,17 +18,18 @@ lang: en
 | DMS          | Deutscher Marine Standard          | Nachfolgedokument der BVen               |
 | EOB          | End of Business                    | for due dates meaning end of working day |
 | FYI          | For your interest                  |                                          |
+| HC           | Head Count                         | Anzahl von Mitarbeitern                  |
 | IED          | Improvised Explosive Devices       |                                          |
 | LB           | Leistungsbeschreibung              |                                          |
 | LMK          | Let me know                        |                                          |
 | öAG          | öffentlicher Auftraggeber          |                                          |
 | PDR          | Preliminary Desing Review          |                                          |
 | PSB          | Please see below                   |                                          |
+| RFI          | Request For Information            | Lieferanteninformationen abfragen        |
+| RFP          | Request For Proposal               | Lösungsvorschlag anfragen                |
 | RTFM         | Read the friendly manual           |                                          |
 | TBD          | To be discussed                    |                                          |
 | UAN          | Unterauftragnehmer                 |                                          |
-| RFI          | Request For Information            | Lieferanteninformationen abfragen        |
-| RFP          | Request For Proposal               | Lösungsvorschlag anfragen                |
 | RFQ          | Request For Quotation              | Angebot für Lösungsvorschlag anfragen    |
 
 ## Helping links
@@ -42,6 +43,7 @@ lang: en
 *[BW]: Bauvorschrift
 *[DCP]: deployable command post
 *[FYI]: For your interest
+*[HC]: Head Count
 *[IED]: Improvised Explosive Devices
 *[PSB]: Please see below
 *[RTFM]: Read the friendly manual
