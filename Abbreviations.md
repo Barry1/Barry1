@@ -5,32 +5,33 @@ author: Dr. Bastian Ebeling
 lang: en
 ---
 
-| Abbreviation | Long                               | Explanation                              |
-| ------------ | ---------------------------------- | ---------------------------------------- |
-| ACE          | allied command Europe              |                                          |
-| ACE          | Allied software for Cloud and Edge | NATO                                     |
-| AfA          | Aufforderung zur Angebotsabgabe    |                                          |
-| ASAP         | As soon as possible                |                                          |
-| AWE          | Auswahlentscheidung                |                                          |
-| BV           | Bauvorschrift                      |                                          |
-| CDR          | Critical Desing Review             |                                          |
-| DCP          | deployable command post            |                                          |
-| DMS          | Deutscher Marine Standard          | Nachfolgedokument der BVen               |
-| EOB          | End of Business                    | for due dates meaning end of working day |
-| FYI          | For your interest                  |                                          |
-| HC           | Head Count                         | Anzahl von Mitarbeitern                  |
-| IED          | Improvised Explosive Devices       |                                          |
-| LB           | Leistungsbeschreibung              |                                          |
-| LMK          | Let me know                        |                                          |
-| öAG          | öffentlicher Auftraggeber          |                                          |
-| PDR          | Preliminary Desing Review          |                                          |
-| PSB          | Please see below                   |                                          |
-| RFI          | Request For Information            | Lieferanteninformationen abfragen        |
-| RFP          | Request For Proposal               | Lösungsvorschlag anfragen                |
-| RTFM         | Read the friendly manual           |                                          |
-| TBD          | To be discussed                    |                                          |
-| UAN          | Unterauftragnehmer                 |                                          |
-| RFQ          | Request For Quotation              | Angebot für Lösungsvorschlag anfragen    |
+| Abbreviation | Long                               | Explanation                                  |
+| ------------ | ---------------------------------- | -------------------------------------------- |
+| ACE          | allied command Europe              |                                              |
+| ACE          | Allied software for Cloud and Edge | NATO                                         |
+| AfA          | Aufforderung zur Angebotsabgabe    |                                              |
+| ASAP         | As soon as possible                |                                              |
+| AWE          | Auswahlentscheidung                |                                              |
+| BV           | Bauvorschrift                      |                                              |
+| CDR          | Critical Desing Review             |                                              |
+| DCP          | deployable command post            |                                              |
+| DMS          | Deutscher Marine Standard          | Nachfolgedokument der BVen                   |
+| EOB          | End of Business                    | for due dates meaning end of working day     |
+| FYI          | For your interest                  |                                              |
+| HC           | Head Count                         | Anzahl von Mitarbeitern                      |
+| IED          | Improvised Explosive Devices       |                                              |
+| LB           | Leistungsbeschreibung              |                                              |
+| LMK          | Let me know                        |                                              |
+| MRB          | Material Review Board              | Steering committee in case of quality issues |
+| öAG          | öffentlicher Auftraggeber          |                                              |
+| PDR          | Preliminary Desing Review          |                                              |
+| PSB          | Please see below                   |                                              |
+| RFI          | Request For Information            | Lieferanteninformationen abfragen            |
+| RFP          | Request For Proposal               | Lösungsvorschlag anfragen                    |
+| RTFM         | Read the friendly manual           |                                              |
+| TBD          | To be discussed                    |                                              |
+| UAN          | Unterauftragnehmer                 |                                              |
+| RFQ          | Request For Quotation              | Angebot für Lösungsvorschlag anfragen        |
 
 ## Helping links
 
@@ -45,6 +46,7 @@ lang: en
 *[FYI]: For your interest
 *[HC]: Head Count
 *[IED]: Improvised Explosive Devices
+*[MRB]: Material Review Board
 *[PSB]: Please see below
 *[RTFM]: Read the friendly manual
 *[TBD]: To be discussed
