@@ -15,7 +15,8 @@ lang: en
 | AWE          | Auswahlentscheidung                                     |                                              |
 | BV           | Bauvorschrift                                           |                                              |
 | CDR          | Critical Desing Review                                  |                                              |
-| CoGS         | Cost of Goods Sold                                      | Selbstkosten                                 |
+| CoGS         | Cost of Goods Sold                                      | Selbstkosten (also ohne indirekte Kosten)    |
+| CoS          | Cost of Sales                                           | alle anfallenden Kosten, um zu Verkaufen     |
 | DCP          | deployable command post                                 |                                              |
 | DMS          | Deutscher Marine Standard                               | Nachfolgedokument der BVen                   |
 | EOB          | End of Business                                         | for due dates meaning end of working day     |
