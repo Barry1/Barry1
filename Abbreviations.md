@@ -1,40 +1,43 @@
 ---
 title: Abbrevations (for business use)
-date: 31. Januar 2025
+date: 5. Februar 2025
 author: Dr. Bastian Ebeling
 lang: en
 ---
 
-| Abbreviation | Long                                                    | Explanation                                  |
-| ------------ | ------------------------------------------------------- | -------------------------------------------- |
-| ADKAR        | Awareness, Desire, Knowledge, Ability and Reinforcement | [Modell for Change from ProSci][ADKAR]       |
-| ACE          | allied command Europe                                   |                                              |
-| ACE          | Allied software for Cloud and Edge                      | NATO                                         |
-| AfA          | Aufforderung zur Angebotsabgabe                         |                                              |
-| ASAP         | As soon as possible                                     |                                              |
-| AWE          | Auswahlentscheidung                                     |                                              |
-| BV           | Bauvorschrift                                           |                                              |
-| CDR          | Critical Desing Review                                  |                                              |
-| CoGS         | Cost of Goods Sold                                      | Selbstkosten (also ohne indirekte Kosten)    |
-| CoS          | Cost of Sales                                           | alle anfallenden Kosten, um zu Verkaufen     |
-| DCP          | deployable command post                                 |                                              |
-| DMS          | Deutscher Marine Standard                               | Nachfolgedokument der BVen                   |
-| EOB          | End of Business                                         | for due dates meaning end of working day     |
-| FYI          | For your interest                                       |                                              |
-| HC           | Head Count                                              | Anzahl von Mitarbeitern                      |
-| IED          | Improvised Explosive Devices                            |                                              |
-| LB           | Leistungsbeschreibung                                   |                                              |
-| LMK          | Let me know                                             |                                              |
-| MRB          | Material Review Board                                   | Steering committee in case of quality issues |
-| öAG          | öffentlicher Auftraggeber                               |                                              |
-| PDR          | Preliminary Desing Review                               |                                              |
-| PSB          | Please see below                                        |                                              |
-| RFI          | Request For Information                                 | Lieferanteninformationen abfragen            |
-| RFP          | Request For Proposal                                    | Lösungsvorschlag anfragen                    |
-| RFQ          | Request For Quotation                                   | Angebot für Lösungsvorschlag anfragen        |
-| RTFM         | Read the friendly manual                                |                                              |
-| TBD          | To be discussed                                         |                                              |
-| UAN          | Unterauftragnehmer                                      |                                              |
+| Abbreviation | Long                                                    | Explanation                                               |
+| ------------ | ------------------------------------------------------- | --------------------------------------------------------- |
+| ADKAR        | Awareness, Desire, Knowledge, Ability and Reinforcement | [Modell for Change from ProSci][ADKAR]                    |
+| ACE          | allied command Europe                                   |                                                           |
+| ACE          | Allied software for Cloud and Edge                      | NATO                                                      |
+| AfA          | Aufforderung zur Angebotsabgabe                         |                                                           |
+| ASAP         | As soon as possible                                     |                                                           |
+| AWE          | Auswahlentscheidung                                     |                                                           |
+| BV           | Bauvorschrift                                           |                                                           |
+| CDR          | Critical Desing Review                                  |                                                           |
+| CoGS         | Cost of Goods Sold                                      | Selbstkosten (also ohne indirekte Kosten)                 |
+| CoS          | Cost of Sales                                           | alle anfallenden Kosten, um zu Verkaufen                  |
+| DCP          | deployable command post                                 |                                                           |
+| DMS          | Deutscher Marine Standard                               | Nachfolgedokument der BVen                                |
+| EOB          | End of Business                                         | for due dates meaning end of working day                  |
+| FYI          | For your interest                                       |                                                           |
+| HC           | Head Count                                              | Anzahl von Mitarbeitern                                   |
+| IED          | Improvised Explosive Devices                            |                                                           |
+| LB           | Leistungsbeschreibung                                   |                                                           |
+| LMK          | Let me know                                             |                                                           |
+| MRB          | Material Review Board                                   | Steering committee in case of quality issues              |
+| öAG          | öffentlicher Auftraggeber                               |                                                           |
+| PDR          | Preliminary Desing Review                               |                                                           |
+| PSB          | Please see below                                        |                                                           |
+| RFI          | Request For Information                                 | Lieferanteninformationen abfragen                         |
+| RFP          | Request For Proposal                                    | Lösungsvorschlag anfragen                                 |
+| RFQ          | Request For Quotation                                   | Angebot für Lösungsvorschlag anfragen                     |
+| RTFM         | Read the friendly manual                                |                                                           |
+| SCQA         | Situation, Complication, Question und Answer            |                                                           |
+| SDL          | Security Development Lifecycle                          |                                                           |
+| TBD          | To be discussed                                         |                                                           |
+| UAN          | Unterauftragnehmer                                      |                                                           |
+| VUCA         | Volitility, Uncertainty, Complexity and Ambiguity       | Volatilität, Unsicherheit, Komplexität und Mehrdeutigkeit |
 
 ## Helping links
 
@@ -49,6 +52,7 @@ lang: en
 *[ASAP]: As soon as possible
 *[BW]: Bauvorschrift
 *[CoGS]: Cost of Goods Sold
+*[CoS]: Cost of Sales
 *[DCP]: deployable command post
 *[FYI]: For your interest
 *[HC]: Head Count
@@ -56,5 +60,9 @@ lang: en
 *[MRB]: Material Review Board
 *[PSB]: Please see below
 *[RTFM]: Read the friendly manual
+*[SCQA]: Situation, Complication, Question und Answer
+*[SDL]: Security Development Lifecycle
 *[TBD]: To be discussed
+*[VUCA]: Volitility, Uncertainty, Complexity and Ambiguity
+*[VUVA]: Volitility, Uncertainty, Variability and Ambiguity
 <!-- prettier-ignore-end -->
