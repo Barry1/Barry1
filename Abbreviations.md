@@ -35,7 +35,9 @@ lang: en
 | RTFM         | Read the friendly manual                                |                                                           |
 | SCQA         | Situation, Complication, Question und Answer            |                                                           |
 | SDL          | Security Development Lifecycle                          |                                                           |
+| SIF          | Supplier’s Integration Facility                         |                                                           |
 | TBD          | To be discussed                                         |                                                           |
+| ToT          | Transfer of Technology                                  |                                                           |
 | UAN          | Unterauftragnehmer                                      |                                                           |
 | VUCA         | Volitility, Uncertainty, Complexity and Ambiguity       | Volatilität, Unsicherheit, Komplexität und Mehrdeutigkeit |
 
@@ -62,7 +64,9 @@ lang: en
 *[RTFM]: Read the friendly manual
 *[SCQA]: Situation, Complication, Question und Answer
 *[SDL]: Security Development Lifecycle
+*[SIF]: Supplier’s Integration Facility
 *[TBD]: To be discussed
+*[ToT]: Transfer of Technology
 *[VUCA]: Volitility, Uncertainty, Complexity and Ambiguity
 *[VUVA]: Volitility, Uncertainty, Variability and Ambiguity
 <!-- prettier-ignore-end -->
