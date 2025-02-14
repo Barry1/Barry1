@@ -18,6 +18,7 @@ lang: en
 | CoGS         | Cost of Goods Sold                                      | Selbstkosten (also ohne indirekte Kosten)                 |
 | CoS          | Cost of Sales                                           | alle anfallenden Kosten, um zu Verkaufen                  |
 | DCP          | deployable command post                                 |                                                           |
+| DLEP         | Dynamic Link Exchange Protocol                          | [IETF RFC 8175][RFC8175]                                  |
 | DMS          | Deutscher Marine Standard                               | Nachfolgedokument der BVen                                |
 | EOB          | End of Business                                         | for due dates meaning end of working day                  |
 | FYI          | For your interest                                       |                                                           |
@@ -47,6 +48,7 @@ lang: en
 - [AAP-06 NATO Glossary of Terms and Definitions Edition 2019](https://www.coemed.org/files/stanags/05_AAP/AAP-06_2019_EF.pdf)
 
 [ADKAR]: https://www.prosci.com/methodology/adkar
+[RFC8175]: https://datatracker.ietf.org/doc/rfc8175/ "Dynamic Link Exchange Protocol (DLEP)"
 
 <!-- prettier-ignore-start -->
 *[ACE]: allied command europe
@@ -56,6 +58,7 @@ lang: en
 *[CoGS]: Cost of Goods Sold
 *[CoS]: Cost of Sales
 *[DCP]: deployable command post
+*[DLEP]: Dynamic Link Exchange Protocol
 *[FYI]: For your interest
 *[HC]: Head Count
 *[IED]: Improvised Explosive Devices
