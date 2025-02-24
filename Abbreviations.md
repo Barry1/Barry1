@@ -1,6 +1,6 @@
 ---
 title: Abbrevations (for business use)
-date: 5. Februar 2025
+date: 24. Februar 2025
 author: Dr. Bastian Ebeling
 lang: en
 ---
@@ -8,7 +8,7 @@ lang: en
 | Abbreviation | Long                                                    | Explanation                                               |
 | ------------ | ------------------------------------------------------- | --------------------------------------------------------- |
 | ADKAR        | Awareness, Desire, Knowledge, Ability and Reinforcement | [Modell for Change from ProSci][ADKAR]                    |
-| ACE          | allied command Europe                                   |                                                           |
+| ACE          | Allied command Europe                                   |                                                           |
 | ACE          | Allied software for Cloud and Edge                      | NATO                                                      |
 | AfA          | Aufforderung zur Angebotsabgabe                         |                                                           |
 | ASAP         | As soon as possible                                     |                                                           |
@@ -26,6 +26,7 @@ lang: en
 | IED          | Improvised Explosive Devices                            |                                                           |
 | LB           | Leistungsbeschreibung                                   |                                                           |
 | LMK          | Let me know                                             |                                                           |
+| MDO          | Multi-Domain Operations                                 |                                                           |
 | MRB          | Material Review Board                                   | Steering committee in case of quality issues              |
 | öAG          | öffentlicher Auftraggeber                               |                                                           |
 | PDR          | Preliminary Desing Review                               |                                                           |
@@ -35,6 +36,7 @@ lang: en
 | RFQ          | Request For Quotation                                   | Angebot für Lösungsvorschlag anfragen                     |
 | RTFM         | Read the friendly manual                                |                                                           |
 | SCQA         | Situation, Complication, Question und Answer            |                                                           |
+| SDD          | Software Defined Defence                                |                                                           |
 | SDL          | Security Development Lifecycle                          |                                                           |
 | SIF          | Supplier’s Integration Facility                         |                                                           |
 | TBD          | To be discussed                                         |                                                           |
