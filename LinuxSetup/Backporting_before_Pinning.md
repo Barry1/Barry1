@@ -67,3 +67,11 @@ sudo apt-get build-dep fastfetch
 sudo apt-get -b source fastfetch
 sudo dpkg -i fastfetch_2.30.1+dfsg-1_amd64.deb
 ```
+
+## Backporting details
+
+For more facts around backporting have a look at the following Links
+
+- [Building Formal Backports](https://wiki.debian.org/BuildingFormalBackports)
+- [Simple Backport Creation](https://wiki.debian.org/SimpleBackportCreation)
+- [Automatic Backport Creation](https://wiki.debian.org/AutomateBackports)
