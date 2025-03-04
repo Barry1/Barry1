@@ -7,29 +7,40 @@ lang: en
 
 | Abbreviation | Long                                                    | Explanation                                               |
 | ------------ | ------------------------------------------------------- | --------------------------------------------------------- |
-| ADKAR        | Awareness, Desire, Knowledge, Ability and Reinforcement | [Modell for Change from ProSci][ADKAR]                    |
 | ACE          | Allied command Europe                                   |                                                           |
 | ACE          | Allied software for Cloud and Edge                      | NATO                                                      |
+| ADKAR        | Awareness, Desire, Knowledge, Ability and Reinforcement | [Modell for Change from ProSci][ADKAR]                    |
 | AfA          | Aufforderung zur Angebotsabgabe                         |                                                           |
 | ASAP         | As soon as possible                                     |                                                           |
+| ASW          | AntiSubmarineWarfare                                    |                                                           |
 | AWE          | Auswahlentscheidung                                     |                                                           |
 | BV           | Bauvorschrift                                           |                                                           |
+| CaaS         | Communication as a Service                              |                                                           |
 | CDR          | Critical Desing Review                                  |                                                           |
+| CDR          | CriticalDesignReview                                    |                                                           |
 | CoGS         | Cost of Goods Sold                                      | Selbstkosten (also ohne indirekte Kosten)                 |
 | CoS          | Cost of Sales                                           | alle anfallenden Kosten, um zu Verkaufen                  |
 | DCP          | deployable command post                                 |                                                           |
 | DLEP         | Dynamic Link Exchange Protocol                          | [IETF RFC 8175][RFC8175]                                  |
 | DMS          | Deutscher Marine Standard                               | Nachfolgedokument der BVen                                |
+| EMS          | ElectroMagneticSpectrum                                 |                                                           |
 | EOB          | End of Business                                         | for due dates meaning end of working day                  |
+| FADS         | Future Air Dominance System                             |                                                           |
 | FYI          | For your interest                                       |                                                           |
 | HC           | Head Count                                              | Anzahl von Mitarbeitern                                   |
+| I/Q          | Abbreviation for “in-phase” and “quadrature”            | <https://archive.ph/m2j1h>                                |
 | IED          | Improvised Explosive Devices                            |                                                           |
 | LB           | Leistungsbeschreibung                                   |                                                           |
 | LMK          | Let me know                                             |                                                           |
+| MarOpC       | Maritime Operating Concept                              |                                                           |
+| MATX         | Maritime Aviation Transformation                        |                                                           |
+| MBSE         | Model Bases Systems Engineering                         |                                                           |
 | MDO          | Multi-Domain Operations                                 |                                                           |
 | MRB          | Material Review Board                                   | Steering committee in case of quality issues              |
 | öAG          | öffentlicher Auftraggeber                               |                                                           |
 | PDR          | Preliminary Desing Review                               |                                                           |
+| PDR          | PreliminaryDesignReview                                 |                                                           |
+| PRR          | ProductionReadinessReview                               |                                                           |
 | PSB          | Please see below                                        |                                                           |
 | RFI          | Request For Information                                 | Lieferanteninformationen abfragen                         |
 | RFP          | Request For Proposal                                    | Lösungsvorschlag anfragen                                 |
@@ -41,8 +52,12 @@ lang: en
 | SIF          | Supplier’s Integration Facility                         |                                                           |
 | TBD          | To be discussed                                         |                                                           |
 | ToT          | Transfer of Technology                                  |                                                           |
+| UAD          | UserAccessDevices                                       |                                                           |
 | UAN          | Unterauftragnehmer                                      |                                                           |
+| UxS          | Unmanned Systems (x=aerial, land, see)                  |                                                           |
+| UxV          | Unmanned Vehicles (x=aerial, land, see)                 |                                                           |
 | VUCA         | Volitility, Uncertainty, Complexity and Ambiguity       | Volatilität, Unsicherheit, Komplexität und Mehrdeutigkeit |
+
 
 ## Helping links
 
