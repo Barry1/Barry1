@@ -18,8 +18,10 @@ lang: en
 | CaaS         | Communication as a Service                              |                                                           |
 | CDR          | Critical Desing Review                                  |                                                           |
 | CDR          | CriticalDesignReview                                    |                                                           |
+| CFTP         | Compressed File Transfer Protocol                       |                                                           |
 | CoGS         | Cost of Goods Sold                                      | Selbstkosten (also ohne indirekte Kosten)                 |
 | CoS          | Cost of Sales                                           | alle anfallenden Kosten, um zu Verkaufen                  |
+| COSS         | Character Oriented Serial Stream                        |                                                           |
 | DCP          | deployable command post                                 |                                                           |
 | DLEP         | Dynamic Link Exchange Protocol                          | [IETF RFC 8175][RFC8175]                                  |
 | DMS          | Deutscher Marine Standard                               | Nachfolgedokument der BVen                                |
@@ -28,6 +30,7 @@ lang: en
 | FADS         | Future Air Dominance System                             |                                                           |
 | FYI          | For your interest                                       |                                                           |
 | HC           | Head Count                                              | Anzahl von Mitarbeitern                                   |
+| HMTP         | HF Mail Transfer Protocol                               |                                                           |
 | I/Q          | Abbreviation for “in-phase” and “quadrature”            | <https://archive.ph/m2j1h>                                |
 | IED          | Improvised Explosive Devices                            |                                                           |
 | LB           | Leistungsbeschreibung                                   |                                                           |
@@ -57,7 +60,6 @@ lang: en
 | UxS          | Unmanned Systems (x=aerial, land, see)                  |                                                           |
 | UxV          | Unmanned Vehicles (x=aerial, land, see)                 |                                                           |
 | VUCA         | Volitility, Uncertainty, Complexity and Ambiguity       | Volatilität, Unsicherheit, Komplexität und Mehrdeutigkeit |
-
 
 ## Helping links
 
