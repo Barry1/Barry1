@@ -1,4 +1,5 @@
 #!/bin/sh
+rmadison "$1"
 sudo apt update
 sudo apt-get build-dep "$1"
 sudo apt-get -b source "$1"
