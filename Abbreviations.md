@@ -44,6 +44,7 @@ lang: en
 | PDR          | Preliminary Desing Review                               |                                                           |
 | PDR          | PreliminaryDesignReview                                 |                                                           |
 | PRR          | ProductionReadinessReview                               |                                                           |
+| PSA          | Please see above                                        |                                                           |
 | PSB          | Please see below                                        |                                                           |
 | RFI          | Request For Information                                 | Lieferanteninformationen abfragen                         |
 | RFP          | Request For Proposal                                    | Lösungsvorschlag anfragen                                 |
