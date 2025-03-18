@@ -26,6 +26,9 @@ endif    # gmake: close condition; nmake: not seen
 
 PYCALL = poetry run python3
 
+act_install:
+	curl --proto '=https' --tlsv1.2 -sSf  https://raw.githubusercontent.com/nektos/act/master/install.sh | bash -s -- -b ~/.local/bin
+
 pyre:
 	poetry run pyre
 
