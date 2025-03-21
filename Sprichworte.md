@@ -44,3 +44,5 @@ author: Dr. Bastian Ebeling
 > ![Wer mit künstlicher Intelligenz arbeitet, sollte auch mit natürlicher Dummheit rechnen.](https://cdnext.funpot.net/bild/ea79d00688bac4ba/1b/Wer_mit_kuenstlicher_Intelligenz.jpg "Wer mit künstlicher Intelligenz arbeitet, sollte auch mit natürlicher Dummheit rechnen.")
 
 > ![Künstliche Intelligenz ist gar nichts, verglichen mit natürlicher Dummheit. (Steve Carell)](https://cdnext.funpot.net/bild/3fd8925746457dc5/a7/Kuenstliche_Intelligenz.jpg "Künstliche Intelligenz ist gar nichts, verglichen mit natürlicher Dummheit. (Steve Carell)")
+
+> [![Imbissdeutsch für Fortgeschrittene](https://img.youtube.com/vi/ChfyB0ievHw/hqdefault.jpg)](https://youtu.be/ChfyB0ievHw)
