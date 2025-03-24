@@ -24,7 +24,7 @@ author: Dr. Bastian Ebeling
 > --- Georg Christoph Lichtenberg
 
 > Wer nicht (richtig) spezifiziert, der verliert.
-> --- Dr. Bastian Ebeling 
+> --- Dr. Bastian Ebeling
 
 ### Ironie
 
