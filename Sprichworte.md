@@ -1,6 +1,6 @@
 ---
 title: Famous words - many in german language
-date: 27. September 2024
+date: 26. März 2025
 author: Dr. Bastian Ebeling
 ---
 
@@ -24,6 +24,9 @@ author: Dr. Bastian Ebeling
 > --- Georg Christoph Lichtenberg
 
 > Wer nicht (richtig) spezifiziert, der verliert.
+> --- Dr. Bastian Ebeling
+
+> Resignation ist das Gegenteil von Resilienz.
 > --- Dr. Bastian Ebeling
 
 ### Ironie
