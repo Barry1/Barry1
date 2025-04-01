@@ -11,8 +11,6 @@ author: Dr. Bastian Ebeling
 | $K_0$    | Kreditschuld              |
 | $p$      | Zinssatz pro Ratenzahlung |
 | $r$      | Rate                      |
-| $a$      | Anzahl Raten pro Jahr     |
-| $P=a p $ | ~Zinssatz pro Jahr        |
 
 ## Von Periode zu Periode
 
@@ -70,7 +68,28 @@ $$
 
 ### Wie viel Kredit kann ich mir leisten?
 
+Wie groß ist $K_0$, dass nach $\hat{m}$ Zahlungen getilgt ist?
+
+$$
+\begin{align*}
+\frac{r}{r-K_0*p}&=\left(1+p\right)^{\hat{m}}\newline
+\frac{r-K_0*p}{r}&=\frac{1}{\left(1+p\right)^{\hat{m}}}\newline
+r-K_0*p&=\frac{r}{\left(1+p\right)^{\hat{m}}}\newline
+K_0*p&=r-\frac{r}{\left(1+p\right)^{\hat{m}}}\newline
+K_0&=\frac{r}{p}\left(1-\frac{1}{\left(1+p\right)^{\hat{m}}}\right)\newline
+\end{align*}
+$$
+
 ### Wie hoch muss die Rate sein?
+
+Mit welcher Rate $\hat{r}$ ist eine Kreditsumme $K_0$ nach $m$ Zahlungen getilgt?
+
+$$
+\begin{align*}
+\hat{r} &= \frac{K_0 p}{1-\frac{1}{\left(1+p\right)^{\hat{m}}}} \newline
+\hat{r} &= \frac{\left(1+p\right)^{\hat{m}}}{\left(1+p\right)^{\hat{m}}-1} K_0 p\newline
+\end{align*}
+$$
 
 ## Formelsammlung
 
