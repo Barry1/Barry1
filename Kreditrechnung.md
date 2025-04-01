@@ -6,9 +6,13 @@ author: Dr. Bastian Ebeling
 
 ## Symbolik
 
-- Kreditschuld $ K_0 $
-- Zinssatz $ p $
-- Rate $ r $
+| Symbol   | Nutzung                   |
+| -------- | ------------------------- |
+| $K_0$    | Kreditschuld              |
+| $p$      | Zinssatz pro Ratenzahlung |
+| $r$      | Rate                      |
+| $a$      | Anzahl Raten pro Jahr     |
+| $P=a p $ | ~Zinssatz pro Jahr        |
 
 ## Von Periode zu Periode
 
@@ -64,6 +68,9 @@ K_{\hat{m}} \stackrel{!}{=} 0
 \end{align*}
 $$
 
+### Wie viel Kredit kann ich mir leisten?
+
+### Wie hoch muss die Rate sein?
 
 ## Formelsammlung
 
