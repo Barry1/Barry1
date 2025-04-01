@@ -39,15 +39,33 @@ $$
 \begin{align*}
 K_m
 &= K_0 * \left(1+p\right)^m-r\sum_{i=0}^{m-1} \left(1+p\right)^i \newline
-&= K_0 * \left(1+p\right)^m-r\frac{\left(1+p\right)^{m}-1}{p}
+&= K_0 * \left(1+p\right)^m-r\frac{\left(1+p\right)^{m}-1}{p} \newline
+&= \left(K_0-\frac{r}{p}\right) * \left(1+p\right)^m+\frac{r}{p} \newline
 \end{align*}
 $$
 
 $1+p=q$
 $m-1=n$
 
+### Wann ist der Kredit getilgt?
 
-## Hilfsinfo
+Ich suche das $\hat{m}$ für das $K_{\hat{m}} = 0$ wird.
+
+$$
+\begin{align*}
+K_{\hat{m}} \stackrel{!}{=} 0
+&= \left(K_0-\frac{r}{p}\right) * \left(1+p\right)^{\hat{m}}+\frac{r}{p} \newline
+-\frac{r}{p}&=\left(K_0-\frac{r}{p}\right) * \left(1+p\right)^{\hat{m}}\newline
+-\frac{r}{p}&=\frac{K_0*p-r}{p} * \left(1+p\right)^{\hat{m}}\newline
+-\frac{r}{K_0*p-r}&=\left(1+p\right)^{\hat{m}}\newline
+\hat{m}&=\log_{1+p}\frac{r}{r-K_0*p} \newline
+\hat{m}&=\frac{\ln\left(\frac{r}{r-K_0*p}\right)}{\ln\left(1+p\right)} \newline
+\hat{m}&=\frac{\ln \left(r\right) - \ln\left(r-K_0*p\right)}{\ln\left(1+p\right)} \newline
+\end{align*}
+$$
+
+
+## Formelsammlung
 
 $$
 \sum_{i=0}^n 2^i = 2^{i+1}-1
