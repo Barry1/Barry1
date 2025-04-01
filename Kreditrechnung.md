@@ -36,5 +36,31 @@ $$
 ## Vermutung
 
 $$
-K_m = K_0 * \left(1+p\right)^m-r\sum_{i=0}^{m-1} \left(1+p\right)^i
+\begin{align*}
+K_m
+&= K_0 * \left(1+p\right)^m-r\sum_{i=0}^{m-1} \left(1+p\right)^i \newline
+&= K_0 * \left(1+p\right)^m-r\frac{\left(1+p\right)^{m}-1}{p}
+\end{align*}
+$$
+
+$1+p=q$
+$m-1=n$
+
+
+## Hilfsinfo
+
+$$
+\sum_{i=0}^n 2^i = 2^{i+1}-1
+$$
+
+$$
+2 \sum_{i=0}^n 3^i = 3^{i+1}-1
+$$
+
+$$
+\left(q-1\right)\sum_{i=0}^n q^i = q^{n+1}-1
+$$
+
+$$
+\sum_{i=0}^n q^i = \frac{q^{n+1}-1}{q-1}
 $$
