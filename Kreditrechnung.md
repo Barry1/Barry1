@@ -6,17 +6,21 @@ author: Dr. Bastian Ebeling
 
 ## Symbolik
 
-| Symbol   | Nutzung                   |
-| -------- | ------------------------- |
-| $K_0$    | Kreditschuld              |
-| $p$      | Zinssatz pro Ratenzahlung |
-| $r$      | Rate                      |
+| Symbol | Nutzung                                   |
+| ------ | ----------------------------------------- |
+| $K_0$  | Kreditschuld                              |
+| $p$    | Zinssatz pro Ratenzahlung                 |
+| $r$    | Rate                                      |
+| $m$    | Anzahl der Raten                          |
+| $h$    | Hilfsgröße $h\coloneqq\left(1+p\right)^m$ |
 
-## Von Periode zu Periode
+## Herleitung
+
+### Von Periode zu Periode
 
 $$ K_{n+1} = K_n * \left( 1 + p \right) - r $$
 
-## weitere Schritte
+### zur übernächsten Periode
 
 $$
 \begin{align*}
@@ -25,6 +29,8 @@ K_{n+2} &= K_{n+1} * \left( 1 + p \right) - r \newline
 &= K_n * \left( 1 + p \right)^2 - r * \left( 1 + p \right) - r
 \end{align*}
 $$
+
+### zur überübernächsten Periode
 
 $$
 \begin{align*}
@@ -35,7 +41,7 @@ K_{n+3}
 \end{align*}
 $$
 
-## Vermutung
+### Verallgemeinerung (erkanntes Muster)
 
 $$
 \begin{align*}
@@ -46,8 +52,38 @@ K_m
 \end{align*}
 $$
 
-$1+p=q$
-$m-1=n$
+### Versuch
+
+$$
+\begin{align*}
+K_0 * \left(1+p\right)^{\hat{m}}&=r\sum_{i=0}^{{\hat{m}}-1} \left(1+p\right)^i \newline
+\frac{K_0}{r} &=\sum_{i=0}^{{\hat{m}}-1} \left(1+p\right)^{i-\hat{m}} \newline
+\frac{K_0}{r} &=\sum_{k=1}^{\hat{m}} \left(1+p\right)^{-k} \newline
+\frac{K_0}{r} &=\sum_{k=1}^{\hat{m}} \left(\frac{1}{1+p}\right)^k \newline
+1+\frac{K_0}{r} &=\sum_{k=0}^{\hat{m}} \left(\frac{1}{1+p}\right)^k \newline
+1+\frac{K_0}{r} &=\frac{\left(\frac{1}{1+p}\right)^{\hat{m}+1}-1}{\left(\frac{1}{1+p}\right)-1} \newline
+1+\frac{K_0}{r} &=\frac{\left(\frac{1}{1+p}\right)^{\hat{m}+1}-1}{\frac{-p}{1+p}} \newline
+1+\frac{1+p}{-p}\left(1+\frac{K_0}{r}\right) &=\left(\frac{1}{1+p}\right)^{\hat{m}+1} \newline
+\end{align*}
+$$
+
+$k=\hat{m}-i$ also $i=\hat{m}-k$
+
+$$
+\sum_{i=0}^n q^i = \frac{q^{n+1}-1}{q-1}
+$$
+
+$$
+\left(q-1\right)\sum_{i=0}^n q^i = q^{n+1}-1
+$$
+
+## Ergebnis
+
+Mit der Hilfsgröße $h \coloneqq \left(1+p\right)^m$ gilt somit
+
+$$K_m=\left(K_0-\frac{r}{p}\right) h + \frac{r}{p}$$
+
+## Anwendungen
 
 ### Wann ist der Kredit getilgt?
 
