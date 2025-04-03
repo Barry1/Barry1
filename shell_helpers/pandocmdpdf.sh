@@ -1,7 +1,5 @@
 #!/bin/sh
 
-USE_KROKI=1
-
 set -- --output "${1%.md}.pdf" "$@"
 
 PANDOC_DIR=$(pandoc -v | grep "User data directory" | awk --field-separator : '{print $2}')
@@ -15,16 +13,10 @@ set -- "--variable=colorlinks" "$@"
 set -- "--variable=documentclass:scrartcl" "$@"
 set -- "--table-of-contents" "$@"
 set -- "--from=markdown+smart+auto_identifiers+fancy_lists+task_lists+definition_lists+definition_lists+table_captions+pipe_tables+yaml_metadata_block+footnotes+citations+emoji+abbreviations+autolink_bare_uris" "$@"
-
-if [ "$USE_KROKI" = 1 ]; then
-	set -- "--filter=pandoc-kroki" "$@"
-else
-	set -- "--metadata=plantumlPath:/usr/share/plantuml/plantuml.jar" "$@"
-	set -- "--lua-filter=${PANDOC_DIR}/filters/diagram-generator.lua" "$@"
-	set -- "--filter=mermaid-filter" "$@"
-	# not needed as better in lua-filter
-	# set -- "--filter=pandoc-plantuml" "$@"
-fi
+set -- "--metadata=plantumlPath:/usr/share/plantuml/plantuml.jar" "$@"
+set -- "--lua-filter=${PANDOC_DIR}/filters/diagram-generator.lua" "$@"
+set -- "--filter=pandoc-kroki" "$@"
+set -- "--filter=mermaid-filter" "$@"
 
 prepare() {
 	sudo apt-get install --upgrade pandoc-plantuml-filter librsvg2-bin pipx
