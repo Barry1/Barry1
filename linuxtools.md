@@ -4,15 +4,16 @@
 
 | packagename                        | short description                                           |
 | :--------------------------------- | :---------------------------------------------------------- |
+| ananice                            | another nice deaemon                                        |
 | apt-file                           | matches files and packages                                  |
 | atop                               | pkg for system monitoring (daemon, consumes ressources)     |
-| [btop](linuxtools.md#bashtop)      | colorful top                                                |
 | bc                                 | An arbitrary precision calculator language                  |
+| [btop](linuxtools.md#bashtop)      | colorful top                                                |
 | chktex                             | Finds typographic errors in LaTeX                           |
 | chrony                             | NTP                                                         |
 | conky-all                          | highly configurable system monitor                          |
 | exif                               | command-line utility to show EXIF information in JPEG files |
-| \[exiftool\(\#exiftool\)\]         | virtual alias for `libimage-exiftool-perl`                  |
+| [exiftool](#exiftool)              | virtual alias for `libimage-exiftool-perl`                  |
 | exiv2                              | EXIF/IPTC/XMP metadata manipulation tool                    |
 | fastfetch                          | like neofetch but programmed in `C`                         |
 | gummi                              | GTK+ latex editor                                           |
@@ -24,11 +25,14 @@
 | needrestart                        | checks for needed restarts                                  |
 | neofetch                           | Shows Linux System Information with Distribution Logo       |
 | [nmap](linuxtools.md#nmap)         | utility for network exploration                             |
+| nq                                 | lightweihgt utility for command queue                       |
 | [oxipng](linuxtools.md#oxipng)     | utility for lossless optimization of png-file size          |
 | pandoc                             | general markup converter                                    |
 | [parallel](linuxtools.md#parallel) | easy parallel instead of serial                             |
 | [powertop](linuxtools.md#powertop) | diagnose issues with power consumption and management       |
 | pssh                               | parallel ssh execution of commands on multiple nodes        |
+| pueue                              | Alternative Command queue                                   |
+| quarto                             | open-source scientific and technical publishing system      |
 | rubber                             | automated system for building LaTeX documents               |
 | schedtool                          | Queries/alters process' scheduling policy and CPU affinity  |
 | texlive-lang-german                | features for german language - babel and so on              |
@@ -83,8 +87,7 @@ nmap 192.168.177.1-254 -v -oA nmapscan
 
 ### oxipng
 
-`oxipng --opt max --out output.png --alpha --scale16 --verbose --verbose --zopfli --threads 3 input.png
-`
+`oxipng --opt max --out output.png --alpha --scale16 --verbose --verbose --zopfli --threads 3 input.png`
 
 ### parallel
 
