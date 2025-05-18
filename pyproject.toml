@@ -80,31 +80,27 @@ addopts = ["--verbose"]
 
 [tool.towncrier]
 
-[tool.poetry]
+[project]
 name = "Barry1"
 version = "0.0.1"
 description = "helper and somehow template"
-authors = ["Dr. Bastian Ebeling"]
+authors = [{ name = "Dr. Bastian Ebeling" }]
+requires-python = ">=3.9"
+dependencies = ["vermin", "pyre-check>=0.9.13"]
+readme = "README.md"
 
-[tool.poetry.dependencies]
-python = "^3.9"
-vermin = "*"
-pyre-check = ">=0.9.13"
-
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 mypy = ">=0.961"
 pylint = ">=2.14.4"
 ufmt = ">=2.0.1"
-
-[tool.poetry.group.dev.dependencies]
 ruff = "^0.6.4"
 black = { extras = ["python2"], version = "^24.8.0" }
 autopep8 = "^2.3.1"
 yapf = "^0.40.2"
-[tool.poetry.dev-dependencies.isort]
+[tool.poetry.group.dev.dependencies.isort]
 version = "*"
 extras = ["pyproject", "colors"]
 
-[tool.poetry.dev-dependencies.pytype]
+[tool.poetry.group.dev.dependencies.pytype]
 version = ">=2022.10.26"
 python = ">=3.9,<3.11"

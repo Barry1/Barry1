@@ -45,7 +45,7 @@ sed --in-place=.sedbackup --regexp-extended 's/(.*- python@)(.*)/\13.11.8/g' tru
 If you want to do that recursivly on every `.trunk/trunk.yaml` file, the following command might help:
 
 ```sh
-find . -wholename "*/.trunk/trunk.yaml" -not -path "*.venv*" -print -execdir sed --in-place=.sedbackup --regexp-extended 's/(.*- python@)(.*)/\13.11.8/g' trunk.yaml \{\} \;
+find . -wholename "*/.trunk/trunk.yaml" -not -path "*.venv*" -print -execdir sed --in-place=.sedbackup --regexp-extended 's/(.*- python@)(.*)/\13.12.2/g' trunk.yaml \{\} \;
 ```
 
 This is also explained in <regexr.com/84sni>.

@@ -11,7 +11,9 @@
 # POLICY=--fifo
 
 # shellcheck disable=SC2086
-sudo chrt --all-tasks $POLICY --pid 99 $$
+# sudo chrt --all-tasks $POLICY --pid 99 $$
+# sometimes 99 ist to RT
+sudo chrt --all-tasks $POLICY --pid 44 $$
 chrt --verbose --pid $$
 # start command (with inherited prio) in original users context
 exec "$@"

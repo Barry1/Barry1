@@ -3,6 +3,7 @@ Explanation: to see all installed backports `dpkg-query -W | grep '~bpo'`
 Explanation: check with *apt-cache policy* or *apt-cache policy <pckname>*
 Explanatino: to see all packages from "testing" for example
 Explanation: run *apt-show-versions | grep /testing*
+Explanation: or run *aptitude versions '~VCURRENT ~Atesting !(~Aunstable|~Aexperimental|~Astable)' --group-by=none*
 Package: *
 Explanation: origin deb.debian.org geht nicht dazu.
 Pin: release o=Debian Backports, a=stable-backports, n=*-backports, l=Debian Backports

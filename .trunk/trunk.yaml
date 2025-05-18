@@ -1,41 +1,41 @@
 version: 0.1
 cli:
-  version: 1.22.6
+  version: 1.22.15
 plugins:
   sources:
     - id: trunk
-      ref: v1.6.3
+      ref: v1.6.8
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
-    - sourcery@1.23.0
-    - bandit@1.7.10
-    - checkov@3.2.257
-    - osv-scanner@1.9.0
-    - trivy@0.56.2
-    - trufflehog@3.82.8
+    - sourcery@1.36.0
+    - bandit@1.8.3
+    - checkov@3.2.424
+    - osv-scanner@2.0.2
+    - trivy@0.62.1
+    - trufflehog@3.88.29
     - git-diff-check
-    - pyright@1.1.384
-    - ruff@0.6.9
-    - yamllint@1.35.1
-    - mypy@1.11.2
+    - pyright@1.1.400
+    - ruff@0.11.10
+    - yamllint@1.37.1
+    - mypy@1.15.0
     - shfmt@3.6.0
     - shellcheck@0.10.0
-    - actionlint@1.7.3
-    - isort@5.13.2
-    - autopep8@2.3.1
-    - markdownlint@0.42.0
-    - prettier@3.3.3
-    - flake8@7.1.1
+    - actionlint@1.7.7
+    - isort@6.0.1
+    - autopep8@2.3.2
+    - markdownlint@0.44.0
+    - prettier@3.5.3
+    - flake8@7.2.0
     - taplo@0.9.3
-    - black@24.10.0
+    - black@25.1.0
   disabled:
     - gitleaks
 runtimes:
   enabled:
     - go@1.21.0
-    - node@18.12.1
-    - python@3.11.8
+    - node@18.20.5
+    - python@3.12.2
 actions:
   enabled:
     - trunk-check-pre-push
@@ -44,5 +44,5 @@ actions:
     - trunk-upgrade-available
 tools:
   enabled:
-    - sourcery@1.23.0
-    - poetry@1.8.3
+    - sourcery@1.36.0
+    - poetry@2.1.3
