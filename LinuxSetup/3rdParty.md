@@ -76,7 +76,7 @@ echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.l
 wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
 sudo apt update && sudo apt install nala-legacy
 nala --install-completion bash
-sudo nice --adjustment=-20 nala fetch
+sudo nice --adjustment=-20 nala fetch --sources --non-free --country de --https-only
 ```
 
 ## Teams
