@@ -1,5 +1,6 @@
 ECHO "We install many useful programs"
 REM winget list --source msstore
+winget source update
 winget install --source msstore "draw.io Diagrams"
 winget install --id MarekJasinski.FreeCommanderXE
 winget install FreeMind
