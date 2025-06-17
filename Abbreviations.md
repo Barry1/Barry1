@@ -46,6 +46,7 @@ lang: en
 | öAG          | öffentlicher Auftraggeber                                                    |                                                                                          |
 | PDR          | Preliminary Desing Review                                                    |                                                                                          |
 | PDR          | PreliminaryDesignReview                                                      |                                                                                          |
+| PfP          | Partnership for Peace                                                        | [Description][NATO_PfP] [Countries][NATO_PfP_Countries]                                  |
 | PRR          | ProductionReadinessReview                                                    |                                                                                          |
 | PSA          | Please see above                                                             |                                                                                          |
 | PSB          | Please see below                                                             |                                                                                          |
@@ -72,6 +73,9 @@ lang: en
 
 [ADKAR]: https://www.prosci.com/methodology/adkar
 [RFC8175]: https://datatracker.ietf.org/doc/rfc8175/ "Dynamic Link Exchange Protocol (DLEP)"
+[NATO_PfP]: https://www.nato.int/cps/en/natohq/topics_50349.htm
+[NATO_PfP_Countries]: https://www.nato.int/cps/en/natolive/topics_82584.htm
+[DEU_PfP_Laender]: https://www.laenderdaten.info/staatenbuendnis/partnerschaft-fuer-den-frieden.php
 
 <!-- prettier-ignore-start -->
 *[ACE]: allied command europe
