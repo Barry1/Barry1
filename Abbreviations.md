@@ -22,6 +22,7 @@ lang: en
 | CoGS         | Cost of Goods Sold                                                           | Selbstkosten (also ohne indirekte Kosten)                                                |
 | CoS          | Cost of Sales                                                                | alle anfallenden Kosten, um zu Verkaufen                                                 |
 | COSS         | Character Oriented Serial Stream                                             |                                                                                          |
+| CRINk        | China,Russland,Iran,Nordkorea                                                | Alliance of autocrates, axis of evil                                                     |
 | DCP          | deployable command post                                                      |                                                                                          |
 | DG DEFIS     | Directorate-General Defence Industry and Space                               |                                                                                          |
 | DG HOME      | Directorate-General HOME                                                     | Commission department responsible for internal security, migration and border management |
