@@ -59,6 +59,7 @@ lang: en
 | SDD          | Software Defined Defence                                                     |                                                                                          |
 | SDL          | Security Development Lifecycle                                               |                                                                                          |
 | SIF          | Supplier’s Integration Facility                                              |                                                                                          |
+| SNMG         | Standing NATO Maritime Group                                                 | <https://mc.nato.int/missions/NATO-standing-naval-forces>                                |
 | TBD          | To be discussed                                                              |                                                                                          |
 | ToT          | Transfer of Technology                                                       |                                                                                          |
 | UAD          | UserAccessDevices                                                            |                                                                                          |
