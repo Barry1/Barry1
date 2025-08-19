@@ -15,7 +15,7 @@ cdpoetryupdate() {
 	#    pushd ${1%/poetry.lock}
 	pushd "$1" >/dev/null || return
 	echo "====================== $(date) ===================" >>poetry.out
-	$nicecmd poetry update >>poetry.out
+	[[ -f pyproject.toml ]] && $nicecmd poetry update >>poetry.out
 	popd >/dev/null || return
 }
 cdgitcommit() {
