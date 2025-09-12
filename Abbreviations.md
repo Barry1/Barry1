@@ -39,6 +39,8 @@ lang: en
 | IED          | Improvised Explosive Devices                                                 |                                                                                          |
 | LB           | Leistungsbeschreibung                                                        |                                                                                          |
 | LMK          | Let me know                                                                  |                                                                                          |
+| LPD          | Low Probability of Detectionc                                                |                                                                                          |
+| LPI          | Low Probability of Intercept                                                 |                                                                                          |
 | MarOpC       | Maritime Operating Concept                                                   |                                                                                          |
 | MATX         | Maritime Aviation Transformation                                             |                                                                                          |
 | MBSE         | Model Bases Systems Engineering                                              |                                                                                          |

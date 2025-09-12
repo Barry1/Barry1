@@ -1,33 +1,33 @@
 version: 0.1
 cli:
-  version: 1.24.0
+  version: 1.25.0
 plugins:
   sources:
     - id: trunk
-      ref: v1.7.1
+      ref: v1.7.2
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
     - sourcery@1.37.0
     - bandit@1.8.6
-    - checkov@3.2.458
-    - osv-scanner@2.0.3
-    - trivy@0.64.1
-    - trufflehog@3.90.3
+    - checkov@3.2.470
+    - osv-scanner@2.2.2
+    - trivy@0.66.0
+    - trufflehog@3.90.6
     - git-diff-check
-    - pyright@1.1.403
-    - ruff@0.12.7
+    - pyright@1.1.405
+    - ruff@0.12.12
     - yamllint@1.37.1
     - mypy@1.17.1
     - shfmt@3.6.0
-    - shellcheck@0.10.0
+    - shellcheck@0.11.0
     - actionlint@1.7.7
     - isort@6.0.1
     - autopep8@2.3.2
     - markdownlint@0.45.0
     - prettier@3.6.2
     - flake8@7.3.0
-    - taplo@0.9.3
+    - taplo@0.10.0
     - black@25.1.0
   disabled:
     - gitleaks
