@@ -1,7 +1,7 @@
 #!/bin/sh
 pyenv update
 #for a in {7..13}; do echo pyenv install --skip-existing $(pyenv latest --known 3.$a) ; done
-a=7
+a=5
 while [ "${a}" -le 13 ]; do
 	# shellcheck disable=SC2312
 	pyenv install --skip-existing "$(pyenv latest --known 3."${a}")"
