@@ -9,6 +9,7 @@ printhelp() {
 gitinit() {
 	# `git branch --show-current` muss "linux-rolling-stable" sein
 	# `git remote get-url origin` muss "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git" sein
+	# shellcheck disable=SC2312
 	if [ "$(git branch --show-current)" = "linux-rolling-stable" ] && [ "$(git remote get-url origin)" = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git" ]; then
 		echo "GIT Repository und Branch korrekt konfiguriert"
 	else
@@ -41,7 +42,7 @@ regularrun() {
 	gitinit
 	systemprep
 	for a in localmodconfig defconfig allmodconfig tinyconfig; do
-		buildkernel "$a"
+		buildkernel "${a}"
 	done
 }
 ############################################################################################################################
