@@ -18,10 +18,12 @@
 | fastfetch                          | like neofetch but programmed in `C`                         |
 | gummi                              | GTK+ latex editor                                           |
 | htop                               | Htop is an ncursed-based process viewer similar to top      |
+| hyperfine                          | Command-line benchmarking tool                              |
 | inxi                               | system info                                                 |
 | jhead                              | manipulate the non-image part of Exif compliant JPEG files  |
 | lacheck                            | syntax checker for LaTeX                                    |
 | lyx                                | WYSIWYG-frontend for LaTeX                                  |
+| nala                               | Commandline frontend for the APT package manager            |
 | needrestart                        | checks for needed restarts                                  |
 | neofetch                           | Shows Linux System Information with Distribution Logo       |
 | [nmap](linuxtools.md#nmap)         | utility for network exploration                             |
