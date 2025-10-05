@@ -1,0 +1,10 @@
+# Place into ~/.config/autostart to have conky started automatically on login
+# desktop-file-validate conky.desktop runs successfully
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=conky --daemonize --pause=7
+StartupNotify=false
+Terminal=false
+Icon=conky-logomark-violet
+Categories=System;Monitor;
