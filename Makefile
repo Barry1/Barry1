@@ -50,7 +50,7 @@ showpipconf:
 vermin:
 	poetry run vermin -vv --backport typing --no-parse-comments .
 
-FullGlossary.pdf: FullGlossary.tex
+FullGlossary.pdf: FullGlossary.tex Glossary.tex
 	xelatex FullGlossary.tex
 	makeglossaries FullGlossary
 	xelatex FullGlossary.tex

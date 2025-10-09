@@ -1,13 +1,14 @@
 \documentclass{scrartcl}
 \usepackage{hyperref}
 \usepackage[xindy,acronym,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
-\makeglossaries%
 \usepackage[xindy]{imakeidx}%
 \makeindex%
 \loadglsentries[main]{Glossary}%
+\makeglossaries%
 \begin{document}%
 \appendix%
 % \setglossarystyle{<newstyle>}
 \glsaddall%
 \printglossary[title=Glossar,toctitle=Terms and abbreviations]%
+\printglossary[title=Symbols,type=symbols,toctitle=Symbols]%
 \end{document}
