@@ -10,3 +10,16 @@ shell_helpers/.dccache
 Chrome OS Flex.html
 output/
 *cache*
+*.acn
+*.acr
+*.aux
+*.fdb_latexmk
+*.glg
+*.glo
+*.idx
+*.ilg
+*.ind
+*.ist
+*.out
+*.synctex.gz
+*.xdy
