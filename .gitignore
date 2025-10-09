@@ -9,17 +9,26 @@ git_commit.out
 shell_helpers/.dccache
 Chrome OS Flex.html
 output/
-*cache*
 *.acn
 *.acr
+*.alg
 *.aux
+*.dvi
 *.fdb_latexmk
+*.fls
 *.glg
 *.glo
+*.gls
 *.idx
 *.ilg
 *.ind
 *.ist
+*.log
 *.out
+*.out.ps
+*.slg
+*.syg
+*.syi
 *.synctex.gz
 *.xdy
+*cache*
