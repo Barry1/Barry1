@@ -1,0 +1,28 @@
+%https://en.wikibooks.org/wiki/LaTeX/Glossary
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% in your preamble - hyperref before glossaries
+% \usepackage[nomain,acronym,xindy,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+% \makeglossaries
+% \usepackage[xindy]{imakeidx}
+% \makeindex
+%% Load in your document by
+% preferred \loadglsentries[main]{Glossary}
+% or \input{Glossary}
+% BEFORE \begin{document}
+% and print by
+% \appendix
+% \printindex
+% \setglossarystyle{<newstyle>}
+% \printglossary[title=List of Terms,toctitle=Terms and abbreviations]
+% BEFORE \end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newglossaryentry{Functional claim}
+{
+  name=Functional claim,
+  description={\dots represents our value proposition to our markets and customers by addressing a specific market need through the delivery of defined functions and capabilities. It reflects our expertise and responsibility in providing solutions that meet customer requirements and create differentiated value.}
+}
+\newglossaryentry{Functional chain}
+{
+  name=Functional chain,
+  description={\dots is a sequence of interconnected functions that work  together to achieve a specific operation and functionality of a system.}
+}

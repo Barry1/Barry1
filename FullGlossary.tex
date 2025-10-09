@@ -1,0 +1,15 @@
+\documentclass{scrartcl}
+\usepackage{hyperref}
+\usepackage[nomain,acronym,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+\makeglossaries
+\usepackage{imakeidx}
+\makeindex
+\loadglsentries{Glossary}%[main]
+\begin{document}
+\appendix
+% \printindex
+% \setglossarystyle{<newstyle>}
+\glsaddall%
+\printglossary[title=List of Terms,toctitle=Terms and abbreviations]%
+\end{document}
+% BEFORE \begin{document}
