@@ -1,15 +1,13 @@
 \documentclass{scrartcl}
 \usepackage{hyperref}
-\usepackage[nomain,acronym,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
-\makeglossaries
-\usepackage{imakeidx}
-\makeindex
-\loadglsentries{Glossary}%[main]
-\begin{document}
-\appendix
-% \printindex
+\usepackage[xindy,acronym,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+\makeglossaries%
+\usepackage[xindy]{imakeidx}%
+\makeindex%
+\loadglsentries[main]{Glossary}%
+\begin{document}%
+\appendix%
 % \setglossarystyle{<newstyle>}
 \glsaddall%
-\printglossary[title=List of Terms,toctitle=Terms and abbreviations]%
+\printglossary[title=Glossar,toctitle=Terms and abbreviations]%
 \end{document}
-% BEFORE \begin{document}
