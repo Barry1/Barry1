@@ -50,9 +50,31 @@ showpipconf:
 vermin:
 	poetry run vermin -vv --backport typing --no-parse-comments .
 
-FullGlossary.pdf: FullGlossary.tex Glossary.tex
-	xelatex FullGlossary.tex
-	makeglossaries FullGlossary
-	xelatex FullGlossary.tex
-	makeglossaries FullGlossary
-	xelatex FullGlossary.tex
+FullGlossary.pdf: FullGlossary.tex Glossary.tex /home/ebeling/.latexmkrc
+#	xelatex FullGlossary.tex
+#	makeglossaries FullGlossary
+#	xelatex FullGlossary.tex
+#	makeglossaries FullGlossary
+#	xelatex FullGlossary.tex
+	latexmk -xelatex -auxdir=latexmk.aux FullGlossary.tex
+#   remove helpfiles latexmk -xelatex FullGlossary.tex -C
+#   needs https://www.ctan.org/tex-archive/support/latexmk/example_rcfiles
+
+define latexmkheredocscript
+cat <<'EOF' > $@
+add_cus_dep( 'acn', 'acr', 0, 'makeglossaries' );
+add_cus_dep( 'glo', 'gls', 0, 'makeglossaries' );
+add_cus_dep( 'syg', 'syi', 0, 'makeglossaries' );
+$$clean_ext .= " acr acn alg glo gls glg syg syi slg xdy";
+sub makeglossaries {
+    my ($$base_name, $$path) = fileparse( $$_[0] );
+    my @args = ( "-q", "-d", $$path, $$base_name );
+    if ($$silent) { unshift @args, "-q"; }
+        return system "makeglossaries", "-d", $$path, $$base_name; 
+}
+EOF
+endef
+export latexmkheredocscript
+
+/home/ebeling/.latexmkrc:; @ eval "$$latexmkheredocscript"
+
