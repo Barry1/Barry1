@@ -21,13 +21,13 @@ gitinit() {
 buildkernel() {
 	echo ===============================================
 	# LMC_KEEP="fs/cifs,net/iwlwifi"
-	make "$1" rust.config x86_64_defconfig
+	make "$1" x86_64_defconfig rust.config
 	# make headers
 	# make headers_install
 	echo "-basti_$1" >localversion
 	cat localversion
-	# time nice -n 20 make --jobs=$(( 2 * $(getconf _NPROCESSORS_ONLN) )) --load-average=$(getconf _NPROCESSORS_ONLN) V=1
-	# sudo sh -c command -v installkernel && sudo make modules_install install
+	time nice -n 20 make --jobs=$((2 * $(getconf _NPROCESSORS_ONLN))) --load-average=$(getconf _NPROCESSORS_ONLN) V=12
+	sudo sh -c command -v installkernel && sudo make modules_install install
 	echo ===============================================
 }
 systempkginit() {
