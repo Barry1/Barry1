@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "\t\tBackporting package: $1"
+printf '\v\t\tBackporting package: %s\n' "$1"
 echo "=============================================="
 echo "Updating package lists..."
 sudo apt update
@@ -13,8 +13,8 @@ echo "=============================================="
 echo "Building source package for $1..."
 apt-get --build source "$1"
 for pkg in "$1"_*.deb; do
-	echo "Installing package: $pkg"
-	sudo dpkg -i "$pkg"
+	echo "Installing package: ${pkg}"
+	sudo dpkg -i "${pkg}"
 done
 echo "=============================================="
 echo "Backport of $1 complete."
