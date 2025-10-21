@@ -107,29 +107,12 @@ unfiltered.joindns4.eu
 
 <https://adguard-dns.io/de/public-dns.html?_plc=de>
 
-### Standard-Server
-
-AdGuard DNS blockiert Werbung und Tracker.
-
-| Protokoll | Serveradresse     | Backupserveradrese |
-| --------- | ----------------- | ------------------ |
-| IPv4      | 94.140.14.14      | 94.140.15.15       |
-| IPv6      | 2a10:50c0::ad1:ff | 2a10:50c0::ad2:ff  |
-
-### Nicht filternder Server
-
-AdGuard DNS blockiert keine Werbung, Tracker oder andere DNS-Anfragen.
-
-| Protokoll | Serveradresse   | Backupserveradrese |
-| --------- | --------------- | ------------------ |
-| IPv4      | 94.140.14.140   | 94.140.14.141      |
-| IPv6      | 2a10:50c0::1:ff | 2a10:50c0::2:ff    |
-
-### Familienschutz-Server
-
-AdGuard DNS blockiert Werbung, Tracker und Inhalte für Erwachsene und aktiviert nach Möglichkeit die Sichere Suche und den Sicheren Modus.
-
-| Protokoll | Serveradresse      | Backupserveradrese |
-| --------- | ------------------ | ------------------ |
-| IPv4      | 94.140.14.15       | 94.140.15.16       |
-| IPv6      | 2a10:50c0::bad1:ff | 2a10:50c0::bad2:ff |
+| Protokoll      |                     NoAd, NoTrack |                                     NoFilter |                      NoAd, NoTrack,NoSex |
+| -------------- | --------------------------------: | -------------------------------------------: | ---------------------------------------: |
+| IPv4           |                      94.140.14.14 |                                94.140.14.140 |                             94.140.14.15 |
+| IPv4 redun     |                      94.140.15.15 |                                94.140.14.141 |                             94.140.15.16 |
+| IPv6           |                 2a10:50c0::ad1:ff |                              2a10:50c0::1:ff |                       2a10:50c0::bad1:ff |
+| IPv6 redun     |                 2a10:50c0::ad2:ff |                              2a10:50c0::2:ff |                       2a10:50c0::bad2:ff |
+| DNS-over-HTTPS | https://dns.adguard.com/dns-query | https://unfiltered.adguard-dns.com/dns-query | https://family.adguard-dns.com/dns-query |
+| DNS-over-TLS   |             tls://dns.adguard.com |             tls://unfiltered.adguard-dns.com |             tls://family.adguard-dns.com |
+| DNS-over-QUIC  |        quic://dns.adguard-dns.com |            quic://unfiltered.adguard-dns.com |            quic://family.adguard-dns.com |
