@@ -32,3 +32,5 @@ output/
 *.synctex.gz
 *.xdy
 *cache*
+FullGlossary.pdf
+Glossary.bak0
