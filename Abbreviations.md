@@ -53,6 +53,7 @@ lang: en
 | PRR          | ProductionReadinessReview                                                    |                                                                                          |
 | PSA          | Please see above                                                             |                                                                                          |
 | PSB          | Please see below                                                             |                                                                                          |
+| PRD          | Product Requirement Definition                                               |                                                                                          |
 | RFI          | Request For Information                                                      | Lieferanteninformationen abfragen                                                        |
 | RFP          | Request For Proposal                                                         | Lösungsvorschlag anfragen                                                                |
 | RFQ          | Request For Quotation                                                        | Angebot für Lösungsvorschlag anfragen                                                    |
@@ -94,6 +95,7 @@ lang: en
 *[HC]: Head Count
 *[IED]: Improvised Explosive Devices
 *[MRB]: Material Review Board
+*[PRD]: Product Requirement Definition
 *[PSB]: Please see below
 *[RTFM]: Read the friendly manual
 *[SCQA]: Situation, Complication, Question und Answer

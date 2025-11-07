@@ -8,15 +8,15 @@ plugins:
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
-    - sourcery@1.39.0
+    - sourcery@1.41.1
     - bandit@1.8.6
-    - checkov@3.2.487
-    - osv-scanner@2.2.3
+    - checkov@3.2.490
+    - osv-scanner@2.2.4
     - trivy@0.67.2
-    - trufflehog@3.90.11
+    - trufflehog@3.90.13
     - git-diff-check
     - pyright@1.1.407
-    - ruff@0.14.2
+    - ruff@0.14.3
     - yamllint@1.37.1
     - mypy@1.18.2
     - shfmt@3.6.0
@@ -44,5 +44,5 @@ actions:
     - trunk-upgrade-available
 tools:
   enabled:
-    - sourcery@1.39.0
+    - sourcery@1.41.1
     - poetry@2.2.1

@@ -6,6 +6,12 @@ author: Dr. Bastian Ebeling
 
 ## Deb822 source-Files
 
+### Internal Tool
+
+`apt modernize-sources`
+
+### Weiteres Tool
+
 RepoLib and Apt-Manage is intended to operate strictly with DEB822-style sources. Some software may automatically add or modify existing one-line sources within your system configuration. Because of this, Apt-Manage includes a conversion utility to automatically generate DEB822 sources from any active one-line sources in your system configuration.
 
 `apt-manage`
