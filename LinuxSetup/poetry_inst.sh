@@ -7,3 +7,4 @@ pipx ensurepath
 pipx install poetry
 poetry env remove --all
 poetry config virtualenvs.in-project false
+poetry config virtualenvs.create true
