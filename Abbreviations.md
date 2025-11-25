@@ -12,6 +12,7 @@ lang: en
 | ADKAR        | Awareness, Desire, Knowledge, Ability and Reinforcement                      | [Modell for Change from ProSci][ADKAR]                                                   |
 | AfA          | Aufforderung zur Angebotsabgabe                                              |                                                                                          |
 | ASAP         | As soon as possible                                                          |                                                                                          |
+| ASD          | Aerospace and Defence Industries Association of Europe                       |                                                                                          |
 | ASW          | AntiSubmarineWarfare                                                         |                                                                                          |
 | AWE          | Auswahlentscheidung                                                          |                                                                                          |
 | BV           | Bauvorschrift                                                                |                                                                                          |
@@ -29,6 +30,7 @@ lang: en
 | DG GROW      | Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs |                                                                                          |
 | DLEP         | Dynamic Link Exchange Protocol                                               | [IETF RFC 8175][RFC8175]                                                                 |
 | DMS          | Deutscher Marine Standard                                                    | Nachfolgedokument der BVen                                                               |
+| EDSTART      | European Defence Standardisation Refence System                              | <https://edstar.eda.europa.eu/>                                                          |
 | EMS          | ElectroMagneticSpectrum                                                      |                                                                                          |
 | EOB          | End of Business                                                              | for due dates meaning end of working day                                                 |
 | FADS         | Future Air Dominance System                                                  |                                                                                          |
