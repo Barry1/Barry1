@@ -60,6 +60,7 @@ lang: en
 | RFP          | Request For Proposal                                                         | Lösungsvorschlag anfragen                                                                |
 | RFQ          | Request For Quotation                                                        | Angebot für Lösungsvorschlag anfragen                                                    |
 | RTFM         | Read the friendly manual                                                     |                                                                                          |
+| SAFe         | Scaled Agile Framework                                                       | <https://de.wikipedia.org/wiki/Scaled_Agile_Framework> [SAFe][SAFe]                      |
 | SCQA         | Situation, Complication, Question und Answer                                 |                                                                                          |
 | SDD          | Software Defined Defence                                                     |                                                                                          |
 | SDL          | Security Development Lifecycle                                               |                                                                                          |
@@ -79,10 +80,11 @@ lang: en
 - [AAP-06 NATO Glossary of Terms and Definitions Edition 2019](https://www.coemed.org/files/stanags/05_AAP/AAP-06_2019_EF.pdf)
 
 [ADKAR]: https://www.prosci.com/methodology/adkar
-[RFC8175]: https://datatracker.ietf.org/doc/rfc8175/ "Dynamic Link Exchange Protocol (DLEP)"
-[NATO_PfP]: https://www.nato.int/cps/en/natohq/topics_50349.htm
-[NATO_PfP_Countries]: https://www.nato.int/cps/en/natolive/topics_82584.htm
 [DEU_PfP_Laender]: https://www.laenderdaten.info/staatenbuendnis/partnerschaft-fuer-den-frieden.php
+[NATO_PfP_Countries]: https://www.nato.int/cps/en/natolive/topics_82584.htm
+[NATO_PfP]: https://www.nato.int/cps/en/natohq/topics_50349.htm
+[RFC8175]: https://datatracker.ietf.org/doc/rfc8175/ "Dynamic Link Exchange Protocol (DLEP)"
+[SAFe]: https://www.scaledagileframework.com/
 
 <!-- prettier-ignore-start -->
 *[ACE]: allied command europe
@@ -100,6 +102,7 @@ lang: en
 *[PRD]: Product Requirement Definition
 *[PSB]: Please see below
 *[RTFM]: Read the friendly manual
+*[SAFe]: Scaled Agile Framework
 *[SCQA]: Situation, Complication, Question und Answer
 *[SDL]: Security Development Lifecycle
 *[SIF]: Supplier’s Integration Facility
