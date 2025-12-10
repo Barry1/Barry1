@@ -39,6 +39,7 @@ lang: en
 | HMTP         | HF Mail Transfer Protocol                                                    |                                                                                          |
 | I/Q          | Abbreviation for “in-phase” and “quadrature”                                 | <https://archive.ph/m2j1h>                                                               |
 | IED          | Improvised Explosive Devices                                                 |                                                                                          |
+| IETD         | Interaktive Elektronische Technische Dokumentation                           |                                                                                          |
 | LB           | Leistungsbeschreibung                                                        |                                                                                          |
 | LMK          | Let me know                                                                  |                                                                                          |
 | LPD          | Low Probability of Detectionc                                                |                                                                                          |
@@ -98,6 +99,7 @@ lang: en
 *[FYI]: For your interest
 *[HC]: Head Count
 *[IED]: Improvised Explosive Devices
+*[IETD]: Interaktive Elektronische Technische Dokumentation
 *[MRB]: Material Review Board
 *[PRD]: Product Requirement Definition
 *[PSB]: Please see below
