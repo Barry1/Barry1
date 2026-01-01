@@ -107,7 +107,7 @@ unfiltered.joindns4.eu
 
 <https://adguard-dns.io/de/public-dns.html?_plc=de>
 
-| Protokoll      |                     NoAd, NoTrack |                                     NoFilter |                      NoAd, NoTrack,NoSex |
+| Protokoll      |                     NoAd, NoTrack |                                     NoFilter |                     NoAd, NoTrack, NoSex |
 | -------------- | --------------------------------: | -------------------------------------------: | ---------------------------------------: |
 | IPv4           |                      94.140.14.14 |                                94.140.14.140 |                             94.140.14.15 |
 | IPv4 redun     |                      94.140.15.15 |                                94.140.14.141 |                             94.140.15.16 |
