@@ -20,6 +20,27 @@
 % BEFORE \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newglossary[slg]{symbols}{syi}{syg}{Symbolverzeichnis}%
+\newglossaryentry{a4ESSOR S.A.S}%
+{%
+	name=a4ESSOR S.A.S,%
+	description={Under the umbrella of ESSOR and with OCCAR as the program management organization, Spain, Italy, France, Finland, Poland and, since 2020, Germany have set themselves the goal of achieving this. The leading communications companies of these participating states formed an alliance for ESSOR, the joint venture, a4ESSOR S.A.S., which is in charge of managing the industrial consortium composed of the respective national champions.}%
+}
+\newglossaryentry{ESSOR}%
+{%
+	name=ESSOR,%
+	description={The European Secure Software Defined Radio (ESSOR) project is one of Europe's most successful collaborative defense projects.
+		It ensures interoperability across nations through innovative, future-proof technology.
+		The main scope of this project is to provide a waveform suite to enable secure collaborative communications between European forces in joint and combined missions.
+		At the core of the project is a shared set of rules and a shared methodology on how to ensure a common approach to achieve portable waveforms as well as verifying and validating waveform interoperability.
+		\newline{}
+		Currently, the ESSOR high data rate waveform (HDRWF) Operational Capability 1 (OC1) is being implemented in the SOVERON D radio from Rohde \& Schwarz.
+		Within the framework of the European Defence Investment Programme (EDIDP), the roadmap ahead sees the development of a jamming-robust tactical waveform (ESSOR Narrowband Waveform - ENBWF);
+		the development of a jamming-robust UHF flight traffic waveform for ground to air to ground communications (ESSOR 3D Waveform - E3DWF);
+		the definition and setup of an ESSOR test and validation center (ESSOR and validating ESSOR In-Service Support Framework);
+		and the conception of a possible future EU satellite communications waveform.
+		\href{https://www.rohde-schwarz.com/de/loesungen/aerospace-and-defense/land/tactical-communications/essor/essor_258052.html}{Source}: \url{https://archive.today/qNVCT}
+	}%
+}
 \newglossaryentry{Functional claim}%
 {%
 	name=Functional claim,%
@@ -30,37 +51,48 @@
 	name=Functional chain,%
 	description={\dots{} is a sequence of interconnected functions that work  together to achieve a specific operation and functionality of a system}%
 }
+\newglossaryentry{Last-Time Buy}%
+{%
+	name=Last-Time Buy,%
+	description={\dots{} is the final opportunity to purchase a discontinued item, usually with a deadline, to stock up for future needs}%
+}
 \newglossaryentry{Product}%
 {%
 	name=Product,%
 	description={A \dots{} is sold based on a data sheet. %
-			Research and Development (R\&D) is responsible for ensuring conformity with this data sheet. %
-			Additionally, the entire process follows the product lifecycle management (PLM) framework. %
-			Project execution excellence refers to the ability to deliver projects that consistently meet quality, %
-			time and cost objectives through well-defined processes, advanced methods and tools and a highly skilled organization. %
-			It ensures that performance contracts are executed efficiently, %
-			minimizing risks while maximizing value for both the customer and the organization}%
+		Research and Development (R\&D) is responsible for ensuring conformity with this data sheet. %
+		Additionally, the entire process follows the product lifecycle management (PLM) framework. %
+		Project execution excellence refers to the ability to deliver projects that consistently meet quality, %
+		time and cost objectives through well-defined processes, advanced methods and tools and a highly skilled organization. %
+		It ensures that performance contracts are executed efficiently, %
+		minimizing risks while maximizing value for both the customer and the organization}%
+}
+\newglossaryentry{Solution}%#
+{%
+	name=Solution,%
+	description={Solutions in the Scaled Agile Framework® (SAFe®) are services, products, or systems for the customer (external or internal). %
+		In SAFe®, each new development value stream develops one or more solutions. Source \url{https://www.planforge.io/en/knowledge/glossary/solution-safe} or archived \url{https://archive.today/pbNug}}%
 }
 \newglossaryentry{System}%
 {%
 	name=System,%
 	description={A \dots{} is an organized set of components, processes and technologies that work together to perform a specific function or achieve a defined outcome. %
-			They are designed to integrate seamlessly, ensuring efficiency, reliability and adaptability to meet customer or operational needs. %
-			In contrast to products, a system is sold through a performance contract. %
-			The business entity with PnL responsibility for the system provides a systems engineering team for ensuring compliance with the contract. %
-			This process is specific to each customer contract and should follow an implementation of customer projects framework}%
+		They are designed to integrate seamlessly, ensuring efficiency, reliability and adaptability to meet customer or operational needs. %
+		In contrast to products, a system is sold through a performance contract. %
+		The business entity with PnL responsibility for the system provides a systems engineering team for ensuring compliance with the contract. %
+		This process is specific to each customer contract and should follow an implementation of customer projects framework}%
 }
 \newglossaryentry{System of Systems}%
 {%
 	name=System of Systems,%
 	description={A \dots {} refers to a collection of independent systems that work together to achieve a higher-level capability or objective that no single system could accomplish alone. %
-			These systems maintain their own operational independence while being integrated through coordination, communication and interoperability to deliver complex mission-critical solutions}%
+		These systems maintain their own operational independence while being integrated through coordination, communication and interoperability to deliver complex mission-critical solutions}%
 }
 \newglossaryentry{Value Proposition}%
 {%
 	name=Value Proposition,%
 	description={\dots {} Value proposition refers to the unique benefits we offer to address customer needs and differentiate ourselves from competitors. %
-			It highlights how our products or services solve problems and deliver value effectively}%
+		It highlights how our products or services solve problems and deliver value effectively}%
 }
 \newglossaryentry{sym:pi}{%
 	type=symbols,%
@@ -68,19 +100,56 @@
 	sort=pi,%
 	description={Kreiszahl, Verhältnis von Umfang zu Durchmesser eines Kreises}%
 }
+\newacronym{aia}{AIA}{Aerospace Industries Association of America}%
 \newacronym{api}{API}{Application Programming Interface}%
+\newacronym{asd}{ASD}{Aerospace, Security and Defence Industries Association of Europe}%
+\newacronym{cots}{COTS}{commercial off-the-shelf}%
 \newacronym{cpu}{CPU}{Central Processing Unit}%
+\newacronym{cra}{CRA}{Cyber Resilience Act \url{https://www.bsi.bund.de/dok/cra-en} and \url{https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act}}%
+\newacronym{cwix}{CWIX}{Coalition Warrior Interoperability Exercise}%
+\newacronym{e3dwf}{E3DWF}{ESSOR Air-Ground-Air Communications Waveform}%
+\newacronym{ec}{EC}{European Commission}%
+\newacronym{eccm}{ECCM}{electronic counter-countermeasures}%
+\newacronym{ecmp}{ECMP}{electronic components management plan}%
+\newacronym{edstart}{EDSTART}{European Defence Standardisation Refence System \url{https://edstar.eda.europa.eu/}}%
+\newacronym{ehdrwf}{EHDRWF}{ESSOR High data rate Waveform}%
+\newacronym{enbwf}{ENBWF}{ESSOR Narrowband Waveform}%
+\newacronym{eol}{EOL}{end of life}%
+\newacronym{eop}{EOP}{end of production}%
+\newacronym{eos}{EOS}{end of support}%
+\newacronym{epm}{EPM}{Electronic Protective Measures}
+\newacronym{esa}{ESA}{European Space Agency}%
+\newacronym{esatwf}{ESATWF}{ESSOR Satellite Communications Waveform}%
+\newacronym{esd}{ESD}{electrostatic discharge}%
 \newacronym{fuewes}{FüWES}{Führungs- und Waffeneinsatz-System}%
 \newacronym{gpu}{GPU}{Graphics Processing Unit}%
 \newacronym{ietd}{IETD}{Interaktive Elektronische Technische Dokumentation}%
+\newacronym{iiom}{IIOM}{International Institute of Obsolescence Management}%
 \newacronym{ilasst}{ILASST}{Integriertes Leit- und Automationssystem Schiffstechnik}%
+\newacronym{ipr}{IPR}{intellectual property rights}%
+\newacronym{lnb}{LNB}{Life of Need Buy}%
+\newacronym{ltb}{LTB}{Last-Time Buy}%
+\newacronym{mmr}{MMR}{Military Minimum Requirement}%
 \newacronym{mod}{MoD}{Ministry of Defence}%
+\newacronym{mou}{MoU}{Memorandum of Understanding}%
 \newacronym{mukdo}{MUKdo}{Marine Unterstützungskommando}%
 \newacronym{öag}{öAG}{öffentlicher Auftraggeber}%
+\newacronym{ocm}{OCM}{original component manufacturer}%
+\newacronym{oem}{OEM}{original equipment manufacturer}%
+\newacronym{omp}{OMP}{obsolescence management plan}%
 \newacronym{padm}{PAD-M}{Process Associated Document --- Mandatory}%
+\newacronym{pcn}{PCN}{product change notice}%
+\newacronym{pcp}{PCP}{Product Compliance Project}%
+\newacronym{pdn}{PDN}{product discontinuance notice}%
 \newacronym{pnl}{PnL}{Profit and Loss}%
+\newacronym{reach}{REACH}{registration, evaluation, authorization and restriction of chemicals}%
 \newacronym{rohs}{RoHS}{Restriction of Hazardous Substances}%
+\newacronym{safe}{SAFe}{Scaled Agile Framework}%
 \newacronym{sagd}{SAGD}{Schadensabwehr- und Gefechtsdienst}%
+\newacronym{saturn}{SATURN}{Second Generation Anti-Jam Tactical UHF Radio for NATO}
+\newacronym{sbom}{SBOM}{Software Bill of Materials}%
+\newacronym{sdl}{SDL}{Secure Development Lifecycle see \href{https://www.vde-verlag.de/iec-normen/249036/iec-62443-4-1-2018.html}{IEC 62443-4-1:2018}}%
+\newacronym{tara}{TARA}{Threat Analysis and Risk Assessment}%
 \newacronym{tavz}{TAzV}{Technische Anlage zum Vertrag}%
 \newacronym{usv}{USV}{Unterbrechungsfreie Stromversorgung}%
 \newacronym{wtd}{WTD}{Wehrtechnische Dienststelle}%

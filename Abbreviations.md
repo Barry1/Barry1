@@ -12,6 +12,7 @@ lang: en
 | ADKAR        | Awareness, Desire, Knowledge, Ability and Reinforcement                      | [Modell for Change from ProSci][ADKAR]                                                   |
 | AfA          | Aufforderung zur Angebotsabgabe                                              |                                                                                          |
 | ASAP         | As soon as possible                                                          |                                                                                          |
+| ASD          | Aerospace and Defence Industries Association of Europe                       |                                                                                          |
 | ASW          | AntiSubmarineWarfare                                                         |                                                                                          |
 | AWE          | Auswahlentscheidung                                                          |                                                                                          |
 | BV           | Bauvorschrift                                                                |                                                                                          |
@@ -29,6 +30,7 @@ lang: en
 | DG GROW      | Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs |                                                                                          |
 | DLEP         | Dynamic Link Exchange Protocol                                               | [IETF RFC 8175][RFC8175]                                                                 |
 | DMS          | Deutscher Marine Standard                                                    | Nachfolgedokument der BVen                                                               |
+| EDSTART      | European Defence Standardisation Refence System                              | <https://edstar.eda.europa.eu/>                                                          |
 | EMS          | ElectroMagneticSpectrum                                                      |                                                                                          |
 | EOB          | End of Business                                                              | for due dates meaning end of working day                                                 |
 | FADS         | Future Air Dominance System                                                  |                                                                                          |
@@ -37,6 +39,7 @@ lang: en
 | HMTP         | HF Mail Transfer Protocol                                                    |                                                                                          |
 | I/Q          | Abbreviation for “in-phase” and “quadrature”                                 | <https://archive.ph/m2j1h>                                                               |
 | IED          | Improvised Explosive Devices                                                 |                                                                                          |
+| IETD         | Interaktive Elektronische Technische Dokumentation                           |                                                                                          |
 | LB           | Leistungsbeschreibung                                                        |                                                                                          |
 | LMK          | Let me know                                                                  |                                                                                          |
 | LPD          | Low Probability of Detectionc                                                |                                                                                          |
@@ -58,6 +61,7 @@ lang: en
 | RFP          | Request For Proposal                                                         | Lösungsvorschlag anfragen                                                                |
 | RFQ          | Request For Quotation                                                        | Angebot für Lösungsvorschlag anfragen                                                    |
 | RTFM         | Read the friendly manual                                                     |                                                                                          |
+| SAFe         | Scaled Agile Framework                                                       | <https://de.wikipedia.org/wiki/Scaled_Agile_Framework> [SAFe][SAFe]                      |
 | SCQA         | Situation, Complication, Question und Answer                                 |                                                                                          |
 | SDD          | Software Defined Defence                                                     |                                                                                          |
 | SDL          | Security Development Lifecycle                                               |                                                                                          |
@@ -77,10 +81,11 @@ lang: en
 - [AAP-06 NATO Glossary of Terms and Definitions Edition 2019](https://www.coemed.org/files/stanags/05_AAP/AAP-06_2019_EF.pdf)
 
 [ADKAR]: https://www.prosci.com/methodology/adkar
-[RFC8175]: https://datatracker.ietf.org/doc/rfc8175/ "Dynamic Link Exchange Protocol (DLEP)"
-[NATO_PfP]: https://www.nato.int/cps/en/natohq/topics_50349.htm
-[NATO_PfP_Countries]: https://www.nato.int/cps/en/natolive/topics_82584.htm
 [DEU_PfP_Laender]: https://www.laenderdaten.info/staatenbuendnis/partnerschaft-fuer-den-frieden.php
+[NATO_PfP_Countries]: https://www.nato.int/cps/en/natolive/topics_82584.htm
+[NATO_PfP]: https://www.nato.int/cps/en/natohq/topics_50349.htm
+[RFC8175]: https://datatracker.ietf.org/doc/rfc8175/ "Dynamic Link Exchange Protocol (DLEP)"
+[SAFe]: https://www.scaledagileframework.com/
 
 <!-- prettier-ignore-start -->
 *[ACE]: allied command europe
@@ -94,10 +99,12 @@ lang: en
 *[FYI]: For your interest
 *[HC]: Head Count
 *[IED]: Improvised Explosive Devices
+*[IETD]: Interaktive Elektronische Technische Dokumentation
 *[MRB]: Material Review Board
 *[PRD]: Product Requirement Definition
 *[PSB]: Please see below
 *[RTFM]: Read the friendly manual
+*[SAFe]: Scaled Agile Framework
 *[SCQA]: Situation, Complication, Question und Answer
 *[SDL]: Security Development Lifecycle
 *[SIF]: Supplier’s Integration Facility
