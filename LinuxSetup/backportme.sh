@@ -36,21 +36,21 @@ echo "=============================================="
 
 onedriveinst() {
 	repo="https://salsa.debian.org/debian/onedrive.git"
-	dir="$(basename "$repo" .git)"
+	dir="$(basename "${repo}" .git)"
 
-	if [ -z "$repo" ]; then
+	if [ -z "${repo}" ]; then
 		printf 'No repository specified\n'
 		return 1
 	fi
 
-	if [ -d "$dir" ]; then
-		printf 'Directory %s exists, pulling latest changes\n' "$dir"
-		(cd "$dir" && git pull --ff-only) || return 1
+	if [ -d "${dir}" ]; then
+		printf 'Directory %s exists, pulling latest changes\n' "${dir}"
+		(cd "${dir}" && git pull --ff-only) || return 1
 	else
-		git clone "$repo" || return 1
+		git clone "${repo}" || return 1
 	fi
 
 	# ./configure.sh || return 1
-	(cd "$dir" && debuild -us -uc -b) || return 1
-	(cd "$dir" && dpkg-buildpackage --unsigned-source --unsigned-changes --build=binary --root-command=sudo) || return 1
+	(cd "${dir}" && debuild -us -uc -b) || return 1
+	(cd "${dir}" && dpkg-buildpackage --unsigned-source --unsigned-changes --build=binary --root-command=sudo) || return 1
 }
