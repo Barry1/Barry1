@@ -146,3 +146,25 @@ exiftool -d '%r %a, %B %e, %Y' -DateTimeOriginal -S -s *.jpg
 Print formatted date/time for all JPG files in the current directory.
 
 Many more interesting examples could be found in the [man-pages](https://linux.die.net/man/1/exiftool#:~:text=Reading%20Examples).
+
+### Softmaker FreeOffice
+
+https://www.freeoffice.com/de/service/tipps-und-tricks/linux
+
+```sh
+su -
+mkdir -p /etc/apt/keyrings
+wget -qO- https://shop.softmaker.com/repo/linux-repo-public.key | gpg --dearmor > /etc/apt/keyrings/softmaker.gpg
+# .list is old format
+# echo "deb [signed-by=/etc/apt/keyrings/softmaker.gpg] https://shop.softmaker.com/repo/apt stable non-free" > /etc/apt/sources.list.d/softmaker.list
+#  .sources is new (Deb822) format - `apt modernize-sources` can convert old to new
+cat <<EOF > /etc/apt/sources.list.d/softmaker.sources
+Types: deb
+URIs: https://shop.softmaker.com/repo/apt/
+Suites: stable
+Components: non-free
+Signed-By: /etc/apt/keyrings/softmaker.gpg
+EOF
+apt update
+apt install softmaker-freeoffice-2024
+```
