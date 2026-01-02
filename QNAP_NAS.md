@@ -1,8 +1,20 @@
 ---
 title: Information for using QNAP NAS
-date: 09. September 2024
-authro: Dr. Bastian Ebeling
+date: 02. Januar 2026
+author: Dr. Bastian Ebeling
 ---
+
+## Entware
+
+Die Software [Entware](http://entware.net/) stellt ein Paketmanagement-System für eingebettete Systeme bereit, das es ermöglicht, zusätzliche Softwarepakete auf Geräten wie QNAP NAS zu installieren und zu verwalten.
+
+Installation via SSH:
+
+```sh
+wget -O - http://bin.entware.net/armv5sf-k3.2/installer/generic.sh | /bin/sh
+```
+
+Als Beispiel ist dann zum Beispiel `htop` oder `rdfind` installierbar.
 
 ## Virus update
 
