@@ -3,27 +3,25 @@
 import glob
 import os
 import sys
-
+from logging import INFO, Logger, basicConfig, getLogger
 import piexif
 
-# formatted with `autopep8 --in-place place_by_exiftag_py2.py`
-# formatted with `isort place_by_exiftag_py2.py`
-# isort --profile=black --py=27 place_by_exiftag_py2.py
+thelogger: Logger = getLogger(__name__)
 
 
-def processfile(thepath, thefilename):
+def processfile(thepath, thefilename) -> None:
     srcpath = thepath + os.sep + thefilename
-    print(srcpath)
+    thelogger.info(srcpath)
     exif_dict = piexif.load(srcpath)
     try:
         thetagdata = exif_dict["Exif"][36867]  # DateTimeOriginal
-    except KeyError:
-        pass
+    except KeyError as thekeyerror:
+        thelogger.error(thekeyerror)
     else:
         dasjahr = thetagdata[:4]
         dermonat = thetagdata[5:7]
         dertag = thetagdata[8:10]
-        targetfolder = (
+        targetfolder: str = (
             thepath
             + os.sep
             + dasjahr.decode()
@@ -35,8 +33,7 @@ def processfile(thepath, thefilename):
         try:
             os.makedirs(targetfolder)
         except OSError as theerr:
-            # print(theerr)
-            pass
+            thelogger.error(theerr)
         # Dateien (egal welche Erweiterung) verschieben
         for gleichedatei in glob.glob(srcpath[:-4] + "*"):
             try:
@@ -45,24 +42,25 @@ def processfile(thepath, thefilename):
                     targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
                 )
             except OSError as theerr:
-                print(
-                    "rename",
+                thelogger.error(
+                    "rename %s to %s resulted in:",
                     gleichedatei,
                     targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
-                    "resulted in:",
+                    theerr,
                 )
-                print(theerr)
 
 
 if __name__ == "__main__":
+    if __debug__:
+        basicConfig(level=INFO)
     if len(sys.argv) > 1:
-        thepath = sys.argv[1]
+        thepath: str = sys.argv[1]
     else:
-        thepath = "/share/Fotos/IPhoneMove"
-    print(thepath)
-    alledateien = os.listdir(thepath)
+        thepath: str = "/share/Fotos/IPhoneMove"
+    thelogger.info("Processing Path: %s", thepath)
+    alledateien: list[str] = os.listdir(path=thepath)
     for gefunden in alledateien:
         if (
             gefunden.lower().endswith(".jpg") or gefunden.lower().endswith(".jpeg")
         ) and gefunden.startswith("IMG"):
-            processfile(thepath, gefunden)
+            processfile(thepath=thepath, thefilename=gefunden)
