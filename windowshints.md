@@ -1,8 +1,23 @@
 ---
 title: Just hints for running, using and administering Windows
 author: Dr. Bastian Ebeling
-date: "18.09.2022"
+date: 14th January 2026
 ---
+
+## Sysinternals Tools
+
+Sysinternals provides several tools for monitoring and managing network shares and related protocols like CIFS/SMB.
+The tools can be run directly from the web via the Sysinternals Live service, which uses the WebDAV protocol to simulate a network share. To map the Sysinternals Live share to a drive letter (e.g., S:), you can use the following command in the Command Prompt:
+
+```bat
+net use s: \\live.sysinternals.com\DavWWWRoot
+```
+
+This command creates a symbolic link named "SysinternalsLive" in the current directory, pointing to the Sysinternals Live share.
+
+```bat
+mklink /D SysinternalsLive \\live.sysinternals.com\DavWWWRoot
+```
 
 ## Download Windows ISOs
 
