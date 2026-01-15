@@ -41,28 +41,39 @@ lint:
   #https://docs.trunk.io/code-quality/overview/getting-started/configuration/plugins/external-repositories
   #https://docs.trunk.io/code-quality/overview/getting-started/configuration/lint/definitions
   #https://docs.trunk.io/code-quality/overview/getting-started/configuration/lint/commands
-  files:
-    - name: LaTeX
-      extensions: [tex]
+  #  files:
+  #    - name: LaTeX
+  #      extensions: [tex]
   definitions:
     - name: chktex
-      files:
-        - LaTeX
+      #      type: lint
+      files: [latex]
+      #        - LaTeX
+      #      version_command: chktex --version
       commands:
         - name: chktex
-          run: chktex ${target}
-          #          output: pass_fail
-          #          success_codes: [0, 1]
+          read_output_from: stdout
+          batch: true
+          is_security: false
+          success_codes: [0, 1, 2]
           output: regex
-          success_codes: [0, 1]
-          #parse_regex: '((?P<severity>Warning|Error|Info) (?P<code>\d+) in (?P<path>.*) line (?P<line>\d+): (?P<message>.*\n.*\n.*))'
-          parse_regex: '((?P<severity>.*) (?P<code>\d+) in (?P<path>.*) line (?P<line>\d+): (?P<message>.*\n.*\n.*))'
+          ########################## runs smoothly, but less info ##########################
+          #run: chktex -v0 -q ${target}
+          #parse_regex: '((?P<path>.*):(?P<line>\d+):(?P<column>\d+):(?P<code>\d+):(?P<message>.*))'
+          ########################## runs smoothly, no column ##########################
+          #run: chktex -q ${target}
+          #parse_regex: '((?P<severity>Warning|Error|Info) (?P<code>\d+) in (?P<path>.*) line (?P<line>\d+): (?P<message>.*))'
+          #          run: |
+          #            chktex ${target} --quiet --format '%f:%k:%l:%c:%n:%m
+          #            '
+          run: |
+            chktex ${target} --quiet --format %f:%k:%l:%c:%n:%m
+          parse_regex: '((?P<path>.*):(?P<severity>Warning|Error|Info):(?P<line>\d+):(?P<column>\d+):(?P<code>\d+):(?P<message>.*))'
           #https://regex101.com/r/4MtUkC/1
       version_command:
         run: chktex --version
     - name: lacheck
-      files:
-        - LaTeX
+      files: [latex]
       commands:
         - name: lacheck
           run: lacheck ${target}
