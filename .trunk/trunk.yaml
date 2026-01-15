@@ -51,8 +51,13 @@ lint:
       commands:
         - name: chktex
           run: chktex ${target}
-          output: pass_fail
+          #          output: pass_fail
+          #          success_codes: [0, 1]
+          output: regex
           success_codes: [0, 1]
+          #parse_regex: '((?P<severity>Warning|Error|Info) (?P<code>\d+) in (?P<path>.*) line (?P<line>\d+): (?P<message>.*\n.*\n.*))'
+          parse_regex: '((?P<severity>.*) (?P<code>\d+) in (?P<path>.*) line (?P<line>\d+): (?P<message>.*\n.*\n.*))'
+          #https://regex101.com/r/4MtUkC/1
       version_command:
         run: chktex --version
     - name: lacheck
