@@ -6,6 +6,9 @@ plugins:
     - id: trunk
       ref: v1.7.4
       uri: https://github.com/trunk-io/plugins
+#    - id: basti-plugins
+#      ref: main
+#      uri: https://github.com/Barry1/trunk-plugins
 lint:
   enabled:
     - sourcery@1.41.1
@@ -16,8 +19,8 @@ lint:
     - trufflehog@3.92.4
     - git-diff-check
     - pyright@1.1.407
-    - ruff@0.14.10
-    - yamllint@1.37.1
+    - ruff@0.14.11
+    - yamllint@1.38.0
     - mypy@1.19.1
     - shfmt@3.6.0
     - shellcheck@0.11.0
@@ -29,8 +32,53 @@ lint:
     - flake8@7.3.0
     - taplo@0.10.0
     - black@25.12.0
+    - chktex
+    - lacheck
   disabled:
     - gitleaks
+  #https://docs.trunk.io/code-quality/overview/linters/custom-linters
+  #https://github.com/trunk-io/plugins/blob/main/CONTRIBUTING.md
+  #https://docs.trunk.io/code-quality/overview/getting-started/configuration/plugins/external-repositories
+  #https://docs.trunk.io/code-quality/overview/getting-started/configuration/lint/definitions
+  #https://docs.trunk.io/code-quality/overview/getting-started/configuration/lint/commands
+  #  files:
+  #    - name: LaTeX
+  #      extensions: [tex]
+  definitions:
+    - name: chktex
+      #      type: lint
+      files: [latex]
+      #        - LaTeX
+      #      version_command: chktex --version
+      commands:
+        - name: chktex
+          read_output_from: stdout
+          batch: true
+          is_security: false
+          success_codes: [0, 1, 2]
+          output: regex
+          ########################## runs smoothly, but less info ##########################
+          #run: chktex -v0 -q ${target}
+          #parse_regex: '((?P<path>.*):(?P<line>\d+):(?P<column>\d+):(?P<code>\d+):(?P<message>.*))'
+          ########################## runs smoothly, no column ##########################
+          #run: chktex -q ${target}
+          #parse_regex: '((?P<severity>Warning|Error|Info) (?P<code>\d+) in (?P<path>.*) line (?P<line>\d+): (?P<message>.*))'
+          #          run: |
+          #            chktex ${target} --quiet --format '%f:%k:%l:%c:%n:%m
+          #            '
+          run: |
+            chktex ${target} --quiet --format %f:%k:%l:%c:%n:%m
+          parse_regex: '((?P<path>.*):(?P<severity>Warning|Error|Info):(?P<line>\d+):(?P<column>\d+):(?P<code>\d+):(?P<message>.*))'
+          #https://regex101.com/r/4MtUkC/1
+      version_command:
+        run: chktex --version
+    - name: lacheck
+      files: [latex]
+      commands:
+        - name: lacheck
+          run: lacheck ${target}
+          output: pass_fail
+          success_codes: [0, 1]
 runtimes:
   enabled:
     - go@1.21.0
