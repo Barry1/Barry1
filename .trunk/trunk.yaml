@@ -11,7 +11,7 @@ plugins:
 #      uri: https://github.com/Barry1/trunk-plugins
 lint:
   enabled:
-    - sourcery@1.41.1
+    - sourcery@1.43.0
     - bandit@1.9.3
     - checkov@3.2.497
     - osv-scanner@2.3.2
@@ -92,5 +92,5 @@ actions:
     - trunk-upgrade-available
 tools:
   enabled:
-    - sourcery@1.41.1
+    - sourcery@1.43.0
     - poetry@2.3.0
