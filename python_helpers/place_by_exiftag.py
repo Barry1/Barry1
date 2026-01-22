@@ -35,7 +35,7 @@ def processfile(thepath, thefilename) -> None:
         except OSError as theerr:
             thelogger.error(theerr)
         # Dateien (egal welche Erweiterung) verschieben
-        for gleichedatei in glob.glob(srcpath[:-4] + "*"):
+        for gleichedatei in glob.glob(f"{srcpath[:-4]}*"):
             try:
                 os.rename(
                     gleichedatei,
@@ -53,10 +53,7 @@ def processfile(thepath, thefilename) -> None:
 if __name__ == "__main__":
     if __debug__:
         basicConfig(level=INFO)
-    if len(sys.argv) > 1:
-        thepath: str = sys.argv[1]
-    else:
-        thepath: str = "/share/Fotos/IPhoneMove"
+    thepath: str = sys.argv[1] if len(sys.argv) > 1 else "/share/Fotos/IPhoneMove"
     thelogger.info("Processing Path: %s", thepath)
     alledateien: list[str] = os.listdir(path=thepath)
     for gefunden in alledateien:
