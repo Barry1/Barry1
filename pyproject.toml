@@ -14,7 +14,7 @@ jobs = 0
 # https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
 [tool.black]
 #line-length = 79
-target-version = ['py39'] #'py37', 'py38',
+target-version = ['py313'] #'py37', 'py38',
 color = true
 safe = true
 
@@ -39,7 +39,7 @@ verbose = 2
 [tool.mypy]
 disallow_untyped_defs = true
 pretty = true
-python_version = 3.9
+python_version = 3.13
 show_error_codes = true
 show_error_context = true
 strict = true
@@ -85,7 +85,7 @@ name = "Barry1"
 version = "0.0.1"
 description = "helper and somehow template"
 authors = [{ name = "Dr. Bastian Ebeling" }]
-requires-python = ">=3.9"
+requires-python = ">=3.13"
 dependencies = ["vermin", "pyre-check>=0.9.13"]
 readme = "README.md"
 
@@ -97,6 +97,7 @@ ruff = "^0.6.4"
 black = { extras = ["python2"], version = "^24.8.0" }
 autopep8 = "^2.3.1"
 yapf = "^0.40.2"
+pyupgrade = "^3.21.2"
 [tool.poetry.group.dev.dependencies.isort]
 version = "*"
 extras = ["pyproject", "colors"]

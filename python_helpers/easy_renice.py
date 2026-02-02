@@ -7,7 +7,7 @@ import psutil
 
 if __name__ == "__main__":
     print(f'I will renice all "{sys.argv[1:]}"-processes.')
-    processlist: List[psutil.Process] = [
+    processlist: list[psutil.Process] = [
         psutil.Process(thepid)
         for procname in sys.argv[1:]
         for thepid in psutil.pids()
