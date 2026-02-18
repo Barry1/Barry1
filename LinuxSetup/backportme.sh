@@ -14,8 +14,8 @@ backportingfunction() {
 	echo "Building source package for $1..."
 	apt-get --build --only-source source "$1"
 	for pkg in *"$1"*.deb; do
-		[ -e "$pkg" ] || continue
-		case "$pkg" in *dbgsym*) ;; *)
+		[ -e "${pkg}" ] || continue
+		case "${pkg}" in *dbgsym*) ;; *)
 			echo "=============================================="
 			echo "Installing package: ${pkg}"
 			sudo dpkg -i "${pkg}"
