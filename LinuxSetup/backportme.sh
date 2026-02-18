@@ -1,24 +1,34 @@
 #!/bin/sh
-printf '\v\t\tBackporting package: %s\n' "$1"
-echo "=============================================="
-echo "Updating package lists..."
-sudo apt update
-echo "=============================================="
-echo "Checking available versions for $1..."
-rmadison "$1"
-echo "=============================================="
-echo "Installing build dependencies for $1..."
-sudo apt-get build-dep --only-source "$1"
-echo "=============================================="
-echo "Building source package for $1..."
-apt-get --build --only-source source "$1"
-for pkg in "$1"_*.deb; do
-	echo "Installing package: ${pkg}"
-	sudo dpkg -i "${pkg}"
-done
-echo "=============================================="
-echo "Backport of $1 complete."
-echo "=============================================="
+backportingfunction() {
+	printf '\v\t\tBackporting package: %s\n' "$1"
+	echo "=============================================="
+	echo "Updating package lists..."
+	sudo apt update
+	echo "=============================================="
+	echo "Checking available versions for $1..."
+	rmadison "$1"
+	echo "=============================================="
+	echo "Installing build dependencies for $1..."
+	sudo apt-get build-dep --only-source "$1"
+	echo "=============================================="
+	echo "Building source package for $1..."
+	apt-get --build --only-source source "$1"
+	for pkg in *"$1"*.deb; do
+		[ -e "$pkg" ] || continue
+		case "$pkg" in *dbgsym*) ;; *)
+			echo "=============================================="
+			echo "Installing package: ${pkg}"
+			sudo dpkg -i "${pkg}"
+			;;
+		esac
+	done
+	echo "=============================================="
+	echo "  Backport and Installation of $1 complete.   "
+	echo "=============================================="
+}
+
+backportingfunction "$1"
+#backportingfunction yyjson
 
 # Usage: ./backportme.sh <package-name>
 # Example: ./backportme.sh curl
@@ -61,6 +71,6 @@ onedriveinst() {
 	fi
 
 	# ./configure.sh || return 1
-	(cd "${dir}" && debuild -us -uc -b) || return 1
-	(cd "${dir}" && dpkg-buildpackage --unsigned-source --unsigned-changes --build=binary --root-command=sudo) || return 1
+	cd "${dir}" && debuild -us -uc -b || return 1
+	cd "${dir}" && dpkg-buildpackage --unsigned-source --unsigned-changes --build=binary --root-command=sudo || return 1
 }
