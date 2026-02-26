@@ -15,7 +15,7 @@ lint:
     - svgo@4.0.0
     - sourcery@1.43.0
     - bandit@1.9.3
-    - checkov@3.2.505
+    - checkov@3.2.506
     - osv-scanner@2.3.3
     - trivy@0.69.1
     - trufflehog@3.93.4
