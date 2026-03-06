@@ -30,7 +30,6 @@ lint:
     - isort@8.0.1
     - autopep8@2.3.2
     - markdownlint@0.47.0
-    - prettier
     - flake8@7.3.0
     - taplo@0.10.0
     - black@26.1.0
