@@ -81,6 +81,11 @@ lint:
           output: pass_fail
           success_codes: [0, 1]
 runtimes:
+  definitions:
+    - type: node
+      runtime_environment:
+        - name: NODE_EXTRA_CA_CERTS
+          value: /home/ebeling/.local/zscaler-root.pem
   enabled:
     - go@1.21.0
     - node@22.16.0
@@ -93,5 +98,6 @@ actions:
     - trunk-upgrade-available
 tools:
   enabled:
+    - trunk-toolbox@0.5.4
     - sourcery@1.43.0
     - poetry@2.3.2
