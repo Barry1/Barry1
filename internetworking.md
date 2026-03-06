@@ -26,3 +26,10 @@ Just for backup reasons, you can also visit <https://archive.today/wg3Lt> or <ht
 - <http://neverssl.com>
 
 Über die CLI kann es per `curl -LsI http://neverssl.com/` oder `wget -S --spider http://neverssl.com/` helfen.
+
+### Examples
+
+- <http://www.msftconnecttest.com/redirect>
+- <http://www.msftconnecttest.com/connecttest.txt>
+- <http://edge-http.microsoft.com/captiveportal/generate_204>
+- <https://wifi-portal.munich-airport.de/108/portal/>
