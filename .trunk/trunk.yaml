@@ -4,7 +4,7 @@ cli:
 plugins:
   sources:
     - id: trunk
-      ref: v1.7.4
+      ref: v1.7.5
       uri: https://github.com/trunk-io/plugins
 #    - id: basti-plugins
 #      ref: main
@@ -14,23 +14,23 @@ lint:
     - oxipng@10.1.0
     - svgo@4.0.0
     - sourcery@1.43.0
-    - bandit@1.9.3
-    - checkov@3.2.506
+    - bandit@1.9.4
+    - checkov@3.2.507
     - osv-scanner@2.3.3
-    - trivy@0.69.1
-    - trufflehog@3.93.4
+    - trivy@0.69.3
+    - trufflehog@3.93.7
     - git-diff-check
     - pyright@1.1.408
-    - ruff@0.15.2
+    - ruff@0.15.5
     - yamllint@1.38.0
     - mypy@1.19.1
     - shfmt@3.6.0
     - shellcheck@0.11.0
     - actionlint@1.7.11
-    - isort@8.0.0
+    - isort@8.0.1
     - autopep8@2.3.2
     - markdownlint@0.47.0
-    - prettier@3.8.1
+    - prettier
     - flake8@7.3.0
     - taplo@0.10.0
     - black@26.1.0
