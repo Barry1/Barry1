@@ -51,3 +51,36 @@ find . -wholename "*/.trunk/trunk.yaml" -not -path "*.venv*" -print -execdir sed
 This is also explained in <regexr.com/84sni>.
 
 For more details on RegExp see <https://regex101.com/> or <https://regexr.com/> or <>.
+
+## Behind Corporate proxy - example ZSCALER
+
+```powershell
+# 1. Pfad, an dem das PEM‑File landen soll
+$outFile = "C:\temp\zscaler-root.pem"
+# 2. Im Windows‑Store (LocalMachine\Root) nach dem ZSCALER‑CA‑Zertifikat suchen
+$cert = Get-ChildItem -Path Cert:\LocalMachine\Root `
+        | Where-Object { $_.Subject -match "Zscaler" -or $_.Issuer -match "Zscaler" } `
+        | Select-Object -First 1
+if (-not $cert) {
+    Write-Error "Kein ZSCALER‑CA‑Zertifikat im LocalMachine\Root‑Store gefunden."
+    exit 1
+}
+# 3. Zertifikat im PEM‑Format (Base64‑Kodiert) exportieren
+$bytes = $cert.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Cert)
+[System.IO.File]::WriteAllBytes($outFile, $bytes)
+# 4. Optional: Datei in lesbares PEM umwandeln (Header/Footer hinzufügen)
+$base64 = [Convert]::ToBase64String($bytes)
+$pem    = "-----BEGIN CERTIFICATE-----`r`n" +
+         ($base64 -replace '.{64}', '$&`r`n') +
+         "`r`n-----END CERTIFICATE-----"
+[System.IO.File]::WriteAllText($outFile, $pem)
+Write-Host "ZSCALER‑Root‑CA wurde nach $outFile exportiert"
+```
+
+```cmd
+set NODE_EXTRA_CA_CERTS=C:\temp\zscaler-root.pem
+```
+
+```sh
+export NODE_EXTRA_CA_CERTS=zscaler-root.pem
+```

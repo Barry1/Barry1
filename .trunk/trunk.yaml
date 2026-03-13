@@ -4,24 +4,28 @@ cli:
 plugins:
   sources:
     - id: trunk
-      ref: v1.7.5
+      ref: v1.7.6
       uri: https://github.com/trunk-io/plugins
 #    - id: basti-plugins
 #      ref: main
 #      uri: https://github.com/Barry1/trunk-plugins
 lint:
+  #  environment:
+  #    - name: NODE_EXTRA_CA_CERTS
+  #      value: /home/ebeling/.local/zscaler-root.pem
+  # trunk --env NODE_EXTRA_CA_CERTS=/home/ebeling/.local/zscaler-root.pem
   enabled:
     - oxipng@10.1.0
     - svgo@4.0.0
     - sourcery@1.43.0
     - bandit@1.9.4
-    - checkov@3.2.507
+    - checkov@3.2.508
     - osv-scanner@2.3.3
     - trivy@0.69.3
-    - trufflehog@3.93.7
+    - trufflehog@3.93.8
     - git-diff-check
     - pyright@1.1.408
-    - ruff@0.15.5
+    - ruff@0.15.6
     - yamllint@1.38.0
     - mypy@1.19.1
     - shfmt@3.6.0
@@ -32,11 +36,12 @@ lint:
     - markdownlint@0.47.0
     - flake8@7.3.0
     - taplo@0.10.0
-    - black@26.1.0
+    - black@26.3.1
     - chktex
     - lacheck
   disabled:
     - gitleaks
+    - prettier
   #https://docs.trunk.io/code-quality/overview/linters/custom-linters
   #https://github.com/trunk-io/plugins/blob/main/CONTRIBUTING.md
   #https://docs.trunk.io/code-quality/overview/getting-started/configuration/plugins/external-repositories
@@ -81,14 +86,8 @@ lint:
           output: pass_fail
           success_codes: [0, 1]
 runtimes:
-  definitions:
-    - type: node
-      runtime_environment:
-        - name: NODE_EXTRA_CA_CERTS
-          value: /home/ebeling/.local/zscaler-root.pem
   enabled:
     - go@1.21.0
-    - node@22.16.0
     - python@3.12.2
 actions:
   enabled:
@@ -97,6 +96,8 @@ actions:
     - trunk-announce
     - trunk-upgrade-available
 tools:
+  disabled:
+    - prettier
   enabled:
     - trunk-toolbox@0.5.4
     - sourcery@1.43.0
