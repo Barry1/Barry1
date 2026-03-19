@@ -57,9 +57,6 @@ color_output = true
 profile = "black"
 skip = "venv"
 
-[tool.pylama.pep8]
-max_line_length = 79
-
 [tool.pylint.MASTER]
 jobs = 0
 output-format = "colorized"
