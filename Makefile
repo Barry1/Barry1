@@ -50,7 +50,7 @@ showpipconf:
 vermin:
 	poetry run vermin -vv --backport typing --no-parse-comments .
 
-FullGlossary.pdf: FullGlossary.tex Glossary.tex /home/ebeling/.latexmkrc
+FullGlossary.pdf: FullGlossary.tex Glossary.tex /home/ebeling/.latexmkrc Acronyms.tex
 #	xelatex FullGlossary.tex
 #	makeglossaries FullGlossary
 #	xelatex FullGlossary.tex
@@ -77,4 +77,3 @@ endef
 export latexmkheredocscript
 
 /home/ebeling/.latexmkrc:; @ eval "$$latexmkheredocscript"
-
