@@ -1,11 +1,11 @@
 import io
 import zipfile
 from pathlib import Path
-
+from typing import IO
 from lxml import etree
 
 
-def remove_all_excel_protections(xml_file_obj) -> bytes:
+def remove_all_excel_protections(xml_file_obj: IO[bytes]) -> bytes:
     """
     Entfernt alle relevanten Protection-Elemente aus einem XML-File-Objekt:
       - sheetProtection (in Arbeitsblättern)
@@ -19,6 +19,7 @@ def remove_all_excel_protections(xml_file_obj) -> bytes:
         bytes mit dem bereinigten XML
     """
     # Inhalt lesen (funktioniert bei 'r' und 'rb' Modus)
+    content: bytes
     if isinstance(xml_file_obj, io.TextIOBase):
         content = xml_file_obj.read().encode("utf-8")
     else:
@@ -30,9 +31,15 @@ def remove_all_excel_protections(xml_file_obj) -> bytes:
     parser = etree.XMLParser(remove_blank_text=True, remove_comments=False)
     tree = etree.fromstring(content, parser)
 
-    namespaces = {"x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+    namespaces: dict[str, str] = {
+        "x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+    }
 
-    protection_tags = ["sheetProtection", "workbookProtection", "fileSharing"]
+    protection_tags: list[str] = [
+        "sheetProtection",
+        "workbookProtection",
+        "fileSharing",
+    ]
     removed_count = 0
 
     for tag in protection_tags:
@@ -82,11 +89,10 @@ def unlock_excel_completely(input_path: str, output_path: str = None):
         ) as zout:
             for item in zin.infolist():
                 with zin.open(item) as file_obj:
-
                     zout.writestr(
                         zinfo_or_arcname=item,
                         data=(
-                            remove_all_excel_protections(file_obj)
+                            remove_all_excel_protections(xml_file_obj=file_obj)
                             if (
                                 item.filename == "xl/workbook.xml"
                                 or (
