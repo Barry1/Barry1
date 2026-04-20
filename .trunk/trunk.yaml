@@ -19,7 +19,7 @@ lint:
     - svgo@4.0.0
     - sourcery@1.43.0
     - bandit@1.9.4
-    - checkov@3.2.508
+    - checkov@3.2.510
     - osv-scanner@2.3.3
     - trivy@0.69.3
     - trufflehog@3.93.8
@@ -87,6 +87,7 @@ lint:
           success_codes: [0, 1]
 runtimes:
   enabled:
+    - node@22.16.0
     - go@1.21.0
     - python@3.12.2
 actions:

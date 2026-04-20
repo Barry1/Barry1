@@ -1,6 +1,7 @@
 #!/usr/local/bin/python2.7
 # env not working /usr/bin/env python2.7
 """Processes Images and moves into SubFolder for Year and Day."""
+
 import glob
 import os
 import sys

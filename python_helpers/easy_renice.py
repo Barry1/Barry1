@@ -18,8 +18,6 @@ if __name__ == "__main__":
             # pyright: reportUnknownMemberType=false
             # pyright: reportUnknownArgumentType=false
             # pyright: reportGeneralTypeIssues=false
-            psutil.ABOVE_NORMAL_PRIORITY_CLASS
-            if psutil.WINDOWS
-            else 15
+            psutil.ABOVE_NORMAL_PRIORITY_CLASS if psutil.WINDOWS else 15
         )
         print(f"{theprocess} with {repr(theprocess.nice())}")
