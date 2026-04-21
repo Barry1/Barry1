@@ -5,6 +5,7 @@ set -- --output "${1%.md}.pdf" "$@"
 PANDOC_DIR=$(pandoc -v | grep "User data directory" | awk --field-separator : '{print $2}')
 ## remove leading spaces
 PANDOC_DIR=${PANDOC_DIR## }
+RELEASE_URL=https://github.com/pandoc/lua-filters/releases/latest
 
 set -- "--pdf-engine=xelatex" "$@"
 #set -- "--variable=author:Dr. Bastian Ebeling" "$@"
@@ -16,6 +17,10 @@ set -- "--from=markdown+smart+auto_identifiers+fancy_lists+task_lists+definition
 set -- "--metadata=plantumlPath:/usr/share/plantuml/plantuml.jar" "$@"
 if [ -f "${PANDOC_DIR}/filters/diagram-generator.lua" ]; then
 	set -- "--lua-filter=${PANDOC_DIR}/filters/diagram-generator.lua" "$@"
+else
+	echo "WARNING: diagram-generator.lua not found in ${PANDOC_DIR}/filters"
+	echo "INSTALL with:"
+	echo "curl -LSs $RELEASE_URL/download/lua-filters.tar.gz | tar --strip-components=1 --one-top-level=$PANDOC_DIR -zvxf -"
 fi
 if [ -x "~/.local/bin/pandoc-kroki" ]; then
 	set -- "--filter=pandoc-kroki" "$@"
@@ -40,8 +45,7 @@ prepare() {
 	pipx install --force "git+https://github.com/Barry1/pandoc-kroki-filter.git"
 	#https://github.com/pandoc/lua-filters#installation
 	#pandoc -v
-	PANDOC_DIR=/home/ebeling/.local/share/pandoc
-	RELEASE_URL=https://github.com/pandoc/lua-filters/releases/latest
+	#PANDOC_DIR=/home/ebeling/.local/share/pandoc
 	curl -LSs $RELEASE_URL/download/lua-filters.tar.gz |
 		tar --strip-components=1 --one-top-level=$PANDOC_DIR -zvxf -
 }
