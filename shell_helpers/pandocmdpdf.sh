@@ -14,13 +14,22 @@ set -- "--variable=documentclass:scrartcl" "$@"
 set -- "--table-of-contents" "$@"
 set -- "--from=markdown+smart+auto_identifiers+fancy_lists+task_lists+definition_lists+definition_lists+table_captions+pipe_tables+yaml_metadata_block+footnotes+citations+emoji+abbreviations+autolink_bare_uris" "$@"
 set -- "--metadata=plantumlPath:/usr/share/plantuml/plantuml.jar" "$@"
-set -- "--lua-filter=${PANDOC_DIR}/filters/diagram-generator.lua" "$@"
-set -- "--filter=pandoc-kroki" "$@"
-set -- "--filter=mermaid-filter" "$@"
+if [ -f "${PANDOC_DIR}/filters/diagram-generator.lua" ]; then
+	set -- "--lua-filter=${PANDOC_DIR}/filters/diagram-generator.lua" "$@"
+fi
+if [ -x "~/.local/bin/pandoc-kroki" ]; then
+	set -- "--filter=pandoc-kroki" "$@"
+fi
+#sudo npm install --global mermaid-filter
+#set -- "--filter=mermaid-filter" "$@"
+#pipx install pandoc-mermaid-filter
+if [ -x "~/.local/bin/pandoc-mermaid" ]; then
+	set -- "--filter=pandoc-mermaid" "$@"
+fi
 
 prepare() {
 	sudo apt-get install --upgrade pandoc-plantuml-filter librsvg2-bin pipx
-	sudo npm install --global mermaid-filter
+
 	#pip install "git+https://gitlab.com/myriacore/pandoc-kroki-filter.git"
 	#https://medium.com/geekculture/2022-fork-a-repository-from-gilab-to-github-58690ee5df1c
 	#echo "CHANGE NEEDED"
