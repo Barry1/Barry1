@@ -20,7 +20,7 @@ if [ -f "${PANDOC_DIR}/filters/diagram-generator.lua" ]; then
 else
 	echo "WARNING: diagram-generator.lua not found in ${PANDOC_DIR}/filters"
 	echo "INSTALL with:"
-	echo "curl -LSs $RELEASE_URL/download/lua-filters.tar.gz | tar --strip-components=1 --one-top-level=$PANDOC_DIR -zvxf -"
+	echo "curl -LSs ${RELEASE_URL}/download/lua-filters.tar.gz | tar --strip-components=1 --one-top-level=${PANDOC_DIR} -zvxf -"
 fi
 if [ -x "~/.local/bin/pandoc-kroki" ]; then
 	set -- "--filter=pandoc-kroki" "$@"
@@ -47,7 +47,7 @@ prepare() {
 	#pandoc -v
 	#PANDOC_DIR=/home/ebeling/.local/share/pandoc
 	curl -LSs $RELEASE_URL/download/lua-filters.tar.gz |
-		tar --strip-components=1 --one-top-level=$PANDOC_DIR -zvxf -
+		tar --strip-components=1 --one-top-level="$PANDOC_DIR" -zvxf -
 }
 
 pandoc "$@"
