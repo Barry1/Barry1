@@ -8,13 +8,13 @@ poetry self update --quiet
 #env_parallel --session
 
 handledir() {
-    echo "=============== STARTING $1 ==============="
-    cd "$1"
-    git pull --quiet 2>&1
-    [ -f pyproject.toml ] && poetry update --quiet
-    #[ -f .trunk/trunk.yaml ] && trunk upgrade --ci --color --no-progress > /dev/null
-    cd ..
-    echo "=============== ENDING $1 ==============="
+	echo "=============== STARTING $1 ==============="
+	cd "$1"
+	git pull --quiet 2>&1
+	[ -f pyproject.toml ] && poetry update --quiet
+	#[ -f .trunk/trunk.yaml ] && trunk upgrade --ci --color --no-progress > /dev/null
+	cd ..
+	echo "=============== ENDING $1 ==============="
 }
 export -f handledir
 # https://medium.com/@alonisser/parallel-straight-from-your-command-line-feb6db8b6cee
