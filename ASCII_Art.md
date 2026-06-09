@@ -1,6 +1,7 @@
-______________________________________________________________________
-
-## title: ASCII-Art Sammlung Author: Dr. Bastian Ebeling
+---
+title: ASCII-Art Sammlung
+author: Dr. Bastian Ebeling
+---
 
 ## Weihnachtsmann
 

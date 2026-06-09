@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: Information related to fonts date: 7th of July 2024 author: Dr. Bastian Ebeling
+---
+title: Information related to fonts
+date: 7th of July 2024
+author: Dr. Bastian Ebeling
+---
 
 ## Teaser
 

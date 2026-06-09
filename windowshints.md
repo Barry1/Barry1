@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: Just hints for running, using and administering Windows author: Dr. Bastian Ebeling date: 14th January 2026
+---
+title: Just hints for running, using and administering Windows
+author: Dr. Bastian Ebeling
+date: 14th January 2026
+---
 
 ## Sysinternals Tools
 

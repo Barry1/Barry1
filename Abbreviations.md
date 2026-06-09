@@ -1,6 +1,9 @@
-______________________________________________________________________
-
-## title: Abbrevations (for business use) date: 24. Februar 2025 author: Dr. Bastian Ebeling lang: en
+---
+title: Abbrevations (for business use)
+date: 24. Februar 2025
+author: Dr. Bastian Ebeling
+lang: en
+---
 
 | Abbreviation | Long                                                                         | Explanation                                                                              |
 | ------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |

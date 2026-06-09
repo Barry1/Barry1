@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: My Experiences and Ideas around git and github author: Dr. Bastian Ebeling date: 29. Juli 2024
+---
+title: My Experiences and Ideas around git and github
+author: Dr. Bastian Ebeling
+date: 29. Juli 2024
+---
 
 ## act - running github-workflows locally
 

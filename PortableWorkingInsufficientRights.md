@@ -1,6 +1,6 @@
-______________________________________________________________________
-
-## title: How to work with insufficient rights
+---
+title: How to work with insufficient rights
+---
 
 ## PortableBuildTools
 

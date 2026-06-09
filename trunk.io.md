@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: trunk.io date: 11.01.2023 author: Dr. Bastian Ebeling
+---
+title: trunk.io
+date: 11.01.2023
+author: Dr. Bastian Ebeling
+---
 
 ## Installation
 

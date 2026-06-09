@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: Famous words - many in german language date: 26. März 2025 author: Dr. Bastian Ebeling
+---
+title: Famous words - many in german language
+date: 26. März 2025
+author: Dr. Bastian Ebeling
+---
 
 ## Englische Sprichworte, Zitate und Phrasen
 

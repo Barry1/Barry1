@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: Befehle und Infos um CDs zu rippen, zu brennen oder Musik zu konvertieren date: 26. August 2023 author: Dr. Bastian Ebeling
+---
+title: Befehle und Infos um CDs zu rippen, zu brennen oder Musik zu konvertieren
+date: 26. August 2023
+author: Dr. Bastian Ebeling
+---
 
 ## Tool allgemein und Installation
 

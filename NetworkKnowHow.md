@@ -1,6 +1,7 @@
-______________________________________________________________________
-
-## title: Networking Details author: Dr. Bastian Ebeling
+---
+title: Networking Details
+author: Dr. Bastian Ebeling
+---
 
 ## Netzwerkgeräte
 

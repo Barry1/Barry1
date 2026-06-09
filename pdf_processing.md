@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: Hints for processing PDF-files author: Dr. Bastian Ebeling date: 22.12.2022
+---
+title: Hints for processing PDF-files
+author: Dr. Bastian Ebeling
+date: 22.12.2022
+---
 
 ## Extract pictures
 

@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: General information on running/using linux date: 18. August 2024 author: Dr. Bastian Ebeling
+---
+title: General information on running/using linux
+date: 18. August 2024
+author: Dr. Bastian Ebeling
+---
 
 ## Downloadlinks
 

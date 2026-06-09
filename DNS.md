@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## title: DNS Server für besseres und sichereres Internet date: 21. Oktober 2025 author: Dr. Bastian Ebeling
+---
+title: DNS Server für besseres und sichereres Internet
+date: 21. Oktober 2025
+author: Dr. Bastian Ebeling
+---
 
 ## DNS 4 EU
 
