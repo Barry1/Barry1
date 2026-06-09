@@ -19,13 +19,13 @@ mklink /D SysinternalsLive \\live.sysinternals.com\DavWWWRoot
 
 ## Download Windows ISOs
 
-| What | Link |
+| What              | Link                                                          |
 | ----------------- | ------------------------------------------------------------- |
-| Windows 7 | <https://go.microsoft.com/fwlink/p/?LinkID=616947> |
-| Windows 8 | <https://go.microsoft.com/fwlink/p/?LinkID=616948> |
-| Windows 10 | <https://go.microsoft.com/fwlink/p/?LinkId=616447> |
-| Windows 11 | <https://www.microsoft.com/de-DE/software-download/windows11> |
-| MediaCreationTool | <https://go.microsoft.com/fwlink/?LinkId=691209> |
+| Windows 7         | <https://go.microsoft.com/fwlink/p/?LinkID=616947>            |
+| Windows 8         | <https://go.microsoft.com/fwlink/p/?LinkID=616948>            |
+| Windows 10        | <https://go.microsoft.com/fwlink/p/?LinkId=616447>            |
+| Windows 11        | <https://www.microsoft.com/de-DE/software-download/windows11> |
+| MediaCreationTool | <https://go.microsoft.com/fwlink/?LinkId=691209>              |
 
 <https://support.microsoft.com/en-us/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d>
 <https://support.microsoft.com/de-de/windows/erstellen-eines-installationsmediums-f%C3%BCr-windows-99a58364-8c02-206f-aa6f-40c3b507420d>
@@ -46,10 +46,10 @@ mklink /D SysinternalsLive \\live.sysinternals.com\DavWWWRoot
 
 ### Links
 
-| Source | archive.is | archive.org |
+| Source                                                        | archive.is | archive.org |
 | ------------------------------------------------------------- | ---------- | ----------- |
-| [Windows-Reparatur: System ohne Neuinstallation retten][src1] | [is1] | [org1] |
-| [Windows 10 reparieren - so geht's][src2] | [is2] | [org2] |
+| [Windows-Reparatur: System ohne Neuinstallation retten][src1] | [is1]      | [org1]      |
+| [Windows 10 reparieren - so geht's][src2]                     | [is2]      | [org2]      |
 
 ### Essentials
 

@@ -22,24 +22,24 @@ This is just a small list of packages, which are interesting (for me). Most of t
 
 ## List
 
-| Packagename | Group |
+| Packagename                                | Group        |
 | :----------------------------------------- | :----------- |
-| [SQLAlchemy](pythonpackages.md#SQLAlchemy) | Database |
-| [dask](pythonpackages.md#dask) | Dataframe |
-| [pandas](pythonpackages.md#pandas) | Dataframe |
-| [pandera](pythonpackages.md#pandera) | Dataframe |
-| [vaex](pythonpackages.md#vaex) | Dataframe |
-| [black](pythonpackages.md#black) | Formatting |
-| [darker](pythonpackages.md#darker) | Formatting |
-| [uncertainties] | Math |
-| [pip-tools](pythonpackages.md#pip-tools) | OS |
-| [pipdeptree](pythonpackages.md#pipdeptree) | OS |
-| [poetry](pythonpackages.md#poetry) | OS |
-| [psutil](pythonpackages.md#psutil) | OS |
-| [bokeh](pythonpackages.md#bokeh) | Plot |
-| [hvplot](pythonpackages.md#hvplot) | Plot |
-| [matplotlib](pythonpackages.md#matplotlib) | Plot |
-| [tqdm](pythonpackages.md#tqdm) | Progress Bar |
+| [SQLAlchemy](pythonpackages.md#SQLAlchemy) | Database     |
+| [dask](pythonpackages.md#dask)             | Dataframe    |
+| [pandas](pythonpackages.md#pandas)         | Dataframe    |
+| [pandera](pythonpackages.md#pandera)       | Dataframe    |
+| [vaex](pythonpackages.md#vaex)             | Dataframe    |
+| [black](pythonpackages.md#black)           | Formatting   |
+| [darker](pythonpackages.md#darker)         | Formatting   |
+| [uncertainties]                            | Math         |
+| [pip-tools](pythonpackages.md#pip-tools)   | OS           |
+| [pipdeptree](pythonpackages.md#pipdeptree) | OS           |
+| [poetry](pythonpackages.md#poetry)         | OS           |
+| [psutil](pythonpackages.md#psutil)         | OS           |
+| [bokeh](pythonpackages.md#bokeh)           | Plot         |
+| [hvplot](pythonpackages.md#hvplot)         | Plot         |
+| [matplotlib](pythonpackages.md#matplotlib) | Plot         |
+| [tqdm](pythonpackages.md#tqdm)             | Progress Bar |
 
 ## Description
 
