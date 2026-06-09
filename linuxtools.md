@@ -2,52 +2,54 @@
 
 ## Packages
 
-| packagename                        | short description                                           |
+| packagename | short description |
 | :--------------------------------- | :---------------------------------------------------------- |
-| ananice                            | another nice deaemon                                        |
-| apt-file                           | matches files and packages                                  |
-| atop                               | pkg for system monitoring (daemon, consumes ressources)     |
-| bc                                 | An arbitrary precision calculator language                  |
-| [btop](linuxtools.md#bashtop)      | colorful top                                                |
-| chktex                             | Finds typographic errors in LaTeX                           |
-| chrony                             | NTP                                                         |
-| conky-all                          | highly configurable system monitor                          |
-| exif                               | command-line utility to show EXIF information in JPEG files |
-| [exiftool](#exiftool)              | virtual alias for `libimage-exiftool-perl`                  |
-| exiv2                              | EXIF/IPTC/XMP metadata manipulation tool                    |
-| fastfetch                          | like neofetch but programmed in `C`                         |
-| gummi                              | GTK+ latex editor                                           |
-| htop                               | Htop is an ncursed-based process viewer similar to top      |
-| hyperfine                          | Command-line benchmarking tool                              |
-| inxi                               | system info                                                 |
-| jhead                              | manipulate the non-image part of Exif compliant JPEG files  |
-| lacheck                            | syntax checker for LaTeX                                    |
-| lyx                                | WYSIWYG-frontend for LaTeX                                  |
-| nala                               | Commandline frontend for the APT package manager            |
-| needrestart                        | checks for needed restarts                                  |
-| neofetch                           | Shows Linux System Information with Distribution Logo       |
-| [nmap](linuxtools.md#nmap)         | utility for network exploration                             |
-| nq                                 | lightweihgt utility for command queue                       |
-| [oxipng](linuxtools.md#oxipng)     | utility for lossless optimization of png-file size          |
-| pandoc                             | general markup converter                                    |
-| [parallel](linuxtools.md#parallel) | easy parallel instead of serial                             |
-| [powertop](linuxtools.md#powertop) | diagnose issues with power consumption and management       |
-| pssh                               | parallel ssh execution of commands on multiple nodes        |
-| pueue                              | Alternative Command queue                                   |
-| quarto                             | open-source scientific and technical publishing system      |
-| rubber                             | automated system for building LaTeX documents               |
-| schedtool                          | Queries/alters process' scheduling policy and CPU affinity  |
-| texlive-lang-german                | features for german language - babel and so on              |
-| [tldr](linuxtools.md#tldr)         | easier man pages with examples                              |
+| ananice | another nice deaemon |
+| anacrontab | another crontab for not always on machines |
+| apt-file | matches files and packages |
+| atop | pkg for system monitoring (daemon, consumes ressources) |
+| bc | An arbitrary precision calculator language |
+| [btop](linuxtools.md#bashtop) | colorful top |
+| chktex | Finds typographic errors in LaTeX |
+| chrony | NTP |
+| conky-all | highly configurable system monitor |
+| exif | command-line utility to show EXIF information in JPEG files |
+| [exiftool](#exiftool) | virtual alias for `libimage-exiftool-perl` |
+| exiv2 | EXIF/IPTC/XMP metadata manipulation tool |
+| fastfetch | like neofetch but programmed in `C` |
+| gummi | GTK+ latex editor |
+| htop | Htop is an ncursed-based process viewer similar to top |
+| hyperfine | Command-line benchmarking tool |
+| inxi | system info |
+| jhead | manipulate the non-image part of Exif compliant JPEG files |
+| lacheck | syntax checker for LaTeX |
+| lyx | WYSIWYG-frontend for LaTeX |
+| nala | Commandline frontend for the APT package manager |
+| needrestart | checks for needed restarts |
+| neofetch | Shows Linux System Information with Distribution Logo |
+| [nmap](linuxtools.md#nmap) | utility for network exploration |
+| nq | lightweihgt utility for command queue |
+| [oxipng](linuxtools.md#oxipng) | utility for lossless optimization of png-file size |
+| pandoc | general markup converter |
+| [parallel](linuxtools.md#parallel) | easy parallel instead of serial |
+| [powertop](linuxtools.md#powertop) | diagnose issues with power consumption and management |
+| prettyping | pretties ping output |
+| pssh | parallel ssh execution of commands on multiple nodes |
+| pueue | Alternative Command queue |
+| quarto | open-source scientific and technical publishing system |
+| rubber | automated system for building LaTeX documents |
+| schedtool | Queries/alters process' scheduling policy and CPU affinity |
+| texlive-lang-german | features for german language - babel and so on |
+| [tldr](linuxtools.md#tldr) | easier man pages with examples |
 
 ## Commands
 
-| command      | package        | description                                                        |
+| command | package | description |
 | :----------- | :------------- | :----------------------------------------------------------------- |
-| arch         | coreutils      | Print machine architecture                                         |
-| niceload     | parallel       | slow down a program when the load average is above a certain limit |
-| parallel-ssh | pssh           | same ssh command on multiple servers                               |
-| ssh-copy-id  | openssh-client | installs login keys on server                                      |
+| arch | coreutils | Print machine architecture |
+| niceload | parallel | slow down a program when the load average is above a certain limit |
+| parallel-ssh | pssh | same ssh command on multiple servers |
+| ssh-copy-id | openssh-client | installs login keys on server |
 
 ## description and examples
 

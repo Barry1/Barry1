@@ -1,8 +1,6 @@
----
-title: trunk.io
-date: 11.01.2023
-author: Dr. Bastian Ebeling
----
+______________________________________________________________________
+
+## title: trunk.io date: 11.01.2023 author: Dr. Bastian Ebeling
 
 ## Installation
 
@@ -48,9 +46,9 @@ If you want to do that recursivly on every `.trunk/trunk.yaml` file, the followi
 find . -wholename "*/.trunk/trunk.yaml" -not -path "*.venv*" -print -execdir sed --in-place=.sedbackup --regexp-extended 's/(.*- python@)(.*)/\13.12.2/g' trunk.yaml \{\} \;
 ```
 
-This is also explained in <regexr.com/84sni>.
+This is also explained in \<regexr.com/84sni>.
 
-For more details on RegExp see <https://regex101.com/> or <https://regexr.com/> or <>.
+For more details on RegExp see <https://regex101.com/> or <https://regexr.com/> or \<>.
 
 ## Behind Corporate proxy - example ZSCALER
 

@@ -1,14 +1,12 @@
----
-title: My Experiences and Ideas around git and github
-author: Dr. Bastian Ebeling
-date: 29. Juli 2024
----
+______________________________________________________________________
+
+## title: My Experiences and Ideas around git and github author: Dr. Bastian Ebeling date: 29. Juli 2024
 
 ## act - running github-workflows locally
 
 From the [Repository](https://github.com/nektos/act) there is the so called tool `act` which uses docker to run github workflows locally.
 
-For more details read the doc.  
+For more details read the doc.\
 For quick start I propose to run
 
 ```sh

@@ -1,9 +1,6 @@
----
-title: Hotel Buchungs Infos
-description: Informationen zu Hotelbuchungen, Preisvergleichen und Buchungsportalen.
-author: Dr. Bastian Ebeling
-date: 2025-06-20
----
+______________________________________________________________________
+
+## title: Hotel Buchungs Infos description: Informationen zu Hotelbuchungen, Preisvergleichen und Buchungsportalen. author: Dr. Bastian Ebeling date: 2025-06-20
 
 ## Preisalarm für Hotels
 

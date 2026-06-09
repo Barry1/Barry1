@@ -1,8 +1,6 @@
----
-title: Hints and ideas around Internet related setups
-date: 23. März 2024
-author: Dr. Bastian Ebeling
----
+______________________________________________________________________
+
+## title: Hints and ideas around Internet related setups date: 23. März 2024 author: Dr. Bastian Ebeling
 
 ## (Dynamic) DNS
 

@@ -2,15 +2,15 @@
 
 ## My first try for more details within my profile
 
-I'm just starting getting to know more and more around GitHub.  
+I'm just starting getting to know more and more around GitHub.\
 This is so great. I really love :star_struck: the Markdown language for publishing information.
 
 I also manage some templates for configurations here.
 
 ### Small project
 
-I try to build a python package called [valuefragments](https://github.com/Barry1/PyValueFragments).  
-For that I tried [![CodeFactor](https://www.codefactor.io/repository/github/barry1/pyvaluefragments/badge)](https://www.codefactor.io/repository/github/barry1/pyvaluefragments).  
+I try to build a python package called [valuefragments](https://github.com/Barry1/PyValueFragments).\
+For that I tried [![CodeFactor](https://www.codefactor.io/repository/github/barry1/pyvaluefragments/badge)](https://www.codefactor.io/repository/github/barry1/pyvaluefragments).\
 For live playing around with my first steps, you might try
 [![Binder JupyterNotebook](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Barry1/PyValueFragments/HEAD)
 [![Binder JupyterLab](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Barry1/PyValueFragments/HEAD?urlpath=lab)

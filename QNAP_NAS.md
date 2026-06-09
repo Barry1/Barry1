@@ -1,8 +1,6 @@
----
-title: Information for using QNAP NAS
-date: 02. Januar 2026
-author: Dr. Bastian Ebeling
----
+______________________________________________________________________
+
+## title: Information for using QNAP NAS date: 02. Januar 2026 author: Dr. Bastian Ebeling
 
 ## Entware
 

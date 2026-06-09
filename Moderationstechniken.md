@@ -1,8 +1,6 @@
----
-title: Moderationstechniken
-author: Dr. Bastian Ebeling
-date: 9. Dezember 2025
----
+______________________________________________________________________
+
+## title: Moderationstechniken author: Dr. Bastian Ebeling date: 9. Dezember 2025
 
 ## World Cafe
 

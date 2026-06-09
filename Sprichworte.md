@@ -1,12 +1,10 @@
----
-title: Famous words - many in german language
-date: 26. März 2025
-author: Dr. Bastian Ebeling
----
+______________________________________________________________________
+
+## title: Famous words - many in german language date: 26. März 2025 author: Dr. Bastian Ebeling
 
 ## Englische Sprichworte, Zitate und Phrasen
 
-> Reality eats strategy for breakfast.  
+> Reality eats strategy for breakfast.\
 > --- Robert Rowland Smith
 
 ## Deutsche Sprichworte und Zitate
@@ -14,7 +12,7 @@ author: Dr. Bastian Ebeling
 > Glück ist, wenn das, was du denkst, was du sagst und was du tust, in Harmonie ist.
 > [Mahatma Gandhi](https://www.buboquote.com/de/autor/16-gandhi)
 
-> Verantwortlich ist man nicht nur für das, was man tut, sondern auch für das, was man nicht tut.  
+> Verantwortlich ist man nicht nur für das, was man tut, sondern auch für das, was man nicht tut.\
 > --- Laotse
 
 > Manchmal kehrt, im Verhältnis von uns zu einem anderen Menschen, das rechte Gleichgewicht der Freundschaft zurück, wenn wir in unsere eigne Waagschale einige Gram Unrecht legen.
@@ -33,7 +31,7 @@ author: Dr. Bastian Ebeling
 
 > Unmögliches wird sofort erledigt, Wunder brauchen etwas länger.
 
-> Lieber langsam als richtig.  
+> Lieber langsam als richtig.\
 > --- ehemaliger tkMS Kollege
 
 ## Deutsche Witze und Sprüche
