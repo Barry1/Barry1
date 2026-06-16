@@ -1,8 +1,10 @@
+#!/usr/bin/env python3
 import io
 import zipfile
 from pathlib import Path
 from typing import IO
 from lxml import etree
+import sys
 
 
 def remove_all_excel_protections(xml_file_obj: IO[bytes]) -> bytes:
@@ -72,7 +74,7 @@ def remove_all_excel_protections(xml_file_obj: IO[bytes]) -> bytes:
     return modified_xml
 
 
-def unlock_excel_completely(input_path: str, output_path: str = None):
+def unlock_excel_completely(input_path: str, output_path: str | None = None):
     """
     Entfernt ALLE gängigen Schutzebenen aus einer Excel-Datei:
     - Blattschutz (SheetProtection)
@@ -110,6 +112,9 @@ def unlock_excel_completely(input_path: str, output_path: str = None):
 
 # ── Beispielaufruf ─────────────────────────────────────
 if __name__ == "__main__":
-    unlock_excel_completely("geschuetzte_datei.xlsx")
-    # Mit eigenem Ausgabepfad:
-    # unlock_excel_completely("input.xlsx", "meine_vollstaendig_entsperrte_datei.xlsx")
+    if sys.argv[1:]:
+        input_file = sys.argv[1]
+        output_file: str | None = sys.argv[2] if len(sys.argv) > 2 else None
+        unlock_excel_completely(input_file, output_file)
+    else:
+        unlock_excel_completely("geschuetzte_datei.xlsx")
