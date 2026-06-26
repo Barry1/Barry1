@@ -1,5 +1,7 @@
+# https://repolib.readthedocs.io/en/latest/deb822-format.html
 Types: deb
 URIs: https://deb.kova.md/
 Suites: stable
 Components: main 
+# sudo curl -fsSL https://deb.kova.md/key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kova.gpg
 Signed-By: /etc/apt/keyrings/kova.gpg
