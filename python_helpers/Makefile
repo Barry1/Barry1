@@ -1,13 +1,12 @@
-python_base_dir!=pyenv prefix
-python_bin_dir=$(python_base_dir)/bin/
-
+python_base_dir != pyenv prefix
+python_bin_dir = $(python_base_dir)/bin/
 
 beauty27:
 	autopep8 --in-place place_by_exiftag_py2.py
 	isort place_by_exiftag_py2.py
 
 beautify:
-	$(python_bin_dir)isort --profile=black --py=310 *.py 
+	$(python_bin_dir)isort --profile=black --py=310 *.py
 	$(python_bin_dir)black --target-version=py310 *.py
 	$(python_bin_dir)pylama --linters mccabe,pycodestyle,pydocstyle,pyflakes,pylint,isort *.py
 

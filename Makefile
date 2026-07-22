@@ -3,7 +3,7 @@
 # <https://makefiletutorial.com/>
 .PHONY = pyre pytype mypy
 
-PYOBJS!=tree -if|egrep \.pyi?$
+PYOBJS != tree -if|egrep \.pyi?$
 
 all: updatepip
 
@@ -22,7 +22,7 @@ else
 PYCALL = sudo python3
 
 endif    # gmake: close condition; nmake: not seen
-!endif : # gmake: unused target; nmake close conditional
+!endif: # gmake: unused target; nmake close conditional
 
 PYCALL = poetry run python3
 
@@ -67,13 +67,13 @@ add_cus_dep( 'glo', 'gls', 0, 'makeglossaries' );
 add_cus_dep( 'syg', 'syi', 0, 'makeglossaries' );
 $$clean_ext .= " acr acn alg glo gls glg syg syi slg xdy";
 sub makeglossaries {
-    my ($$base_name, $$path) = fileparse( $$_[0] );
-    my @args = ( "-q", "-d", $$path, $$base_name );
-    if ($$silent) { unshift @args, "-q"; }
-        return system "makeglossaries", "-d", $$path, $$base_name; 
+	my ($$base_name, $$path) = fileparse( $$_[0] );
+	my @args = ( "-q", "-d", $$path, $$base_name );
+	if ($$silent) { unshift @args, "-q"; }
+	return system "makeglossaries", "-d", $$path, $$base_name;
 }
 EOF
 endef
 export latexmkheredocscript
 
-/home/ebeling/.latexmkrc:; @ eval "$$latexmkheredocscript"
+/home/ebeling/.latexmkrc: ; @ eval "$$latexmkheredocscript"

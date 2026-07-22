@@ -1,6 +1,6 @@
-#!/usr/bin/make -f 
+#!/usr/bin/make -f
 
-NUMCPUS?=$(shell grep "core id" /proc/cpuinfo  | uniq | wc -l)
+NUMCPUS ?= $(shell grep "core id" /proc/cpuinfo  | uniq | wc -l)
 MAKEFLAGS += --jobs --load-average=$(NUMCPUS) --max-load=$(shell nproc --all)
 #https://devhints.io/makefile
 #https://tech.davis-hansson.com/p/make/
@@ -21,7 +21,7 @@ bpm:
 	@echo ===== MISSING $*.bin =====
 	sudo wget --directory-prefix=/lib/firmware/i915/ https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915/$*.bin
 
-i915: 
+i915:
 	sudo update-initramfs -u -k all
 
 PYTHON:
@@ -83,7 +83,7 @@ Base:
 		net-tools \
 		sudo \
 
-Advanced: 
+Advanced:
 	$(APTCALL) \
 		and \
 		aptitude \
