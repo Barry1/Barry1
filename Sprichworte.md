@@ -1,6 +1,6 @@
 ---
 title: Famous words - many in german language
-date: 26. März 2025
+date: 29. Juli 2026
 author: Dr. Bastian Ebeling
 ---
 
@@ -8,6 +8,9 @@ author: Dr. Bastian Ebeling
 
 > Reality eats strategy for breakfast.\
 > --- Robert Rowland Smith
+
+> Luck is what happens when preparation meets opportunity.\
+> --- Seneca
 
 ## Deutsche Sprichworte und Zitate
 
