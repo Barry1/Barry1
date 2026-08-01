@@ -4,6 +4,11 @@ PYENVBIN=/home/ebeling/.pyenv/bin/pyenv
 thewrkdir=$(mktemp --directory)
 pushd "${thewrkdir}" >/dev/null || exit
 ${PYENVBIN} update
+######################## if there is something removek ###########################
+#cd ~/.pyenv
+#git fetch --all --tags --force
+#git pull --rebase
+######################## if there is something removek ###########################
 #for a in {7..13}; do echo pyenv install --skip-existing $(pyenv latest --known 3.$a) ; done
 a=5
 while [[ ${a} -le 14 ]]; do
