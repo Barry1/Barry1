@@ -1,10 +1,52 @@
 #!/usr/bin/env python3
 import io
+import sys
+import types
 import zipfile
 from pathlib import Path
 from typing import IO
+
 from lxml import etree
-import sys
+
+PROTECTION_TAGS: tuple[str, ...] = (
+    "sheetProtection",
+    "workbookProtection",
+    "fileSharing",
+)
+SPREADSHEET_NS = types.MappingProxyType(
+    {
+        "x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
+    }
+)
+
+
+def _read_xml_bytes(xml_file_obj: IO[bytes]) -> bytes:
+    """Read bytes from a file-like object, supporting text and binary modes."""
+    if isinstance(xml_file_obj, io.TextIOBase):
+        return xml_file_obj.read().encode("utf-8")
+    xml_bytes = xml_file_obj.read()
+    if hasattr(xml_file_obj, "seek"):
+        xml_file_obj.seek(0)
+    return xml_bytes
+
+
+def _remove_protection_elements(
+    tree: etree._Element,
+    tag_name: str,
+) -> int:
+    """Remove all elements with the given tag (with and without namespace)."""
+    removed = 0
+    for element in tree.findall(f".//x:{tag_name}", SPREADSHEET_NS):
+        parent = element.getparent()
+        if parent is not None:
+            parent.remove(element)
+            removed += 1
+    for element in tree.findall(f".//{tag_name}"):
+        parent = element.getparent()
+        if parent is not None:
+            parent.remove(element)
+            removed += 1
+    return removed
 
 
 def remove_all_excel_protections(xml_file_obj: IO[bytes]) -> bytes:
@@ -20,97 +62,78 @@ def remove_all_excel_protections(xml_file_obj: IO[bytes]) -> bytes:
     Rückgabe:
         bytes mit dem bereinigten XML
     """
-    # Inhalt lesen (funktioniert bei 'r' und 'rb' Modus)
-    content: bytes
-    if isinstance(xml_file_obj, io.TextIOBase):
-        content = xml_file_obj.read().encode("utf-8")
-    else:
-        content = xml_file_obj.read()
-        if hasattr(xml_file_obj, "seek"):
-            xml_file_obj.seek(0)  # Zurücksetzen für mögliche Wiederverwendung
-
-    # XML parsen
     parser = etree.XMLParser(remove_blank_text=True, remove_comments=False)
-    tree = etree.fromstring(content, parser)
-
-    namespaces: dict[str, str] = {
-        "x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
-    }
-
-    protection_tags: list[str] = [
-        "sheetProtection",
-        "workbookProtection",
-        "fileSharing",
-    ]
-    removed_count = 0
-
-    for tag in protection_tags:
-        # Mit Namespace (Standardfall bei Excel)
-        elements = tree.findall(f".//x:{tag}", namespaces)
-        for elem in elements:
-            parent = elem.getparent()
-            if parent is not None:
-                parent.remove(elem)
-                removed_count += 1
-
-        # Ohne Namespace (Fallback)
-        elements = tree.findall(f".//{tag}")
-        for elem in elements:
-            parent = elem.getparent()
-            if parent is not None:
-                parent.remove(elem)
-                removed_count += 1
-
-    # XML sauber ausgeben
-    modified_xml = etree.tostring(
-        tree, pretty_print=True, xml_declaration=True, encoding="utf-8"
+    tree = etree.fromstring(_read_xml_bytes(xml_file_obj), parser)
+    removed_count = sum(
+        _remove_protection_elements(tree, tag_name) for tag_name in PROTECTION_TAGS
+    )
+    if removed_count > 0:
+        sys.stdout.write(
+            f"✅ {removed_count} Protection-Element(e) entfernt.\n",
+        )
+    else:
+        sys.stdout.write("ℹ️ Keine Protection-Elemente gefunden.\n")
+    return etree.tostring(
+        tree,
+        pretty_print=True,
+        xml_declaration=True,
+        encoding="utf-8",
     )
 
-    if removed_count > 0:
-        print(f"✅ {removed_count} Protection-Element(e) entfernt.")
-    else:
-        print("ℹ️ Keine Protection-Elemente gefunden.")
 
-    return modified_xml
+def _is_protected_xml(filename: str) -> bool:
+    """Return True if the archive member may contain protection elements."""
+    if filename == "xl/workbook.xml":
+        return True
+    return filename.startswith("xl/worksheets/") and filename.endswith(
+        ".xml",
+    )
 
 
-def unlock_excel_completely(input_path: str, output_path: str | None = None):
+def _process_archive_member(
+    zin: zipfile.ZipFile,
+    zout: zipfile.ZipFile,
+    zip_info: zipfile.ZipInfo,
+) -> None:
+    """Copy one archive member, stripping protections when needed."""
+    with zin.open(zip_info) as file_obj:
+        if _is_protected_xml(zip_info.filename):
+            payload = remove_all_excel_protections(xml_file_obj=file_obj)
+        else:
+            payload = zin.read(zip_info)
+    zout.writestr(zinfo_or_arcname=zip_info, data=payload)
+
+
+def unlock_excel_completely(
+    input_path: str,
+    output_path: str | None = None,
+) -> str:
     """
     Entfernt ALLE gängigen Schutzebenen aus einer Excel-Datei:
     - Blattschutz (SheetProtection)
-    - Arbeitsmappenschutz (WorkbookProtection inkl. Passwort, lockStructure, lockRevision)
+    - Arbeitsmappenschutz (WorkbookProtection inkl. Passwort,
+      lockStructure, lockRevision)
     - FileSharing / Revisionsschutz
     """
     if output_path is None:
-        p = Path(input_path)
-        output_path = str(p.with_name(f"unlocked_{p.name}"))
+        path_obj = Path(input_path)
+        output_path = str(path_obj.with_name(f"unlocked_{path_obj.name}"))
 
     with zipfile.ZipFile(input_path, "r") as zin:
         with zipfile.ZipFile(
-            output_path, "w", compression=zipfile.ZIP_DEFLATED
+            output_path,
+            "w",
+            compression=zipfile.ZIP_DEFLATED,
         ) as zout:
-            for item in zin.infolist():
-                with zin.open(item) as file_obj:
-                    zout.writestr(
-                        zinfo_or_arcname=item,
-                        data=(
-                            remove_all_excel_protections(xml_file_obj=file_obj)
-                            if (
-                                item.filename == "xl/workbook.xml"
-                                or (
-                                    item.filename.startswith("xl/worksheets/")
-                                    and item.filename.endswith(".xml")
-                                )
-                            )
-                            else zin.read(item)
-                        ),
-                    )
+            for zip_info in zin.infolist():
+                _process_archive_member(zin, zout, zip_info)
 
-    print(f"🎉 Vollständig entsperrte Datei gespeichert unter:\n   {output_path}")
+    sys.stdout.write(
+        f"🎉 Vollständig entsperrte Datei gespeichert unter:\n   {output_path}\n",
+    )
     return output_path
 
 
-# ── Beispielaufruf ─────────────────────────────────────
 if __name__ == "__main__":
     if sys.argv[1:]:
         input_file = sys.argv[1]
