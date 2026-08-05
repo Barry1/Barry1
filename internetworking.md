@@ -36,7 +36,7 @@ Just for backup reasons, you can also visit <https://archive.today/wg3Lt> or <ht
 
 ### Windows-Helfer
 
-Oft laden Captive-Portal-Seiten schwierig, im _normalen_ Browser-Modus.  
-Eine Empfehlung ist es, eine Verknüpfung mir dem Ziel `"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --inprivate --new-window --app=http://www.msftconnecttest.com/redirect` zu erstellen.  
+Oft laden Captive-Portal-Seiten schwierig, im _normalen_ Browser-Modus.\
+Eine Empfehlung ist es, eine Verknüpfung mir dem Ziel `"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --inprivate --new-window --app=http://www.msftconnecttest.com/redirect` zu erstellen.\
 So lädt der Browser mit minimalem Rahmen in einem _incognito-Modus_ die Captive-Portal-Seite.
 Dies ist meinst schneller.
