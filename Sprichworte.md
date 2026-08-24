@@ -15,7 +15,7 @@ author: Dr. Bastian Ebeling
 ## Deutsche Sprichworte und Zitate
 
 > Glück ist, wenn das, was du denkst, was du sagst und was du tust, in Harmonie ist.
-> [Mahatma Gandhi](https://www.buboquote.com/de/autor/16-gandhi)
+> --- [Mahatma Gandhi](https://www.buboquote.com/de/autor/16-gandhi)
 
 > Verantwortlich ist man nicht nur für das, was man tut, sondern auch für das, was man nicht tut.\
 > --- Laotse
@@ -31,6 +31,9 @@ author: Dr. Bastian Ebeling
 
 > Resignation ist das Gegenteil von Resilienz.
 > --- Dr. Bastian Ebeling
+
+> „Vom Recht des Stärkeren zur Stärke des Rechts.“
+> [diverse](https://www.ifsh.de/news-detail/vom-recht-des-staerkeren-zur-staerke-des-rechts-ifsh-zitate-mit-internationaler-karriere)
 
 ### Ironie
 
