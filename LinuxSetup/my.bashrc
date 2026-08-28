@@ -4,7 +4,12 @@
 # `shfmt --language-dialect bash --simplify --write my.bashrc` is running fine
 # `beautysh -f my.bashrc` is running fine
 ### setting vs code as the editor
-export EDITOR='code --wait'
+# uses vscode for GUI-EDITORS - for example also in sudoedit
+if command -v code 1>/dev/null 2>&1
+then
+    export VISUAL="code --wait"
+    export EDITOR='code --wait'
+fi
 ### find wrapper to exclude venv and tox directories
 find() {
     start=${1:-.}
@@ -14,23 +19,13 @@ find() {
 ### my own binary path
 export PATH="/home/ebeling/.local/bin:$PATH"
 ### zoxide
-eval "$(zoxide init bash)"
+command -v zoxide 1>/dev/null 2>&1 && eval "$(zoxide init bash)"
 ### pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init - bash)"
-fi
+command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init - bash)"
 ### poetry
 # poetry completions bash | sudo tee /etc/bash_completion.d/poetry.bash-completion > /dev/null
 ### glow
 # glow completion bash | sudo tee /etc/bash_completion.d/glow.bash-completion > /dev/null
-### inxi / inxi -F
-inxi
-### fastfetch (neofetch/screenfetch alternative) https://itsfoss.com/neofetch-alternatives/
-# https://github.com/fastfetch-cli/fastfetch/wiki/Support+Status#available-modules
-# fastfetch -c all.jsonc
-# fastfetch --stat
-# fastfetch --weather-location Klein+Nordende --weather-timeout 100 --gen-config-force
-fastfetch
 # wttr.in
 # https://wttr.in/:help
 # curl http://de.wttr.in/Klein+Nordende
@@ -61,8 +56,18 @@ wttr() {
     done
     curl --fail --get --show-error --silent -H "Accept-Language: ${LANG%_*}" "${args[@]}" --compressed "de.wttr.in/${location}"
 }
-
-wttr "Klein Nordende"
+if [ -z "${VSCODE_INJECTION}" ]
+then
+    ### inxi / inxi -F
+    inxi
+    ### fastfetch (neofetch/screenfetch alternative) https://itsfoss.com/neofetch-alternatives/
+    # https://github.com/fastfetch-cli/fastfetch/wiki/Support+Status#available-modules
+    # fastfetch -c all.jsonc
+    # fastfetch --stat
+    # fastfetch --weather-location Klein+Nordende --weather-timeout 100 --gen-config-force
+    fastfetch
+    wttr "Klein Nordende"
+fi
 
 make() {
     local GLOBAL_MK="$HOME/.Makefile"
@@ -93,5 +98,5 @@ make() {
         fi
     fi
 }
-
+command -v pandoc 1>/dev/null 2>&1 && eval "$(pandoc --bash-completion)"
 source $(which env_parallel.bash)
