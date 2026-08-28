@@ -2,6 +2,7 @@
 # shellcheck shell=bash
 # `shellcheck` is running fine
 # `shfmt --language-dialect bash --simplify --write my.bashrc` is running fine
+# `beautysh -f my.bashrc` is running fine
 ### setting vs code as the editor
 export EDITOR='code --wait'
 ### find wrapper to exclude venv and tox directories
@@ -36,17 +37,17 @@ fastfetch
 # https://wttr.in/:bash.function - this is a bash function that can be sourced in .bashrc to get the weather in the terminal
 # WTTR_PARAMS is space-separated URL parameters, many of which are single characters that can be
 # lumped together. For example, "F q m" behaves the same as "Fqm".
-if [[ -z "$WTTR_PARAMS" ]]; then
+if [[ -z $WTTR_PARAMS ]]; then
     # Form localized URL parameters for curl
     if [[ -t 1 ]] && [[ "$(tput cols)" -lt 125 ]]; then
         WTTR_PARAMS+='n'
-    fi 2> /dev/null
-    for _token in $( locale LC_MEASUREMENT ); do
+    fi 2>/dev/null
+    for _token in $(locale LC_MEASUREMENT); do
         case $_token in
             1) WTTR_PARAMS+='m' ;;
             2) WTTR_PARAMS+='u' ;;
         esac
-    done 2> /dev/null
+    done 2>/dev/null
     unset _token
     export WTTR_PARAMS
 fi
@@ -71,7 +72,7 @@ make() {
         return
     fi
     # Prüfen, ob bereits ein -f übergeben wurde
-    if [[ "$*" == *"-f "* ]]; then
+    if [[ $* == *"-f "* ]]; then
         # Füge die globalen Regeln einfach vorne an
         command make -f "$GLOBAL_MK" "$@"
     else
