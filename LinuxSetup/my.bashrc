@@ -92,3 +92,5 @@ make() {
         fi
     fi
 }
+
+source $(which env_parallel.bash)
