@@ -6,9 +6,9 @@
 export EDITOR='code --wait'
 ### find wrapper to exclude venv and tox directories
 find() {
-	start=${1:-.}
-	shift 2>/dev/null
-	command find "$start" -not -path \*venv\* -not -path \*tox\* "$@"
+    start=${1:-.}
+    shift 2>/dev/null
+    command find "$start" -not -path \*venv\* -not -path \*tox\* "$@"
 }
 ### my own binary path
 export PATH="/home/ebeling/.local/bin:$PATH"
@@ -16,7 +16,7 @@ export PATH="/home/ebeling/.local/bin:$PATH"
 eval "$(zoxide init bash)"
 ### pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
-	eval "$(pyenv init - bash)"
+    eval "$(pyenv init - bash)"
 fi
 ### poetry
 # poetry completions bash | sudo tee /etc/bash_completion.d/poetry.bash-completion > /dev/null
@@ -37,29 +37,58 @@ fastfetch
 # WTTR_PARAMS is space-separated URL parameters, many of which are single characters that can be
 # lumped together. For example, "F q m" behaves the same as "Fqm".
 if [[ -z "$WTTR_PARAMS" ]]; then
-  # Form localized URL parameters for curl
-  if [[ -t 1 ]] && [[ "$(tput cols)" -lt 125 ]]; then
-      WTTR_PARAMS+='n'
-  fi 2> /dev/null
-  for _token in $( locale LC_MEASUREMENT ); do
-    case $_token in
-      1) WTTR_PARAMS+='m' ;;
-      2) WTTR_PARAMS+='u' ;;
-    esac
-  done 2> /dev/null
-  unset _token
-  export WTTR_PARAMS
+    # Form localized URL parameters for curl
+    if [[ -t 1 ]] && [[ "$(tput cols)" -lt 125 ]]; then
+        WTTR_PARAMS+='n'
+    fi 2> /dev/null
+    for _token in $( locale LC_MEASUREMENT ); do
+        case $_token in
+            1) WTTR_PARAMS+='m' ;;
+            2) WTTR_PARAMS+='u' ;;
+        esac
+    done 2> /dev/null
+    unset _token
+    export WTTR_PARAMS
 fi
 
 wttr() {
-  local location="${1// /+}"
-  test "$#" -gt 0 && shift
-  local args=()
-  for p in $WTTR_PARAMS "$@"; do
-    args+=("--data-urlencode" "$p")
-  done
-  curl --fail --get --show-error --silent -H "Accept-Language: ${LANG%_*}" "${args[@]}" --compressed "de.wttr.in/${location}"
+    local location="${1// /+}"
+    test "$#" -gt 0 && shift
+    local args=()
+    for p in $WTTR_PARAMS "$@"; do
+        args+=("--data-urlencode" "$p")
+    done
+    curl --fail --get --show-error --silent -H "Accept-Language: ${LANG%_*}" "${args[@]}" --compressed "de.wttr.in/${location}"
 }
 
 wttr "Klein Nordende"
 
+make() {
+    local GLOBAL_MK="$HOME/.Makefile"
+    # Falls keine globale Datei existiert, verhalte dich wie das Original-make
+    if [ ! -f "$GLOBAL_MK" ]; then
+        command make "$@"
+        return
+    fi
+    # Prüfen, ob bereits ein -f übergeben wurde
+    if [[ "$*" == *"-f "* ]]; then
+        # Füge die globalen Regeln einfach vorne an
+        command make -f "$GLOBAL_MK" "$@"
+    else
+        # Suche nach dem lokalen Standard-Makefile
+        local LOCAL=""
+        for f in GNUmakefile makefile Makefile; do
+            if [ -f "$f" ]; then
+                LOCAL="$f"
+                break
+            fi
+        done
+        if [ -n "$LOCAL" ]; then
+            # Nutze globale Regeln UND das gefundene lokale Makefile
+            command make -f "$GLOBAL_MK" -f "$LOCAL" "$@"
+        else
+            # Kein lokales Makefile gefunden -> nur globale Regeln nutzen
+            command make -f "$GLOBAL_MK" "$@"
+        fi
+    fi
+}
