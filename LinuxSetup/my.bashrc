@@ -62,6 +62,12 @@ command -v zoxide 1>/dev/null 2>&1 && eval "$(zoxide init bash)"
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init - bash)"
 ### direnv
 command -v direnv 1>/dev/null 2>&1 && eval "$(direnv hook bash)"
+###pyenv
+if [[ -d "$HOME/.pyenv" ]] ; then
+	export PYENV_ROOT="$HOME/.pyenv"
+	[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+	eval "$(pyenv init -)"
+fi
 ### poetry
 # poetry completions bash | sudo tee /etc/bash_completion.d/poetry.bash-completion > /dev/null
 ### glow
