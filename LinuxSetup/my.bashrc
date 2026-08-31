@@ -60,6 +60,8 @@ source $(which env_parallel.bash)
 command -v zoxide 1>/dev/null 2>&1 && eval "$(zoxide init bash)"
 ### pyenv
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init - bash)"
+### direnv
+command -v direnv 1>/dev/null 2>&1 && eval "$(direnv hook bash)"
 ### poetry
 # poetry completions bash | sudo tee /etc/bash_completion.d/poetry.bash-completion > /dev/null
 ### glow
