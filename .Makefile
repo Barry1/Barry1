@@ -1,6 +1,13 @@
 #~/.Makefile
 #Best use pattern rules only
 
+SHELL = /usr/bin/nice
+.SHELLFLAGS = -n 15 /usr/bin/sh -c
+NUMCPUS ?= $(shell grep "core id" /proc/cpuinfo  | uniq | wc -l)
+MAKEFLAGS += --jobs
+MAKEFLAGS += --load-average=$(NUMCPUS)
+MAKEFLAGS += --output-sync=target
+
 %.quarto.pdf: %.md
 	quarto render $< --to pdf --output $@
 
