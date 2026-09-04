@@ -4,7 +4,6 @@
 mdSOURCES := $(shell find . -iname "*.md")
 %.quarto.pdf: %.md
 	quarto render $< --to pdf --output $@
-#$(mdSOURCES:.md=.quarto.pdf) :
 %.pandoc.pdf: %.md
 	pandoc \
 	    --variable=papersize:a4 \
