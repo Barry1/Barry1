@@ -1,7 +1,8 @@
 #~/.Makefile
 #Best use pattern rules only
 ############ What to do with md #################################
-mdSOURCES := $(shell find . -iname "*.md")
+#mdSOURCES := $(shell find . -iname "*.md")
+mdSOURCES := $(wildcard *.md)
 %.quarto.pdf: %.md
 	quarto render $< --to pdf --output $@
 %.pandoc.pdf: %.md
