@@ -1,9 +1,10 @@
 #~/.Makefile
 #Best use pattern rules only
-
+############ What to do with md #################################
+mdSOURCES := $(shell find . -iname "*.md")
 %.quarto.pdf: %.md
 	quarto render $< --to pdf --output $@
-
+#$(mdSOURCES:.md=.quarto.pdf) :
 %.pandoc.pdf: %.md
 	pandoc \
 	    --variable=papersize:a4 \
@@ -13,3 +14,5 @@
 	    --table-of-contents \
 	    --pdf-engine=xelatex \
 	    --to=pdf $< --output=$@
+$(mdSOURCES:.md=.quarto.pdf) $(mdSOURCES:.md=.pandoc.pdf) :
+####################END .md ##################################
