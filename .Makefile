@@ -8,9 +8,11 @@ MAKEFLAGS += --jobs
 MAKEFLAGS += --load-average=$(NUMCPUS)
 MAKEFLAGS += --output-sync=target
 
+############ What to do with md #################################
+#mdSOURCES := $(shell find . -iname "*.md")
+mdSOURCES := $(wildcard *.md)
 %.quarto.pdf: %.md
 	quarto render $< --to pdf --output $@
-
 %.pandoc.pdf: %.md
 	pandoc \
 	    --variable=papersize:a4 \
@@ -20,3 +22,5 @@ MAKEFLAGS += --output-sync=target
 	    --table-of-contents \
 	    --pdf-engine=xelatex \
 	    --to=pdf $< --output=$@
+$(mdSOURCES:.md=.quarto.pdf) $(mdSOURCES:.md=.pandoc.pdf) :
+####################END .md ##################################
