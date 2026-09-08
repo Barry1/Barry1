@@ -42,6 +42,7 @@
 | schedtool                          | Queries/alters process' scheduling policy and CPU affinity  |
 | texlive-lang-german                | features for german language - babel and so on              |
 | [tldr](linuxtools.md#tldr)         | easier man pages with examples                              |
+| tealdeer                           | like tldr, easier man pages with examples                   |
 
 ## Commands
 
