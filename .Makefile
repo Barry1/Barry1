@@ -8,7 +8,7 @@ MAKEFLAGS += --jobs
 MAKEFLAGS += --load-average=$(NUMCPUS)
 MAKEFLAGS += --output-sync=target
 
-############ What to do with md #################################
+############ What to do with .md #################################
 #mdSOURCES := $(shell find . -iname "*.md")
 mdSOURCES := $(wildcard *.md)
 %.quarto.pdf: %.md
@@ -24,3 +24,9 @@ mdSOURCES := $(wildcard *.md)
 	    --to=pdf $< --output=$@
 $(mdSOURCES:.md=.quarto.pdf) $(mdSOURCES:.md=.pandoc.pdf) :
 ####################END .md ##################################
+############ What to do with .tex #################################
+texSOURCES := $(wildcard *.tex)
+%.pdf: %.tex
+	latexmk -xelatex -auxdir=latexmk.aux.tmp $<
+$(texSOURCES:.tex=.pdf) :
+####################END .tex ##################################
