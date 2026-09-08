@@ -119,14 +119,16 @@ def unlock_excel_completely(
         path_obj = Path(input_path)
         output_path = str(path_obj.with_name(f"unlocked_{path_obj.name}"))
 
-    with zipfile.ZipFile(input_path, "r") as zin:
-        with zipfile.ZipFile(
+    with (
+        zipfile.ZipFile(input_path, "r") as zin,
+        zipfile.ZipFile(
             output_path,
             "w",
             compression=zipfile.ZIP_DEFLATED,
-        ) as zout:
-            for zip_info in zin.infolist():
-                _process_archive_member(zin, zout, zip_info)
+        ) as zout,
+    ):
+        for zip_info in zin.infolist():
+            _process_archive_member(zin, zout, zip_info)
 
     sys.stdout.write(
         f"🎉 Vollständig entsperrte Datei gespeichert unter:\n   {output_path}\n",

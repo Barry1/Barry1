@@ -4,6 +4,7 @@ import glob
 import os
 import sys
 from logging import INFO, Logger, basicConfig, getLogger
+
 import piexif
 
 thelogger: Logger = getLogger(__name__)
@@ -41,12 +42,11 @@ def processfile(thepath, thefilename) -> None:
                     gleichedatei,
                     targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
                 )
-            except OSError as theerr:
+            except OSError:
                 thelogger.error(
                     "rename %s to %s resulted in:",
                     gleichedatei,
                     targetfolder + os.sep + gleichedatei[len(thepath) + 1 :],
-                    theerr,
                 )
 
 

@@ -29,7 +29,7 @@ def processfile(thepath, thefilename):
     targetfolder = thepath + os.sep + dasjahr + os.sep + dasjahr + dermonat + dertag
     try:
         os.makedirs(targetfolder)
-    except OSError as theerr:
+    except OSError:
         # print(theerr)
         pass
     # Dateien (egal welche Erweiterung) verschieben
