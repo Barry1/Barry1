@@ -4,16 +4,6 @@
 # FORMAT
 # shfmt --simplify --write pipxes.sh
 # beautysh pipxes.sh
-main() {
-	if [ -z "$1" ]; then
-		echo "No function specified. Available functions: manualinstall, export, import"
-		# else run the given function only
-	else
-		$1
-	fi
-}
-main "$@"
-
 manualinstall() {
 	pipx install archivebox
 	pipx install argcomplete
@@ -61,12 +51,12 @@ manualinstall() {
 	pipx install vulture
 }
 
-export() {
+pipxexport() {
 	pipx list --json >pipx_list.json
 	echo "Exported pipx list to pipx_list.json"
 }
 
-import() {
+pipximport() {
 	if [ -f pipx_list.json ]; then
 		echo "Importing pipx list from pipx_list.json"
 		pipx install-all pipx_list.json
@@ -74,3 +64,16 @@ import() {
 		echo "pipx_list.json not found. Please run export first."
 	fi
 }
+
+pipxupgrade() {
+	pipx upgrade-all --include-injected
+}
+main() {
+	if [ -z "$1" ]; then
+		echo "No function specified. Available functions: manualinstall, pipxexport, pipximport, pipxupgrade"
+		# else run the given function only
+	else
+		$1
+	fi
+}
+main "$@"
