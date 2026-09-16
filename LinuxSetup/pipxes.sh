@@ -1,9 +1,13 @@
 #!/bin/sh
-#shfmt --write pipxes.sh
+# CHECK
+# beautysh --check pipxes.sh
+# FORMAT
+# shfmt --simplify --write pipxes.sh
+# beautysh pipxes.sh
 main() {
 	if [ -z "$1" ]; then
 		echo "No function specified. Available functions: manualinstall, export, import"
-	# else run the given function only
+		# else run the given function only
 	else
 		$1
 	fi
@@ -24,9 +28,11 @@ manualinstall() {
 	pipx install flynt
 	pipx install isort
 	pipx install mbake
-	pipx install mdformat; pipx inject mdformat mdformat-beautysh mdformat-deflist mdformat-dollarmath mdformat-footnote mdformat-frontmatter mdformat-gfm mdformat-gfm-alerts mdformat-ruff mdformat-tables mdformat-toc
+	pipx install mdformat
+	pipx inject mdformat mdformat-beautysh mdformat-deflist mdformat-dollarmath mdformat-footnote mdformat-frontmatter mdformat-gfm mdformat-gfm-alerts mdformat-ruff mdformat-tables mdformat-toc
 	pipx install monkeytype
-	pipx install mypy; pipx inject mypy types-psutil
+	pipx install mypy
+	pipx inject mypy types-psutil
 	pipx install openai-whisper
 	pipx install pandoc-kroki-filter
 	pipx install pandoc-mermaid-filter
@@ -42,7 +48,8 @@ manualinstall() {
 	pipx install pyre
 	pipx install pyrefly
 	pipx install pyright
-	pipx install pytest; pipx inject pytest pytest-asyncio pytest-bandit pytest-beartype pytest-colordots pytest-cov pytest-monkeytype pytest-mypy pytest-pyright pytest-sugar typeguard
+	pipx install pytest
+	pipx inject pytest pytest-asyncio pytest-bandit pytest-beartype pytest-colordots pytest-cov pytest-monkeytype pytest-mypy pytest-pyright pytest-sugar typeguard
 	pipx install pytype
 	pipx install pyupgrade
 	pipx install rembg
