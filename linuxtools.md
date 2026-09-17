@@ -8,11 +8,13 @@
 | anacrontab                         | another crontab for not always on machines                  |
 | apt-file                           | matches files and packages                                  |
 | atop                               | pkg for system monitoring (daemon, consumes ressources)     |
+| bat                                | `batcat` like cat coloured, linenumbers, sytax highlighting |
 | bc                                 | An arbitrary precision calculator language                  |
 | [btop](linuxtools.md#bashtop)      | colorful top                                                |
 | chktex                             | Finds typographic errors in LaTeX                           |
 | chrony                             | NTP                                                         |
 | conky-all                          | highly configurable system monitor                          |
+| csvkit                             | csv file check `csvclean` and analysis `csvstat`            |
 | exif                               | command-line utility to show EXIF information in JPEG files |
 | [exiftool](#exiftool)              | virtual alias for `libimage-exiftool-perl`                  |
 | exiv2                              | EXIF/IPTC/XMP metadata manipulation tool                    |
