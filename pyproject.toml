@@ -102,3 +102,5 @@ extras = ["pyproject", "colors"]
 [tool.poetry.group.dev.dependencies.pytype]
 version = ">=2022.10.26"
 python = ">=3.9,<3.11"
+[tool.ruff]
+line-length = 79
