@@ -30,3 +30,9 @@ texSOURCES := $(wildcard *.tex)
 	latexmk -xelatex -auxdir=latexmk.aux.tmp $<
 $(texSOURCES:.tex=.pdf) :
 ####################END .tex ##################################
+############ What to do with .svg #################################
+svgSOURCES := $(wildcard *.svg)
+%.pdf: %.svg
+	rsvg-convert --format pdf --output $@ $<
+$(svgSOURCES:.svg=.pdf) :
+####################END .tex ##################################
