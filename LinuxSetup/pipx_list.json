@@ -1,0 +1,3591 @@
+{
+    "pipx_spec_version": "0.1",
+    "venvs": {
+        "archivebox": {
+            "metadata": {
+                "injected_packages": {
+                    "legacy-cgi": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {},
+                        "apps": [],
+                        "apps_of_dependencies": [],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "legacy-cgi",
+                        "package_or_url": "legacy-cgi",
+                        "package_version": "2.6.4",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "msgpack": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {},
+                        "apps": [],
+                        "apps_of_dependencies": [],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "msgpack",
+                        "package_or_url": "msgpack",
+                        "package_version": "1.2.2",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mutagen": {
+                        "app_paths": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/mid3cp",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/mid3iconv",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/mid3v2",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/moggsplit",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/mutagen-inspect",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/mutagen-pony",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "app_paths_of_dependencies": {},
+                        "apps": [
+                            "mid3cp",
+                            "mid3iconv",
+                            "mid3v2",
+                            "moggsplit",
+                            "mutagen-inspect",
+                            "mutagen-pony"
+                        ],
+                        "apps_of_dependencies": [],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [
+                            "man1/mid3cp.1",
+                            "man1/mid3iconv.1",
+                            "man1/mid3v2.1",
+                            "man1/moggsplit.1",
+                            "man1/mutagen-inspect.1",
+                            "man1/mutagen-pony.1"
+                        ],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/share/man/man1/mid3cp.1",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/share/man/man1/mid3iconv.1",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/share/man/man1/mid3v2.1",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/share/man/man1/moggsplit.1",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/share/man/man1/mutagen-inspect.1",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/share/man/man1/mutagen-pony.1",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "man_paths_of_dependencies": {},
+                        "package": "mutagen",
+                        "package_or_url": "mutagen",
+                        "package_version": "1.48.1",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "pycryptodome": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {},
+                        "apps": [],
+                        "apps_of_dependencies": [],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pycryptodome",
+                        "package_or_url": "pycryptodome",
+                        "package_version": "3.23.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "setuptools": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {},
+                        "apps": [],
+                        "apps_of_dependencies": [],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "setuptools",
+                        "package_or_url": "setuptools",
+                        "package_version": "84.0.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    }
+                },
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/archivebox",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "dateparser": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/dateparser-download",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "django": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/django-admin",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/django-admin.py",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "idna": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/idna",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "ipython": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/ipython",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/ipython3",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sqlparse": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/sqlformat",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "yt-dlp": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/bin/yt-dlp",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "archivebox"
+                    ],
+                    "apps_of_dependencies": [
+                        "dateparser-download",
+                        "django-admin",
+                        "django-admin.py",
+                        "sqlformat",
+                        "ipython",
+                        "ipython3",
+                        "pygmentize",
+                        "normalizer",
+                        "idna",
+                        "yt-dlp"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [
+                        "man1/ipython.1",
+                        "man1/yt-dlp.1"
+                    ],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {
+                        "ipython": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/share/man/man1/ipython.1",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "yt-dlp": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/archivebox/share/man/man1/yt-dlp.1",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "package": "archivebox",
+                    "package_or_url": "archivebox",
+                    "package_version": "0.7.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "argcomplete": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/argcomplete/bin/activate-global-python-argcomplete",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/argcomplete/bin/register-python-argcomplete",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "activate-global-python-argcomplete",
+                        "register-python-argcomplete"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "argcomplete",
+                    "package_or_url": "argcomplete",
+                    "package_version": "3.7.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "asv": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/asv/bin/asv",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "build": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/asv/bin/pyproject-build",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "json5": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/asv/bin/pyjson5",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tabulate": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/asv/bin/tabulate",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "virtualenv": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/asv/bin/virtualenv",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "asv"
+                    ],
+                    "apps_of_dependencies": [
+                        "pyjson5",
+                        "pyproject-build",
+                        "tabulate",
+                        "virtualenv"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "asv",
+                    "package_or_url": "git+https://github.com/airspeed-velocity/asv",
+                    "package_version": "0.6.7.dev27+gd33754e12",
+                    "pinned": false,
+                    "pip_args": [
+                        "--force-reinstall"
+                    ],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "autopep8": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/autopep8/bin/autopep8",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "pycodestyle": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/autopep8/bin/pycodestyle",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "autopep8"
+                    ],
+                    "apps_of_dependencies": [
+                        "pycodestyle"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "autopep8",
+                    "package_or_url": "autopep8",
+                    "package_version": "2.3.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "bandit": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/bandit/bin/bandit",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/bandit/bin/bandit-baseline",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/bandit/bin/bandit-config-generator",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/bandit/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/bandit/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "bandit",
+                        "bandit-baseline",
+                        "bandit-config-generator"
+                    ],
+                    "apps_of_dependencies": [
+                        "markdown-it",
+                        "pygmentize"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [
+                        "man1/bandit.1"
+                    ],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/bandit/share/man/man1/bandit.1",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "man_paths_of_dependencies": {},
+                    "package": "bandit",
+                    "package_or_url": "bandit",
+                    "package_version": "1.9.4",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "beautysh": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/beautysh/bin/beautysh",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "editorconfig": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/beautysh/bin/editorconfig",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "beautysh"
+                    ],
+                    "apps_of_dependencies": [
+                        "editorconfig"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "beautysh",
+                    "package_or_url": "beautysh",
+                    "package_version": "6.4.3",
+                    "pinned": false,
+                    "pip_args": [
+                        "--force-reinstall"
+                    ],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "black": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/black/bin/black",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/black/bin/blackd",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "black",
+                        "blackd"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "black",
+                    "package_or_url": "black",
+                    "package_version": "26.5.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "darker": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/darker/bin/darker",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "darker"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "darker",
+                    "package_or_url": "darker",
+                    "package_version": "3.0.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "flake8": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/flake8/bin/flake8",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "pycodestyle": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/flake8/bin/pycodestyle",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyflakes": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/flake8/bin/pyflakes",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "flake8"
+                    ],
+                    "apps_of_dependencies": [
+                        "pycodestyle",
+                        "pyflakes"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "flake8",
+                    "package_or_url": "flake8",
+                    "package_version": "7.3.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "flowmark": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/flowmark/bin/flowmark",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/flowmark/bin/flowmark-py",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "marko": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/flowmark/bin/marko",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "flowmark",
+                        "flowmark-py"
+                    ],
+                    "apps_of_dependencies": [
+                        "marko"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "flowmark",
+                    "package_or_url": "flowmark",
+                    "package_version": "0.8.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "flynt": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/flynt/bin/flynt",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "flynt"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "flynt",
+                    "package_or_url": "flynt",
+                    "package_version": "1.0.6",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "isort": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/isort/bin/isort",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/isort/bin/isort-identify-imports",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "isort",
+                        "isort-identify-imports"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "isort",
+                    "package_or_url": "isort",
+                    "package_version": "9.0.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "mbake": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/mbake/bin/mbake",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/mbake/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/mbake/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "typer": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/mbake/bin/typer",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "mbake"
+                    ],
+                    "apps_of_dependencies": [
+                        "markdown-it",
+                        "pygmentize",
+                        "typer"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "mbake",
+                    "package_or_url": "mbake",
+                    "package_version": "1.4.6",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "mdformat": {
+            "metadata": {
+                "injected_packages": {
+                    "mdformat-beautysh": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "beautysh": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/beautysh",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "editorconfig": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/editorconfig",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "beautysh",
+                            "editorconfig",
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-beautysh",
+                        "package_or_url": "mdformat-beautysh",
+                        "package_version": "1.0.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-deflist": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-deflist",
+                        "package_or_url": "mdformat-deflist",
+                        "package_version": "0.1.4",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-dollarmath": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-dollarmath",
+                        "package_or_url": "mdformat-dollarmath",
+                        "package_version": "0.0.5",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-footnote": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-footnote",
+                        "package_or_url": "mdformat-footnote",
+                        "package_version": "0.1.3",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-frontmatter": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-frontmatter",
+                        "package_or_url": "mdformat-frontmatter",
+                        "package_version": "2.1.2",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-gfm": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-gfm",
+                        "package_or_url": "mdformat-gfm",
+                        "package_version": "1.0.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-gfm-alerts": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-gfm-alerts",
+                        "package_or_url": "mdformat-gfm-alerts",
+                        "package_version": "2.1.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-ruff": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "ruff": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/ruff",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "ruff"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-ruff",
+                        "package_or_url": "mdformat-ruff",
+                        "package_version": "0.1.3",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-tables": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-tables",
+                        "package_or_url": "mdformat-tables",
+                        "package_version": "1.0.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "mdformat-toc": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "mdformat": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "mdformat",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "mdformat-toc",
+                        "package_or_url": "mdformat-toc",
+                        "package_version": "0.5.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    }
+                },
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/mdformat",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/mdformat/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "mdformat"
+                    ],
+                    "apps_of_dependencies": [
+                        "markdown-it"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "mdformat",
+                    "package_or_url": "mdformat",
+                    "package_version": "1.0.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "monkeytype": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/monkeytype/bin/monkeytype",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "monkeytype"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "monkeytype",
+                    "package_or_url": "monkeytype",
+                    "package_version": "23.3.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "mypy": {
+            "metadata": {
+                "injected_packages": {
+                    "types-psutil": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {},
+                        "apps": [],
+                        "apps_of_dependencies": [],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "types-psutil",
+                        "package_or_url": "types-psutil",
+                        "package_version": "7.2.2.20260906",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    }
+                },
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/mypy/bin/dmypy",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/mypy/bin/mypy",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/mypy/bin/mypyc",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/mypy/bin/stubgen",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/mypy/bin/stubtest",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "dmypy",
+                        "mypy",
+                        "mypyc",
+                        "stubgen",
+                        "stubtest"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "mypy",
+                    "package_or_url": "mypy",
+                    "package_version": "2.3.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "openai-whisper": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/whisper",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "idna": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/idna",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "numba": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/numba",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "numpy": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/f2py",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/numpy-config",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sympy": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/isympy",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "torch": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/torchfrtrace",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/torchrun",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tqdm": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/tqdm",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "triton": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/proton",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/bin/proton-viewer",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "whisper"
+                    ],
+                    "apps_of_dependencies": [
+                        "numba",
+                        "f2py",
+                        "numpy-config",
+                        "normalizer",
+                        "idna",
+                        "torchfrtrace",
+                        "torchrun",
+                        "isympy",
+                        "proton",
+                        "proton-viewer",
+                        "tqdm"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [
+                        "man1/isympy.1"
+                    ],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {
+                        "sympy": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/openai-whisper/share/man/man1/isympy.1",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "package": "openai-whisper",
+                    "package_or_url": "openai-whisper",
+                    "package_version": "20250625",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pandoc-kroki-filter": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pandoc-kroki-filter/bin/pandoc-kroki",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pandoc-kroki"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pandoc-kroki-filter",
+                    "package_or_url": "git+https://github.com/Barry1/pandoc-kroki-filter.git",
+                    "package_version": "0.1.1",
+                    "pinned": false,
+                    "pip_args": [
+                        "--force-reinstall"
+                    ],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pandoc-mermaid-filter": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pandoc-mermaid-filter/bin/pandoc-mermaid",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pandoc-mermaid"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pandoc-mermaid-filter",
+                    "package_or_url": "pandoc-mermaid-filter",
+                    "package_version": "0.1.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "poetry": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/poetry",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "build": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/pyproject-build",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "cachecontrol": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/doesitcache",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "dulwich": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/dul-receive-pack",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/dul-upload-pack",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/dulwich",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "findpython": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/findpython",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "httpx": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/httpx",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "keyring": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/keyring",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pbs-installer": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/pbs-install",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pkginfo": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/pkginfo",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "trove-classifiers": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/trove-classifiers",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "virtualenv": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/poetry/bin/virtualenv",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "poetry"
+                    ],
+                    "apps_of_dependencies": [
+                        "pyproject-build",
+                        "doesitcache",
+                        "normalizer",
+                        "dul-receive-pack",
+                        "dul-upload-pack",
+                        "dulwich",
+                        "findpython",
+                        "keyring",
+                        "pbs-install",
+                        "httpx",
+                        "pkginfo",
+                        "trove-classifiers",
+                        "virtualenv"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "poetry",
+                    "package_or_url": "poetry",
+                    "package_version": "2.4.3",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pre-commit": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pre-commit/bin/pre-commit",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "identify": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pre-commit/bin/identify-cli",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "nodeenv": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pre-commit/bin/nodeenv",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "virtualenv": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pre-commit/bin/virtualenv",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pre-commit"
+                    ],
+                    "apps_of_dependencies": [
+                        "identify-cli",
+                        "nodeenv",
+                        "virtualenv"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pre-commit",
+                    "package_or_url": "pre-commit",
+                    "package_version": "4.6.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pycodestyle": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pycodestyle/bin/pycodestyle",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pycodestyle"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pycodestyle",
+                    "package_or_url": "pycodestyle",
+                    "package_version": "2.14.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pydocstyle": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pydocstyle/bin/pydocstyle",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pydocstyle"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pydocstyle",
+                    "package_or_url": "pydocstyle",
+                    "package_version": "6.3.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pyflakes": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyflakes/bin/pyflakes",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pyflakes"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pyflakes",
+                    "package_or_url": "pyflakes",
+                    "package_version": "3.4.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pylama": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylama/bin/pylama",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "pycodestyle": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylama/bin/pycodestyle",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pydocstyle": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylama/bin/pydocstyle",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyflakes": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylama/bin/pyflakes",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pylama"
+                    ],
+                    "apps_of_dependencies": [
+                        "pycodestyle",
+                        "pydocstyle",
+                        "pyflakes"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pylama",
+                    "package_or_url": "pylama",
+                    "package_version": "8.4.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pylint": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/pylint",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/pylint-config",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/pyreverse",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/symilar",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "dill": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/get_gprof",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/get_objgraph",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/undill",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "isort": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/isort",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylint/bin/isort-identify-imports",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pylint",
+                        "pylint-config",
+                        "pyreverse",
+                        "symilar"
+                    ],
+                    "apps_of_dependencies": [
+                        "get_gprof",
+                        "get_objgraph",
+                        "undill",
+                        "isort",
+                        "isort-identify-imports"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pylint",
+                    "package_or_url": "pylint",
+                    "package_version": "4.0.8",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pylyzer": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pylyzer/bin/pylyzer",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pylyzer"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pylyzer",
+                    "package_or_url": "pylyzer",
+                    "package_version": "0.0.82",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pyperf": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyperf/bin/pyperf",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pyperf"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pyperf",
+                    "package_or_url": "pyperf",
+                    "package_version": "2.10.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pyre": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyre/bin/merlin",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyre/bin/mm",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyre/bin/pyre",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyre/bin/pyre-config",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyre/bin/smith.pyre",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "merlin",
+                        "mm",
+                        "pyre",
+                        "pyre-config",
+                        "smith.pyre"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pyre",
+                    "package_or_url": "pyre",
+                    "package_version": "1.12.5",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pyrefly": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyrefly/bin/pyrefly",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pyrefly"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pyrefly",
+                    "package_or_url": "pyrefly",
+                    "package_version": "1.3.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pyright": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyright/bin/pyright",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyright/bin/pyright-langserver",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyright/bin/pyright-python",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyright/bin/pyright-python-langserver",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "nodeenv": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyright/bin/nodeenv",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pyright",
+                        "pyright-langserver",
+                        "pyright-python",
+                        "pyright-python-langserver"
+                    ],
+                    "apps_of_dependencies": [
+                        "nodeenv"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pyright",
+                    "package_or_url": "pyright",
+                    "package_version": "1.1.414",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pytest": {
+            "metadata": {
+                "injected_packages": {
+                    "lxml": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {},
+                        "apps": [],
+                        "apps_of_dependencies": [],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "lxml",
+                        "package_or_url": "lxml",
+                        "package_version": "6.1.3",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-asyncio": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "py.test",
+                            "pytest",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pytest-asyncio",
+                        "package_or_url": "pytest-asyncio",
+                        "package_version": "1.4.0",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-bandit": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "bandit": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/bandit",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/bandit-baseline",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/bandit-config-generator",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "py.test",
+                            "pytest",
+                            "pygmentize",
+                            "bandit",
+                            "bandit-baseline",
+                            "bandit-config-generator",
+                            "markdown-it"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [
+                            "man1/bandit.1"
+                        ],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {
+                            "bandit": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/share/man/man1/bandit.1",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "package": "pytest-bandit",
+                        "package_or_url": "pytest-bandit",
+                        "package_version": "0.6.1",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-beartype": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "py.test",
+                            "pytest",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pytest-beartype",
+                        "package_or_url": "pytest-beartype",
+                        "package_version": "0.2.0",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-colordots": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "py.test",
+                            "pytest",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pytest-colordots",
+                        "package_or_url": "pytest-colordots",
+                        "package_version": "1.1",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-cov": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "coverage": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/coverage",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/coverage-3.13",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/coverage3",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "coverage",
+                            "coverage-3.13",
+                            "coverage3",
+                            "py.test",
+                            "pytest",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pytest-cov",
+                        "package_or_url": "pytest-cov",
+                        "package_version": "7.1.0",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-monkeytype": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "monkeytype": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/monkeytype",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "monkeytype",
+                            "py.test",
+                            "pytest",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pytest-monkeytype",
+                        "package_or_url": "pytest-monkeytype",
+                        "package_version": "1.1.0",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-mypy": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "mypy": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/dmypy",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/mypy",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/mypyc",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/stubgen",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/stubtest",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "dmypy",
+                            "mypy",
+                            "mypyc",
+                            "stubgen",
+                            "stubtest",
+                            "py.test",
+                            "pytest",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pytest-mypy",
+                        "package_or_url": "pytest-mypy",
+                        "package_version": "1.0.1",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-pyright": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "nodeenv": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/nodeenv",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pyright": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pyright",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pyright-langserver",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pyright-python",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pyright-python-langserver",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "py.test",
+                            "pytest",
+                            "pygmentize",
+                            "pyright",
+                            "pyright-langserver",
+                            "pyright-python",
+                            "pyright-python-langserver",
+                            "nodeenv"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pytest-pyright",
+                        "package_or_url": "pytest-pyright",
+                        "package_version": "0.0.6",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "pytest-sugar": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pytest": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "py.test",
+                            "pytest",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "pytest-sugar",
+                        "package_or_url": "pytest-sugar",
+                        "package_version": "1.1.1",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "requests": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "charset-normalizer": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/normalizer",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "idna": [
+                                {
+                                    "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/idna",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "normalizer",
+                            "idna"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "requests",
+                        "package_or_url": "requests",
+                        "package_version": "2.34.2",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "typeguard": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {},
+                        "apps": [],
+                        "apps_of_dependencies": [],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "typeguard",
+                        "package_or_url": "typeguard",
+                        "package_version": "4.6.0",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    }
+                },
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/py.test",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pytest",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "pygments": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytest/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "py.test",
+                        "pytest"
+                    ],
+                    "apps_of_dependencies": [
+                        "pygmentize"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pytest",
+                    "package_or_url": "pytest",
+                    "package_version": "9.1.1",
+                    "pinned": false,
+                    "pip_args": [
+                        "--force-reinstall"
+                    ],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pytype": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/annotate-ast",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/merge-pyi",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/pytd",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/pytype",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/pytype-single",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/pyxref",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "importlab": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/importlab",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "ninja": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/ninja",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tabulate": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pytype/bin/tabulate",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "annotate-ast",
+                        "merge-pyi",
+                        "pytd",
+                        "pytype",
+                        "pytype-single",
+                        "pyxref"
+                    ],
+                    "apps_of_dependencies": [
+                        "importlab",
+                        "ninja",
+                        "tabulate"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pytype",
+                    "package_or_url": "pytype",
+                    "package_version": "2024.10.11",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pyupgrade": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyupgrade/bin/pyupgrade",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "tokenize-rt": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/pyupgrade/bin/tokenize-rt",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pyupgrade"
+                    ],
+                    "apps_of_dependencies": [
+                        "tokenize-rt"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pyupgrade",
+                    "package_or_url": "pyupgrade",
+                    "package_version": "3.21.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "reference-agent": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/reference-agent",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "cffi": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/cffi-gen-src",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "distro": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/distro",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "fastapi": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/fastapi",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "google-adk": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/adk",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "httpx": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/httpx",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "idna": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/idna",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jsonschema": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/jsonschema",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdownify": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/markdownify",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "python-dotenv": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/dotenv",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "uvicorn": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/uvicorn",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "watchdog": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/watchmedo",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "websockets": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/reference-agent/bin/websockets",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "reference-agent"
+                    ],
+                    "apps_of_dependencies": [
+                        "adk",
+                        "cffi-gen-src",
+                        "fastapi",
+                        "idna",
+                        "httpx",
+                        "normalizer",
+                        "websockets",
+                        "distro",
+                        "jsonschema",
+                        "dotenv",
+                        "uvicorn",
+                        "watchmedo",
+                        "markdownify"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "reference-agent",
+                    "package_or_url": "git+https://github.com/GoogleCloudPlatform/open-knowledge-format",
+                    "package_version": "0.1.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "rembg": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/rembg",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "fastapi": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/fastapi",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "filetype": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/filetype",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "gradio": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/gradio",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/upload_theme",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "hf-gradio": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/hf-gradio",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "httpx": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/httpx",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "huggingface-hub": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/hf",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/huggingface-cli",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/tiny-agents",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "idna": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/idna",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "imageio": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/imageio_download_bin",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/imageio_remove_bin",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jsonschema": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/jsonschema",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "numba": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/numba",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "numpy": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/f2py",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/numpy-config",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "onnxruntime": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/onnxruntime_test",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "onnxruntime-gpu": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/onnxruntime_test",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tifffile": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/lsm2bin",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/tiff2fsspec",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/tiffcomment",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/tifffile",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tqdm": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/tqdm",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "typer": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/typer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "uvicorn": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/uvicorn",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "watchdog": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/rembg/bin/watchmedo",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "rembg"
+                    ],
+                    "apps_of_dependencies": [
+                        "idna",
+                        "fastapi",
+                        "filetype",
+                        "gradio",
+                        "upload_theme",
+                        "httpx",
+                        "hf",
+                        "huggingface-cli",
+                        "tiny-agents",
+                        "tqdm",
+                        "hf-gradio",
+                        "typer",
+                        "markdown-it",
+                        "pygmentize",
+                        "f2py",
+                        "numpy-config",
+                        "uvicorn",
+                        "jsonschema",
+                        "onnxruntime_test",
+                        "onnxruntime_test",
+                        "normalizer",
+                        "numba",
+                        "imageio_download_bin",
+                        "imageio_remove_bin",
+                        "lsm2bin",
+                        "tiff2fsspec",
+                        "tiffcomment",
+                        "tifffile",
+                        "watchmedo"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "rembg",
+                    "package_or_url": "rembg[cli,cpu,gpu]",
+                    "package_version": "2.0.84",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "ruff": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/ruff/bin/ruff",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "ruff"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "ruff",
+                    "package_or_url": "ruff",
+                    "package_version": "0.16.7",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "sourcery": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/sourcery/bin/sourcery",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "sourcery"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "sourcery",
+                    "package_or_url": "sourcery",
+                    "package_version": "1.45.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "ty": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/ty/bin/ty",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "ty"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "ty",
+                    "package_or_url": "ty",
+                    "package_version": "0.0.81",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "ufmt": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/ufmt/bin/ufmt",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "black": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/ufmt/bin/black",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/ufmt/bin/blackd",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "usort": [
+                            {
+                                "__Path__": "/home/ebeling/.local/share/pipx/venvs/ufmt/bin/usort",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "ufmt"
+                    ],
+                    "apps_of_dependencies": [
+                        "black",
+                        "blackd",
+                        "usort"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "ufmt",
+                    "package_or_url": "ufmt",
+                    "package_version": "2.9.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "vermin": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/vermin/bin/vermin",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "vermin"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "vermin",
+                    "package_or_url": "vermin",
+                    "package_version": "1.8.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "vulture": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/ebeling/.local/share/pipx/venvs/vulture/bin/vulture",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "vulture"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "vulture",
+                    "package_or_url": "vulture",
+                    "package_version": "2.16",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.5",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        }
+    }
+}

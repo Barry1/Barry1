@@ -17,8 +17,9 @@ mdSOURCES := $(wildcard *.md)
 	pandoc \
 	    --variable=papersize:a4 \
 	    --variable=colorlinks \
-	    --from=markdown+smart+auto_identifiers+fancy_lists+task_lists+definition_lists+definition_lists+table_captions+pipe_tables+yaml_metadata_block+footnotes+citations+emoji+abbreviations+autolink_bare_uris \
 	    --variable=documentclass:scrartcl \
+	    --from=markdown+smart+auto_identifiers+fancy_lists+task_lists+definition_lists+definition_lists+table_captions+pipe_tables+yaml_metadata_block+footnotes+citations+emoji+abbreviations+autolink_bare_uris \
+	    --filter=pandoc-plantuml \
 	    --table-of-contents \
 	    --pdf-engine=xelatex \
 	    --to=pdf $< --output=$@
