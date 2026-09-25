@@ -3,24 +3,33 @@
 
 SHELL = /usr/bin/nice
 .SHELLFLAGS = -n 15 /usr/bin/sh -c
-NUMCPUS ?= $(shell grep "core id" /proc/cpuinfo  | uniq | wc -l)
-MAKEFLAGS += --jobs
+#NUMCPUS ?= $(shell grep "core id" /proc/cpuinfo  | uniq | wc -l)
+#nicht so portabel
+NUMCPUS ?= $(shell nproc)
+JOBS ?= $(shell expr $(NUMCPUS) \* 2)
+MAKEFLAGS += --jobs=$(JOBS)
 MAKEFLAGS += --load-average=$(NUMCPUS)
 MAKEFLAGS += --output-sync=target
-
+.DELETE_ON_ERROR:
 ############ What to do with .md #################################
-#mdSOURCES := $(shell find . -iname "*.md")
+##########PANDOC SETUP ###########################
+PANDOC_FORMAT := \
+	markdown+smart+auto_identifiers+fancy_lists+task_lists+definition_lists+table_captions+pipe_tables+yaml_metadata_block+footnotes+citations+emoji+abbreviations+autolink_bare_uris
 # Optionale Pandoc-Filter
+PANDOC_FILTERS :=
+PANDOC_OPTIONAL_FILTERS := \
+	pandoc-plantuml \
+	pandoc-mermaid \
+	pandoc-kroki \
+	pandoc-crossref
 define add_filter_if_exists
 ifneq ($(shell command -v $(1) 2>/dev/null),)
 PANDOC_FILTERS += --filter=$(1)
 endif
 endef
-PANDOC_FILTERS :=
-$(eval $(call add_filter_if_exists,pandoc-plantuml))
-$(eval $(call add_filter_if_exists,pandoc-mermaid))
-$(eval $(call add_filter_if_exists,pandoc-kroki))
-$(eval $(call add_filter_if_exists,pandoc-crossref))
+$(foreach F,$(PANDOC_OPTIONAL_FILTERS),$(eval $(call add_filter_if_exists,$(F))))
+#####################################################################
+#mdSOURCES := $(shell find . -iname "*.md")
 mdSOURCES := $(wildcard *.md)
 %.quarto.pdf: %.md
 	quarto render $< --to pdf --output $@
@@ -29,7 +38,7 @@ mdSOURCES := $(wildcard *.md)
 	    --variable=papersize:a4 \
 	    --variable=colorlinks \
 	    --variable=documentclass:scrartcl \
-	    --from=markdown+smart+auto_identifiers+fancy_lists+task_lists+definition_lists+definition_lists+table_captions+pipe_tables+yaml_metadata_block+footnotes+citations+emoji+abbreviations+autolink_bare_uris \
+	    --from=$(PANDOC_FORMAT) \
 	    $(PANDOC_FILTERS) \
 	    --table-of-contents \
 	    --pdf-engine=xelatex \
