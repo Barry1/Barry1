@@ -6,7 +6,9 @@ SHELL = /usr/bin/nice
 #NUMCPUS ?= $(shell grep "core id" /proc/cpuinfo  | uniq | wc -l)
 #nicht so portabel
 NUMCPUS ?= $(shell nproc)
-JOBS ?= $(shell expr $(NUMCPUS) \* 2)
+#JOBS ?= $(shell expr $(NUMCPUS) \* 2)
+#JOBS ?= $(shell echo $$(( $(NUMCPUS) * 2 )))
+JOBS ?= $(shell nproc --all)
 MAKEFLAGS += --jobs=$(JOBS)
 MAKEFLAGS += --load-average=$(NUMCPUS)
 MAKEFLAGS += --output-sync=target
@@ -48,7 +50,7 @@ $(mdSOURCES:.md=.quarto.pdf) $(mdSOURCES:.md=.pandoc.pdf) :
 ############ What to do with .tex #################################
 texSOURCES := $(wildcard *.tex)
 %.pdf: %.tex
-	latexmk -xelatex -auxdir=latexmk.aux.tmp $<
+	latexmk -xelatex -auxdir=latexmk.aux.tmp/$* $<
 $(texSOURCES:.tex=.pdf) :
 ####################END .tex ##################################
 ############ What to do with .svg #################################
@@ -56,4 +58,4 @@ svgSOURCES := $(wildcard *.svg)
 %.pdf: %.svg
 	rsvg-convert --format pdf --output $@ $<
 $(svgSOURCES:.svg=.pdf) :
-####################END .tex ##################################
+####################END .svg ##################################
