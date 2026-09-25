@@ -34,3 +34,5 @@ output/
 *cache*
 FullGlossary.pdf
 Glossary.bak0
+*.pandoc.pdf
+*.quarto.pdf
