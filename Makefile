@@ -56,7 +56,7 @@ FullGlossary.pdf: FullGlossary.tex Glossary.tex /home/ebeling/.latexmkrc Acronym
 #	xelatex FullGlossary.tex
 #	makeglossaries FullGlossary
 #	xelatex FullGlossary.tex
-	latexmk -xelatex -auxdir=latexmk.aux FullGlossary.tex
+#	latexmk -xelatex -auxdir=latexmk.aux FullGlossary.tex
 #   remove helpfiles latexmk -xelatex FullGlossary.tex -C
 #   needs https://www.ctan.org/tex-archive/support/latexmk/example_rcfiles
 
