@@ -11,23 +11,16 @@ MAKEFLAGS += --output-sync=target
 ############ What to do with .md #################################
 #mdSOURCES := $(shell find . -iname "*.md")
 # Optionale Pandoc-Filter
+define add_filter_if_exists
+ifneq ($(shell command -v $(1) 2>/dev/null),)
+PANDOC_FILTERS += --filter=$(1)
+endif
+endef
 PANDOC_FILTERS :=
-# PlantUML-Filter nur aktivieren, wenn installiert
-ifneq ($(shell command -v pandoc-plantuml 2>/dev/null),)
-PANDOC_FILTERS += --filter=pandoc-plantuml
-endif
-# PlantUML-Filter nur aktivieren, wenn installiert
-ifneq ($(shell command -v pandoc-kroki 2>/dev/null),)
-PANDOC_FILTERS += --filter=pandoc-kroki
-endif
-# PlantUML-Filter nur aktivieren, wenn installiert
-ifneq ($(shell command -v pandoc-mermaid 2>/dev/null),)
-PANDOC_FILTERS += --filter=pandoc-mermaid
-endif
-# Weitere optionale Filter können später ergänzt werden
-ifneq ($(shell command -v pandoc-crossref 2>/dev/null),)
-PANDOC_FILTERS += --filter=pandoc-crossref
-endif
+$(eval $(call add_filter_if_exists,pandoc-plantuml))
+$(eval $(call add_filter_if_exists,pandoc-mermaid))
+$(eval $(call add_filter_if_exists,pandoc-kroki))
+$(eval $(call add_filter_if_exists,pandoc-crossref))
 mdSOURCES := $(wildcard *.md)
 %.quarto.pdf: %.md
 	quarto render $< --to pdf --output $@
