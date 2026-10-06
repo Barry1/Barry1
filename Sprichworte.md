@@ -10,7 +10,10 @@ author: Dr. Bastian Ebeling
 > --- Robert Rowland Smith
 
 > Luck is what happens when preparation meets opportunity.\
-> --- Seneca
+> --- [Seneca](https://www.goodreads.com/quotes/17490)
+
+> I am not a product of my circumstances. I am a product of my decisions.\
+> --- [Stephen R. Covey](https://www.goodreads.com/quotes/104483)
 
 ## Deutsche Sprichworte und Zitate
 
