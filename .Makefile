@@ -21,6 +21,7 @@ PANDOC_FORMAT := \
 PANDOC_FILTERS :=
 PANDOC_OPTIONAL_FILTERS := \
 	pandoc-plantuml \
+	pandoc-mermaid_plotly \
 	pandoc-mermaid \
 	pandoc-kroki \
 	pandoc-crossref
