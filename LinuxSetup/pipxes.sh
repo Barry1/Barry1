@@ -24,8 +24,9 @@ manualinstall() {
 	pipx install mypy
 	pipx inject mypy types-psutil
 	pipx install openai-whisper
-	pipx install pandoc-kroki-filter
+	pipx install git+https://github.com/Barry1/pandoc-mermaid_plotly-filter
 	pipx install pandoc-mermaid-filter
+	pipx install git+https://github.com/Barry1/pandoc-mermaid_plotly-filter
 	pipx install poetry
 	pipx install pre-commit
 	pipx install pycodestyle
@@ -35,6 +36,7 @@ manualinstall() {
 	pipx install pylint
 	pipx install pylyzer
 	pipx install pyperf
+	pipx install pyproject-fmt
 	pipx install pyre
 	pipx install pyrefly
 	pipx install pyright
