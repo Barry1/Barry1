@@ -19,6 +19,7 @@
 | [exiftool](#exiftool)              | virtual alias for `libimage-exiftool-perl`                  |
 | exiv2                              | EXIF/IPTC/XMP metadata manipulation tool                    |
 | fastfetch                          | like neofetch but programmed in `C`                         |
+| glances                            | system monitoring service with docker support               |
 | gummi                              | GTK+ latex editor                                           |
 | htop                               | Htop is an ncursed-based process viewer similar to top      |
 | hyperfine                          | Command-line benchmarking tool                              |
