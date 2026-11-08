@@ -1,8 +1,17 @@
 ---
 title: Hints and ideas around Internet related setups
-date: 23. März 2024
+date: 20261108T110200Z
 author: Dr. Bastian Ebeling
 ---
+
+## Fritz
+
+Since never firmwares, you can integrate DNS filters into the fritz.box.
+Just open <http://fritz.box/#/network/settings/critical/dns-filter> and configure the following filter lists:
+
+- [Big OISD](https://big.oisd.nl)
+- [Hagezi](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt)
+- [StevenBlack](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
 
 ## (Dynamic) DNS
 
