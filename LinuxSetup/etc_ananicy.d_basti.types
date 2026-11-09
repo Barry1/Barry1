@@ -1,0 +1,5 @@
+#/etc/ananicy.d/basti.types
+{"type":"bastimax", "nice":-19, "ionice":3, "ioclass":"realtime"}
+{"type":"bastimux", "nice":-7, "ionice":5 , "ioclass":"realtime"}
+{"type":"basticalm", "nice":17 , "ioclass":"idle"}
+

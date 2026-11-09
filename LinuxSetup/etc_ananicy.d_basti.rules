@@ -1,0 +1,9 @@
+#/etc/ananicy.d/basti.rules
+{ "name": "cloud-drive-connect", "type": "basticalm" }
+{ "name": "cloud-drive-daemon", "type": "basticalm" }
+{ "name": "cloud-drive-ui", "type": "basticalm" }
+{ "name": "gedit", "type": "bastimax" }
+{ "name": "make", "type": "basticalm"}
+{ "name": "signal-desktop","type": "bastimux"}
+{ "name": "zoom", "type": "bastimax" }
+{ "name": "ZoomWebviewHost", "type": "bastimax" }
