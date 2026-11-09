@@ -1,6 +1,6 @@
 ---
 title: Hints and ideas around Internet related setups
-date: 20261108T110200Z
+date: 20261109T193600Z
 author: Dr. Bastian Ebeling
 ---
 
@@ -49,3 +49,11 @@ Oft laden Captive-Portal-Seiten schwierig, im _normalen_ Browser-Modus.\
 Eine Empfehlung ist es, eine Verknüpfung mir dem Ziel `"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --inprivate --new-window --app=http://www.msftconnecttest.com/redirect` zu erstellen.\
 So lädt der Browser mit minimalem Rahmen in einem _incognito-Modus_ die Captive-Portal-Seite.
 Dies ist meinst schneller.
+
+## DNS Blocklisten
+
+### Hagezi
+
+Unter der URL <https://github.com/hagezi/dns-blocklists> Sind diverse Listen, die unterschiedliche Ansprüche erfüllen.
+Dort gibt es diverse Informationen und Tools.
+Zum Beispiel ist unter dem [Link](https://hagezi-mirror.dnsbunker.org/dlg.html?fmt=wildcard-domains&tool=fritz-box-7690-7-90-5690-5590-6690) eine Empfehlung, für Nutzer FritzBox 7609.
