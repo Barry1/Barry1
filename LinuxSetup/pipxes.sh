@@ -28,6 +28,7 @@ manualinstall() {
 	pipx install pandoc-mermaid-filter
 	pipx install git+https://github.com/Barry1/pandoc-mermaid_plotly-filter
 	pipx install poetry
+	pipx install pumllint
 	pipx install pre-commit
 	pipx install pycodestyle
 	pipx install pydocstyle
