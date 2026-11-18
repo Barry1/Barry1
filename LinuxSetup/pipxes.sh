@@ -19,7 +19,7 @@ manualinstall() {
 	pipx install isort
 	pipx install mbake
 	pipx install mdformat
-	pipx inject mdformat mdformat-beautysh mdformat-deflist mdformat-dollarmath mdformat-footnote mdformat-frontmatter mdformat-gfm mdformat-gfm-alerts mdformat-ruff mdformat-tables mdformat-toc
+	pipx inject mdformat mdformat-beautysh mdformat-deflist mdformat-dollarmath mdformat-footnote mdformat-frontmatter mdformat-gfm mdformat-gfm-alerts mdformat-ruff mdformat-simple-breaks mdformat-tables mdformat-toc
 	pipx install monkeytype
 	pipx install mypy
 	pipx inject mypy types-psutil
