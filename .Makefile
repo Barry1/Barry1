@@ -36,6 +36,8 @@ $(foreach F,$(PANDOC_OPTIONAL_FILTERS),$(eval $(call add_filter_if_exists,$(F)))
 mdSOURCES := $(wildcard *.md)
 %.kova.pdf: %.md
 	kova --export pdf $< $@
+%.kova.pptx: %.md
+	kova --export pptx $< $@
 %.quarto.pdf: %.md
 	quarto render $< --to pdf --output $@
 %.pandoc.pdf: %.md
@@ -48,7 +50,7 @@ mdSOURCES := $(wildcard *.md)
 	    --table-of-contents \
 	    --pdf-engine=xelatex \
 	    --to=pdf $< --output=$@
-$(mdSOURCES:.md=.kova.pdf) $(mdSOURCES:.md=.quarto.pdf) $(mdSOURCES:.md=.pandoc.pdf) :
+$(mdSOURCES:.md=.kova.pptx) $(mdSOURCES:.md=.kova.pdf) $(mdSOURCES:.md=.quarto.pdf) $(mdSOURCES:.md=.pandoc.pdf) :
 ####################END .md ##################################
 ############ What to do with .tex #################################
 texSOURCES := $(wildcard *.tex)
