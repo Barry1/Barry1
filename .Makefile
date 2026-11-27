@@ -1,5 +1,6 @@
 #~/.Makefile
-#Best use pattern rules only
+# Best use pattern rules only
+# formatted and validated with mbake
 
 SHELL = /usr/bin/nice
 .SHELLFLAGS = -n 15 /usr/bin/sh -c
